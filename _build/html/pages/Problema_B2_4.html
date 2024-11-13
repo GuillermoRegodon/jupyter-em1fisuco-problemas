@@ -299,7 +299,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -315,6 +317,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efectos-mecanicos-sobre-un-dipolo">Efectos mecánicos sobre un dipolo</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -387,6 +397,75 @@ dr' = -\frac{a^2}{r^2} dr
 <p>Cada carga puntual con su imagen, deja la esfera con potencial nulo. Por el principio de superposición, <em>podemos sumar tantas cargas puntuales más sus imagenes, que dejan la esfera con potencial nulo</em> (Es lo que hemos hemos con la corona de carga). La unica carga imagen que deja <em>el potencial constante en la esfera de CEP es una carga imagen puntual en el centro de la esfera</em>.</p>
 </div>
 <p>La carga restante es <span class="math notranslate nohighlight">\(Q_c = Q - Q_{imagen}\)</span>, que <em>podemos obtener por integración</em>, ya que conocemos la densidad superficial (que no es constante) en función de sus coordenadas <span class="math notranslate nohighlight">\(r'\)</span> y <span class="math notranslate nohighlight">\(\theta'\)</span>. Por último, <em>podemos conocer el potencial y el campo eléctrico de la configuración de CEP más corona de carga constante calculando y sumando el potencial y el campo eléctrico de la corona de carga más su imagen más la carga restante en el centro de la esfera</em>.</p>
+<section id="efectos-mecanicos-sobre-un-dipolo">
+<h2>Efectos mecánicos sobre un dipolo<a class="headerlink" href="#efectos-mecanicos-sobre-un-dipolo" title="Permalink to this heading">#</a></h2>
+<p>Los efectos mecánicos sobre un dipolo, es decir, <strong>la fuerza y el momento angular sobre el dipolo depende del campo eléctrico</strong> a través de las siguientes expresiones:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{F} = (\vec{p} \cdot \nabla) \vec{E} \\
+\vec{M} = \vec{p} \times \vec{E}
+\end{split}\]</div>
+<p>En principio, <strong>conociendo la distribución de cargas se puede calcular el campo electrico <span class="math notranslate nohighlight">\(\vec{E}\)</span></strong> (aunque no siempre sea fácil). En este problema, ya hemos resuelto la dicribución de cargas, por lo que solo queda calcular el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>. Nos piden el efecto mecánico (fuerza y momento) sobre <strong>un dipolo colocado en el eje z y orientado en la dirección <span class="math notranslate nohighlight">\(z\)</span></strong></p>
+<div class="math notranslate nohighlight">
+\[
+\vec{p} = p \vec{u_z} 
+\]</div>
+<ul class="simple">
+<li><p>Empezamos por <strong>el momento resultante que es nulo</strong>: En el eje <span class="math notranslate nohighlight">\(z\)</span>, el campo electrico tiene que tener dirección <span class="math notranslate nohighlight">\(z\)</span>, por la simetría del problema, por lo que el momento <span class="math notranslate nohighlight">\(\vec{M} = \vec{p} \times \vec{E} = (p \vec{u_z}) \times (E_z \vec{u_z}) = 0\)</span>.</p></li>
+<li><p><strong>La fuerza neta es la contribución de tres términos</strong>: Hay que sumar el campo de la corona externa (<span class="math notranslate nohighlight">\(\sigma = cte\)</span>), el campo de la corona imagen (<span class="math notranslate nohighlight">\(\sigma' \neq cte\)</span>) y la carga central <span class="math notranslate nohighlight">\(Q_c\)</span>. El operador <span class="math notranslate nohighlight">\((\vec{p} \cdot \nabla)\)</span> debe ser particularizado con cuidado para el problema. Teniendo en cuenta que el campo electrico solo tiene componente <span class="math notranslate nohighlight">\(z\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+(\vec{p} \cdot \nabla) \vec{E} = ((p \vec{u_z}) \cdot \nabla) E_z \vec{u_z} = p_z \frac{\partial E_z}{\partial z} \vec{u_z} = -p_z \frac{\partial^2 \Phi}{\partial z^2} \vec{u_z}
+\]</div>
+<p>(<em>He utilizado la definición de <span class="math notranslate nohighlight">\(\vec{E} = - \nabla \Phi\)</span>, de forma que podemos calcular el que nos parezca más fácil. Típicamente el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> es más fácil, aunque no siempre</em>)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>De los tres términos, dos son sencillos de obtener, ya que son integrales que hemos hecho otras veces:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+&amp;\Phi_{corona} = \frac{\sigma}{2 \varepsilon_0} \left( \sqrt{z^2 + R_2^2} - \sqrt{z^2 + R_1^2} \right), \\
+&amp;\Phi_{Q_c} = \frac{Q_c}{4 \pi \varepsilon_0 z}
+\end{split}\]</div>
+<p>El otro término es el de <strong>una corona con <span class="math notranslate nohighlight">\(\sigma \neq cte\)</span></strong>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sigma' &amp;= -\sigma \frac{a^3}{r'^3}, \\
+\vec{r} &amp;= z \vec{u_z},\\
+\vec{r'} &amp;= (r'\cos{\phi'},r'\sin{\phi'},0),\\ 
+|{\vec{r}-\vec{r'}}| &amp;= \sqrt{r'^2 + z^2},
+\end{split}\]</div>
+<p>con los límites de integración <span class="math notranslate nohighlight">\(r' \in [R_2', R_1'] = [\frac{a^2}{R_2}, \frac{a^2}{R_1}]\)</span> y <span class="math notranslate nohighlight">\(\phi' \in [0, 2 \pi]\)</span>. Con lo que la integral queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi_{imagen} = \frac{1}{4 \pi \varepsilon_0} \int_{s`=R_2'}^{s'=R_1'} \int_{\phi' = 0}^{\phi' = 2 \pi} \frac{-\sigma \frac{a^3}{r'^3}}{\sqrt{r'^2 + z^2}} r'dr'd\phi'
+\]</div>
+<p>Esta integral no es plato de buen gusto, pero se puede resolver realizando algunos cambios de variable. Primero, para quitar el denominador, podemos usar <span class="math notranslate nohighlight">\(\frac{r'}{z} = \sinh{x}\)</span> de forma que queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi_{imagen} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{dx}{\sinh^2{x}}
+\]</div>
+<p>Esta integral parece más dificil, pero si tenemos en cuenta que <span class="math notranslate nohighlight">\(\sinh{x} = \frac{e^x-e^{-x}}{2}\)</span> podemos poner:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi_{imagen} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 dx}{(e^x-e^{-x})^2} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 e^{2x} dx}{(e^{2x}-1)^2} 
+\]</div>
+<p>Por lo que ahora podemos usar el cambio de variable <span class="math notranslate nohighlight">\(y = e^{2x} - 1\)</span>, <span class="math notranslate nohighlight">\(dy = 2 e^{2x} dx\)</span>, resultando en una integral inmediata. Después de hacer la sustitución y posteriormente sustituir a la inversa:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int \frac{4 e^{2x} dx}{(e^{2x}-1)^2} &amp;= \int \frac{2 dy}{y^2} = -\frac{2}{y} \\
+&amp;= -\frac{2}{e^{2x} - 1} = -\frac{2}{e^x(e^x-e^{-x})} \\
+&amp;= -\frac{1}{(\sinh{x} + \cosh{x}) \sinh{x}} \\
+&amp;= -\frac{1}{   \left(   \frac{r'}{z} + \sqrt{1 + (\frac{r'}{z})^2  } \right)  (\frac{r'}{z})   }
+\end{split}\]</div>
+<p>Por lo tanto, se puede obtener la expresión:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi_{imagen} = \frac{\sigma a^3}{2 \varepsilon_0} \frac{1}{r'(r'+ \sqrt{r'^2 + z^2})}|_{r' = R'_2}^{r' = R'_1}
+\]</div>
+<p>Finalmente, si quisieramos desarrollar una expresión final, faltaría sustituir y derivar dos veces con respecto a <span class="math notranslate nohighlight">\(z\)</span>.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -443,6 +522,20 @@ dr' = -\frac{a^2}{r^2} dr
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efectos-mecanicos-sobre-un-dipolo">Efectos mecánicos sobre un dipolo</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
