@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Problema B4.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_4';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Problema B2.6" href="Problema_B2_6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Problemas resueltos de Electromagnetismo I - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Problemas resueltos de Electromagnetismo I - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Problemas resueltos de Electromagnetismo I
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_3.html">Problema B2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_4.html">Problema B2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_6.html">Problema B2.6</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B4.4</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/pages/Problema_B4_4.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Problema B4.4</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-4">
+<h1>Problema B4.4<a class="headerlink" href="#problema-b4-4" title="Permalink to this heading">#</a></h1>
+<p>Claramente, <em>la carga superficial <span class="math notranslate nohighlight">\(\sigma\)</span> girando a velocidad constante <span class="math notranslate nohighlight">\(\omega\)</span></em> implica <strong>unas cargas que se desplazan</strong>, en este caso, <em>una corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span></em>. <strong>El potencial vector</strong> tiene una expresión sencilla a partir de la corriente superficial:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A} = \frac{\mu_0}{4 \pi} \int_{S'} \frac{\vec{j}(\vec{r}')} {|\vec{r} - \vec{r}'|} dS'
+\]</div>
+<p>Para usar esta expresión, tenemos que calcular <strong>la corriente superficial</strong>, que debe ir en la dirección de la velocidad de desplazamiento de las cargas. <em>Cuando tenemos la velocidad de desplazamiento de las cargas</em>, la manera más sencilla de obtener la corriente superficial es multiplicar:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{j} = \sigma \vec{v}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para recordar o deducir la expresión de <span class="math notranslate nohighlight">\(\vec{j}\)</span>, primero observamos que tiene <strong>las unidades correctas, de <span class="math notranslate nohighlight">\([A/m]\)</span></strong>. Notamos que <strong>la velocidad debe estar contenida en la superficie</strong> para que la expresión tenga sentido, de forma que las cargas se desplazan dentro de la superficie</p>
+<p>Es similar a la expresión conocida <span class="math notranslate nohighlight">\(\vec{J} = \rho \vec{v}\)</span>, con unidades de <span class="math notranslate nohighlight">\([A/m^2]\)</span></p>
+</div>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/esfera_rot.png"><img alt="esfera_rot" src="../_images/esfera_rot.png" style="width: 180px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Podemos comprobar que la velocidad siempre tiene dirección <span class="math notranslate nohighlight">\(\vec{u_\varphi}\)</span>, y que su valor depende de la latitud en la esfera, <span class="math notranslate nohighlight">\(\vec{v} = a \sin{\theta} \omega \vec{u_\varphi}\)</span>. Vemos que esta expresión <strong>es la que obtendríamos si utilizamos la expresión vectorial de la velocidad (y por tanto, indendiente del sistema de referencia) en función de la velocidad angular</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{v} = \vec{\omega} \times \vec{r}' = \omega \vec{u_z} \times a \vec{u_r}
+\]</div>
+<p>Así:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{j} = \sigma a \sin{\theta'} \omega \vec{u_\varphi}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Observamos que la expresión del <strong>potencial escalar general</strong> en función de la densidad de corriente <span class="math notranslate nohighlight">\(\vec{J}\)</span> <strong>es fácil de particularizar para los casos de corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span> o corriente por un hilo <span class="math notranslate nohighlight">\(I\)</span></strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A} = \frac{\mu_0}{4 \pi} \int_{V'} \frac{\vec{J}(\vec{r}')} {|\vec{r} - \vec{r}'|} dV' =
+\frac{\mu_0}{4 \pi} \int_{S'} \frac{\vec{j}(\vec{r}')} {|\vec{r} - \vec{r}'|} dS' =
+\frac{\mu_0}{4 \pi} \int_{C'} \frac{I(\vec{r}')} {|\vec{r} - \vec{r}'|} \vec{dl}'
+\]</div>
+<p>Sin embargo, la expresión de la ley de Biot-Sabart, se puede poner fácilmente para densidad de corriente <span class="math notranslate nohighlight">\(\vec{J}\)</span> y para la corriente <span class="math notranslate nohighlight">\(I\)</span> que pasa por un hilo (<em>ambas están en las transparencias</em>), pero es dificil de expresar en función de la corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span>. Por eso, en este problema es más facil calcular la expresión del potencial vector <span class="math notranslate nohighlight">\(\vec{A}\)</span> y obtener el campo magnético como un rotacional, <span class="math notranslate nohighlight">\(\vec{B} = \nabla \times \vec{A}\)</span>.</p>
+<p><strong>A veces, la geometría de la corriente superficial es suficientemente sencilla</strong> para que el campo magnético resulte facil de plantear directamente del diagrama como una suma (<em>integral</em>) de espiras o hilos, <em>pero en este caso, aunque se hiciera, la integral resultaría complicada</em>.</p>
+</div>
+<p>Planteamos los elementos que aparecen en la integral de <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{r} &amp;= (x,y,z) \\
+\vec{r}' &amp;= (a \sin \theta'  \cos \varphi', a \sin \theta' \sin \varphi', a \cos\theta') \\
+|\vec{r} - \vec{r}'| &amp;= \sqrt{(x - a \sin\theta' \cos\varphi')^2 + (y - a \sin\theta' \sin\varphi')^2 + (z - a \cos\theta')^2} \\
+dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
+\vec{j} &amp; = \sigma a \sin{\theta'} \omega \vec{u_\varphi}
+\end{split}\]</div>
+<p>Con lo que nos queda una expresión para <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A} = \frac{\mu_0}{4 \pi} \int_{S'} \frac{\sigma a \sin{\theta'} \omega \vec{u_\varphi}} {\sqrt{(x - a \sin\theta' \cos\varphi')^2 + (y - a \sin\theta' \sin\varphi')^2 + (z - a \cos\theta')^2}} a^2 \sin\theta'd\theta'd\varphi'
+\]</div>
+<p><strong>¡Esta expresión es dificil!</strong> Las variables de integración <span class="math notranslate nohighlight">\(\theta'\)</span> y <span class="math notranslate nohighlight">\(\varphi'\)</span> están ambas en el argumento de la raíz, por lo que no son separables. Además están dentro de senos y cosenos. Y peor aún, no hay cambios de variable de <span class="math notranslate nohighlight">\(\theta'\)</span> o <span class="math notranslate nohighlight">\(\varphi'\)</span> que permitan simplificar la integral de forma sustancial. Sin embargo, existe una manera alternativa de plantear el sistema de referencia, de forma que la integral el sencilla.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El hecho de que podamos cambiar el sistema de referencia para que la integral sea sencilla significa que <em>debe existir un cambio de variables <span class="math notranslate nohighlight">\((\theta', \varphi')\)</span> a otras dos que simplificaría la integral</em>. Sin embargo, no es facil pensar dicho cambio de variables, mientras que <strong>el cambio de sistema de referencia es muy facil de ver</strong>.</p>
+</div>
+<p>El sistema de referencia alternativo es el que <strong>tiene el eje <span class="math notranslate nohighlight">\(z\)</span> en la dirección del vector posición <span class="math notranslate nohighlight">\(\vec{r}\)</span></strong>, de forma que es la velocidad angular <span class="math notranslate nohighlight">\(\vec{\omega}\)</span> la que es un parámetro de la integral. Arbitrariamente, elegimos que esté contenida en el plano <span class="math notranslate nohighlight">\((x,z)\)</span>.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/esfera_alt.png"><img alt="esfera_alt" src="../_images/esfera_alt.png" style="width: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Diagrama del problema con sistema de referencia alternativo.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>De esta manera, planteamos los elementos de la integral de <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{r} &amp;= (0,0,z) \\
+\vec{r}' &amp;= (a \sin \theta'  \cos \varphi', a \sin \theta' \sin \varphi', a \cos\theta') \\
+|\vec{r} - \vec{r}'| &amp;= \sqrt{a^2 + z^2 - 2 a z \cos\theta'} \\
+dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
+\end{split}\]</div>
+<p>Para la densidad superficial de corriente, usamos la expresión vectorial. Llamamos <span class="math notranslate nohighlight">\(\Psi\)</span> al ángulo entre <span class="math notranslate nohighlight">\(\vec{r}\)</span> y <span class="math notranslate nohighlight">\(\vec{\omega}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{j} = \sigma \vec{v} = \sigma \vec{\omega} \times \vec{r}' = \sigma (\omega (\sin\Psi \vec{u_x} + \cos\Psi \vec{u_z})) \times (a \sin \theta'  \cos \varphi', a \sin \theta' \sin \varphi', a \cos\theta')
+\]</div>
+<p>Con lo que nos queda una expresión para <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A} = \frac{\mu_0}{4 \pi} \int_{S'} \frac{\sigma (\omega (\sin\Psi \vec{u_x} + \cos\Psi \vec{u_z})) \times (a \sin \theta'  \cos \varphi', a \sin \theta' \sin \varphi', a \cos\theta')} {\sqrt{a^2 + z^2 - 2 a z \cos\theta'}} a^2 \sin\theta'd\theta'd\varphi'
+\]</div>
+<p><strong>¡Esta expresión es más facilmente resoluble!</strong> Para empezar, <span class="math notranslate nohighlight">\(\varphi'\)</span> esta separada y se puede integrar. Además, los términos que tienen <span class="math notranslate nohighlight">\(\sin\varphi'\)</span> y <span class="math notranslate nohighlight">\(\cos\varphi'\)</span> tienen una integral nula, por ser la integral en un periodo completo. Otros términos desaparecen por el producto vectorial. El único término que sobrevive es:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A} = \frac{\mu_0}{2} \int_{\theta'=0}^{\theta'=\pi} \frac{\sigma \omega (\sin\Psi \vec{u_x}) \times (a \cos\theta' \vec{u_z})} {\sqrt{a^2 + z^2 - 2 a z \cos\theta'}} a^2 \sin\theta'd\theta'
+\]</div>
+<p>La dirección resultante <span class="math notranslate nohighlight">\(-\vec{u_y}\)</span> es constante en la integral. Con el cambio de variable <span class="math notranslate nohighlight">\(u = \cos\theta'\)</span>, y usando la integral:</p>
+<div class="math notranslate nohighlight">
+\[
+\int \frac{udu}{\sqrt{k-u}} = -\frac{2}{3}\sqrt{k-u}(u-2k)
+\]</div>
+<p>Podemos resolver el potencial vector <span class="math notranslate nohighlight">\(\vec{A}\)</span>. Para los puntos dentro de la esfera, para <span class="math notranslate nohighlight">\(z&lt;a\)</span> (<em>cuidado con que el resultado de las raices siempre sea positivo</em>) el resultado final es:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A} = -\frac{\mu_0 \omega z a \sin\Psi \sigma}{3} \vec{u_y}
+\]</div>
+<p>Ahora, <strong>podemos volver al sistema de referencia original</strong>. La manera más sencilla es poner <strong>la expresión resultante en forma vectorial</strong> de nuevo, que es independiente del sistema de referencia. Usamos que, en este sistema de referencia:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{\omega} \times \vec{r} = (\omega (\sin\Psi \vec{u_x} + \cos\Psi \vec{u_z}) \times (0,0,z) = -\omega z \sin\Psi \vec{u_y}
+\]</div>
+<p>De tal forma que obtenemos la expresión vectorial, independiente del sistema de referencia:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A} = \frac{\mu_0 a \sigma}{3} \vec{\omega} \times \vec{r}
+\]</div>
+<p>Ponemos esta expresión en el sistema de referencia original, con <span class="math notranslate nohighlight">\(\vec{\omega} = \omega \vec{u_z}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A} = \frac{\mu_0 a \omega \sigma}{3} r \sin\theta \vec{u_\varphi}
+\]</div>
+<p>Finalmente, tomando rotacional, comprobamos que <strong>el campo magnético en el interior de la esfera es constante</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = \frac{2}{3} \mu_0 a \sigma \vec{\omega}
+\]</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./pages"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B2_6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B2.6</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Guillermo Fernando Regodon Harkness
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
