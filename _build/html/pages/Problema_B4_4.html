@@ -67,6 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_4';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B4.5" href="Problema_B4_5.html" />
     <link rel="prev" title="Problema B2.6" href="Problema_B2_6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -174,6 +175,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_4.html">Problema B2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_6.html">Problema B2.6</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_5.html">Problema B4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_7.html">Problema B4.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Parcial_2425.html">Problemas Examen parcial 24/25</a></li>
 </ul>
 
     </div>
@@ -342,7 +346,7 @@ document.write(`
 <p>Es similar a la expresión conocida <span class="math notranslate nohighlight">\(\vec{J} = \rho \vec{v}\)</span>, con unidades de <span class="math notranslate nohighlight">\([A/m^2]\)</span></p>
 </div>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/esfera_rot.png"><img alt="esfera_rot" src="../_images/esfera_rot.png" style="width: 180px;" /></a>
+<a class="reference internal image-reference" href="../_images/esfera_rot.png"><img alt="esfera_rot" src="../_images/esfera_rot.png" style="width: 200px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 7 </span><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -383,7 +387,7 @@ dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
 \[
 \vec{A} = \frac{\mu_0}{4 \pi} \int_{S'} \frac{\sigma a \sin{\theta'} \omega \vec{u_\varphi}} {\sqrt{(x - a \sin\theta' \cos\varphi')^2 + (y - a \sin\theta' \sin\varphi')^2 + (z - a \cos\theta')^2}} a^2 \sin\theta'd\theta'd\varphi'
 \]</div>
-<p><strong>¡Esta expresión es dificil!</strong> Las variables de integración <span class="math notranslate nohighlight">\(\theta'\)</span> y <span class="math notranslate nohighlight">\(\varphi'\)</span> están ambas en el argumento de la raíz, por lo que no son separables. Además están dentro de senos y cosenos. Y peor aún, no hay cambios de variable de <span class="math notranslate nohighlight">\(\theta'\)</span> o <span class="math notranslate nohighlight">\(\varphi'\)</span> que permitan simplificar la integral de forma sustancial. Sin embargo, existe una manera alternativa de plantear el sistema de referencia, de forma que la integral el sencilla.</p>
+<p><strong>¡Esta expresión es dificil!</strong> Las variables de integración <span class="math notranslate nohighlight">\(\theta'\)</span> y <span class="math notranslate nohighlight">\(\varphi'\)</span> están ambas en el argumento de la raíz, por lo que no son separables. Además están dentro de senos y cosenos. Y peor aún, no hay cambios de variable de <span class="math notranslate nohighlight">\(\theta'\)</span> o de <span class="math notranslate nohighlight">\(\varphi'\)</span> por separado que permitan simplificar la integral de forma sustancial. Sin embargo, existe una manera alternativa de plantear el sistema de referencia, de forma que la integral es sencilla.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>El hecho de que podamos cambiar el sistema de referencia para que la integral sea sencilla significa que <em>debe existir un cambio de variables <span class="math notranslate nohighlight">\((\theta', \varphi')\)</span> a otras dos que simplificaría la integral</em>. Sin embargo, no es facil pensar dicho cambio de variables, mientras que <strong>el cambio de sistema de referencia es muy facil de ver</strong>.</p>
@@ -423,6 +427,10 @@ dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
 \[
 \int \frac{udu}{\sqrt{k-u}} = -\frac{2}{3}\sqrt{k-u}(u-2k)
 \]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En algunos problemas, <em>el sistema de referencia se puede elegir en base a criterios físicos del problema, y pensar que permitirá simplificar la expresión de la integral</em>. En este caso, poniendo el sistema de referencia con el punto <span class="math notranslate nohighlight">\(\vec{r}\)</span> fijado, podemos deducir que las componentes <span class="math notranslate nohighlight">\(\vec{u_x}\)</span> y <span class="math notranslate nohighlight">\(\vec{u_z}\)</span> se cancelarán. Para verlo podemos ver que para <strong>cada punto de la fuente de corriente que contribuye en las dirección positivas de <span class="math notranslate nohighlight">\(\vec{u_x}\)</span> y <span class="math notranslate nohighlight">\(\vec{u_z}\)</span> hay otro punto que contribuye en dirección contraria y se cancelan</strong>. La unica componente que no se cancela es la <span class="math notranslate nohighlight">\(\vec{u_y}\)</span>. En la integral, resulta en integrales en <span class="math notranslate nohighlight">\(\sin\varphi'\)</span> y <span class="math notranslate nohighlight">\(\cos\varphi'\)</span> que se anulan.</p>
+</div>
 <p>Podemos resolver el potencial vector <span class="math notranslate nohighlight">\(\vec{A}\)</span>. Para los puntos dentro de la esfera, para <span class="math notranslate nohighlight">\(z&lt;a\)</span> (<em>cuidado con que el resultado de las raices siempre sea positivo</em>) el resultado final es:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -488,6 +496,15 @@ dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Problema B2.6</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B4_5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B4.5</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
