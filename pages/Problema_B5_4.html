@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Problema B2.6 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B5.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -64,11 +64,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_6';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B5_4';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B4.4" href="Problema_B4_4.html" />
-    <link rel="prev" title="Problema B2.4" href="Problema_B2_4.html" />
+    <link rel="next" title="Problema B5.5" href="Problema_B5_5.html" />
+    <link rel="prev" title="Problema B4.7" href="Problema_B4_7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,11 +173,11 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_3.html">Problema B2.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_4.html">Problema B2.4</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_6.html">Problema B2.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_4.html">Problema B4.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_5.html">Problema B4.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_7.html">Problema B4.7</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B5_4.html">Problema B5.4</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B5.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_5.html">Problema B5.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Parcial_2425.html">Problemas Examen parcial 24/25</a></li>
 </ul>
@@ -234,7 +234,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/pages/Problema_B2_6.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B5_4.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -316,7 +316,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B2.6</h1>
+    <h1>Problema B5.4</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -330,69 +330,61 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-6">
-<h1>Problema B2.6<a class="headerlink" href="#problema-b2-6" title="Permalink to this heading">#</a></h1>
-<p>Tenemos <strong>una esfera a un potencial conocido</strong>, de radio <span class="math notranslate nohighlight">\(R\)</span>, que sigue la expresión <span class="math notranslate nohighlight">\(V = K \cos(3\theta)\)</span>, donde <span class="math notranslate nohighlight">\((r, \theta, \varphi)\)</span> son las coordenadas <strong>esféricas</strong> e implicitamente, se establece <em>la simetría en la variable <span class="math notranslate nohighlight">\(\varphi\)</span></em>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b5-4">
+<h1>Problema B5.4<a class="headerlink" href="#problema-b5-4" title="Permalink to this heading">#</a></h1>
+<p>Este es un problema de circuito magnético que resolvemos con un <strong>método gráfico, ya que la respuesta del material ferromagnético es no lineal y tenemos la gráfica, pero no tenemos una expresión</strong>. Nos dan la gráfica de la respuesta del material <span class="math notranslate nohighlight">\(H_{Fe} = H_{Fe}(B_{Fe})\)</span></p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/fe_carga.png"><img alt="fe_carga" src="../_images/fe_carga.png" style="width: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Respuesta de carga inicial del material ferromagnético.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>El circuito magnético tiene una fuerza magnetomotriz, o <span class="math notranslate nohighlight">\(fmm\)</span></strong>, generada por un bobinado de <span class="math notranslate nohighlight">\(N=300\)</span> espiras por las que circula una corriente <span class="math notranslate nohighlight">\(I=2.5\rm{A}\)</span>. El circuito tiene una sección <span class="math notranslate nohighlight">\(S = 2 \rm{cm^2}\)</span> y una longitud de <span class="math notranslate nohighlight">\(L_{Fe}=60 \rm{cm}\)</span>, y un entrehierro (es decir, un trozo de aire que rompe el circuito de hierro) de <span class="math notranslate nohighlight">\(L_e=2 \rm{mm}\)</span>. <strong>El entrehierro, al ser aire, tendrá una respuesta lineal, caracterizada por su reluctancia <span class="math notranslate nohighlight">\(R_e = \frac{L_e}{\mu_0 S}\)</span></strong>. Deberíamos haber usado <span class="math notranslate nohighlight">\(S_e\)</span>, pero el entrehierro es tan estrecho, que podemo asumir que la sección por la que pasa el flujo magnético es la misma que la sección del material ferromagnético <span class="math notranslate nohighlight">\(S\)</span>. Por lo tanto, <em>el campo magnético también es igual en el material ferromagnético que en el entrehierro, <span class="math notranslate nohighlight">\(B_{Fe} = B_e = B\)</span></em>. El circuito magnético podríamos dibujarlo de la siguiente manera:</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/fe_carga_circuito.png"><img alt="fe_carga_circuito" src="../_images/fe_carga_circuito.png" style="width: 200px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Circuito magnético equivalente.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Si pidiera el potencial en un punto del eje <span class="math notranslate nohighlight">\(z\)</span> o algún otro punto con una simetría clara, la integración directa sería posible.</p>
-<p>Dado que se pide el potencial en cualquier punto externo e interno, la estrategia de los polinomios de Legendre es la única fáctible.</p>
-</div>
-<p>Se trata entonces de <strong>resolver la ecuación de Poisson</strong> con las condiciones de contorno apropiadas.</p>
-<div class="math notranslate nohighlight">
-\[
-\nabla^2 \Phi = 0
-\]</div>
-<p>Para <em>el volumen interno a la esfera</em>, la única condición de contorno es el propio potencial <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em = \kern -0.2em R) = K \cos(3\theta)\)</span> de la esfera. Para <em>el volumen exterior a la esfera</em>, además de <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em = \kern -0.2em R) = K \cos(3\theta)\)</span>, usamos el potencial en el infinito, <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em \rightarrow \kern -0.2em \infty) = 0\)</span>.</p>
-<p>Este es precisamente el problema que tiene por solución los Polinomios de Lengendre:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi = \sum_{l=0}^{\infty} \left( A_l r^l + \frac{B_l}{r^{l+1}} \right) P_l(\cos(\theta))
-\]</div>
-<p><strong>Para el volumen interior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_d\)</span> y usamos la condición de que todos las magnitudes físicas deben ser fínitas, y por tanto, <span class="math notranslate nohighlight">\(B_l = 0\)</span>. <strong>Para el volumen exterior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_f\)</span> y usamos la condición de que el potencial en el infinito se anula, y por tanto, <span class="math notranslate nohighlight">\(A_l = 0\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\Phi_d = \sum_{l=0}^{\infty} A_l r^l P_l(\cos(\theta)) \\
-\Phi_f = \sum_{l=0}^{\infty} \frac{B_l}{r^{l+1}} P_l(\cos(\theta))
-\end{split}\]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Podemos <strong>resolver los dos problemas por separado o en paralelo</strong>, ya que son independientes. Están separados por la condición de contorno <span class="math notranslate nohighlight">\(V\)</span> que descompone el espacio en dos volumenes separados.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Debemos usar los infinitos términos de las sumatorias pero por inspección podemos reducir los terminos a unos pocos (<em>en algunos casos a uno</em>)</p>
+<p>Todos los problemas de este tipo los vamos a resolver por un método gráfico. <strong>La metodología gráfica tiene tres pasos</strong>:</p>
 <ul class="simple">
-<li><p>Los polinomios de Lengendre incluyen términos <span class="math notranslate nohighlight">\(\cos^l(\theta)\)</span>, que siempre se van a poder poner en forma de <strong>una suma de términos que contiene <span class="math notranslate nohighlight">\(\cos(l \theta)\)</span></strong>.</p></li>
-<li><p>Los polinomios de Legendre son independientes, no se puede poner uno en función de otros. El motivo es que <strong>los términos de <span class="math notranslate nohighlight">\(\cos(l \theta)\)</span> son independientes</strong> (<em>y por tanto los polinomios</em>).</p></li>
+<li><p><strong>Plantear</strong> la ecuación del circuito. Tipicamente:</p></li>
 </ul>
-</div>
-<p>La condición de contorno que nos dan <em>es una función de <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span></em>, por lo que <strong>seguro que necesitamos el término de <span class="math notranslate nohighlight">\(l = 3\)</span></strong>. Efectivamente:</p>
 <div class="math notranslate nohighlight">
 \[
-P_3(\cos(\theta)) = \frac{1}{2} \left( 5 \cos^3(\theta) - 3 \cos(\theta) \right) = \frac{5}{8} \cos(3 \theta) + \frac{3}{8} \cos(\theta) 
+fmm = H(B)L + \Phi R
 \]</div>
-<p>Vemos que este polinomio de Lengendre incluye un término en <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>, por lo que de por sí solo, podemos conseguir el término <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span>, pero nos sobra el de <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>. <strong>Por esto tenemos que añadir el término del polinómio de Lengendre con <span class="math notranslate nohighlight">\(l=1\)</span></strong>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>En general, si nos vemos obligados a añadir <strong>un polinomio de orden <span class="math notranslate nohighlight">\(l\)</span></strong>, tendremos que añadir también todos los polinomios <strong>de grado inferior <span class="math notranslate nohighlight">\(l'\)</span> del mismo tipo par o impar</strong>. (Es decir, si <span class="math notranslate nohighlight">\(l\)</span> es par, pondremos todos los términos pares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>, y si <span class="math notranslate nohighlight">\(l\)</span> es impar, todos los términos impares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>).</p>
-<p>Por ejemplo, si la condición de contorno fuera <span class="math notranslate nohighlight">\(V = K_1 \cos(9 l) + K_2 \cos(4 l)\)</span>, por el primer término tendríamos que poner <span class="math notranslate nohighlight">\(l \in \{1, 3, 5, 7, 9\}\)</span> mientras que por el segundo término, tendríamos que poner <span class="math notranslate nohighlight">\(l \in \{0, 2, 4\}\)</span> (Ojalá nunca nos encontremos con un problema así).</p>
-</div>
-<p>Si realizamos la igualación de los términos con la condición de contorno…</p>
+<ul class="simple">
+<li><p><strong>Despejar</strong> el elemento no lineal para el que tenemos la gráfica.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+H(B) = \frac{1}{L}(fmm - \Phi R)
+\]</div>
+<ul class="simple">
+<li><p><strong>Dibujar</strong> en la gráfica la recta que nos queda en la igualdad. El punto de corte es la solución que cumple los dos miembros de la igualdad.</p></li>
+</ul>
+<p>Las fórmulas que debemos tener en cuenta son:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Phi_d(r \kern -0.2em = \kern -0.2em R) = A_1 R^1 P_1(\cos(\theta)) + A_3 R^3 P_3(\cos(\theta)) = K \cos(3\theta) \\
-\Phi_f(r \kern -0.2em = \kern -0.2em R) = \frac{B_1}{R^2} P_1(\cos(\theta)) + \frac{B_3}{R^4} P_3(\cos(\theta)) = K \cos(3\theta)
+fmm &amp;= NI \\
+\Phi R &amp;= \phi \frac{L_R}{\mu_R S_R} = B_R \frac{L_R}{\mu_R}
 \end{split}\]</div>
-<p>…nos da el siguiente resultado</p>
+<p>Esta metodología general se puede aplicar a los casos concretos de los problemas con un único material ferromagnético y una unica malla, de forma que solo nos queda la ecuación de dicha malla.</p>
+</div>
+<p>Aplicando la metodología gráfica, <strong>la ecuación del circuito</strong> queda:</p>
 <div class="math notranslate nohighlight">
 \[
-A_1 = -\frac{3 K}{5 R}; \space
-A_3 = \frac{8 K}{5 R^3}; \space
-B_1 = -\frac{3}{5} K R^2; \space
-B_3 = \frac{8}{5} K R^4
+fmm = H_{Fe}(B_{Fe}) L_{Fe} + \Phi R_e
 \]</div>
-<p>Por supuesto, la expresión de <span class="math notranslate nohighlight">\(\Phi_d\)</span> es válida dentro de la esfera y la de <span class="math notranslate nohighlight">\(\Phi_f\)</span> es válida fuera de la esfera.</p>
+<p>Sustituimos los valores de <span class="math notranslate nohighlight">\(fmm\)</span> y <span class="math notranslate nohighlight">\(R_e\)</span> y dejamos la expresión para que dependa de <span class="math notranslate nohighlight">\(B_{Fe} = B_e = B\)</span>. La expresión final, después de despejar <span class="math notranslate nohighlight">\(H_{Fe}(B)\)</span>, es la siguiente:</p>
+<div class="math notranslate nohighlight">
+\[
+H_{Fe}(B) = \frac{1}{L_{Fe}}\left( NI - B \frac{L_e}{\mu_0} \right)
+\]</div>
+<p>Podemos comprobar que la recta dibujada en la figura es la recta que tiene esta ecuación. Lo más facil es dibujar los puntos de corte con los ejes y trazar la linea recta que los une. Si calculamos los puntos de corte con los ejes de la recta <span class="math notranslate nohighlight">\(\frac{1}{L_{Fe}}\left( NI - B \frac{L_e}{\mu_0} \right)\)</span>, comprobaremos que coinciden con los de la recta dibujada.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -426,20 +418,20 @@ B_3 = \frac{8}{5} K R^4
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problema_B2_4.html"
+       href="Problema_B4_7.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B2.4</p>
+        <p class="prev-next-title">Problema B4.7</p>
       </div>
     </a>
     <a class="right-next"
-       href="Problema_B4_4.html"
+       href="Problema_B5_5.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problema B4.4</p>
+        <p class="prev-next-title">Problema B5.5</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
