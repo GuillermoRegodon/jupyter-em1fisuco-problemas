@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Problema B4.5 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B6.3 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -64,11 +64,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_5';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B6_3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B4.7" href="Problema_B4_7.html" />
-    <link rel="prev" title="Problema B4.4" href="Problema_B4_4.html" />
+    <link rel="next" title="Problema B6.4" href="Problema_B6_4.html" />
+    <link rel="prev" title="Problema B6.1" href="Problema_B6_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,12 +175,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_4.html">Problema B2.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_6.html">Problema B2.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_4.html">Problema B4.4</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_5.html">Problema B4.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_7.html">Problema B4.7</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_4.html">Problema B5.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_5.html">Problema B5.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B6_1.html">Problema B6.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B6_3.html">Problema B6.3</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B6.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B6_4.html">Problema B6.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B6_5.html">Problema B6.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B6_6.html">Problema B6.6</a></li>
@@ -239,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/pages/Problema_B4_5.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B6_3.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -310,9 +310,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -323,20 +321,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B4.5</h1>
+    <h1>Problema B6.3</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-db">Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-dm">Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span></a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -346,78 +335,35 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-5">
-<h1>Problema B4.5<a class="headerlink" href="#problema-b4-5" title="Permalink to this heading">#</a></h1>
-<p><em>La carga superficial <span class="math notranslate nohighlight">\(\sigma\)</span> girando a velocidad constante <span class="math notranslate nohighlight">\(\omega\)</span></em> implica <strong>unas cargas que se desplazan</strong>, en este caso, <em>una corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span></em>. En este caso, dado que el cilindro <strong>se puede dividir fácilmente en espiras diferenciales que podemos integrar</strong>, vamos a calcular el campo magnético total a partir del campo magnético de una espira (<em>Notar que es similar al problema 4.2</em>):</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{B} = \int d \vec{B}
-\]</div>
-<p>El campo magnético de <strong>una espira de corriente <span class="math notranslate nohighlight">\(I\)</span> y de radio <span class="math notranslate nohighlight">\(a\)</span> en el eje <span class="math notranslate nohighlight">\(\vec{u_z}\)</span> de simetría</strong> es conocido:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{B_1} = \frac{\mu_0 I}{2} \frac{a^2}{(a^2 + z^2)^{3/2}} \vec{u_z}
-\]</div>
-<p>Ahora vamos a utilizar este resultado para <strong>obtener el campo magnético generado por un trozo de cilindro</strong> cuya posición sea <span class="math notranslate nohighlight">\(z'\)</span>:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b6-3">
+<h1>Problema B6.3<a class="headerlink" href="#problema-b6-3" title="Permalink to this heading">#</a></h1>
+<p>En el diagrama de este problema no hay un circuito, espira o similar por donde sepamos seguro que debe pasar la corriente, por lo que <strong>no podemos aplicar las expresiones de inducción, fuerza electromotriz, etc</strong>. Tenemos que quedarnos en un paso anterior de los desarrollos teóricos y quedarnos con las leyes fundamentales. En este caso, <strong>tenemos unas cargas libres en el disco de metal que estarán sujetas a a fuerza de Lorentz <span class="math notranslate nohighlight">\(\vec{F_L}\)</span></strong> cuando el disco gira.</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/cilindro_rot.png"><img alt="cilindro_rot" src="../_images/cilindro_rot.png" style="width: 210px;" /></a>
+<a class="reference internal image-reference" href="../_images/disco_rot.png"><img alt="disco_rot" src="../_images/disco_rot.png" style="width: 250px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Vamos a particularizar el resultado para la espira diferencial en <span class="math notranslate nohighlight">\(z'\)</span>.</p>
-<section id="calculo-de-vec-db">
-<h2>Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span><a class="headerlink" href="#calculo-de-vec-db" title="Permalink to this heading">#</a></h2>
-<p>Por una parte, <strong>la posición ha cambiado, por lo que tenemos que sustituir <span class="math notranslate nohighlight">\(z\)</span></strong> para tener en cuenta la posición de la espira diferencial:</p>
+<p>Despreciando la aceleración centrípeta, que es muy pequeña, podemos decir que la fuerza de Lorentz sobre la partícula es nula, <span class="math notranslate nohighlight">\(\vec{F_L} = 0\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-z \rightarrow z-z'
+\vec{F_L} = q \left( \vec{E} + \vec{v} \times \vec{B_0} \right)
 \]</div>
-<p>Por otra parte, <strong>tenemos que obtener la corriente que atraviesa la sección lateral de anchura <span class="math notranslate nohighlight">\(dz'\)</span></strong>. Se puede calcular como la densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j}\)</span> multiplicada por la anchura del segmento perpendicular <span class="math notranslate nohighlight">\(dz'\)</span>. <em>Cuando tenemos la velocidad de desplazamiento de las cargas</em>, la manera más sencilla de obtener la corriente superficial es multiplicar:</p>
+<p>Es decir, para que las partículas estén estacionarias (<em>o girando con inercia despreciable</em>), debe aparecer <strong>un campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> que compense la fuerza magnética producida por <span class="math notranslate nohighlight">\(\vec{B_0}\)</span></strong>. El campo eléctrico aparece por la acumulación de cargas positivas en el exterior del disco a causa de la fuerza magnética:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{j} = \sigma \vec{v} 
+\vec{F_m} = q(\vec{v} \times \vec{B_0}) = q(\vec{\omega} \times \vec{r}) \times \vec{B_0} = q(\omega\vec{u_z} \times r\vec{u_r}) \times B_0\vec{u_z} = q \omega r B_0 \vec{u_r}
 \]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Para recordar o deducir la expresión de <span class="math notranslate nohighlight">\(\vec{j}\)</span>, primero observamos que tiene <strong>las unidades correctas, de <span class="math notranslate nohighlight">\([A/m]\)</span></strong>. Notamos que <strong>la velocidad debe estar contenida en la superficie</strong> para que la expresión tenga sentido, de forma que las cargas se desplazan dentro de la superficie</p>
-<p>Es similar a la expresión conocida <span class="math notranslate nohighlight">\(\vec{J} = \rho \vec{v}\)</span>, con unidades de <span class="math notranslate nohighlight">\([A/m^2]\)</span></p>
-</div>
-<p>Queda obtener la velocidad, que está relacionada con la velocidad angular <span class="math notranslate nohighlight">\(\omega\)</span> y con el radio del cilíndro <span class="math notranslate nohighlight">\(a\)</span>. Así:</p>
+<p>Efectivamente, la fuerza magnética aleja las cargas del centro del disco. El campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> se obtiene por lo tanto:</p>
 <div class="math notranslate nohighlight">
 \[
-I = j \space dz' = \sigma v \space dz' = \sigma \omega a \space dz' 
+\vec{E} = -\vec{v} \times \vec{B_0} = -\omega r B_0 \vec{u_r}
 \]</div>
-<p>Observar que coincide con la carga por unidad de tiempo que atraviesa la sección lateral de anchura <span class="math notranslate nohighlight">\(dz'\)</span>. Dicha carga, la que atraviesa <span class="math notranslate nohighlight">\(dz'\)</span> en un tiempo <span class="math notranslate nohighlight">\(dt\)</span> es la contenida en una superficie de lados <span class="math notranslate nohighlight">\(dz'\)</span> y <span class="math notranslate nohighlight">\(v \space dt\)</span>.
-$<span class="math notranslate nohighlight">\(
-I = \frac{dq}{dt} = \frac{\sigma dz' \space v \space dt}{dt}
-\)</span>$</p>
-<p>Ya tenemos todos los elementos para obtener <span class="math notranslate nohighlight">\(\vec{dB}\)</span>. Por último, las espiras diferenciales tienen posiciones desde <span class="math notranslate nohighlight">\(z' = -L/2\)</span> hasta <span class="math notranslate nohighlight">\(z' = +L/2\)</span>, que serán los límites de integración</p>
-<p>Con esto, <strong>el campo magnético total, obtenido a partir del campo magnético diferencial de cada espira diferencial</strong> es:</p>
+<p>Si se conecta una resistencia <span class="math notranslate nohighlight">\(R\)</span> entre el centro y el borde del disco, la corriente que atraviesa la resistencia viene dada por la ley de Ohm, <span class="math notranslate nohighlight">\(I = \frac{\Delta V}{R}\)</span>, y la diferencia de potencial la podemos obtener por integración del campo eléctrico a lo largo de un radio del disco, <span class="math notranslate nohighlight">\(r\in[0,a]\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{B} = \int d \vec{B} = \int_{z'=-L/2}^{z'=L/2} \frac{\mu_0 \sigma \omega a \space dz'}{2} \frac{a^2}{(a^2 + (z-z')^2)^{3/2}} \vec{u_z}
+\Delta V = \Phi(r=a) - \Phi(r=0) = -\int_{r_0}^{r=a}\vec{E}\cdot\vec{dl} = \int_{r_0}^{r=a}\omega r B_0 dr = \frac{\omega a^2 B_0}{2}
 \]</div>
-<p>Dando un resultado comparable al del problema 4.2:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{B} = - \frac{\mu_0 \sigma \omega a \vec{u_z}}{2} \left(\frac{z-L/2}{\sqrt{a^2 + (z-L/2)^2}} - \frac{z+L/2}{\sqrt{a^2 + (z+L/2)^2}}\right)
-\]</div>
-<p><strong>Para obtener el momento magnético total, usamos la misma estrategia</strong>:</p>
-</section>
-<section id="calculo-de-vec-dm">
-<h2>Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span><a class="headerlink" href="#calculo-de-vec-dm" title="Permalink to this heading">#</a></h2>
-<p>El momento magnético de cada espira diferencial es el de una espira de corriente <span class="math notranslate nohighlight">\(I\)</span> y radio <span class="math notranslate nohighlight">\(a\)</span></p>
-<div class="math notranslate nohighlight">
-\[
-\vec{dm} = I \pi a^2 \vec{u_z} = \sigma \omega a \space dz' \pi a^2 \vec{u_z}
-\]</div>
-<p>Por lo tanto:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{m} = \int \vec{dm} = \sigma \omega \pi a^3 L \vec{u_z}
-\]</div>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -451,20 +397,20 @@ I = \frac{dq}{dt} = \frac{\sigma dz' \space v \space dt}{dt}
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problema_B4_4.html"
+       href="Problema_B6_1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B4.4</p>
+        <p class="prev-next-title">Problema B6.1</p>
       </div>
     </a>
     <a class="right-next"
-       href="Problema_B4_7.html"
+       href="Problema_B6_4.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problema B4.7</p>
+        <p class="prev-next-title">Problema B6.4</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -474,21 +420,6 @@ I = \frac{dq}{dt} = \frac{\sigma dz' \space v \space dt}{dt}
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-db">Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-dm">Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span></a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
