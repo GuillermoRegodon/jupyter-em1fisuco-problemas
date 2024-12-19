@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Problema B6.5 &#8212; Problemas resueltos de Electromagnetismo I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B6_5';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B6.6" href="Problema_B6_6.html" />
+    <link rel="prev" title="Problema B6.4" href="Problema_B6_4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Problemas resueltos de Electromagnetismo I - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Problemas resueltos de Electromagnetismo I - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Problemas resueltos de Electromagnetismo I
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_3.html">Problema B2.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_4.html">Problema B2.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_6.html">Problema B2.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_4.html">Problema B4.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_5.html">Problema B4.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_7.html">Problema B4.7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_4.html">Problema B5.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_5.html">Problema B5.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_1.html">Problema B6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_3.html">Problema B6.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_4.html">Problema B6.4</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B6.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_6.html">Problema B6.6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Parcial_2425.html">Problemas Examen parcial 24/25</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/pages/Problema_B6_5.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Problema B6.5</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b6-5">
+<h1>Problema B6.5<a class="headerlink" href="#problema-b6-5" title="Permalink to this heading">#</a></h1>
+<p>La densidad del corriente en el interior del cilindro es <span class="math notranslate nohighlight">\(\vec{J} = \frac{I}{\pi a^2}\vec{u_z}\)</span>.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/hilo.png"><img alt="hilo" src="../_images/hilo.png" style="width: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 22 </span><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>El problema pide la autoinducción <span class="math notranslate nohighlight">\(L\)</span> por unidad de longitud <span class="math notranslate nohighlight">\(l\)</span>, o <span class="math notranslate nohighlight">\(L/l\)</span>. El propio enunciado nos da la pista de que no se puede calcular la inducción total, ya que las corrientes no están confinadas. Aunque podemos calcular el campo magnético por Ampere, la expresión no se puede usar para obtener la inducción.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El campo magnetico que genera se puede obtener con un circuito de Ampere apropiado.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El circuito de Ampere debe elegirse de forma que <strong>la superficie de dicho circuito de Ampere tenga lados paralelos al campo magnético</strong>. Los lados restantes, si los hay, deberían ser perpendiculares al campo magnético. Para ello, debemos adivinar <strong>la dirección del campo magnético usando la regla de la mano derecha</strong>. Por otra parte, <strong>el circuito de Ampere debe estar atravesado por la corriente que genera el campo</strong>.</p>
+</div>
+<p>Dado que la corriente tiene dirección <span class="math notranslate nohighlight">\(\vec{u_z}\)</span>, deducimos que el campo magnético debe tener dirección <span class="math notranslate nohighlight">\(\vec{u_\phi}\)</span>. Por lo tanto, <strong>el circuito de Ampere debe ser una circunferencia de radio <span class="math notranslate nohighlight">\(r\)</span> en el plano horizontal, de forma que su lado sigue una linea de campo del campo magnético</strong>. La corriente atravesada dependerá de si el radio <span class="math notranslate nohighlight">\(r\)</span> de dicho circuito de Ampere es menor o mayor que <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/hilo_ampere.png"><img alt="hilo_ampere" src="../_images/hilo_ampere.png" style="width: 250px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La integral de Ampere queda:</p>
+<div class="math notranslate nohighlight">
+\[
+\int\vec{B}\cdot\vec{dl} = \mu_0 I_{enc}
+\]</div>
+<p>Si <span class="math notranslate nohighlight">\(r&lt;a\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B 2\pi r &amp;= \mu_0 \frac{I}{\pi a^2} \pi r^2 \\
+\vec{B} &amp;= \frac{\mu_0 I r}{2 \pi a^2} \vec{u_\phi}
+\end{split}\]</div>
+<p>Si <span class="math notranslate nohighlight">\(r&gt;a\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B 2\pi r &amp;= \mu_0 \frac{I}{\pi a^2} \pi a^2 \\
+\vec{B} &amp;= \frac{\mu_0 I}{2 \pi r} \vec{u_\phi}
+\end{split}\]</div>
+</div>
+<p>Para corrientes no confinadas tenemos unas expresiones de energía magnética que sí son válidas y que contienen la <span class="math notranslate nohighlight">\(L\)</span> que necesitamos calcular:</p>
+<div class="math notranslate nohighlight">
+\[
+U_m = \frac{1}{2}LI^2 = \frac{1}{2}\int_V\vec{J}\cdot\vec{A} dV
+\]</div>
+<p>Es decir, que <span class="math notranslate nohighlight">\(L = \frac{1}{I^2}\int_V\vec{J}\cdot\vec{A} dV\)</span>. Para calcular la autoinducción por unidad de longitud <span class="math notranslate nohighlight">\(L/l\)</span>, tan solo necesitamos restringir el volumen de integración a un intervalo en <span class="math notranslate nohighlight">\(z\)</span> de longitud <span class="math notranslate nohighlight">\(l\)</span>. ¡No conocemos <span class="math notranslate nohighlight">\(\vec{A}\)</span>! Podríamos intentar calcularlo mediante su expresión a partir de la integral de <span class="math notranslate nohighlight">\(\vec{J}\)</span>. Pero en este caso, dado que <span class="math notranslate nohighlight">\(\vec{B}\)</span> es conocido, podemos intentar deducirlo a partir de su definición <span class="math notranslate nohighlight">\(\vec{B} = \nabla\times\vec{A}\)</span>. Dado que toda la corriente tiene dirección <span class="math notranslate nohighlight">\(\vec{u_z}\)</span>, <span class="math notranslate nohighlight">\(\vec{A}\)</span> tambiéndebe tener dirección <span class="math notranslate nohighlight">\(\vec{u_z}\)</span>. Además, por simetría, sólo puede depender de la coordenada radial de cilíndricas <span class="math notranslate nohighlight">\(r\)</span>. De esta forma, el único término de cilíndricas que sobrevive es:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = \nabla\times\vec{A} = -\frac{\partial A_z}{\partial r}\vec{u_\phi}
+\]</div>
+<p>Dado que sólo nos interesa <span class="math notranslate nohighlight">\(\vec{A}\)</span> dentro del cilindro (fuera, <span class="math notranslate nohighlight">\(\vec{J} = 0\)</span> y en la integral de <span class="math notranslate nohighlight">\(U_m\)</span> no aporta), podemos poner la siguiente igualdad:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\mu_0 I r}{2 \pi a^2} = -\frac{\partial A_z}{\partial r}
+\]</div>
+<p>Y podemos deducir que la expresión de <span class="math notranslate nohighlight">\(A_z\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+A_z = -\frac{\mu_0 I r^2}{4 \pi a^2} + K = \frac{\mu_0 I (a^2 - r^2)}{4 \pi a^2}
+\]</div>
+<p>El valor de la constante <span class="math notranslate nohighlight">\(K\)</span> es el que se obtiene cuando imponemos que la corriente vuelva por la superficie exterior del cilindro, aunque no se mencione en el enunciado (ver problema 7.28 de Griffiths). Ya podemos calcular el producto <span class="math notranslate nohighlight">\(\vec{J}\cdot\vec{A}\)</span> e integrarlos en un volumen de altura <span class="math notranslate nohighlight">\(l\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{J}\cdot\vec{A} = (\frac{I}{\pi a^2}\vec{u_z})\cdot( \frac{\mu_0 I (a^2 - r^2)}{4 \pi a^2} \vec{u_z}) = \frac{\mu_0 I^2 (a^2 - r^2)}{4\pi^2 a^4}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\int_V\vec{J}\cdot\vec{A} dV = \int_{r=0}^{r=a}\int_{z=0}^{z=l}\int_{\phi=0}^{\phi=2\pi} \frac{\mu_0 I^2 (a^2 - r^2)}{4\pi^2 a^4} r dr\space dz\space d\phi = \frac{\mu_0 I^2 l}{2\pi a^4}\left(\frac{a^2r^2}{2}-\frac{r^4}{4}\right)|_{r=0}^{r=a}
+\]</div>
+<p>Finalmente:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{L}{l} = \frac{\mu_0}{8\pi}
+\]</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./pages"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B6_4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B6.4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B6_6.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B6.6</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Guillermo Fernando Regodon Harkness
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
