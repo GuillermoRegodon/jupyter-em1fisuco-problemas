@@ -65,6 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/e1a2425';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problemas Examen 2a convocatoria 24/25" href="e2a2425.html" />
     <link rel="prev" title="Problemas Examen parcial 24/25" href="Parcial_2425.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -185,6 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B6_6.html">Problema B6.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Parcial_2425.html">Problemas Examen parcial 24/25</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problemas Examen 1a convocatoria 24/25</a></li>
+<li class="toctree-l1"><a class="reference internal" href="e2a2425.html">Problemas Examen 2a convocatoria 24/25</a></li>
 </ul>
 
     </div>
@@ -485,6 +487,59 @@ r = \sqrt{s^2 + d^2}
 M_{12} = \frac{\Phi_{12}}{I_2} = M_{21} = \frac{\Phi_{21}}{I_1}
 \]</div>
 <p>(<em>De hecho, esta igualdad nos ofrece una manera alternativa más rápida de resolver el problema. Después de calcular el flujo <span class="math notranslate nohighlight">\(\Phi_{12}\)</span> que depende de <span class="math notranslate nohighlight">\(I_2\)</span>, podemos obtener <span class="math notranslate nohighlight">\(M_{12}\)</span>. Dado que <span class="math notranslate nohighlight">\(M_{12} = M_{21}\)</span> y <span class="math notranslate nohighlight">\(\Phi_{21} = M_{21} I_1\)</span>, podemos concluir que el flujo <span class="math notranslate nohighlight">\(\Phi_{21}\)</span> se puede obtener escribiendo el flujo <span class="math notranslate nohighlight">\(\Phi_{12}\)</span> realizando el cambio <span class="math notranslate nohighlight">\(I_2 \rightarrow I_1\)</span></em>.)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<h3 class="rubric" id="problema-segundo-llamamiento-de-magnetostatica">Problema segundo llamamiento de magnetostática</h3>
+<p>Un alambre de material magnético con una susceptibilidad magnética <span class="math notranslate nohighlight">\(χ_m\)</span> tiene un arrollamiento de hilos por los que circula una corriente <span class="math notranslate nohighlight">\(I\)</span>. En un segmento de longitud <span class="math notranslate nohighlight">\(L\)</span> hay <span class="math notranslate nohighlight">\(N\)</span> hilos. Calcule:</p>
+<ul class="simple">
+<li><p>A) Los campos <span class="math notranslate nohighlight">\(\vec{H}\)</span>, <span class="math notranslate nohighlight">\(\vec{B}\)</span> y <span class="math notranslate nohighlight">\(\vec{M}\)</span> (5 puntos).</p></li>
+<li><p>B) Las densidades de corriente de polarización (2 puntos).</p></li>
+<li><p>C) La fuerza magnetomotriz de los hilos (<span class="math notranslate nohighlight">\(fmm\)</span>, en unidades de <span class="math notranslate nohighlight">\(A\)</span>) y la reluctancia del material (<span class="math notranslate nohighlight">\(R\)</span>, en unidades de <span class="math notranslate nohighlight">\(A/(Tm^2))\)</span> (3 puntos).</p></li>
+</ul>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/e1a2425_3.png"><img alt="e1a2425_3.png" src="../_images/e1a2425_3.png" style="width: 320px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 31 </span><span class="caption-text">Figura 1.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p><strong>Este problema tinene simetría cilíndrica de rotación y de translación en la dirección del eje</strong>. Es decir, si rotamos la configuración un ángulo <span class="math notranslate nohighlight">\(\phi\)</span> cualquiera o si desplazamos la configuración en la dirección <span class="math notranslate nohighlight">\(z\)</span>, la configuración queda igual. Además, teniendo un medio material distinto en el interior y en el exterior, lo conveniente es usar la ley de Ampere sobre <span class="math notranslate nohighlight">\(\vec{H}\)</span>, que es independiente del material.</p>
+<div class="math notranslate nohighlight">
+\[
+\int_C \vec{H} \cdot \vec{dl} = I_{enc}
+\]</div>
+<p>Debemos elegir un circuito de Ampere que nos permita resolver el problema. Vemos que por la regla de la mano derecha, el campo magnético debe tener la dirección <span class="math notranslate nohighlight">\(\vec{u_z}\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El circuito de Ampere debe elegirse de forma que <strong>la superficie de dicho circuito de Ampere tenga lados paralelos al campo magnético</strong>. Los lados restantes, si los hay, deberían ser perpendiculares al campo magnético. Para ello, debemos adivinar <strong>la dirección del campo magnético usando la regla de la mano derecha</strong>. Por otra parte, <strong>el circuito de Ampere debe estar atravesado por la corriente que genera el campo</strong>.</p>
+</div>
+<p>En este caso, un trozo del circuito de Ampere debe tener la dirección <span class="math notranslate nohighlight">\(\vec{u_z}\)</span> por el interior del arrollamiento, para que sea colineal con el campo magnético. Ponemos otro por el exterior, para poder comparar el campo magnético interior y exterior y los dos lados restantes, perpendiculares a la dirección <span class="math notranslate nohighlight">\(\vec{u_z}\)</span>. De esta forma, el circuito de Ampere será un marco rectangular de altura <span class="math notranslate nohighlight">\(L\)</span> con un lado dentro del arrollamiento y otro lado fuera, de forma que la corriente que atraviesa la superficie limitada por el circuito de Ampere es <span class="math notranslate nohighlight">\(I_{enc} = N I\)</span>.</p>
+<p>Observamos que <strong>la posición de los lados es indiferente</strong> y que siempre le atraviesa la misma corriente. De esta manera deducimos que <strong>el campo magnético tanto dentro como fuera del arrollamiento debe ser constante</strong>. Y además, el campo exterior debe ser nulo, para que en el infinito el campo magnético también se anule. Por lo tanto, la integral de Ampere resulta:</p>
+<div class="math notranslate nohighlight">
+\[
+H L = N I
+\]</div>
+<p>Con lo que podemos despejar <span class="math notranslate nohighlight">\(H\)</span> y ponerle la dirección <span class="math notranslate nohighlight">\(\vec{u_z}\)</span>. Para obtener <span class="math notranslate nohighlight">\(\vec{M}\)</span> tenemos que multiplicar por <span class="math notranslate nohighlight">\(\chi_m \vec{H}\)</span>, y para obtener <span class="math notranslate nohighlight">\(\vec{B}\)</span>, podemos usar la expresión que los relaciona:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = \mu_0 (\vec{H} + \vec{M})
+\]</div>
+<p>Las densidades de corriente de magnetización se pueden obtener a partir de su definición:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+J_m = \nabla \times \vec{M} \\
+j_m = \vec{M} \times \vec{n}
+\end{split}\]</div>
+<p>La fuerza magnetomotriz en un circuito magnético es tan solo el producto de la corriente que atraviesa el arrollamiento por el número de vueltas. Para un segmento de longitud <span class="math notranslate nohighlight">\(L\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+fmm = NI
+\]</div>
+<p>Observamos que las unidades son las que nos sugiere el enunciado. Por otra parte, la reluctancia estaba relacionada con la permeabilidad magnética <span class="math notranslate nohighlight">\(\mu_1\)</span>, el área <span class="math notranslate nohighlight">\(A\)</span> y la longitud <span class="math notranslate nohighlight">\(L\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+R = \frac{L}{\mu_1 A} = \frac{L}{\mu_0 (1+\chi_m) \pi a^2}
+\]</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -525,6 +580,15 @@ M_{12} = \frac{\Phi_{12}}{I_2} = M_{21} = \frac{\Phi_{21}}{I_1}
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Problemas Examen parcial 24/25</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="e2a2425.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problemas Examen 2a convocatoria 24/25</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
