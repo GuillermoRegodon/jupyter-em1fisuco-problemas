@@ -7,4 +7,4 @@ Las notas están pensadas para que puedan actualizarse y mejorarse a medida que 
 ```{tableofcontents}
 ```
 
-*Ultima actualización: 19/12/24*
+*Ultima actualización: 06/02/25*
