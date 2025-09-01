@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B6.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Ejemplo 1 (1.6 Griffiths) &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,9 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B6_1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Ejemplo_B1_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Problemas resueltos de Electromagnetismo I" href="../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +116,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -170,8 +169,8 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Ejemplo_B1_1.html">Ejemplo 1 (1.6 Griffiths)</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ejemplo 1 (1.6 Griffiths)</a></li>
 </ul>
 
     </div>
@@ -231,7 +230,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B6_1.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Ejemplo_B1_1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -305,7 +304,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B6.1</h1>
+    <h1>Ejemplo 1 (1.6 Griffiths)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -319,40 +318,68 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b6-1">
-<h1>Problema B6.1<a class="headerlink" href="#problema-b6-1" title="Link to this heading">#</a></h1>
-<p>Antes de plantear el problema, <em>recordamos el fenómeno físico</em>: Cuándo un campo magnetico <span class="math notranslate nohighlight">\(\vec{B_1}\)</span> varía a través de una espira, de tal forma que el flujo total <span class="math notranslate nohighlight">\(\Phi_{21} = \int_{S_2}\vec{B_1}\cdot\vec{dS_2}\)</span> varía, se genera una fuerza electromotriz <span class="math notranslate nohighlight">\(\mathcal{E_2}=-\frac{\rm{d}\Phi_{21}}{\rm{d}I_1}\)</span> que genera una corriente <span class="math notranslate nohighlight">\(I_2\)</span> en dicha espira. <em>Esta corriente podría generar un campo magnético adicional <span class="math notranslate nohighlight">\(\vec{B_2}\)</span></em> que a su vez debería tenerse en cuenta para corregir la corriente <span class="math notranslate nohighlight">\(I_2\)</span>. Cuando nos pidan la corriente inducida, <strong>vamos a despreciar este efecto de autoinducción, que es lo mismo que decir que el campo magnético <span class="math notranslate nohighlight">\(\vec{B_2}\)</span> tiene un efecto despreciable frente al efecto de <span class="math notranslate nohighlight">\(\vec{B_1}\)</span></strong>. Esto lo conseguimos limitando la corriente con una resistencia <span class="math notranslate nohighlight">\(R\neq 0\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[
-I_2 = \frac{\mathcal{E}}{R} = -\frac{1}{R}\frac{\rm{d}\Phi_{21}}{\rm{d}I_1}
-\]</div>
-<p>En este problema concreto, tenemos la corriente <span class="math notranslate nohighlight">\(I_1 = I(t)\)</span> diferente para cada apartado.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="ejemplo-1-1-6-griffiths">
+<h1>Ejemplo 1 (1.6 Griffiths)<a class="headerlink" href="#ejemplo-1-1-6-griffiths" title="Link to this heading">#</a></h1>
+<p>Calcule <strong>la integral de línea</strong> del campo vectorial <span class="math notranslate nohighlight">\( \vec{v} = y^2 \,\hat{x} + 2x(y+1)\,\hat{y} \)</span> desde el punto <span class="math notranslate nohighlight">\(a = (1,1,0)\)</span> hasta el punto <span class="math notranslate nohighlight">\(b = (2,2,0)\)</span>, a lo largo de los caminos (1) y (2) de la figura 1. ¿Cuánto vale <span class="math notranslate nohighlight">\(\oint \vec{v} \cdot d\vec{l}\)</span> <strong>para el lazo que va de <span class="math notranslate nohighlight">\(a\)</span> a <span class="math notranslate nohighlight">\(b\)</span> por el camino (1) y vuelve a <span class="math notranslate nohighlight">\(a\)</span> por el camino (2)</strong>?</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/induccion.png"><img alt="induccion" src="../_images/induccion.png" style="width: 260px;" /></a>
+<a class="reference internal image-reference" href="../_images/Ejemplo_B1_1.png"><img alt="Ejemplo_B1_1" src="../_images/Ejemplo_B1_1.png" style="width: 330px;" /></a>
 <figcaption>
-<p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Figura 1.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><em>En el primer apartado, la espira rectangular está quieta</em>, por lo que la única variación del flujo <span class="math notranslate nohighlight">\(\Phi_{21}\)</span> viene de la dependencia temporal de la corriente.</p>
+<hr class="docutils" />
+<p><strong>Solución:</strong><br />
+Como siempre,<br />
+$<span class="math notranslate nohighlight">\(
+d\vec{l} = dx \,\hat{x} + dy \,\hat{y} + dz \,\hat{z}.
+\)</span>$</p>
+<p><strong>El camino (1) consta de dos partes</strong>. A lo largo del segmento <em>horizontal</em>, <span class="math notranslate nohighlight">\(dy = dz = 0\)</span>, por lo que (i) <span class="math notranslate nohighlight">\(d\vec{l} = dx \,\hat{x}, \quad y = 1\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi_{21} = \int_{S_2}\vec{B_1}\cdot\vec{dS_2} = \int_{z=0}^{z=b}\int_{r=c}^{r=c+a}(\frac{\mu_0 I(t)}{2\pi r}\vec{u_\phi})\cdot({dr\space dz \space \vec{u_\phi}})
+\vec{v} \cdot d\vec{l} = y^2 dx = dx,
 \]</div>
-<p>En los apartados segundo y tercero la corriente es constante <span class="math notranslate nohighlight">\(I_1 = I_0 = cte\)</span>, pero <em>la espira se mueve de forma que el flujo <span class="math notranslate nohighlight">\(\Phi_{21}\)</span> puede variar</em>. En el segundo apartado, la espira rectangular se desplaza radialmente, por lo que cambiamos la corriente y los límites de integración de la siguiente manera:</p>
+<p>entonces</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-I_1 &amp;= I_0 = cte \\
-r=c &amp;\rightarrow r=vt \\
-r=c+a &amp;\rightarrow r=vt + a
-\end{split}\]</div>
-<p>De esta forma el flujo disminuye y la fuerza electromotriz <span class="math notranslate nohighlight">\(\mathcal{E}\)</span> genera la corriente <span class="math notranslate nohighlight">\(I_2 \neq 0\)</span>. En el tercer apartado, la espira se desplaza a lo largo del eje <span class="math notranslate nohighlight">\(z\)</span> de simetría, por lo que cambiamos:</p>
+\[
+\int \vec{v} \cdot d\vec{l} = \int_1^2 dx = 1.
+\]</div>
+<p>En el tramo <em>vertical</em>, <span class="math notranslate nohighlight">\(dx = dz = 0\)</span>, así que (ii) <span class="math notranslate nohighlight">\(d\vec{l} = dy \,\hat{y}, \quad x = 2\)</span>,</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-I_1 &amp;= I_0 = cte \\
-z=0 &amp;\rightarrow z=vt \\
-z=b &amp;\rightarrow z=vt + b
-\end{split}\]</div>
-<p>En esta caso, obtenemos un flujo magnético constante, por lo que la corriente inducida en <span class="math notranslate nohighlight">\(I_2 = 0\)</span>.</p>
+\[
+\vec{v} \cdot d\vec{l} = 2x(y+1) dy = 4(y+1) dy,
+\]</div>
+<p>por tanto</p>
+<div class="math notranslate nohighlight">
+\[
+\int \vec{v} \cdot d\vec{l} = 4 \int_1^2 (y+1) dy = 10.
+\]</div>
+<p><strong>Por el camino (1), entonces,</strong></p>
+<div class="math notranslate nohighlight">
+\[
+\int_a^b \vec{v} \cdot d\vec{l} = 1 + 10 = 11.
+\]</div>
+<hr class="docutils" />
+<p>Mientras tanto, <strong>en el camino (2)</strong>, <span class="math notranslate nohighlight">\(x = y\)</span>, <span class="math notranslate nohighlight">\(dx = dy\)</span> y <span class="math notranslate nohighlight">\(dz = 0\)</span>, de modo que</p>
+<div class="math notranslate nohighlight">
+\[
+d\vec{l} = dx \,\hat{x} + dx \,\hat{y}, \quad
+\vec{v} \cdot d\vec{l} = x^2 dx + 2x(x+1) dx = (3x^2 + 2x) dx,
+\]</div>
+<p>por tanto</p>
+<div class="math notranslate nohighlight">
+\[
+\int_a^b \vec{v} \cdot d\vec{l} = \int_1^2 (3x^2 + 2x) dx = (x^3 + x^2)\Big|_1^2 = 10.
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La estrategia aquí es expresar todo en función de una sola variable; también podría haber eliminado <span class="math notranslate nohighlight">\(x\)</span> en favor de <span class="math notranslate nohighlight">\(y\)</span>; En ocasiones se puede usar un parámetro, si la curva está expresada de forma paramétrica).</p>
+</div>
+<hr class="docutils" />
+<p>Para el lazo que va por (1) y vuelve por (2), entonces,</p>
+<div class="math notranslate nohighlight">
+\[
+\oint \vec{v} \cdot d\vec{l} = 11 - 10 = 1.
+\]</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -385,6 +412,15 @@ z=b &amp;\rightarrow z=vt + b
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problemas resueltos de Electromagnetismo I</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
