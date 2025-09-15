@@ -4,7 +4,8 @@
 format: jb-book
 root: intro
 chapters:
-- file: pages/Ejemplo_B1_1
+- file: pages/0-repaso_gauss_ampere
+# - file: pages/Ejemplo_B1_1
 # - file: pages/Problema_B2_3
 # - file: pages/Problema_B2_4
 # - file: pages/Problema_B2_6

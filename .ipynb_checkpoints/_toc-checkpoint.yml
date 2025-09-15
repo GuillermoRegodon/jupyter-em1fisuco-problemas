@@ -4,21 +4,23 @@
 format: jb-book
 root: intro
 chapters:
-- file: pages/Problema_B2_3
-- file: pages/Problema_B2_4
-- file: pages/Problema_B2_6
-- file: pages/Problema_B4_4
-- file: pages/Problema_B4_5
-- file: pages/Problema_B4_7
-- file: pages/Problema_B5_4
-- file: pages/Problema_B5_5
-- file: pages/Problema_B6_1
-- file: pages/Problema_B6_3
-- file: pages/Problema_B6_4
-- file: pages/Problema_B6_5
-- file: pages/Problema_B6_6
-- file: pages/Parcial_2425
-- file: pages/e1a2425
-- file: pages/e2a2425
+- file: pages/0-repaso_gauss_ampere
+# - file: pages/Ejemplo_B1_1
+# - file: pages/Problema_B2_3
+# - file: pages/Problema_B2_4
+# - file: pages/Problema_B2_6
+# - file: pages/Problema_B4_4
+# - file: pages/Problema_B4_5
+# - file: pages/Problema_B4_7
+# - file: pages/Problema_B5_4
+# - file: pages/Problema_B5_5
+# - file: pages/Problema_B6_1
+# - file: pages/Problema_B6_3
+# - file: pages/Problema_B6_4
+# - file: pages/Problema_B6_5
+# - file: pages/Problema_B6_6
+# - file: pages/Parcial_2425
+# - file: pages/e1a2425
+# - file: pages/e2a2425
 
  
