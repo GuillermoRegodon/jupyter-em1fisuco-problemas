@@ -3,9 +3,16 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: pages/0-repaso_gauss_ampere
-# - file: pages/Ejemplo_B1_1
+parts:
+- caption: Repaso
+  chapters:
+  - file: pages/0-repaso_gauss_ampere
+- caption: Seminario 1 - Superposición
+  chapters:
+  - file: pages/Problema_B1_S1_1
+  - file: pages/Problema_B1_S1_2
+  - file: pages/Problema_B1_S1_3
+  - file: pages/Problema_B1_S1_4
 # - file: pages/Problema_B2_3
 # - file: pages/Problema_B2_4
 # - file: pages/Problema_B2_6

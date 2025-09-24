@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Problema B1.S2.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B1_S2_1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Problemas resueltos de Electromagnetismo I - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Problemas resueltos de Electromagnetismo I - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Problemas resueltos de Electromagnetismo I
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Repaso</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0-repaso_gauss_ampere.html">Repaso del uso de las simetrías para resolver problemas</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Superposición</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_3.html">Problema B1.S1.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_4.html">Problema B1.S1.4</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/pages/Problema_B1_S2_1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Problema B1.S2.1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-c">Apartado <span class="math notranslate nohighlight">\(c)\)</span></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b1-s2-1">
+<h1>Problema B1.S2.1<a class="headerlink" href="#problema-b1-s2-1" title="Link to this heading">#</a></h1>
+<p>Este problema tiene tres apartados independientes. El primero es un cálculo que no es de dipolos, que hay que resolver con expresiones integrales del campo eléctrico, al no tener ninguna simetría conveniente. El segundo y el tercero son dos aplicaciones de dipolos distintas. Vamos a comprobar cada apartado por separado.</p>
+<section id="apartado-a">
+<h2>Apartado <span class="math notranslate nohighlight">\(a)\)</span><a class="headerlink" href="#apartado-a" title="Link to this heading">#</a></h2>
+<p>Se pide el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> y el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> de una configuración lineal de carga <span class="math notranslate nohighlight">\(\lambda = \lambda_0 \cos \phi'\)</span> semicircular en el plano <span class="math notranslate nohighlight">\(xy\)</span> en los puntos del eje z. Dado que no tenemos ninguna simetría conveniente para realizar la integral, no tenemos más alternativa que calcular la integral de linea:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{E} = \frac{1}{4\pi\varepsilon_0}\int\frac{\lambda(\vec{r'}) dl'}{R^2} \vec{u_R}
+\]</div>
+<p>Con <span class="math notranslate nohighlight">\(\vec{R} = \vec{r}-\vec{r'}\)</span>. Como no nos indica la orientación exacta del semicírculo, la podemos elegir nosotros. Elegimos por tanto que el semicírculo esté en el semiplano <span class="math notranslate nohighlight">\(y&gt;0\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B1_S2_1_1.png"><img alt="semicirculo de carga.png" src="../_images/B1_S2_1_1.png" style="width: 350px;" /></a>
+</figure>
+<p>Aunque la simetría no nos permite calcular la integral, si que <strong>podemos utilizar la simetría de reflexión sobre el plano <span class="math notranslate nohighlight">\(yz\)</span> para observar que algunas componentes deben ser nulas en el eje <span class="math notranslate nohighlight">\(z\)</span></strong> (<em>Pensar cuáles durante unos instantes</em>).</p>
+<p>Vemos que por cada trozo de carga positiva en el 1º cuadrante (azul en la figura) que genera un campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> en la dirección <span class="math notranslate nohighlight">\(z\)</span> positiva y en la dirección <span class="math notranslate nohighlight">\(y\)</span> negativa, tenemos un trozo de carga negativa en el segundo cuadrante (rojo en la figura) que genera un campo eléctrico de igual magnitud pero en la dirección de <span class="math notranslate nohighlight">\(z\)</span> negativa y en la de <span class="math notranslate nohighlight">\(y\)</span> positiva. Por lo tanto, el campo eléctrico total, al ser la superposición de ambos, debe cancelarse en las direcciones <span class="math notranslate nohighlight">\(z\)</span> e <span class="math notranslate nohighlight">\(y\)</span>. La única componente que sobrevive es la <span class="math notranslate nohighlight">\(x\)</span>, ya que todos los trozos de carga generan campo en la dirección <span class="math notranslate nohighlight">\(x\)</span> positiva.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B1_S2_1_2.png"><img alt="semicirculo de carga.png" src="../_images/B1_S2_1_2.png" style="width: 350px;" /></a>
+</figure>
+<p>Tenemos que interpretar todos los elementos que aparecen en la integral de línea.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\lambda(\vec{r'}) &amp;= \lambda_0 \cos \phi' \\
+\vec{r} &amp;= (0,0,z) \\
+\vec{r'} &amp;= (a\cos\phi',a\sin\phi',0) \\
+\vec{R} &amp;= (-a\cos\phi',-a\sin\phi',z) \\
+R &amp;= \sqrt{a^2 + z^2} \\
+\vec{u_R} &amp;= (-\frac{a\cos\phi'}{\sqrt{a^2 + z^2}},-\frac{a\sin\phi'}{\sqrt{a^2 + z^2}},\frac{z}{\sqrt{a^2 + z^2}}) \\
+dl' &amp;= a d\phi' \quad \quad \phi' \in [0,\pi]
+\end{split}\]</div>
+<p>Como hemos argumentado, nos quedamos tan sólo con la componente <span class="math notranslate nohighlight">\(x\)</span> del campo eléctrico, y obtenemos la siguiente expresión:</p>
+<div class="math notranslate nohighlight">
+\[
+E_x = \frac{1}{4\pi\varepsilon_0} \int_{\phi'=0}^{\phi'=\pi} \frac{\lambda_0 \cos \phi' a d\phi'}{(a^2 + z^2)^{\frac{3}{2}}} \left(-a\cos\phi'\right) = -\frac{\lambda_0 a^2}{8 \varepsilon_0 (a^2 + z^2)^{\frac{3}{2}}}
+\]</div>
+<p>En este punto, es fácil plantear las integrales para las componentes <span class="math notranslate nohighlight">\(z\)</span> e <span class="math notranslate nohighlight">\(y\)</span> y verificar que son cero (<em>¡En el eje <span class="math notranslate nohighlight">\(z\)</span>!</em>). Del mismo modo, si planteamos la integral del potencial <span class="math notranslate nohighlight">\(\Phi\)</span>, también se anula (<em>¡También en el eje <span class="math notranslate nohighlight">\(z\)</span>!</em>).</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi = \frac{1}{4\pi\varepsilon_0}\int\frac{\lambda(\vec{r'}) dl'}{R} = \frac{1}{4\pi\varepsilon_0} \int_{\phi'=0}^{\phi'=\pi} \frac{\lambda_0 \cos \phi' a d\phi'}{\sqrt{a^2 + z^2}} = 0
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Observar que las simetrías se pueden aprovechar sólo en el eje <span class="math notranslate nohighlight">\(z\)</span> (<em>más bien en el plano <span class="math notranslate nohighlight">\(x=0\)</span></em>). En muchos problemas, calcular el campo eléctrico o el potencial en cualquier punto del espacio es impracticable o directamente imposible. Por eso, en muchos casos, se pide el campo eléctrico o el potencial en algún punto en el que se sabe que se puede calcular (<em>En este caso, en los puntos en el eje <span class="math notranslate nohighlight">\(z\)</span></em>).</p>
+</div>
+</section>
+<section id="apartado-b">
+<h2>Apartado <span class="math notranslate nohighlight">\(b)\)</span><a class="headerlink" href="#apartado-b" title="Link to this heading">#</a></h2>
+<p>En este apartado se pide comprobar el efecto mecánico sobre un dipolo. Observamos que el dipolo es muy pequeño en comparación con la configuración de carga, y gracias a esto, en lugar de considerar las dos cargas <span class="math notranslate nohighlight">\(q_0\)</span> de distinto signo que conforman el dipolo separadas una cierta distancia <span class="math notranslate nohighlight">\(d_0\)</span>, podemos usar las expresiones simplificadas:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{F} &amp;= (\vec{p_0} \cdot \nabla) \vec{E} \\
+\vec{M} &amp;= \vec{p_0} \times \vec{E}
+\end{split}\]</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B1_S2_1_3.png"><img alt="semicirculo de carga.png" src="../_images/B1_S2_1_3.png" style="width: 350px;" /></a>
+</figure>
+<p>Es decir, la fuerza <span class="math notranslate nohighlight">\(\vec{F}\)</span> y el momento de la fuerza <span class="math notranslate nohighlight">\(\vec{M}\)</span> sobre las dos cargas del dipolo junto con la ligadura que las mantiene unidas se puede obtener utilizando esta expresión, debido a que el tamaño del dipolo (<em>la separación de las cargas <span class="math notranslate nohighlight">\(d_0\)</span></em>) es muy pequeño en comparación con las distancias características en las que varía el campo eléctrico. Dado que la configuración de carga tiene una escala característica del orden del radio <span class="math notranslate nohighlight">\(a\)</span>, la separación entre las cargas <span class="math notranslate nohighlight">\(d_0\)</span> debe <span class="math notranslate nohighlight">\(d_0 \ll a\)</span>.</p>
+<ul class="simple">
+<li><p>Fuerza <span class="math notranslate nohighlight">\(\vec{F}\)</span></p></li>
+</ul>
+<p>La expresión general incluye el operador <span class="math notranslate nohighlight">\(\vec{p_0} \cdot \nabla = p_{0x} \frac{\partial}{\partial x} + p_{0y} \frac{\partial}{\partial y} + p_{0z} \frac{\partial}{\partial z}\)</span>  actuando sobre las tres componentes del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>. La única componente del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> es la componente <span class="math notranslate nohighlight">\(x\)</span>, mientras que la única componente del dipolo <span class="math notranslate nohighlight">\(\vec{p_0}\)</span> es la componente <span class="math notranslate nohighlight">\(z\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+F_x = p_0 \frac{\partial E_x}{\partial z} = \frac{p_0 \lambda_0 a^2}{8 \varepsilon_0} \frac{3 z}{(a^2 + z^2)^{\frac{5}{2}}}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La carga negativa <span class="math notranslate nohighlight">\(-q_0\)</span> del dipolo está sometida a un campo eléctrico <span class="math notranslate nohighlight">\(E_x\)</span> un poco más intenso en el sentido de <span class="math notranslate nohighlight">\(x\)</span> negativo que la carga positiva <span class="math notranslate nohighlight">\(+q_0\)</span>, por lo que la fuerza neta sobre el dipolo es hacia el sentido de <span class="math notranslate nohighlight">\(x\)</span> positivo.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Nos preguntamos en este punto, <strong>¿qué pasaría si el dipolo estuviera orientado en la dirección <span class="math notranslate nohighlight">\(x\)</span> o en la dirección <span class="math notranslate nohighlight">\(y\)</span>?</strong> (<em>¡Pensar durante unos instantes!</em>)</p>
+<p>Es importante observar una cosa. Dado que el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> solo se conoce en el eje <span class="math notranslate nohighlight">\(z\)</span>, <em>no se puede calcular la derivada parcial del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> en las direcciones <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span></em>. Es un error común, dado que la expresión no tiene <span class="math notranslate nohighlight">\(x\)</span> o <span class="math notranslate nohighlight">\(y\)</span>, calcular que la derivada parcial con respecto a ambas variables es cero, pero lo cierto es que solo conocemos el campo eléctrico en el eje <span class="math notranslate nohighlight">\(z\)</span>, por lo que no sabemos como depende de las otras coordenadas <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span>. Lo que si sabemos es que, <em>si fuera posible obtener una expresión de la variación en <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span>, al sustituir en <span class="math notranslate nohighlight">\(x=y=0\)</span>, obtendríamos la expresión calculada en el apartado <span class="math notranslate nohighlight">\(a)\)</span></em>.</p>
+<p>Es una suerte (<em>intencionadamente</em>) que el problema pida que el dipolo <span class="math notranslate nohighlight">\(\vec{p_0}\)</span> este orientado en la dirección <span class="math notranslate nohighlight">\(z\)</span>.</p>
+</div>
+<ul class="simple">
+<li><p>Momento de la fuerza <span class="math notranslate nohighlight">\(\vec{M}\)</span></p></li>
+</ul>
+<p>La expresión del momento de la fuerza es tan solo un producto vectorial.</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = \vec{p_0} \times \vec{E} = p_0 E_x \vec{u_z} \times \vec{u_x} = p_0 E_x \vec{u_y}
+\]</div>
+</section>
+<section id="apartado-c">
+<h2>Apartado <span class="math notranslate nohighlight">\(c)\)</span><a class="headerlink" href="#apartado-c" title="Link to this heading">#</a></h2>
+<p>Este apartado pregunta por el dipolo equivalente de la configuración a gran distancia del medio anillo. Observamos que a grandes distancias, la configuración es muy pequeña con respecto a la escala característica <span class="math notranslate nohighlight">\(a\)</span> de la configuración de carga, es decir, <span class="math notranslate nohighlight">\(r \gg a\)</span>. Desde estas distancias, la configuración se percibe como un dipolo <span class="math notranslate nohighlight">\(\vec{p}\)</span> que se puede calcular utilizando la expresión apropiada, aplicada a una configuración lineal de carga:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{p} = \int \vec{r'} \lambda(\vec{r'}) dl'
+\]</div>
+<p>Realizando la sustitución de los elementos de la integral obtenidos en el apartado <span class="math notranslate nohighlight">\(a)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{p} = \int_{\phi'=0}^{\phi'=\pi} (a\cos\phi',a\sin\phi',0) \lambda_0 \cos \phi' a d\phi'
+\]</div>
+<p>Esta integral es en realidad tres integrales, una para cada componente.</p>
+<ul class="simple">
+<li><p>La componente <span class="math notranslate nohighlight">\(x\)</span>, es una integral <span class="math notranslate nohighlight">\(\cos^2\phi'\)</span>, ya resuelta anteriormente</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+p_x = \int_{\phi'=0}^{\phi'=\pi} \lambda_0 a^2 \cos^2\phi' d\phi' = \lambda_0 a^2 \frac{\pi}{2}
+\]</div>
+<ul class="simple">
+<li><p>La componente <span class="math notranslate nohighlight">\(y\)</span>, es una integral que se anula (<em>¡Comprobar!</em>).</p></li>
+<li><p>La componente <span class="math notranslate nohighlight">\(z\)</span> es directamente 0.</p></li>
+</ul>
+<p>Por lo tanto, la configuración, <strong>a grandes distancias</strong>, es equivalente a un dipolo orientado en la dirección x.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Observar como los apartados <span class="math notranslate nohighlight">\(b)\)</span> y <span class="math notranslate nohighlight">\(c)\)</span> utilizan el concepto de dipolo pero en escalas diferentes. Sin embargo, en ambos casos el requisito para poder hablar de dipolo es que el tamaño del dipolo sea muy pequeño en comparación con las distancias en las que se desarrolla el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>.</p>
+</div>
+<p>Queda comprobar que la configuración en los puntos en los que conocemos el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>, es decir en el eje <span class="math notranslate nohighlight">\(z\)</span>, tiene la misma expresión que la del dipolo equivalente <span class="math notranslate nohighlight">\(\vec{p}\)</span>. La expresión general es (<em>¿por qué no podemos usar la expresión en coordenadas esféricas? ¿Podríamos usarla de alguna manera?</em>):</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{E} = \frac{1}{4\pi\varepsilon_0}\left[ \frac{(3\vec{p}\cdot\vec{r})\vec{r}}{r^5} - \frac{\vec{p}}{r^3}\right]
+\]</div>
+<p>Sustituyendo los elementos obtenidos en el apartado <span class="math notranslate nohighlight">\(a)\)</span> y en este apartado, <span class="math notranslate nohighlight">\(\vec{p}\cdot\vec{r} = 0\)</span>, por lo que la expresión es:</p>
+<div class="math notranslate nohighlight">
+\[
+E_x = -\frac{\lambda_0 a^2}{8\varepsilon_0 z^3}
+\]</div>
+<p>Comprobamos que es el mismo resultado que si usamos la expresión exacta, valida en el eje <span class="math notranslate nohighlight">\(z\)</span>, y obtenemos la expresión cuando <span class="math notranslate nohighlight">\(r\)</span> es muy grande, <span class="math notranslate nohighlight">\(r \uparrow\)</span> (<em>o lo que es lo mismo en el eje <span class="math notranslate nohighlight">\(z\)</span>, la expresión cuando <span class="math notranslate nohighlight">\(z \gg a\)</span></em>). Así mismo, si calculamos el potencial en el eje <span class="math notranslate nohighlight">\(z\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi = -\frac{1}{4\pi\varepsilon_0} \frac{\vec{u_r}\cdot\vec{p}}{r^2} = 0
+\]</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./pages"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-c">Apartado <span class="math notranslate nohighlight">\(c)\)</span></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Guillermo Fernando Regodon Harkness
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
