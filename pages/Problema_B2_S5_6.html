@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B1.S1.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B2.6 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,11 +62,9 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B1_S1_4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S5_6';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B1.S2.1" href="Problema_B1_S2_1.html" />
-    <link rel="prev" title="Problema B1.S1.3" href="Problema_B1_S1_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,6 +115,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -175,11 +175,11 @@
 <li class="toctree-l1"><a class="reference internal" href="0-repaso_gauss_ampere.html">Repaso del uso de las simetrías para resolver problemas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Superposición</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_3.html">Problema B1.S1.3</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B1.S1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_4.html">Problema B1.S1.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_1.html">Problema B1.S2.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_2.html">Problema B1.S2.2</a></li>
 </ul>
@@ -241,7 +241,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B1_S1_4.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B2_S5_6.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -315,7 +315,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B1.S1.4</h1>
+    <h1>Problema B2.6</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -329,50 +329,69 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b1-s1-4">
-<h1>Problema B1.S1.4<a class="headerlink" href="#problema-b1-s1-4" title="Link to this heading">#</a></h1>
-<p>Nos pide la fuerza que ejerce un hemisferio de carga sobre el otro, con la densidad de carga <span class="math notranslate nohighlight">\(\rho = \frac{Q}{(4/3)\pi a^3}\)</span> constante. Observamos que la fuerza que sufre una partícula, o un diferencial de carga en nuestro caso, es proporcional al campo eléctrico. Por lo tanto, <em>necesitamos conocer el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{S\rightarrow N}\)</span> que ejerce el hemisferio sur en un punto del hemisferio norte</em>. Una vez tuvieramos la expresión, podríamos integrar en todo el hemisferio norte para obtener la fuerza total.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{F}_N = \int_N \rho \vec{E}_{S\rightarrow N} dV_N
-\]</div>
-<p>Posiblemente, lo primero que observemos es que la fuerza debe tener dirección <span class="math notranslate nohighlight">\(z\)</span> por simetría y eliminar dos componentes. Sin embargo, calcular el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{S\rightarrow N}\)</span> que genera el hemisferio sur en cualquier punto del hemisferio norte es complicado.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{E}_{S\rightarrow N} = \frac{1}{4\pi\varepsilon_0}\int_S \frac{\rho}{R^2}\vec{u_R} dV_S
-\]</div>
-<p>La simetría esférica se puede utilizar para parametrizar de forma sencilla el diferencial de volumen de integración, pero para parametrizar el punto en el que se integra, es necesario utilizar otras coordenadas. La distancia <span class="math notranslate nohighlight">\(R = |\vec{r_N} - \vec{r_S}|\)</span> depende fuertemente del punto en el que se quiere integrar, y no resulta sencillo en ningún caso. (<strong>Notar que en lugar de utilizar <span class="math notranslate nohighlight">\(\vec{r}\)</span> y <span class="math notranslate nohighlight">\(\vec{r'}\)</span>, hemos utilizado los subíndices <span class="math notranslate nohighlight">\(N\)</span> y <span class="math notranslate nohighlight">\(S\)</span> para el punto donde se calcula el campo y el punto en el que está la fuente</strong>).</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-6">
+<h1>Problema B2.6<a class="headerlink" href="#problema-b2-6" title="Link to this heading">#</a></h1>
+<p>Tenemos <strong>una esfera a un potencial conocido</strong> de radio <span class="math notranslate nohighlight">\(R\)</span> que sigue la expresión <span class="math notranslate nohighlight">\(V = K \cos(3\theta)\)</span>, donde <span class="math notranslate nohighlight">\((r, \theta, \varphi)\)</span> son las coordenadas <strong>esféricas</strong> e implicitamente, se establece <em>la simetría en la variable <span class="math notranslate nohighlight">\(\varphi\)</span></em>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Aunque a priori, este problema se puede plantear, y quizás resolver la expresión exacta, <em>vamos a aprovechar el principio de superposición para resolver el problema de forma sencilla</em>.</p>
+<p>Si pidiera el potencial en un punto del eje <span class="math notranslate nohighlight">\(z\)</span> o en algún otro punto con una simetría clara, la integración directa sería posible.</p>
+<p>Dado que se pide el potencial en cualquier punto externo e interno, la estrategia de los polinomios de Legendre es la única fáctible.</p>
 </div>
-<p>Para simplificar el cálculo, observemos que si añadiéramos el hemisferio norte, calcular el campo eléctrico en el hemisferio norte es sencillo por Gauss (<em>¡Comprobar!</em>).</p>
+<p>Se trata entonces de <strong>resolver la ecuación de Poisson</strong> con las condiciones de contorno apropiadas.</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{E}_N = \vec{E}_{S\rightarrow N} + \vec{E}_{N\rightarrow N} = \frac{\rho \vec{r}}{3\varepsilon_0} = \frac{Q \vec{r}}{4\pi\varepsilon_0 a^3} = \frac{Q r}{4\pi\varepsilon_0 a^3}\vec{u_r}
+\nabla^2 \Phi = 0
 \]</div>
-<p>Nos preguntamos en este punto, <strong>¿Pero el campo eléctrico que afecta al hemisferio norte es sólo el del hemisferio sur?</strong> Sin duda que el hemisferio norte también genera su campo eléctrico. <strong>¿Qué efecto produce el campo eléctrico del hemisferio norte sobre el propio hemisfério norte?</strong> (<em>¡Pensar durante unos instantes!</em>)</p>
-<p>La respuesta proviene de un principio de mecánica: La fuerza que ejerce un cuerpo sobre sí mismo, debe ser nulo (<em>Si no fuera así, se movería sólo, sin cumplir la tercera ley de Newton</em>). Por lo tanto, la fuerza total que ejerce el hemisferio sur sobre el hemisferio norte es la misma que la fuerza que ejerce la esfera completa (<em>sur y norte</em>) sobre el hemisferio norte.</p>
+<p>Para <em>el volumen interno a la esfera</em>, la única condición de contorno es el propio potencial <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em = \kern -0.2em R) = K \cos(3\theta)\)</span> de la esfera. Para <em>el volumen exterior a la esfera</em>, además de <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em = \kern -0.2em R) = K \cos(3\theta)\)</span>, usamos el potencial en el infinito, <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em \rightarrow \kern -0.2em \infty) = 0\)</span>.</p>
+<p>Este es precisamente el problema que tiene por solución los Polinomios de Lengendre:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{F}_N = \int_N \rho \vec{E}_{S\rightarrow N} dV_N + \int_N \rho \vec{E}_{N\rightarrow N} dV_N = \int_N \rho \vec{E}_{N} dV_N
+\Phi = \sum_{l=0}^{\infty} \left( A_l r^l + \frac{B_l}{r^{l+1}} \right) P_l(\cos(\theta))
 \]</div>
-<p>Utilizando la expresión obtenida fácilmente por la ley de Gauss:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{F}_N = \int_N \rho \frac{\rho r}{3\varepsilon_0}\vec{u_r} dV_N
-\]</div>
-<p>Por la simetría en torno al eje <span class="math notranslate nohighlight">\(z\)</span> de la que seguro que nos hemos dado cuenta antes, nos quedamos solamente con la componente <span class="math notranslate nohighlight">\(z\)</span> de <span class="math notranslate nohighlight">\(\vec{u_r} = (...,...,\cos\theta)\)</span>. Usando el diferencial de volumen en el hemisferio norte:</p>
+<p><strong>Para el volumen interior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_d\)</span> y usamos la condición de que todos las magnitudes físicas deben ser fínitas, y por tanto, <span class="math notranslate nohighlight">\(B_l = 0\)</span>. <strong>Para el volumen exterior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_f\)</span> y usamos la condición de que el potencial en el infinito se anula, y por tanto, <span class="math notranslate nohighlight">\(A_l = 0\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-dV_N = r^2 \sin \theta dr d\theta d\varphi \\
-r \in [0,a] \qquad \theta \in [0, \pi/2] \qquad \varphi \in [0,2\pi]
+\Phi_d = \sum_{l=0}^{\infty} A_l r^l P_l(\cos(\theta)) \\
+\Phi_f = \sum_{l=0}^{\infty} \frac{B_l}{r^{l+1}} P_l(\cos(\theta))
 \end{split}\]</div>
-<p>Por lo que, finalmente:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Podemos <strong>resolver los dos problemas por separado o en paralelo</strong>, ya que son independientes. Están separados por la condición de contorno <span class="math notranslate nohighlight">\(V\)</span> que descompone el espacio en dos volumenes separados.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Debemos usar los infinitos términos de las sumatorias pero por inspección podemos reducir los terminos a unos pocos (<em>en algunos casos a uno</em>)</p>
+<ul class="simple">
+<li><p>Los polinomios de Lengendre incluyen términos <span class="math notranslate nohighlight">\(\cos^l(\theta)\)</span>, que siempre se van a poder poner en forma de <strong>una suma de términos que contiene <span class="math notranslate nohighlight">\(\cos(l \theta)\)</span></strong>.</p></li>
+<li><p>Los polinomios de Legendre son independientes, no se puede poner uno en función de otros. El motivo es que <strong>los términos de <span class="math notranslate nohighlight">\(\cos(l \theta)\)</span> son independientes</strong> (<em>y por tanto los polinomios</em>).</p></li>
+</ul>
+</div>
+<p>La condición de contorno que nos dan <em>es una función de <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span></em>, por lo que <strong>seguro que necesitamos el término de <span class="math notranslate nohighlight">\(l = 3\)</span></strong>. Efectivamente:</p>
 <div class="math notranslate nohighlight">
 \[
-F_{Nz} = \int_{r=0}^{r=a} \int_{\theta=0}^{\theta=\pi/2)} \int_{\varphi=0}^{\varphi=2\pi} \frac{\rho^2}{3\varepsilon_0} r^3 \cos \theta \sin \theta dr d\theta d\varphi = \frac{\rho^2 \pi a^4}{12 \varepsilon_0} = \frac{3 Q^2}{64 \pi a^2\varepsilon_0}
+P_3(\cos(\theta)) = \frac{1}{2} \left( 5 \cos^3(\theta) - 3 \cos(\theta) \right) = \frac{5}{8} \cos(3 \theta) + \frac{3}{8} \cos(\theta) 
 \]</div>
+<p>Vemos que este polinomio de Lengendre incluye un término en <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>, por lo que de por sí solo, podemos conseguir el término <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span>, pero nos sobra el de <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>. <strong>Por esto tenemos que añadir el término del polinómio de Lengendre con <span class="math notranslate nohighlight">\(l=1\)</span></strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En general, si nos vemos obligados a añadir <strong>un polinomio de orden <span class="math notranslate nohighlight">\(l\)</span></strong>, tendremos que añadir también todos los polinomios <strong>de grado inferior <span class="math notranslate nohighlight">\(l'\)</span> del mismo tipo par o impar</strong>. (Es decir, si <span class="math notranslate nohighlight">\(l\)</span> es par, pondremos todos los términos pares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>, y si <span class="math notranslate nohighlight">\(l\)</span> es impar, todos los términos impares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>).</p>
+<p>Por ejemplo, si la condición de contorno fuera <span class="math notranslate nohighlight">\(V = K_1 \cos(9 l) + K_2 \cos(4 l)\)</span>, por el primer término tendríamos que poner <span class="math notranslate nohighlight">\(l \in \{1, 3, 5, 7, 9\}\)</span> mientras que por el segundo término, tendríamos que poner <span class="math notranslate nohighlight">\(l \in \{0, 2, 4\}\)</span> (Ojalá nunca nos encontremos con un problema así).</p>
+</div>
+<p>Si realizamos la igualación de los términos con la condición de contorno…</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Phi_d(r \kern -0.2em = \kern -0.2em R) = A_1 R^1 P_1(\cos(\theta)) + A_3 R^3 P_3(\cos(\theta)) = K \cos(3\theta) \\
+\Phi_f(r \kern -0.2em = \kern -0.2em R) = \frac{B_1}{R^2} P_1(\cos(\theta)) + \frac{B_3}{R^4} P_3(\cos(\theta)) = K \cos(3\theta)
+\end{split}\]</div>
+<p>…nos da el siguiente resultado</p>
+<div class="math notranslate nohighlight">
+\[
+A_1 = -\frac{3 K}{5 R}; \space
+A_3 = \frac{8 K}{5 R^3}; \space
+B_1 = -\frac{3}{5} K R^2; \space
+B_3 = \frac{8}{5} K R^4
+\]</div>
+<p>Por supuesto, la expresión de <span class="math notranslate nohighlight">\(\Phi_d\)</span> es válida dentro de la esfera y la de <span class="math notranslate nohighlight">\(\Phi_f\)</span> es válida fuera de la esfera.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -405,24 +424,6 @@ F_{Nz} = \int_{r=0}^{r=a} \int_{\theta=0}^{\theta=\pi/2)} \int_{\varphi=0}^{\var
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Problema_B1_S1_3.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B1.S1.3</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Problema_B1_S2_1.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problema B1.S2.1</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
