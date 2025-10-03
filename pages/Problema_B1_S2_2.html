@@ -326,8 +326,8 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado a)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado b)</a></li>
 </ul>
             </nav>
         </div>
@@ -371,11 +371,11 @@ Q_{ij} = \int_{V'} \left(3x'_ix'_j - r'^2 \delta_{ij}\right) \rho(\vec{r'}) dV'
 \]</div>
 </div>
 <section id="apartado-a">
-<h2>Apartado <span class="math notranslate nohighlight">\(a)\)</span><a class="headerlink" href="#apartado-a" title="Link to this heading">#</a></h2>
+<h2>Apartado a)<a class="headerlink" href="#apartado-a" title="Link to this heading">#</a></h2>
 <p>Al tratarse de cargas puntuales, utilizamos las expresiones equivalentes en términos de sumatorias (<em>Es útil tener soltura pasando las expresiones integrales a sumatorias cuando sea necesario</em>):</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-Q_T &amp;= \sum_{k=1}^N q_k\\
+Q_T &amp;= \sum_{k=1}^N q_k \\
 \vec{p} &amp;= \sum_{k=1}^N \vec{r'_k} q_k \\
 \overleftrightarrow{Q} &amp;= \sum_{k=1}^N \left(3\vec{r'_k}\vec{r'_k} - r_k'^2 \overleftrightarrow{I}\right) q_k
 \end{split}\]</div>
@@ -385,13 +385,10 @@ Q_T &amp;= \sum_{k=1}^N q_k\\
 </figure>
 <p>En este caso, ya solo nos queda tener cuidado con los índices y obtener los momentos:</p>
 <div class="math notranslate nohighlight">
-\[
-Q_T = q_1 + q_2 + q_3 = 0
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-\vec{p} = q_1 \vec{r'_1} + q_2 \vec{r'_2} + q_3 \vec{r'_3} = q (a \vec{u_z}) -2q (\vec{0}) + q (-a \vec{u_z}) = \vec{0}
-\]</div>
+\[\begin{split}
+Q_T &amp;= q_1 + q_2 + q_3 = 0 \\
+\vec{p} &amp;= q_1 \vec{r'_1} + q_2 \vec{r'_2} + q_3 \vec{r'_3} = q (a \vec{u_z}) -2q (\vec{0}) + q (-a \vec{u_z}) = \vec{0}
+\end{split}\]</div>
 <p>Para el momento cuadripolar necesitamos tener cuidado con los índices: <span class="math notranslate nohighlight">\(k\)</span> sobre las partículas, e <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span> sobre las coordenadas cartesianas, es decir, <span class="math notranslate nohighlight">\(x_{ki}\)</span> y <span class="math notranslate nohighlight">\(x_{kj}\)</span> son las coordenadas <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span> de la carga <span class="math notranslate nohighlight">\(k\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -399,27 +396,29 @@ Q_{ij} = \sum_{k=1}^3 \left(3x'_{ki}x'_{kj} - r'^2 \delta_{ij}\right) q_k
 \]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Visto de otro modo, que quizás se hace más sencillo:
-$<span class="math notranslate nohighlight">\(
-\vec{r'_k} = (x'_k,y'_k,z'_k) = (x'_{k1},x'_{k2},x'_{k3})
-\)</span>$</p>
+<p>Visto de otro modo, que quizás se hace más sencillo:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{r}_k = ({x}_k,{y}_k,{z}_k) = ({x}_{k1},{x}_{k2},{x}_{k3})
+\]</div>
 </div>
 <p>Por lo tanto:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-Q_{11} &amp;= q_1 (3x_{11}'^2-(x_{11}'^2+x_{12}'^2+x_{13}'^2)) + q_2 (3x_{21}'^2-(x_{21}'^2+x_{22}'^2+x_{23}'^2))  + q_3 (3x_{31}'^2-(x_{31}'^2+x_{32}'^2+x_{13}'^2))  \\
-Q_{12} &amp;= Q_{21} = q_1 (3x'_{11}x'_{12}) + q_2 (3x'_{21}x'_{22}) + q_3 (3x'_{31}x'_{32}) \\
+Q_{11} &amp;= q_1 (3x_{11}'^2-(x_{11}'^2+x_{12}'^2+x_{13}'^2)) + q_2 (3x_{21}'^2-(x_{21}'^2+x_{22}'^2+x_{23}'^2))  + q_3 (3x_{31}'^2-(x_{31}'^2+x_{32}'^2+x_{13}'^2))  \\
+Q_{12} &amp;= Q_{21} = q_1 (3x'_{11}x'_{12}) + q_2 (3x'_{21}x'_{22}) + q_3 (3x'_{31}x'_{32}) \\
 ...
 \end{split}\]</div>
 <p>(<em>Usar unos instantes para verificar estas expresiones</em>)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Estas expresiones, quizás se entiendan de una forma más sencilla así:
-$<span class="math notranslate nohighlight">\(
-Q_{11} &amp;= q_1 (3x_1'^2-(x_1'^2+y_1'^2+z_1'^2)) + q_2 (3x_2'^2-(x_2'^2+y_2'^2+z_2'^2))  + q_3 (3x_3'^2-(x_3'^2+y_3'^2+z_3'^2))  \\
-Q_{12} &amp;= Q_{21} = q_1 (3x'_1y'_1) + q_2 (3x'_2y'_2) + q_3 (3x'_3y'_3) \\
+<p>Estas expresiones, quizás se entiendan de una forma más sencilla así:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q_{11} &amp;= q_1 (3x_1'^2-(x_1'^2+y_1'^2+z_1'^2)) + q_2 (3x_2'^2-(x_2'^2+y_2'^2+z_2'^2)) + q_3 (3x_3'^2-(x_3'^2+y_3'^2+z_3'^2)) \\
+Q_{12} &amp;= Q_{21} = q_1 (3x'_1y'_1) + q_2 (3x'_2y'_2) + q_3 (3x'_3y'_3) \\
 ...
-\)</span>$</p>
+\end{split}\]</div>
 <p>(<em>Verificar que son equivalentes</em>)</p>
 </div>
 <p>De esta forma,</p>
@@ -438,7 +437,7 @@ Q_{12} &amp;= Q_{21} = Q_{13} = Q_{31} = Q_{23} = Q_{32} = q(0) - 2q(0) + q(0) =
 <p>más un término de error que decae con la distancia como <span class="math notranslate nohighlight">\(1/r^4\)</span> o más rápidamente.</p>
 </section>
 <section id="apartado-b">
-<h2>Apartado <span class="math notranslate nohighlight">\(b)\)</span><a class="headerlink" href="#apartado-b" title="Link to this heading">#</a></h2>
+<h2>Apartado b)<a class="headerlink" href="#apartado-b" title="Link to this heading">#</a></h2>
 <p>Este apartado pide los momentos monopolar, dipolar y cuadripolar de una configuración esférica sin simetría:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -460,7 +459,7 @@ Q_T &amp;= \int_{S'} \sigma(\vec{r'}) dS' \\
 \sigma(\vec{r'}) &amp;= \sigma_0 \cos\theta' \\
 dS' &amp;= a \sin\theta' d\theta' d\varphi' \\
 \vec{r'} &amp;= a(\sin\theta' \cos\varphi', \sin\theta' \sin\varphi', \cos\theta') \\
-r'^2 &amp;= a^2 
+r'^2 &amp;= a^2 
 \end{split}\]</div>
 <p>Con esto, <span class="math notranslate nohighlight">\(Q_T = 0\)</span> y:</p>
 <div class="math notranslate nohighlight">
@@ -558,8 +557,8 @@ Q_{23} &amp;= Q_{32} = \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado a)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado b)</a></li>
 </ul>
   </nav></div>
 
