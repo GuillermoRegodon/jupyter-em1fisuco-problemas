@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B2.6 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B2.S3.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,7 +62,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_6';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S3_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -180,6 +180,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_3.html">Problema B1.S1.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_4.html">Problema B1.S1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_1.html">Problema B1.S2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_2.html">Problema B1.S2.2</a></li>
 </ul>
 
     </div>
@@ -239,7 +241,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B2_6.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B2_S3_1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -313,7 +315,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B2.6</h1>
+    <h1>Problema B2.S3.1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -327,69 +329,40 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-6">
-<h1>Problema B2.6<a class="headerlink" href="#problema-b2-6" title="Link to this heading">#</a></h1>
-<p>Tenemos <strong>una esfera a un potencial conocido</strong> de radio <span class="math notranslate nohighlight">\(R\)</span> que sigue la expresión <span class="math notranslate nohighlight">\(V = K \cos(3\theta)\)</span>, donde <span class="math notranslate nohighlight">\((r, \theta, \varphi)\)</span> son las coordenadas <strong>esféricas</strong> e implicitamente, se establece <em>la simetría en la variable <span class="math notranslate nohighlight">\(\varphi\)</span></em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Si pidiera el potencial en un punto del eje <span class="math notranslate nohighlight">\(z\)</span> o en algún otro punto con una simetría clara, la integración directa sería posible.</p>
-<p>Dado que se pide el potencial en cualquier punto externo e interno, la estrategia de los polinomios de Legendre es la única fáctible.</p>
-</div>
-<p>Se trata entonces de <strong>resolver la ecuación de Poisson</strong> con las condiciones de contorno apropiadas.</p>
-<div class="math notranslate nohighlight">
-\[
-\nabla^2 \Phi = 0
-\]</div>
-<p>Para <em>el volumen interno a la esfera</em>, la única condición de contorno es el propio potencial <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em = \kern -0.2em R) = K \cos(3\theta)\)</span> de la esfera. Para <em>el volumen exterior a la esfera</em>, además de <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em = \kern -0.2em R) = K \cos(3\theta)\)</span>, usamos el potencial en el infinito, <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em \rightarrow \kern -0.2em \infty) = 0\)</span>.</p>
-<p>Este es precisamente el problema que tiene por solución los Polinomios de Lengendre:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi = \sum_{l=0}^{\infty} \left( A_l r^l + \frac{B_l}{r^{l+1}} \right) P_l(\cos(\theta))
-\]</div>
-<p><strong>Para el volumen interior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_d\)</span> y usamos la condición de que todos las magnitudes físicas deben ser fínitas, y por tanto, <span class="math notranslate nohighlight">\(B_l = 0\)</span>. <strong>Para el volumen exterior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_f\)</span> y usamos la condición de que el potencial en el infinito se anula, y por tanto, <span class="math notranslate nohighlight">\(A_l = 0\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\Phi_d = \sum_{l=0}^{\infty} A_l r^l P_l(\cos(\theta)) \\
-\Phi_f = \sum_{l=0}^{\infty} \frac{B_l}{r^{l+1}} P_l(\cos(\theta))
-\end{split}\]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Podemos <strong>resolver los dos problemas por separado o en paralelo</strong>, ya que son independientes. Están separados por la condición de contorno <span class="math notranslate nohighlight">\(V\)</span> que descompone el espacio en dos volumenes separados.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Debemos usar los infinitos términos de las sumatorias pero por inspección podemos reducir los terminos a unos pocos (<em>en algunos casos a uno</em>)</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-s3-1">
+<h1>Problema B2.S3.1<a class="headerlink" href="#problema-b2-s3-1" title="Link to this heading">#</a></h1>
+<p>Este problema es el más básico de imágenes, pero es interesante porque pide calcular muchas cosas distintas en los distintos subapartados. Se trata de una partícula de carga <span class="math notranslate nohighlight">\(q\)</span> a una distancia <span class="math notranslate nohighlight">\(d\)</span> de un plano de conductor eléctrico perfecto (<em>CEP</em>) conectada a un potencial nulo, <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S3_1_1.png"><img alt="plano CEP y carga.png" src="../_images/B2_S3_1_1.png" style="width: 350px;" /></a>
+</figure>
+<p>La imagen de la carga puntal <span class="math notranslate nohighlight">\(q\)</span> es fácil, pero antes de establecerla y empezar a hacer cálculos, vamos a considerar las condiciones que debe cumplir la imagen para que sea válida (<em>El argumento también será válido en configuraciones más complejas</em>).</p>
 <ul class="simple">
-<li><p>Los polinomios de Lengendre incluyen términos <span class="math notranslate nohighlight">\(\cos^l(\theta)\)</span>, que siempre se van a poder poner en forma de <strong>una suma de términos que contiene <span class="math notranslate nohighlight">\(\cos(l \theta)\)</span></strong>.</p></li>
-<li><p>Los polinomios de Legendre son independientes, no se puede poner uno en función de otros. El motivo es que <strong>los términos de <span class="math notranslate nohighlight">\(\cos(l \theta)\)</span> son independientes</strong> (<em>y por tanto los polinomios</em>).</p></li>
+<li><p>Queremos sustituir el CEP por una configuración de cargas que permita que el potencial en la superficie del CEP sea <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recordemos que un conductor eléctrico perfecto (<em>CEP</em>) tiene las siguiente características, derivadas de la libertad de movimiento de las cargas dentro del CEP.</p>
+<ul class="simple">
+<li><p>El CEP impone un potencial constante en su superficie (<em>y en general en todo su volumen</em>).</p></li>
+<li><p>El campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{CEP}\)</span> en la superficie del CEP es perpendicular (<em>o nulo</em>) a dicha superficie. Está garantizado si el potencial el constante en la superficie.</p></li>
+<li><p>La densidad de carga superficial es la que permite cumplir estas dos condiciones. Puede ser cualquiera, dependiendo de las cargas fuera del conductor. Solamente se puede calcular a posteriori, después de conocer el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{CEP}\)</span> en la superficie del CEP.</p></li>
 </ul>
 </div>
-<p>La condición de contorno que nos dan <em>es una función de <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span></em>, por lo que <strong>seguro que necesitamos el término de <span class="math notranslate nohighlight">\(l = 3\)</span></strong>. Efectivamente:</p>
-<div class="math notranslate nohighlight">
-\[
-P_3(\cos(\theta)) = \frac{1}{2} \left( 5 \cos^3(\theta) - 3 \cos(\theta) \right) = \frac{5}{8} \cos(3 \theta) + \frac{3}{8} \cos(\theta) 
-\]</div>
-<p>Vemos que este polinomio de Lengendre incluye un término en <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>, por lo que de por sí solo, podemos conseguir el término <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span>, pero nos sobra el de <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>. <strong>Por esto tenemos que añadir el término del polinómio de Lengendre con <span class="math notranslate nohighlight">\(l=1\)</span></strong>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>En general, si nos vemos obligados a añadir <strong>un polinomio de orden <span class="math notranslate nohighlight">\(l\)</span></strong>, tendremos que añadir también todos los polinomios <strong>de grado inferior <span class="math notranslate nohighlight">\(l'\)</span> del mismo tipo par o impar</strong>. (Es decir, si <span class="math notranslate nohighlight">\(l\)</span> es par, pondremos todos los términos pares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>, y si <span class="math notranslate nohighlight">\(l\)</span> es impar, todos los términos impares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>).</p>
-<p>Por ejemplo, si la condición de contorno fuera <span class="math notranslate nohighlight">\(V = K_1 \cos(9 l) + K_2 \cos(4 l)\)</span>, por el primer término tendríamos que poner <span class="math notranslate nohighlight">\(l \in \{1, 3, 5, 7, 9\}\)</span> mientras que por el segundo término, tendríamos que poner <span class="math notranslate nohighlight">\(l \in \{0, 2, 4\}\)</span> (Ojalá nunca nos encontremos con un problema así).</p>
-</div>
-<p>Si realizamos la igualación de los términos con la condición de contorno…</p>
+<ul class="simple">
+<li><p>La imagen debe garantizar que el potencial en la superficie del CEP es la apropiada, <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>, permitiendo sustituir una por la otra en los cálculos.</p></li>
+<li><p>El potencial <span class="math notranslate nohighlight">\(\Phi(\vec{r})\)</span> y el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}(\vec{r})\)</span> calculados con las cargas y sus imágenes solo es válido fuera del CEP. Dentro del CEP, el modelo no es válido, y el potencial es constante <span class="math notranslate nohighlight">\(\Phi_{CEP}(\vec{r}) = \Phi_{CEP} = 0\)</span>.</p></li>
+</ul>
+<p>Pensar en términos de potencial es a menudo más sencillo en problemas de imágenes. Por lo tanto, necesitamos una configuración de cargas que permita que el potencial sea 0 en la superficie del CEP, teniendo una carga <span class="math notranslate nohighlight">\(q\)</span> que ya impone un potencial distinto de 0. Por lo tanto, <strong>contamos con la posición y el valor de las cargas imágenes</strong>: Aunque se puede demostrar matemáticamente, por inspección vemos que la única opción es una carga negativa <span class="math notranslate nohighlight">\(-q\)</span> a una distancia <span class="math notranslate nohighlight">\(d\)</span> dentro del CEP, de tal modo que el potencial que impone es del mismo valor y de signo contrario. La combinación de ambos da 0 en la superficie, y podemos retirar el CEP (<em>como la solución es única, y hemos encontrado una solución aunque sea por inspección, la solución es la correcta</em>).</p>
+<p>Es decir, la configuración equivalente, que verifica que el potencial en la superficie del CEP es <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span> es la siguiente:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S3_1_2.png"><img alt="plano CEP y carga.png" src="../_images/B2_S3_1_2.png" style="width: 350px;" /></a>
+</figure>
+<p>Elegimos el Sistema de Referencia de tal modo que el plano de CEP está en <span class="math notranslate nohighlight">\(x=0\)</span>, y la carga <span class="math notranslate nohighlight">\(q\)</span> está en <span class="math notranslate nohighlight">\(\vec{r}_q = d\vec{u_x}\)</span>, entonces la imagen <span class="math notranslate nohighlight">\(q'\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Phi_d(r \kern -0.2em = \kern -0.2em R) = A_1 R^1 P_1(\cos(\theta)) + A_3 R^3 P_3(\cos(\theta)) = K \cos(3\theta) \\
-\Phi_f(r \kern -0.2em = \kern -0.2em R) = \frac{B_1}{R^2} P_1(\cos(\theta)) + \frac{B_3}{R^4} P_3(\cos(\theta)) = K \cos(3\theta)
+q' &amp;= -q \\
+\vec{r}_{q'} &amp;= -d\vec{u_x}
 \end{split}\]</div>
-<p>…nos da el siguiente resultado</p>
-<div class="math notranslate nohighlight">
-\[
-A_1 = -\frac{3 K}{5 R}; \space
-A_3 = \frac{8 K}{5 R^3}; \space
-B_1 = -\frac{3}{5} K R^2; \space
-B_3 = \frac{8}{5} K R^4
-\]</div>
-<p>Por supuesto, la expresión de <span class="math notranslate nohighlight">\(\Phi_d\)</span> es válida dentro de la esfera y la de <span class="math notranslate nohighlight">\(\Phi_f\)</span> es válida fuera de la esfera.</p>
 </section>
 
     <script type="text/x-thebe-config">

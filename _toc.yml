@@ -13,6 +13,8 @@ parts:
   - file: pages/Problema_B1_S1_2
   - file: pages/Problema_B1_S1_3
   - file: pages/Problema_B1_S1_4
+  - file: pages/Problema_B1_S2_1
+  - file: pages/Problema_B1_S2_2
 # - file: pages/Problema_B2_3
 # - file: pages/Problema_B2_4
 # - file: pages/Problema_B2_6

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B1.S1.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B1.S2.2 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,11 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B1_S1_4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B1_S2_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B1.S2.1" href="Problema_B1_S2_1.html" />
-    <link rel="prev" title="Problema B1.S1.3" href="Problema_B1_S1_3.html" />
+    <link rel="prev" title="Problema B1.S2.1" href="Problema_B1_S2_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -179,9 +178,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_3.html">Problema B1.S1.3</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B1.S1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_4.html">Problema B1.S1.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_1.html">Problema B1.S2.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_2.html">Problema B1.S2.2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B1.S2.2</a></li>
 </ul>
 
     </div>
@@ -241,7 +240,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B1_S1_4.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B1_S2_2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -304,7 +303,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -315,11 +316,20 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B1.S1.4</h1>
+    <h1>Problema B1.S2.2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -329,50 +339,167 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b1-s1-4">
-<h1>Problema B1.S1.4<a class="headerlink" href="#problema-b1-s1-4" title="Link to this heading">#</a></h1>
-<p>Nos pide la fuerza que ejerce un hemisferio de carga sobre el otro, con la densidad de carga <span class="math notranslate nohighlight">\(\rho = \frac{Q}{(4/3)\pi a^3}\)</span> constante. Observamos que la fuerza que sufre una partícula, o un diferencial de carga en nuestro caso, es proporcional al campo eléctrico. Por lo tanto, <em>necesitamos conocer el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{S\rightarrow N}\)</span> que ejerce el hemisferio sur en un punto del hemisferio norte</em>. Una vez tuvieramos la expresión, podríamos integrar en todo el hemisferio norte para obtener la fuerza total.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{F}_N = \int_N \rho \vec{E}_{S\rightarrow N} dV_N
-\]</div>
-<p>Posiblemente, lo primero que observemos es que la fuerza debe tener dirección <span class="math notranslate nohighlight">\(z\)</span> por simetría y eliminar dos componentes. Sin embargo, calcular el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{S\rightarrow N}\)</span> que genera el hemisferio sur en cualquier punto del hemisferio norte es complicado.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{E}_{S\rightarrow N} = \frac{1}{4\pi\varepsilon_0}\int_S \frac{\rho}{R^2}\vec{u_R} dV_S
-\]</div>
-<p>La simetría esférica se puede utilizar para parametrizar de forma sencilla el diferencial de volumen de integración, pero para parametrizar el punto en el que se integra, es necesario utilizar otras coordenadas. La distancia <span class="math notranslate nohighlight">\(R = |\vec{r_N} - \vec{r_S}|\)</span> depende fuertemente del punto en el que se quiere integrar, y no resulta sencillo en ningún caso. (<strong>Notar que en lugar de utilizar <span class="math notranslate nohighlight">\(\vec{r}\)</span> y <span class="math notranslate nohighlight">\(\vec{r'}\)</span>, hemos utilizado los subíndices <span class="math notranslate nohighlight">\(N\)</span> y <span class="math notranslate nohighlight">\(S\)</span> para el punto donde se calcula el campo y el punto en el que está la fuente</strong>).</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Aunque a priori, este problema se puede plantear, y quizás resolver la expresión exacta, <em>vamos a aprovechar el principio de superposición para resolver el problema de forma sencilla</em>.</p>
-</div>
-<p>Para simplificar el cálculo, observemos que si añadiéramos el hemisferio norte, calcular el campo eléctrico en el hemisferio norte es sencillo por Gauss (<em>¡Comprobar!</em>).</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{E}_N = \vec{E}_{S\rightarrow N} + \vec{E}_{N\rightarrow N} = \frac{\rho \vec{r}}{3\varepsilon_0} = \frac{Q \vec{r}}{4\pi\varepsilon_0 a^3} = \frac{Q r}{4\pi\varepsilon_0 a^3}\vec{u_r}
-\]</div>
-<p>Nos preguntamos en este punto, <strong>¿Pero el campo eléctrico que afecta al hemisferio norte es sólo el del hemisferio sur?</strong> Sin duda que el hemisferio norte también genera su campo eléctrico. <strong>¿Qué efecto produce el campo eléctrico del hemisferio norte sobre el propio hemisfério norte?</strong> (<em>¡Pensar durante unos instantes!</em>)</p>
-<p>La respuesta proviene de un principio de mecánica: La fuerza que ejerce un cuerpo sobre sí mismo, debe ser nulo (<em>Si no fuera así, se movería sólo, sin cumplir la tercera ley de Newton</em>). Por lo tanto, la fuerza total que ejerce el hemisferio sur sobre el hemisferio norte es la misma que la fuerza que ejerce la esfera completa (<em>sur y norte</em>) sobre el hemisferio norte.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{F}_N = \int_N \rho \vec{E}_{S\rightarrow N} dV_N + \int_N \rho \vec{E}_{N\rightarrow N} dV_N = \int_N \rho \vec{E}_{N} dV_N
-\]</div>
-<p>Utilizando la expresión obtenida fácilmente por la ley de Gauss:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{F}_N = \int_N \rho \frac{\rho r}{3\varepsilon_0}\vec{u_r} dV_N
-\]</div>
-<p>Por la simetría en torno al eje <span class="math notranslate nohighlight">\(z\)</span> de la que seguro que nos hemos dado cuenta antes, nos quedamos solamente con la componente <span class="math notranslate nohighlight">\(z\)</span> de <span class="math notranslate nohighlight">\(\vec{u_r} = (...,...,\cos\theta)\)</span>. Usando el diferencial de volumen en el hemisferio norte:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b1-s2-2">
+<h1>Problema B1.S2.2<a class="headerlink" href="#problema-b1-s2-2" title="Link to this heading">#</a></h1>
+<p>Este problema es una aplicación inmediata de las expresiones de los términos monopolar, dipolar y cuadripolar:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-dV_N = r^2 \sin \theta dr d\theta d\varphi \\
-r \in [0,a] \qquad \theta \in [0, \pi/2] \qquad \varphi \in [0,2\pi]
+Q_T &amp;= \int_{V'} \rho(\vec{r'}) dV' \\
+\vec{p} &amp;= \int_{V'} \vec{r'} \rho(\vec{r'}) dV' \\
+\overleftrightarrow{Q} &amp;= \int_{V'} \left(3\vec{r'}\vec{r'} - r'^2 \overleftrightarrow{I}\right) \rho(\vec{r'}) dV'
 \end{split}\]</div>
-<p>Por lo que, finalmente:</p>
+<p>Las dos primeras son aplicación inmediata de expresiones conocidas, solamente es necesario tener cuidado eligiendo los elementos de las integrales. El tercero es menos común, pero no es tan distinto: Es una matriz simétrica, por lo que lo que tenemos que hacer es poner la expresión para los 6 elementos distintos en la base más apropiada, que va a ser la cartesiana, y obtener las seis integrales. En cartesianas, siendo <span class="math notranslate nohighlight">\(\vec{r'} = (x',y',z') = (x'_1,x'_2,x'_3)\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-F_{Nz} = \int_{r=0}^{r=a} \int_{\theta=0}^{\theta=\pi/2)} \int_{\varphi=0}^{\varphi=2\pi} \frac{\rho^2}{3\varepsilon_0} r^3 \cos \theta \sin \theta dr d\theta d\varphi = \frac{\rho^2 \pi a^4}{12 \varepsilon_0} = \frac{3 Q^2}{64 \pi a^2\varepsilon_0}
+Q_{ij} = \int_{V'} \left(3x'_ix'_j - r'^2 \delta_{ij}\right) \rho(\vec{r'}) dV'
 \]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>El momento cuadripolar es una matriz. Podría elegirse otra base, pero dado que la base varía con respecto al punto en coordonadas esféricas y cilíndricas, los términos de la matríz también, lo que supone una complejidad innecesaria y que dificulta interpretar el resultado.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Veamos que el momento dipolar <span class="math notranslate nohighlight">\(\vec{p}\)</span> es un vector, pero en realidad sólo lo usamos dentro de una expresión multiplicado por el vector de posición. Por ejemplo, para el potencial <span class="math notranslate nohighlight">\(\Phi\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi = \frac{1}{4\pi\varepsilon_0} \frac{\vec{u_r}\cdot\vec{p}}{r^2}
+\]</div>
+<p>En este sentido, el momento dipolar se puede entender como una función que siempre se aplica sobre un vector, y que devuelve un escalar. El momento cuadripolar es similar, solo que se aplica sobre el vector de posición dos veces.</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi = \frac{1}{4\pi\varepsilon_0} \frac{1}{2} \frac{\vec{u_r}\overleftrightarrow{Q}\vec{u_r}}{r^3} = \frac{1}{4\pi\varepsilon_0} \frac{1}{2} \sum_{i,j=1}^3 \frac{x_iQ_{ij}x_j}{r^5}
+\]</div>
+</div>
+<section id="apartado-a">
+<h2>Apartado <span class="math notranslate nohighlight">\(a)\)</span><a class="headerlink" href="#apartado-a" title="Link to this heading">#</a></h2>
+<p>Al tratarse de cargas puntuales, utilizamos las expresiones equivalentes en términos de sumatorias (<em>Es útil tener soltura pasando las expresiones integrales a sumatorias cuando sea necesario</em>):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q_T &amp;= \sum_{k=1}^N q_k\\
+\vec{p} &amp;= \sum_{k=1}^N \vec{r'_k} q_k \\
+\overleftrightarrow{Q} &amp;= \sum_{k=1}^N \left(3\vec{r'_k}\vec{r'_k} - r_k'^2 \overleftrightarrow{I}\right) q_k
+\end{split}\]</div>
+<p>Observemos que he preferido utilizar <span class="math notranslate nohighlight">\(k\)</span> para la sumatoria, porque tenemos los índices <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span> para los índices de las coordenadas cartesianas en el momento cuadripolar. Las tres cargas de este apartado van a ser numeradas como en la siguiente figura:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B1_S2_2_1.png"><img alt="cargas puntuales.png" src="../_images/B1_S2_2_1.png" style="width: 250px;" /></a>
+</figure>
+<p>En este caso, ya solo nos queda tener cuidado con los índices y obtener los momentos:</p>
+<div class="math notranslate nohighlight">
+\[
+Q_T = q_1 + q_2 + q_3 = 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\vec{p} = q_1 \vec{r'_1} + q_2 \vec{r'_2} + q_3 \vec{r'_3} = q (a \vec{u_z}) -2q (\vec{0}) + q (-a \vec{u_z}) = \vec{0}
+\]</div>
+<p>Para el momento cuadripolar necesitamos tener cuidado con los índices: <span class="math notranslate nohighlight">\(k\)</span> sobre las partículas, e <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span> sobre las coordenadas cartesianas, es decir, <span class="math notranslate nohighlight">\(x_{ki}\)</span> y <span class="math notranslate nohighlight">\(x_{kj}\)</span> son las coordenadas <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span> de la carga <span class="math notranslate nohighlight">\(k\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+Q_{ij} = \sum_{k=1}^3 \left(3x'_{ki}x'_{kj} - r'^2 \delta_{ij}\right) q_k
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Visto de otro modo, que quizás se hace más sencillo:
+$<span class="math notranslate nohighlight">\(
+\vec{r'_k} = (x'_k,y'_k,z'_k) = (x'_{k1},x'_{k2},x'_{k3})
+\)</span>$</p>
+</div>
+<p>Por lo tanto:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q_{11} &amp;= q_1 (3x_{11}'^2-(x_{11}'^2+x_{12}'^2+x_{13}'^2)) + q_2 (3x_{21}'^2-(x_{21}'^2+x_{22}'^2+x_{23}'^2))  + q_3 (3x_{31}'^2-(x_{31}'^2+x_{32}'^2+x_{13}'^2))  \\
+Q_{12} &amp;= Q_{21} = q_1 (3x'_{11}x'_{12}) + q_2 (3x'_{21}x'_{22}) + q_3 (3x'_{31}x'_{32}) \\
+...
+\end{split}\]</div>
+<p>(<em>Usar unos instantes para verificar estas expresiones</em>)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Estas expresiones, quizás se entiendan de una forma más sencilla así:
+$<span class="math notranslate nohighlight">\(
+Q_{11} &amp;= q_1 (3x_1'^2-(x_1'^2+y_1'^2+z_1'^2)) + q_2 (3x_2'^2-(x_2'^2+y_2'^2+z_2'^2))  + q_3 (3x_3'^2-(x_3'^2+y_3'^2+z_3'^2))  \\
+Q_{12} &amp;= Q_{21} = q_1 (3x'_1y'_1) + q_2 (3x'_2y'_2) + q_3 (3x'_3y'_3) \\
+...
+\)</span>$</p>
+<p>(<em>Verificar que son equivalentes</em>)</p>
+</div>
+<p>De esta forma,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q_{11} &amp;= q(0-a^2) - 2q(0-0) + q(0-a^2) = -2qa^2 \\
+Q_{22} &amp;= q(0-a^2) - 2q(0-0) + q(0-a^2) = -2qa^2 \\
+Q_{33} &amp;= q(3a^2-a^2) - 2q(0-0) + q(3a^2-a^2) = 4qa^2 \\
+Q_{12} &amp;= Q_{21} = Q_{13} = Q_{31} = Q_{23} = Q_{32} = q(0) - 2q(0) + q(0) = 0
+\end{split}\]</div>
+<p>Con esto, sabemos que el <strong>potencial electrostático <span class="math notranslate nohighlight">\(\Phi\)</span> a grandes distancias</strong> de la configuración de carga, tiene la expresión aproximada:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi (\vec{r}) = \frac{1}{4\pi\varepsilon_0} \frac{1}{2} \sum_{i,j=1}^3 \frac{x_iQ_{ij}x_j}{r^5} + ...
+\]</div>
+<p>más un término de error que decae con la distancia como <span class="math notranslate nohighlight">\(1/r^4\)</span> o más rápidamente.</p>
+</section>
+<section id="apartado-b">
+<h2>Apartado <span class="math notranslate nohighlight">\(b)\)</span><a class="headerlink" href="#apartado-b" title="Link to this heading">#</a></h2>
+<p>Este apartado pide los momentos monopolar, dipolar y cuadripolar de una configuración esférica sin simetría:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma(\theta') = \sigma_0 \cos(\theta')
+\]</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B1_S2_2_2.png"><img alt="carga esferica sin simetría.png" src="../_images/B1_S2_2_2.png" style="width: 300px;" /></a>
+</figure>
+<p>Al tratarse de una carga superficial, utilizamos las expresiones de las integrales en forma de integrales de superficie:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q_T &amp;= \int_{S'} \sigma(\vec{r'}) dS' \\
+\vec{p} &amp;= \int_{S'} \vec{r'} \sigma(\vec{r'}) dS' \\
+\overleftrightarrow{Q} &amp;= \int_{S'} \left(3\vec{r'}\vec{r'} - r'^2 \overleftrightarrow{I}\right) \sigma(\vec{r'}) dS'
+\end{split}\]</div>
+<p>La forma esférica nos sugiere que conviene parametrizar en coordenadas esféricas. Los elementos que aparecen en las integrales son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sigma(\vec{r'}) &amp;= \sigma_0 \cos\theta' \\
+dS' &amp;= a \sin\theta' d\theta' d\varphi' \\
+\vec{r'} &amp;= a(\sin\theta' \cos\varphi', \sin\theta' \sin\varphi', \cos\theta') \\
+r'^2 &amp;= a^2 
+\end{split}\]</div>
+<p>Con esto, <span class="math notranslate nohighlight">\(Q_T = 0\)</span> y:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{p} = \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'=2\pi} a(\sin\theta' \cos\varphi', \sin\theta' \sin\varphi', \cos\theta') \sigma_0 \cos\theta' a \sin\theta' d\theta' d\varphi'
+\]</div>
+<p>Realizando las tres integrales de las componentes por separado, vemos que las integrales en las coordenadas <span class="math notranslate nohighlight">\(x\)</span> e <span class="math notranslate nohighlight">\(y\)</span> tienen la integral en <span class="math notranslate nohighlight">\(\varphi'\)</span> de <span class="math notranslate nohighlight">\(\int_0^{2\pi}\sin\varphi' d\varphi'\)</span> y <span class="math notranslate nohighlight">\(\int_0^{2\pi}\cos\varphi' d\varphi'\)</span>, ambas nulas. Sin embargo, la coordenada <span class="math notranslate nohighlight">\(z\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+p_z = \sigma_0 a^2 \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'=2\pi} \cos^2\theta' \sin\theta' d\theta' d\varphi' = \frac{4}{3}\pi\sigma_0a^3
+\]</div>
+<p>Para el momento cuadripolar, observamos que necesitamos los siguientes elementos en las integrales:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x_1'^2 &amp;= x'^2 = a^2 \sin^2\theta' \cos^2\varphi' \\
+x_2'^2 &amp;= y'^2 = a^2 \sin^2\theta' \sin^2\varphi' \\
+x_3'^2 &amp;= z'^2 = a^2 \cos^2\theta' \\
+r'^2 &amp;= a^2 \\
+x'_1x'_2 &amp;= x'y' = a^2 (\sin\theta' \cos\varphi' \sin\theta' \sin\varphi') = a^2 (\sin^2 \theta' \cos\varphi' \sin\varphi') \\
+x'_1x'_3 &amp;= x'z' = a^2 (\sin\theta' \cos\varphi' \cos\theta') \\
+x'_2x'_3 &amp;= y'z' = a^2 (\sin\theta' \sin\varphi' \cos\theta') \\
+\end{split}\]</div>
+<p>Con lo que:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q_{11} &amp;= \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'=2\pi} \left(3x'^2 - r'^2 \right) \sigma_0 \cos\theta' a \sin\theta' d\theta' d\varphi' \\
+Q_{22} &amp;= \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'=2\pi} \left(3y'^2 - r'^2 \right) \sigma_0 \cos\theta' a \sin\theta' d\theta' d\varphi' \\
+Q_{22} &amp;= \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'=2\pi} \left(3y'^2 - r'^2 \right) \sigma_0 \cos\theta' a \sin\theta' d\theta' d\varphi' \\
+Q_{12} &amp;= Q_{21} = \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'=2\pi} \left(3x'y' \right) \sigma_0 \cos\theta' a \sin\theta' d\theta' d\varphi' \\
+Q_{13} &amp;= Q_{31} = \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'=2\pi} \left(3x'z' \right) \sigma_0 \cos\theta' a \sin\theta' d\theta' d\varphi' \\
+Q_{23} &amp;= Q_{32} = \int_{\theta'=0}^{\theta'=\pi}\int_{\varphi'=0}^{\varphi'=2\pi} \left(3y'z' \right) \sigma_0 \cos\theta' a \sin\theta' d\theta' d\varphi' \\
+\end{split}\]</div>
+<p>Realizando todas las integrales, demostramos que son todas nulas. Por lo tanto, el <strong>potencial electrostático <span class="math notranslate nohighlight">\(\Phi\)</span> a grandes distancias</strong> de la configuración de carga, tiene la expresión aproximada:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi (\vec{r}) = \frac{1}{4\pi\varepsilon_0} \frac{\vec{u_r}\cdot\vec{p}}{r^2} + ...
+\]</div>
+<p>más un término de error que decae con la distancia como <span class="math notranslate nohighlight">\(1/r^4\)</span> o más rápidamente.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -406,22 +533,13 @@ F_{Nz} = \int_{r=0}^{r=a} \int_{\theta=0}^{\theta=\pi/2)} \int_{\varphi=0}^{\var
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problema_B1_S1_3.html"
+       href="Problema_B1_S2_1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B1.S1.3</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Problema_B1_S2_1.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Problema B1.S2.1</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -429,6 +547,23 @@ F_{Nz} = \int_{r=0}^{r=a} \int_{\theta=0}^{\theta=\pi/2)} \int_{\varphi=0}^{\var
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
