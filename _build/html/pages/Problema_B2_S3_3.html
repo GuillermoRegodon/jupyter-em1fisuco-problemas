@@ -182,6 +182,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_4.html">Problema B1.S1.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_1.html">Problema B1.S2.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_2.html">Problema B1.S2.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_1.html">Problema B2.S3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_2.html">Problema B2.S3.2</a></li>
 </ul>
 
     </div>
@@ -338,12 +340,12 @@
 </div>
 <p>Empezamos por lo que sí sabemos seguro: La imagen de una carga puntual <span class="math notranslate nohighlight">\(q\)</span> a una distancia <span class="math notranslate nohighlight">\(d\)</span> del centro de una esfera de CEP de radio <span class="math notranslate nohighlight">\(a\)</span> (<span class="math notranslate nohighlight">\(d&gt;a\)</span>) es otra carga <span class="math notranslate nohighlight">\(q' = -q\frac{a}{d}\)</span> a una distancia <span class="math notranslate nohighlight">\(d'=\frac{a^2}{d}\)</span>.</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/q_puntual.png"><img alt="q_puntual" src="../_images/q_puntual.png" style="width: 610px;" /></a>
+<a class="reference internal image-reference" href="../_images/q_puntual.png"><img alt="q_puntual" src="../_images/q_puntual.png" style="width: 350px;" /></a>
 <figcaption>
 <p><span class="caption-text">Imagen de una carga puntual frente a una esfera de CEP.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Ahora descomponemos el dipolo en <em>dos cargas separadas una distancia <span class="math notranslate nohighlight">\(\Delta\)</span></em>, tal que <span class="math notranslate nohighlight">\(\lim\limits_{\Delta \rightarrow 0} q \Delta = p\)</span>:</p>
+<p>Ahora descomponemos el dipolo en <em>dos cargas separadas una distancia <span class="math notranslate nohighlight">\(\Delta\)</span></em>, tal que <span class="math notranslate nohighlight">\(q \Delta = p\)</span>:</p>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../_images/dipolo_eq.png"><img alt="dipolo_eq" src="../_images/dipolo_eq.png" style="width: 260px;" /></a>
 <figcaption>
@@ -352,7 +354,7 @@
 </figure>
 <p>Veamos cual sería la imagen de las dos cargas puntuales equivalentes al dipolo.</p>
 <figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/dipolo_imagen.png"><img alt="dipolo_imagen" src="../_images/dipolo_imagen.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/dipolo_imagen.png"><img alt="dipolo_imagen" src="../_images/dipolo_imagen.png" style="width: 350px;" /></a>
 <figcaption>
 <p><span class="caption-text">Imagen de las cargas equivalentes al dipolo.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
@@ -365,6 +367,17 @@ d_1 = \frac{a^2}{d}\\
 q_2 = -q\frac{a}{d+\Delta}\\
 d_2 = \frac{a^2}{d+\Delta}
 \end{split}\]</div>
+<p>Estas dos cargas parecen un dipolo, pero si nos fijamos en detalle, las dos cargas no son exactamente iguales, por lo que no es solamente un dipolo. Podemos utilizar <strong>la configuración con estas dos cargas y realizar el análisis multipolar</strong>, para comprobar <strong>cuál es el valor del dipolo imagen</strong>.</p>
+<p>El término monopolar imagen, llamémoslo <span class="math notranslate nohighlight">\(Q'_T\)</span>, será la suma de las cargas:</p>
+<div class="math notranslate nohighlight">
+\[
+Q'_T = q_1+q_2 = q \frac{a}{d} - q \frac{a}{d+\Delta} = q \frac{a}{d} - q \frac{a}{d^2}(d-\Delta) = q\frac{a\Delta}{d^2} = p \frac{a}{d^2}
+\]</div>
+<p>Vemos que el término monopolar no es despreciable, sino que es del orden de <span class="math notranslate nohighlight">\(q\)</span>, <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(d\)</span>. Respecto al término dipolar <span class="math notranslate nohighlight">\(\vec{p'}\)</span> de la configuración de las imágenes (<em>Vamos a poner el eje <span class="math notranslate nohighlight">\(z\)</span> en la linea recta que une las cargas y el centro de la esfera</em>):</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{p'} = q_1 \vec{r_1} + q_2 \vec{r_2} = q_1 d_1 \vec{u_z} + q_2 d_2 \vec{u_z} = \left( q \frac{a^3}{d^2} - q \frac{a^3}{(d+\Delta)^2} \right)
+\]</div>
 <p>Solo nos falta <strong>tomar el límite</strong> para recuperar el dipolo <span class="math notranslate nohighlight">\(\vec{p}\)</span> y obtener la configuración de las cargas imágenes. Lo primero que nos llama la atención, es que <strong>las dos cargas no se compensan exactamente</strong>. Podemos calcular cuál es la suma de las dos cargas cuando tomamos el límite de <span class="math notranslate nohighlight">\(\lim\limits_{\Delta \rightarrow 0}\)</span> (<em>Este es un límite de tipo <span class="math notranslate nohighlight">\(0\cdot\infty\)</span>, ya que <span class="math notranslate nohighlight">\(q \rightarrow \infty\)</span> cuando <span class="math notranslate nohighlight">\(\Delta \rightarrow 0\)</span>, que se resuelve modificando algebraicamente la expresión</em>).</p>
 <div class="math notranslate nohighlight">
 \[

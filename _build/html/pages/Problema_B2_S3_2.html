@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B2.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B2.S3.2 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,9 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S4_4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S3_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Problema B2.S3.1" href="Problema_B2_S3_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +116,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -175,7 +174,7 @@
 <li class="toctree-l1"><a class="reference internal" href="0-repaso_gauss_ampere.html">Repaso del uso de las simetrías para resolver problemas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Superposición</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_3.html">Problema B1.S1.3</a></li>
@@ -183,7 +182,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_1.html">Problema B1.S2.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_2.html">Problema B1.S2.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_1.html">Problema B2.S3.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_2.html">Problema B2.S3.2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B2.S3.2</a></li>
 </ul>
 
     </div>
@@ -243,7 +242,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B2_S4_4.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B2_S3_2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -319,7 +318,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B2.4</h1>
+    <h1>Problema B2.S3.2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -329,7 +328,8 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efectos-mecanicos-sobre-un-dipolo">Efectos mecánicos sobre un dipolo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuerza-nula-sobre-la-carga">Fuerza nula sobre la carga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo">Trabajo</a></li>
 </ul>
             </nav>
         </div>
@@ -341,137 +341,107 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-4">
-<h1>Problema B2.4<a class="headerlink" href="#problema-b2-4" title="Link to this heading">#</a></h1>
-<p>Para obtener la imagen de <strong>una corona superficial de carga</strong> frente a una esfera de <strong>CEP (Conductor Eléctrico Perfecto)</strong> podemos obtener la imagen de <strong>cada trozo diferencial</strong> de corona, que podemos considerar como una carga puntual de valor conocido, <em>tendrá como imagen otra carga puntual de valor conocido</em>. El diagrama del problema es el siguiente:</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/saturn.png"><img alt="saturn" src="../_images/saturn.png" style="width: 410px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama del problema, con la corona de densidad de carga constante alrededor de la esfera de CEP.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Cada trozo de corona de carga va a tener <em>una imagen dentro de la esfera de CEP</em>. En conjunto, los trozos imagen tienen una distribución de <strong>otra corona de carga</strong> dentro de la esfera.</p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/saturn_image.png"><img alt="saturn_image" src="../_images/saturn_image.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama de la corona de densidad de carga constante y la corona imagen, de densidad desconocida, alrededor de la esfera de CEP.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-s3-2">
+<h1>Problema B2.S3.2<a class="headerlink" href="#problema-b2-s3-2" title="Link to this heading">#</a></h1>
+<p>Cuando el conductor eléctrico perfecto es una esfera, el problema pierde la simetría de reflexión. Sin embargo, el concepto detrás de la imagen es el mismo. Vamos a revisar el problema suponiendo que la esfera estuviera conectada a tierra:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>La clave del problema es poner un trozo diferencial de la <strong>corona externa</strong> en función de sus coordenadas, hacer lo mismo con un trozo diferencial de la <strong>corona imagen</strong>, y relacionarlas mediante la teoría bien establecida de la imagen de una carga puntual.</p>
-</div>
-<p>Empezamos la teoría bien establecida: La imagen de una carga puntual <span class="math notranslate nohighlight">\(q\)</span> a una distancia <span class="math notranslate nohighlight">\(d\)</span> del centro de una esfera de CEP de radio <span class="math notranslate nohighlight">\(a\)</span> (<span class="math notranslate nohighlight">\(d&gt;a\)</span>) es otra carga <span class="math notranslate nohighlight">\(q' = -q\frac{a}{d}\)</span> a una distancia <span class="math notranslate nohighlight">\(d'=\frac{a^2}{d}\)</span>.</p>
-<figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/q_puntual.png"><img alt="q_puntual" src="../_images/q_puntual.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text">Imagen de una carga puntual frente a una esfera de CEP.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Un trozo diferencial de corona externa, en función de <strong>sus coordenadas en polares</strong>, está a una <strong>distancia</strong> <span class="math notranslate nohighlight">\(d = r\)</span> y tiene una <strong>carga</strong> <span class="math notranslate nohighlight">\(q = \sigma \space dS = \sigma \space r dr d\theta\)</span> por lo que su imagen tiene unos valores:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-q' &amp;= -q \frac{a}{d} = -\sigma \space r dr d\theta \frac{a}{r} \\
-r' &amp;= \frac{a^2}{r}
-\end{split}\]</div>
-<p>Por otra parte, la <strong>carga de la imagen</strong> en función de <strong>sus propias coordenadas en polares</strong> es:</p>
-<div class="math notranslate nohighlight">
-\[
-q' = \sigma' \space r' dr' d\theta'
-\]</div>
-<p>Por lo que:</p>
-<div class="math notranslate nohighlight">
-\[
--\sigma \space dr d\theta a = \sigma' \space r' dr' d\theta'
-\]</div>
-<p>Identificamos <span class="math notranslate nohighlight">\(\theta' = \theta\)</span>, de forma que las cargas imagen no se superponen. Ya tenemos la expresión de <span class="math notranslate nohighlight">\(r'\)</span> en función de <span class="math notranslate nohighlight">\(r\)</span> en (1), por lo que <em>solo nos queda expresar <span class="math notranslate nohighlight">\(dr'\)</span> en función de <span class="math notranslate nohighlight">\(r\)</span> (y <span class="math notranslate nohighlight">\(dr\)</span>)</em>. Diferenciando la expresión (1) obtenida:</p>
-<div class="math notranslate nohighlight">
-\[
-dr' = -\frac{a^2}{r^2} dr
-\]</div>
-<p>Dado que el área debe ser positiva, cogemos el valor absoluto de esta expresión y sustituimos en la expresión (3):</p>
-<div class="math notranslate nohighlight">
-\[
-\sigma' = - \sigma \frac{r^3}{a^3} = - \sigma \frac{a^3}{r'^3} 
-\]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Comprobamos que el área de la imagen <strong>no es constante</strong>, sino que depende de la coordenada polar <span class="math notranslate nohighlight">\(r'\)</span>.</p>
-</div>
-<p>Esta sería la solución si la esfera de CEP estuviera conectada a tierra, pero el enunciado indica que <strong>la esfera está aislada y con una carga <span class="math notranslate nohighlight">\(Q\)</span></strong>. Para calcular el potencial, tenemos que encontrar <strong>la carga imagen restante</strong>, <span class="math notranslate nohighlight">\(Q_c\)</span>, y que debemos colocar en el centro, para que el potencial de la esfera siga siendo constante.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Cada carga puntual con su imagen, deja la esfera con potencial nulo. Por el principio de superposición, <em>podemos sumar tantas cargas puntuales más sus imagenes, que dejan la esfera con potencial nulo</em> (Es lo que hemos hemos con la corona de carga). La unica carga imagen que deja <em>el potencial constante en la esfera de CEP es una carga imagen puntual en el centro de la esfera</em>.</p>
-</div>
-<p>La carga restante es <span class="math notranslate nohighlight">\(Q_c = Q - Q_{imagen}\)</span>, que <em>podemos obtener por integración</em>, ya que conocemos la densidad superficial (que no es constante) en función de sus coordenadas <span class="math notranslate nohighlight">\(r'\)</span> y <span class="math notranslate nohighlight">\(\theta'\)</span>. Por último, <em>podemos conocer el potencial y el campo eléctrico de la configuración de CEP más corona de carga constante calculando y sumando el potencial y el campo eléctrico de la corona de carga más su imagen más la carga restante en el centro de la esfera</em>.</p>
-<section id="efectos-mecanicos-sobre-un-dipolo">
-<h2>Efectos mecánicos sobre un dipolo<a class="headerlink" href="#efectos-mecanicos-sobre-un-dipolo" title="Link to this heading">#</a></h2>
-<p>Los efectos mecánicos sobre un dipolo, es decir, <strong>la fuerza y el momento angular sobre el dipolo depende del campo eléctrico</strong> a través de las siguientes expresiones:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{F} = (\vec{p} \cdot \nabla) \vec{E} \\
-\vec{M} = \vec{p} \times \vec{E}
-\end{split}\]</div>
-<p>En principio, <strong>conociendo la distribución de cargas se puede calcular el campo electrico <span class="math notranslate nohighlight">\(\vec{E}\)</span></strong> (aunque no siempre sea fácil). En este problema, ya hemos resuelto la dicribución de cargas, por lo que solo queda calcular el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>. Nos piden el efecto mecánico (fuerza y momento) sobre <strong>un dipolo colocado en el eje z y orientado en la dirección <span class="math notranslate nohighlight">\(z\)</span></strong></p>
-<div class="math notranslate nohighlight">
-\[
-\vec{p} = p \vec{u_z} 
-\]</div>
 <ul class="simple">
-<li><p>Empezamos por <strong>el momento resultante que es nulo</strong>: En el eje <span class="math notranslate nohighlight">\(z\)</span>, el campo electrico tiene que tener dirección <span class="math notranslate nohighlight">\(z\)</span>, por la simetría del problema, por lo que el momento <span class="math notranslate nohighlight">\(\vec{M} = \vec{p} \times \vec{E} = (p \vec{u_z}) \times (E_z \vec{u_z}) = 0\)</span>.</p></li>
-<li><p><strong>La fuerza neta es la contribución de tres términos</strong>: Hay que sumar el campo de la corona externa (<span class="math notranslate nohighlight">\(\sigma = cte\)</span>), el campo de la corona imagen (<span class="math notranslate nohighlight">\(\sigma' \neq cte\)</span>) y la carga central <span class="math notranslate nohighlight">\(Q_c\)</span>. El operador <span class="math notranslate nohighlight">\((\vec{p} \cdot \nabla)\)</span> debe ser particularizado con cuidado para el problema. Teniendo en cuenta que el campo electrico solo tiene componente <span class="math notranslate nohighlight">\(z\)</span>:</p></li>
+<li><p>Queremos sustituir el CEP por una configuración de cargas que permita que el potencial en la superficie del CEP sea <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>.</p></li>
+</ul>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S3_2_1.png"><img alt="esfera CEP y carga.png" src="../_images/B2_S3_2_1.png" style="width: 350px;" /></a>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Recordemos que un conductor eléctrico perfecto (<em>CEP</em>) tiene las siguiente características, derivadas de la libertad de movimiento de las cargas dentro del CEP.</p>
+<ul class="simple">
+<li><p>El CEP impone un potencial constante en su superficie (<em>y en general en todo su volumen</em>).</p></li>
+<li><p>El campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{CEP}\)</span> en la superficie del CEP es perpendicular (<em>o nulo</em>) a dicha superficie. Está garantizado si el potencial el constante en la superficie.</p></li>
+<li><p>La densidad de carga superficial es la que permite cumplir estas dos condiciones. Puede ser cualquiera, dependiendo de las cargas fuera del conductor. Solamente se puede calcular a posteriori, después de conocer el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{CEP}\)</span> en la superficie del CEP.</p></li>
+</ul>
+</div>
+<p>Sabemos que la imagen de una carga <span class="math notranslate nohighlight">\(q\)</span> a una distancia <span class="math notranslate nohighlight">\(d\)</span> del centro de la esfera de CEP de radio <span class="math notranslate nohighlight">\(a\)</span> tiene las siguientes características:</p>
+<ul class="simple">
+<li><p>La carga imagen es una carga puntual en la misma linea que pasa por la carga original y por el centro de la esfera de CEP.</p></li>
+<li><p>El valor de la carga imagen y la distancia con respecto al centro de la esfera son:</p></li>
 </ul>
 <div class="math notranslate nohighlight">
-\[
-(\vec{p} \cdot \nabla) \vec{E} = ((p \vec{u_z}) \cdot \nabla) E_z \vec{u_z} = p_z \frac{\partial E_z}{\partial z} \vec{u_z} = -p_z \frac{\partial^2 \Phi}{\partial z^2} \vec{u_z}
-\]</div>
-<p>(<em>He utilizado la definición de <span class="math notranslate nohighlight">\(\vec{E} = - \nabla \Phi\)</span>, de forma que podemos calcular el que nos parezca más fácil. Típicamente el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> es más fácil, aunque no siempre</em>)</p>
+\[\begin{split}
+q' &amp;= -q \frac{a}{d} \\
+d' &amp;= \frac{a^2}{d}
+\end{split}\]</div>
+<p>Por lo tanto, la imagen es la siguiente:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S3_2_2.png"><img alt="esfera CEP y carga.png" src="../_images/B2_S3_2_2.png" style="width: 350px;" /></a>
+</figure>
+</div>
+<p>Teniendo este problema revisado, veamos las dos variaciones más inmediatas que se pueden realizar sobre este problema, que están muy relacionadas entre si:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>De los tres términos, dos son sencillos de obtener, ya que son integrales que hemos hecho otras veces:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-&amp;\Phi_{corona} = \frac{\sigma}{2 \varepsilon_0} \left( \sqrt{z^2 + R_2^2} - \sqrt{z^2 + R_1^2} \right), \\
-&amp;\Phi_{Q_c} = \frac{Q_c}{4 \pi \varepsilon_0 z}
-\end{split}\]</div>
-<p>El otro término es el de <strong>una corona con <span class="math notranslate nohighlight">\(\sigma \neq cte\)</span></strong>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\sigma' &amp;= -\sigma \frac{a^3}{r'^3}, \\
-\vec{r} &amp;= z \vec{u_z},\\
-\vec{r'} &amp;= (r'\cos{\phi'},r'\sin{\phi'},0),\\ 
-|{\vec{r}-\vec{r'}}| &amp;= \sqrt{r'^2 + z^2},
-\end{split}\]</div>
-<p>con los límites de integración <span class="math notranslate nohighlight">\(r' \in [R_2', R_1'] = [\frac{a^2}{R_2}, \frac{a^2}{R_1}]\)</span> y <span class="math notranslate nohighlight">\(\phi' \in [0, 2 \pi]\)</span>. Con lo que la integral queda:</p>
+<ul class="simple">
+<li><p>La esfera de carga tiene un potencial <span class="math notranslate nohighlight">\(V \neq 0\)</span> y una carga neta <span class="math notranslate nohighlight">\(Q\)</span>.</p></li>
+</ul>
+<p>Vamos a ver que los dos valores están muy relacionados entre si, y que la elección de cuál es el dato y cuál se calcula a partir del otro depende del enunciado.</p>
+<p>Sabemos que la única imagen que permite que la esfera de carga este a potencial nulo es la imagen <span class="math notranslate nohighlight">\(q'\)</span>. <strong>¡No existe imagen puntual que permita que la esfera de CEP tenga otro potencial!</strong>. Sin embargo, gracias al <strong>Principio de Superposición</strong> podemos añadir otra configuración de cargas que permita que la esfera de carga esté a potencial <span class="math notranslate nohighlight">\(V \neq 0\)</span> constante (<em>Pensar en qué condición debe cumplir la configuración de cargas imagen para conseguir que <span class="math notranslate nohighlight">\(\Phi(r{=}a)=cte\)</span></em>). Elegimos por simplicidad la más sencilla, una carga puntual en el origen, de valor <span class="math notranslate nohighlight">\(Q_c\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S3_2_3.png"><img alt="esfera CEP y carga.png" src="../_images/B2_S3_2_3.png" style="width: 350px;" /></a>
+</figure>
+<p>Por lo tanto, el valor del potencial en la superficie de la esfera de CEP es la suma del potencial que generan la carga original y su imagen, es decir 0, más el potencial que genera la carga central <span class="math notranslate nohighlight">\(Q_c\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi_{imagen} = \frac{1}{4 \pi \varepsilon_0} \int_{s`=R_2'}^{s'=R_1'} \int_{\phi' = 0}^{\phi' = 2 \pi} \frac{-\sigma \frac{a^3}{r'^3}}{\sqrt{r'^2 + z^2}} r'dr'd\phi'
+V = \Phi(r{=}a) = \Phi(r{=}a)_q + \Phi(r{=}a)_{-q} + \Phi(r{=}a)_{Q_c} = 0 + \frac{1}{4\pi\varepsilon_0}\frac{Q_c}{a}
 \]</div>
-<p>Esta integral no es plato de buen gusto, pero se puede resolver realizando algunos cambios de variable. Primero, para quitar el denominador, podemos usar <span class="math notranslate nohighlight">\(\frac{r'}{z} = \sinh{x}\)</span> de forma que queda:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi_{imagen} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{dx}{\sinh^2{x}}
-\]</div>
-<p>Esta integral parece más dificil, pero si tenemos en cuenta que <span class="math notranslate nohighlight">\(\sinh{x} = \frac{e^x-e^{-x}}{2}\)</span> podemos poner:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi_{imagen} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 dx}{(e^x-e^{-x})^2} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 e^{2x} dx}{(e^{2x}-1)^2} 
-\]</div>
-<p>Por lo que ahora podemos usar el cambio de variable <span class="math notranslate nohighlight">\(y = e^{2x} - 1\)</span>, <span class="math notranslate nohighlight">\(dy = 2 e^{2x} dx\)</span>, resultando en una integral inmediata. Después de hacer la sustitución y posteriormente sustituir a la inversa:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\int \frac{4 e^{2x} dx}{(e^{2x}-1)^2} &amp;= \int \frac{2 dy}{y^2} = -\frac{2}{y} \\
-&amp;= -\frac{2}{e^{2x} - 1} = -\frac{2}{e^x(e^x-e^{-x})} \\
-&amp;= -\frac{1}{(\sinh{x} + \cosh{x}) \sinh{x}} \\
-&amp;= -\frac{1}{   \left(   \frac{r'}{z} + \sqrt{1 + (\frac{r'}{z})^2  } \right)  (\frac{r'}{z})   }
-\end{split}\]</div>
-<p>Por lo tanto, se puede obtener la expresión:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi_{imagen} = \frac{\sigma a^3}{2 \varepsilon_0} \frac{1}{r'(r'+ \sqrt{r'^2 + z^2})}|_{r' = R'_2}^{r' = R'_1}
-\]</div>
-<p>Finalmente, si quisieramos desarrollar una expresión final, faltaría sustituir y derivar dos veces con respecto a <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<ul class="simple">
+<li><p>Si el problema nos dice que la esfera de CEP está conectada a una fuente de alimentación de valor <span class="math notranslate nohighlight">\(V\)</span>, el potencial de la esfera es el dato y la carga central <span class="math notranslate nohighlight">\(Q_c\)</span> se puede obtener a partir de dicho valor <span class="math notranslate nohighlight">\(V\)</span>.</p></li>
+<li><p>Si el problema nos dice que la esfera de CEP está aislada con una carga total <span class="math notranslate nohighlight">\(Q\)</span> (<em>Observar que <span class="math notranslate nohighlight">\(Q\)</span> podría ser nula, <span class="math notranslate nohighlight">\(Q=0\)</span></em>), calculamos la carga central <span class="math notranslate nohighlight">\(Q_c\)</span> utilizando el valor neto <span class="math notranslate nohighlight">\(Q\)</span> de la carga dentro de la esfera de CEP, <span class="math notranslate nohighlight">\(Q = Q_c - q'\)</span>, y obtenemos el potencial <span class="math notranslate nohighlight">\(V\)</span> a partir de este valor <span class="math notranslate nohighlight">\(Q_c\)</span>.</p></li>
+</ul>
 </div>
+<p>Este problema es del segundo tipo, por lo que:</p>
+<p><span class="math notranslate nohighlight">\(Q_c = Q - q' = Q + q\frac{a}{d}\)</span></p>
+<section id="fuerza-nula-sobre-la-carga">
+<h2>Fuerza nula sobre la carga<a class="headerlink" href="#fuerza-nula-sobre-la-carga" title="Link to this heading">#</a></h2>
+<p>Nos piden el valor de la carga <span class="math notranslate nohighlight">\(q\)</span> tal que no sufre fuerza neta cuando se coloca a una distancia <span class="math notranslate nohighlight">\(d\)</span> del centro de la esfera, lo que es lo mismo que decir que el campo eléctrico es nulo, <span class="math notranslate nohighlight">\(\vec{E} = 0\)</span>. Por lo tanto, tan solo tenemos que sumar el campo eléctrico que generan ambas cargas imagen, <span class="math notranslate nohighlight">\(q'\)</span> y <span class="math notranslate nohighlight">\(Q_c\)</span>. Quedándonos sólo con la componente radial que es por simetría la que no es nula (<em>¿Qué tipo de simetría? No es simetría esférica…</em>).</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E_r(r{=}d) &amp;= E_{r,q'}(r{=}d) + E_{r,Q_c}(r{=}d) = \frac{1}{4\pi\varepsilon_0} \left( \frac{-q\frac{a}{d}}{(d-\frac{a^2}{d})^2} + \frac{Q + q\frac{a}{d}}{d^2} \right) = 0 \\
+\end{split}\]</div>
+<p>Con esta expresión, podemos despejar <span class="math notranslate nohighlight">\(q\)</span> en función de los datos del problema.</p>
+<div class="math notranslate nohighlight">
+\[
+q = \frac{(d^2-a^2)^2 dQ}{a^3(2d^2-a^2)} = \frac{(1-(\frac{a}{d})^2)^2 Q}{(\frac{a}{d})^3(2-(\frac{a}{d})^2)}
+\]</div>
+</section>
+<section id="trabajo">
+<h2>Trabajo<a class="headerlink" href="#trabajo" title="Link to this heading">#</a></h2>
+<p>La definición de trabajo es conocida, a partir de la fuerza:</p>
+<div class="math notranslate nohighlight">
+\[
+W = \int \vec{F}\cdot\vec{dl}
+\]</div>
+<p>Es decir, necesitamos el campo eléctrico que se aplica sobre la carga, tenemos que elegir un camino para traer la carga <span class="math notranslate nohighlight">\(q\)</span> desde su posición <span class="math notranslate nohighlight">\(d\)</span> hasta el infinito, y realizar la integral. En este caso, <strong>¡no es un problema inmediato!</strong> (<em>¿Por qué?</em>).</p>
+<p>La imagen <span class="math notranslate nohighlight">\(q'\)</span>, tanto su valor como su posición varían cuando la posición de la carga original <span class="math notranslate nohighlight">\(q\)</span> se desplaza. Por ejemplo, cuando la carga <span class="math notranslate nohighlight">\(q\)</span> está en el infinito, la imagen es nula y en el origen, y a medida que se acerca, la imagen va modificando su valor y desplazándose. Es decir, la fuerza que afecta a la carga <span class="math notranslate nohighlight">\(q\)</span> no es la de la imagen final <span class="math notranslate nohighlight">\(q' = -q\frac{a}{d}\)</span> en la posición <span class="math notranslate nohighlight">\(d' = \frac{a^2}{d}\)</span>, sino que <em>¡la fuerza que se aplica en cada posición está relacionada con su posición actual!</em></p>
+<p>Vamos a usar la letra <span class="math notranslate nohighlight">\(d\)</span> para la posición inicial, y <span class="math notranslate nohighlight">\(l\)</span> como la posición actual. El camino sera a través de la linea infinita que pasa por las dos cargas imagen y la posición final. Por lo tanto, la variable que determina el camino es <span class="math notranslate nohighlight">\(l\)</span>, su diferencial es <span class="math notranslate nohighlight">\(dl\)</span> y el intervalo de integración es <span class="math notranslate nohighlight">\(l \in [0, \infty)\)</span>. La fuerza <span class="math notranslate nohighlight">\(F_r\)</span> debe ser proporcional al campo eléctrico <span class="math notranslate nohighlight">\(E_r\)</span> que sufre la partícula, con el signo cambiado. Recopilamos.</p>
+<div class="math notranslate nohighlight">
+\[
+W = \int \vec{F}\cdot\vec{dl} = -q\int_d^\infty \vec{E}\cdot\vec{dl} = -q\int_d^\infty \left( E_{r,q'}(r{=}l)\vec{u_r} + E_{r,Q_c}(r{=}l)\vec{u_r} \right) \cdot (dl \vec{u_r})
+\]</div>
+<p>Antes de sustituir, vamos a pensar en cuál es el signo que debe tener. Suponiendo que <span class="math notranslate nohighlight">\(q\)</span> y <span class="math notranslate nohighlight">\(Q\)</span> son positivas, el trabajo de acercarlas debe ser positivo, ya que debe suponer un gasto de energía acercarlas. Sin embargo, nos piden alejarlas, por lo que esperamos que el trabajo sea negativo, o en otros términos, que la configuración de cargas devuelva energía eléctrica (<em>posiblemente en forma de energía cinética de <span class="math notranslate nohighlight">\(q\)</span></em>):</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{dl}\)</span> es radial hacia afuera, <span class="math notranslate nohighlight">\(\vec{dl} = dl\vec{u_r}\)</span> con los límites de integración empezando en <span class="math notranslate nohighlight">\(d\)</span> y acabando en el infinito.</p></li>
+<li><p>El campo eléctrico es radial hacia afuera, por lo que la fuerza necesaria para superarlo en radial hacia dentro. De aquí surge el signo menos delante de la integral.</p></li>
+<li><p>La carga sobre la que se aplica el campo es <span class="math notranslate nohighlight">\(q\)</span>.</p></li>
+</ul>
+<p>Por lo tanto:</p>
+<div class="math notranslate nohighlight">
+\[
+W = -\frac{q}{4\pi\varepsilon_0} \int_d^\infty \left( \frac{-q\frac{a}{l}}{(l-\frac{a^2}{l})^2} + \frac{Q + q\frac{a}{l}}{l^2} \right) dl = \frac{q}{4\pi\varepsilon_0} \left( -\frac{aq}{2(d^2+a^2)} - \frac{Q}{d} + \frac{ad}{2d^2} \right)
+\]</div>
+<p>Por último, sustituyendo el valor de <span class="math notranslate nohighlight">\(q\)</span> obtenido anteriormente, obtenemos el trabajo que devuelve la partícula de carga <span class="math notranslate nohighlight">\(q\)</span> cuando se desplaza desde la posición de equilibrio (<em>¿Estable o inestable?</em>) hasta el infinito.</p>
+<div class="math notranslate nohighlight">
+\[
+W = -\frac{(d^2-a^2) Q^2 (3d^2-a^2)}{8\pi\varepsilon_0a^3(2d^2-a^2)}
+\]</div>
 </section>
 </section>
 
@@ -505,6 +475,15 @@ dr' = -\frac{a^2}{r^2} dr
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B2_S3_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B2.S3.1</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
@@ -522,7 +501,8 @@ dr' = -\frac{a^2}{r^2} dr
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efectos-mecanicos-sobre-un-dipolo">Efectos mecánicos sobre un dipolo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuerza-nula-sobre-la-carga">Fuerza nula sobre la carga</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trabajo">Trabajo</a></li>
 </ul>
   </nav></div>
 
