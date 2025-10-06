@@ -13,12 +13,15 @@ parts:
   - file: pages/Problema_B1_S1_2
   - file: pages/Problema_B1_S1_3
   - file: pages/Problema_B1_S1_4
+- caption: Seminario 2 - Multipolar
+  chapters:
   - file: pages/Problema_B1_S2_1
   - file: pages/Problema_B1_S2_2
+- caption: Seminario 3 - Imágenes, Cargas puntuales
+  chapters:
   - file: pages/Problema_B2_S3_1
   - file: pages/Problema_B2_S3_2
-# - file: pages/Problema_B2_S3_3
-# - file: pages/Problema_B2_3
+  - file: pages/Problema_B2_S3_3
 # - file: pages/Problema_B2_4
 # - file: pages/Problema_B2_6
 # - file: pages/Problema_B4_4
