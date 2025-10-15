@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B2.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema.B2.S4.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,9 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S4_4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S4_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B2.S4.2" href="Problema_B2_S4_2.html" />
+    <link rel="prev" title="Problema B2.S3.3" href="Problema_B2_S3_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -192,6 +192,11 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_2.html">Problema B2.S3.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_3.html">Problema B2.S3.3</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 4 - Imágenes, Cargas distribuidos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema.B2.S4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_2.html">Problema B2.S4.2</a></li>
+</ul>
 
     </div>
 </nav></div>
@@ -250,7 +255,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B2_S4_4.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B2_S4_1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -313,9 +318,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -326,19 +329,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B2.4</h1>
+    <h1>Problema.B2.S4.1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efectos-mecanicos-sobre-un-dipolo">Efectos mecánicos sobre un dipolo</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -348,138 +343,74 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-4">
-<h1>Problema B2.4<a class="headerlink" href="#problema-b2-4" title="Link to this heading">#</a></h1>
-<p>Para obtener la imagen de <strong>una corona superficial de carga</strong> frente a una esfera de <strong>CEP (Conductor Eléctrico Perfecto)</strong> podemos obtener la imagen de <strong>cada trozo diferencial</strong> de corona, que podemos considerar como una carga puntual de valor conocido, <em>tendrá como imagen otra carga puntual de valor conocido</em>. El diagrama del problema es el siguiente:</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/saturn.png"><img alt="saturn" src="../_images/saturn.png" style="width: 410px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama del problema, con la corona de densidad de carga constante alrededor de la esfera de CEP.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-s4-1">
+<h1>Problema.B2.S4.1<a class="headerlink" href="#problema-b2-s4-1" title="Link to this heading">#</a></h1>
+<p>En este problema tenemos un hilo de carga caracterizado por una densidad lineal de carga constante <span class="math notranslate nohighlight">\(\lambda\)</span>. Lo único que hemos podido demostrar matemáticamente es: ¿cuál es la imagen y la posición de una carga puntual? Con esto podemos construir una densidad lineal de carga constante como una sucesión de cargas puntuales <span class="math notranslate nohighlight">\(q\)</span> en la posición <span class="math notranslate nohighlight">\(z\)</span> equiespaciadas con una distancia <span class="math notranslate nohighlight">\(dz\)</span>. Para tener la imagen clara, el problema original es el siguiente:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S4_1_1.png"><img alt="lineal y esfera.png" src="../_images/B2_S4_1_1.png" style="width: 320px;" /></a>
 </figure>
-<p>Cada trozo de corona de carga va a tener <em>una imagen dentro de la esfera de CEP</em>. En conjunto, los trozos imagen tienen una distribución de <strong>otra corona de carga</strong> dentro de la esfera.</p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/saturn_image.png"><img alt="saturn_image" src="../_images/saturn_image.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama de la corona de densidad de carga constante y la corona imagen, de densidad desconocida, alrededor de la esfera de CEP.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
+<p>El problema equivalente en el que la densidad lineal de carga se descompone en trozos diferenciales es el siguiente:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S4_1_2.png"><img alt="cargas diferenciales y esfera.png" src="../_images/B2_S4_1_2.png" style="width: 320px;" /></a>
 </figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>La clave del problema es poner un trozo diferencial de la <strong>corona externa</strong> en función de sus coordenadas, hacer lo mismo con un trozo diferencial de la <strong>corona imagen</strong>, y relacionarlas mediante la teoría bien establecida de la imagen de una carga puntual.</p>
-</div>
-<p>Empezamos la teoría bien establecida: La imagen de una carga puntual <span class="math notranslate nohighlight">\(q\)</span> a una distancia <span class="math notranslate nohighlight">\(d\)</span> del centro de una esfera de CEP de radio <span class="math notranslate nohighlight">\(a\)</span> (<span class="math notranslate nohighlight">\(d&gt;a\)</span>) es otra carga <span class="math notranslate nohighlight">\(q' = -q\frac{a}{d}\)</span> a una distancia <span class="math notranslate nohighlight">\(d'=\frac{a^2}{d}\)</span>.</p>
-<figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="images/q_puntual.png"><img alt="q_puntual" src="images/q_puntual.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-text">Imagen de una carga puntual frente a una esfera de CEP.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Un trozo diferencial de corona externa, en función de <strong>sus coordenadas en polares</strong>, está a una <strong>distancia</strong> <span class="math notranslate nohighlight">\(d = r\)</span> y tiene una <strong>carga</strong> <span class="math notranslate nohighlight">\(q = \sigma \space dS = \sigma \space r dr d\theta\)</span> por lo que su imagen tiene unos valores:</p>
+<p>Claramente, <span class="math notranslate nohighlight">\(q = \lambda \space dz\)</span>. <strong>Cada uno de estos trozos diferenciales tienen su propia imagen</strong> <span class="math notranslate nohighlight">\(q'\)</span> a una distancia <span class="math notranslate nohighlight">\(z'\)</span> del centro de la esfera.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-q' &amp;= -q \frac{a}{d} = -\sigma \space r dr d\theta \frac{a}{r} \\
-r' &amp;= \frac{a^2}{r}
+q' &amp;= -\frac{a}{z}q \\ 
+z' &amp;= \frac{a^2}{z}
 \end{split}\]</div>
-<p>Por otra parte, la <strong>carga de la imagen</strong> en función de <strong>sus propias coordenadas en polares</strong> es:</p>
+<p>Si utilizamos la definición de <span class="math notranslate nohighlight">\(q = \lambda dz\)</span> y <span class="math notranslate nohighlight">\(q' = \lambda' dz'\)</span> obtenemos</p>
 <div class="math notranslate nohighlight">
 \[
-q' = \sigma' \space r' dr' d\theta'
+\lambda' dz' = -\frac{a}{z} \lambda dz
 \]</div>
-<p>Por lo que:</p>
+<p>Para poder identificar la expresión de <span class="math notranslate nohighlight">\(\lambda'\)</span> como una función de <span class="math notranslate nohighlight">\(z'\)</span>, en la ecuación <strong>falta establecer la relación entre <span class="math notranslate nohighlight">\(dz\)</span> y <span class="math notranslate nohighlight">\(dz'\)</span></strong>, lo que podemos hacer diferenciando en la expresión de <span class="math notranslate nohighlight">\(z'\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
--\sigma \space dr d\theta a = \sigma' \space r' dr' d\theta'
+dz' = -\frac{a^2}{z^2}dz \quad \Rightarrow \quad \left|\frac{dz'}{dz}\right| = \frac{a^2}{z^2} 
 \]</div>
-<p>Identificamos <span class="math notranslate nohighlight">\(\theta' = \theta\)</span>, de forma que las cargas imagen no se superponen. Ya tenemos la expresión de <span class="math notranslate nohighlight">\(r'\)</span> en función de <span class="math notranslate nohighlight">\(r\)</span> en (1), por lo que <em>solo nos queda expresar <span class="math notranslate nohighlight">\(dr'\)</span> en función de <span class="math notranslate nohighlight">\(r\)</span> (y <span class="math notranslate nohighlight">\(dr\)</span>)</em>. Diferenciando la expresión (1) obtenida:</p>
+<p>He ignorado el signo, porque <strong>sobre el trozo diferencial <span class="math notranslate nohighlight">\(q'\)</span> en <span class="math notranslate nohighlight">\(z'\)</span> solo nos interesa su longitud <span class="math notranslate nohighlight">\(dz'\)</span>, no si está a la derecha o a la izquierda</strong>. Con esto:</p>
 <div class="math notranslate nohighlight">
 \[
-dr' = -\frac{a^2}{r^2} dr
+\lambda'\frac{a^2}{z^2} = -\frac{a}{z} \lambda
 \]</div>
-<p>Dado que el área debe ser positiva, cogemos el valor absoluto de esta expresión y sustituimos en la expresión (3):</p>
+<p><strong>Finalmente</strong>, despejando y utilizando la relación entre <span class="math notranslate nohighlight">\(z\)</span> y <span class="math notranslate nohighlight">\(z'\)</span>, obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
-\sigma' = - \sigma \frac{r^3}{a^3} = - \sigma \frac{a^3}{r'^3} 
+\lambda' = -\lambda\frac{a}{z'}
 \]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Comprobamos que el área de la imagen <strong>no es constante</strong>, sino que depende de la coordenada polar <span class="math notranslate nohighlight">\(r'\)</span>.</p>
-</div>
-<p>Esta sería la solución si la esfera de CEP estuviera conectada a tierra, pero el enunciado indica que <strong>la esfera está aislada y con una carga <span class="math notranslate nohighlight">\(Q\)</span></strong>. Para calcular el potencial, tenemos que encontrar <strong>la carga imagen restante</strong>, <span class="math notranslate nohighlight">\(Q_c\)</span>, y que debemos colocar en el centro, para que el potencial de la esfera siga siendo constante.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Cada carga puntual con su imagen, deja la esfera con potencial nulo. Por el principio de superposición, <em>podemos sumar tantas cargas puntuales más sus imagenes, que dejan la esfera con potencial nulo</em> (Es lo que hemos hemos con la corona de carga). La unica carga imagen que deja <em>el potencial constante en la esfera de CEP es una carga imagen puntual en el centro de la esfera</em>.</p>
-</div>
-<p>La carga restante es <span class="math notranslate nohighlight">\(Q_c = Q - Q_{imagen}\)</span>, que <em>podemos obtener por integración</em>, ya que conocemos la densidad superficial (que no es constante) en función de sus coordenadas <span class="math notranslate nohighlight">\(r'\)</span> y <span class="math notranslate nohighlight">\(\theta'\)</span>. Por último, <em>podemos conocer el potencial y el campo eléctrico de la configuración de CEP más corona de carga constante calculando y sumando el potencial y el campo eléctrico de la corona de carga más su imagen más la carga restante en el centro de la esfera</em>.</p>
-<section id="efectos-mecanicos-sobre-un-dipolo">
-<h2>Efectos mecánicos sobre un dipolo<a class="headerlink" href="#efectos-mecanicos-sobre-un-dipolo" title="Link to this heading">#</a></h2>
-<p>Los efectos mecánicos sobre un dipolo, es decir, <strong>la fuerza y el momento angular sobre el dipolo depende del campo eléctrico</strong> a través de las siguientes expresiones:</p>
+<p>Por lo tanto, <strong>la distribución imagen es una distribución lineal de carga variable <span class="math notranslate nohighlight">\(\lambda'(z')\)</span> entre <span class="math notranslate nohighlight">\(z' = a/3\)</span> y <span class="math notranslate nohighlight">\(z'=a/2\)</span></strong>, que son las posiciónes de las imagenes en <span class="math notranslate nohighlight">\(3a\)</span> y <span class="math notranslate nohighlight">\(2a\)</span>, respectivamente. <strong>Para obtener la carga total de la imagen, utilizamos la carga total de una distribución lineal de carga</strong>.</p>
+<div class="math notranslate nohighlight">
+\[
+Q_T = \int_{a/3}^{a/2}\lambda'(z') dz'
+\]</div>
+<p>Y finalmente, para obtener <strong>el potencial a partir de las dos distribuciones lineales de carga</strong> utilizamos la expresión del potencial:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi(z) = \frac{1}{4 \pi \varepsilon_0} \int_C \frac{\lambda(\vec{r}')dl'}{|\vec{r} - \vec{r}'|}
+\]</div>
+<p><strong>Tenemos dos contribuciones, la de <span class="math notranslate nohighlight">\(\lambda\)</span> y la de <span class="math notranslate nohighlight">\(\lambda'(z')\)</span></strong>. Vamos a detallar los elementos de cada una de las dos integrales, aunque primero vamos a observar que tanto la distribución lineal de carga como el punto <span class="math notranslate nohighlight">\(z\)</span> están en el mismo eje. Además, <strong>tenemos que tener cuidado con la notación, ya que las primas <span class="math notranslate nohighlight">\('\)</span> en la integral se refieren a las variables espaciales en la región de la fuente que genera el potencial</strong>. Por eso, cuando haga la integral en el hilo <span class="math notranslate nohighlight">\(\lambda\)</span>, también voy a usar <span class="math notranslate nohighlight">\(z'\)</span>, como la posición en el hilo que genera el potencial. Vamos a calcular tan solo la integral para <span class="math notranslate nohighlight">\(z&gt;3a\)</span>. Para los rangos <span class="math notranslate nohighlight">\(z \in [a,2a]\)</span> y <span class="math notranslate nohighlight">\(z \in [2a,3a]\)</span> las integrales son similares, pero hay que tener cuidado con los signos en el valor absoluto del denominador para que el denominador sea positivo (<em>Obviamente, para <span class="math notranslate nohighlight">\(z&lt;a\)</span> el potencial es nulo</em>). Para el hilo original:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\vec{F} = (\vec{p} \cdot \nabla) \vec{E} \\
-\vec{M} = \vec{p} \times \vec{E}
+\int_C &amp;= \int_{z' = 2a}^{z' = 3a} \\
+\lambda(\vec{r}') &amp;= \lambda \\
+dl &amp;= dz' \\
+|\vec{r} - \vec{r}'| &amp;= z-z' 
 \end{split}\]</div>
-<p>En principio, <strong>conociendo la distribución de cargas se puede calcular el campo electrico <span class="math notranslate nohighlight">\(\vec{E}\)</span></strong> (aunque no siempre sea fácil). En este problema, ya hemos resuelto la dicribución de cargas, por lo que solo queda calcular el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>. Nos piden el efecto mecánico (fuerza y momento) sobre <strong>un dipolo colocado en el eje z y orientado en la dirección <span class="math notranslate nohighlight">\(z\)</span></strong></p>
-<div class="math notranslate nohighlight">
-\[
-\vec{p} = p \vec{u_z} 
-\]</div>
-<ul class="simple">
-<li><p>Empezamos por <strong>el momento resultante que es nulo</strong>: En el eje <span class="math notranslate nohighlight">\(z\)</span>, el campo electrico tiene que tener dirección <span class="math notranslate nohighlight">\(z\)</span>, por la simetría del problema, por lo que el momento <span class="math notranslate nohighlight">\(\vec{M} = \vec{p} \times \vec{E} = (p \vec{u_z}) \times (E_z \vec{u_z}) = 0\)</span>.</p></li>
-<li><p><strong>La fuerza neta es la contribución de tres términos</strong>: Hay que sumar el campo de la corona externa (<span class="math notranslate nohighlight">\(\sigma = cte\)</span>), el campo de la corona imagen (<span class="math notranslate nohighlight">\(\sigma' \neq cte\)</span>) y la carga central <span class="math notranslate nohighlight">\(Q_c\)</span>. El operador <span class="math notranslate nohighlight">\((\vec{p} \cdot \nabla)\)</span> debe ser particularizado con cuidado para el problema. Teniendo en cuenta que el campo electrico solo tiene componente <span class="math notranslate nohighlight">\(z\)</span>:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-(\vec{p} \cdot \nabla) \vec{E} = ((p \vec{u_z}) \cdot \nabla) E_z \vec{u_z} = p_z \frac{\partial E_z}{\partial z} \vec{u_z} = -p_z \frac{\partial^2 \Phi}{\partial z^2} \vec{u_z}
-\]</div>
-<p>(<em>He utilizado la definición de <span class="math notranslate nohighlight">\(\vec{E} = - \nabla \Phi\)</span>, de forma que podemos calcular el que nos parezca más fácil. Típicamente el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> es más fácil, aunque no siempre</em>)</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>De los tres términos, dos son sencillos de obtener, ya que son integrales que hemos hecho otras veces:</p>
+<p><strong>Observemos que <span class="math notranslate nohighlight">\(|\vec{r} - \vec{r}'| = z-z'\)</span> se puede hacer por que el enunciado pide calcular el valor para <span class="math notranslate nohighlight">\(z &gt;3a\)</span></strong>, es decir, que <span class="math notranslate nohighlight">\(z\)</span> siempre es mayor que <span class="math notranslate nohighlight">\(z'&lt;=3a\)</span>. Para el hilo imagen:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-&amp;\Phi_{corona} = \frac{\sigma}{2 \varepsilon_0} \left( \sqrt{z^2 + R_2^2} - \sqrt{z^2 + R_1^2} \right), \\
-&amp;\Phi_{Q_c} = \frac{Q_c}{4 \pi \varepsilon_0 z}
+\int_C &amp;= \int_{z' = a/3}^{z' = a/2} \\
+\lambda(\vec{r}') &amp;= \lambda(z') = -\lambda\frac{a}{z'} \\
+dl &amp;= dz' \\
+|\vec{r} - \vec{r}'| &amp;= z-z' 
 \end{split}\]</div>
-<p>El otro término es el de <strong>una corona con <span class="math notranslate nohighlight">\(\sigma \neq cte\)</span></strong>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\sigma' &amp;= -\sigma \frac{a^3}{r'^3}, \\
-\vec{r} &amp;= z \vec{u_z},\\
-\vec{r'} &amp;= (r'\cos{\phi'},r'\sin{\phi'},0),\\ 
-|{\vec{r}-\vec{r'}}| &amp;= \sqrt{r'^2 + z^2},
-\end{split}\]</div>
-<p>con los límites de integración <span class="math notranslate nohighlight">\(r' \in [R_2', R_1'] = [\frac{a^2}{R_2}, \frac{a^2}{R_1}]\)</span> y <span class="math notranslate nohighlight">\(\phi' \in [0, 2 \pi]\)</span>. Con lo que la integral queda:</p>
+<p>Con lo que <strong>el potencial se puede obtener resolviendo la siguiente expresión</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi_{imagen} = \frac{1}{4 \pi \varepsilon_0} \int_{s`=R_2'}^{s'=R_1'} \int_{\phi' = 0}^{\phi' = 2 \pi} \frac{-\sigma \frac{a^3}{r'^3}}{\sqrt{r'^2 + z^2}} r'dr'd\phi'
+\Phi(z) = \frac{1}{4 \pi \varepsilon_0} \left( \int_{z' = 2a}^{z' = 3a} \frac{\lambda dz'}{z-z'} + \int_{z' = a/3}^{z' = a/2} \frac{-\lambda a dz'}{z'(z-z')} \right)
 \]</div>
-<p>Esta integral no es plato de buen gusto, pero se puede resolver realizando algunos cambios de variable. Primero, para quitar el denominador, podemos usar <span class="math notranslate nohighlight">\(\frac{r'}{z} = \sinh{x}\)</span> de forma que queda:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi_{imagen} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{dx}{\sinh^2{x}}
-\]</div>
-<p>Esta integral parece más dificil, pero si tenemos en cuenta que <span class="math notranslate nohighlight">\(\sinh{x} = \frac{e^x-e^{-x}}{2}\)</span> podemos poner:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi_{imagen} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 dx}{(e^x-e^{-x})^2} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 e^{2x} dx}{(e^{2x}-1)^2} 
-\]</div>
-<p>Por lo que ahora podemos usar el cambio de variable <span class="math notranslate nohighlight">\(y = e^{2x} - 1\)</span>, <span class="math notranslate nohighlight">\(dy = 2 e^{2x} dx\)</span>, resultando en una integral inmediata. Después de hacer la sustitución y posteriormente sustituir a la inversa:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\int \frac{4 e^{2x} dx}{(e^{2x}-1)^2} &amp;= \int \frac{2 dy}{y^2} = -\frac{2}{y} \\
-&amp;= -\frac{2}{e^{2x} - 1} = -\frac{2}{e^x(e^x-e^{-x})} \\
-&amp;= -\frac{1}{(\sinh{x} + \cosh{x}) \sinh{x}} \\
-&amp;= -\frac{1}{   \left(   \frac{r'}{z} + \sqrt{1 + (\frac{r'}{z})^2  } \right)  (\frac{r'}{z})   }
-\end{split}\]</div>
-<p>Por lo tanto, se puede obtener la expresión:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi_{imagen} = \frac{\sigma a^3}{2 \varepsilon_0} \frac{1}{r'(r'+ \sqrt{r'^2 + z^2})}|_{r' = R'_2}^{r' = R'_1}
-\]</div>
-<p>Finalmente, si quisieramos desarrollar una expresión final, faltaría sustituir y derivar dos veces con respecto a <span class="math notranslate nohighlight">\(z\)</span>.</p>
-</div>
-</section>
+<p>La primera integral es inmediata, y la segunda se puede resolver por fracciones simples (<span class="math notranslate nohighlight">\( \frac{z}{z'(z-z')} = \frac{1}{z'} - \frac{1}{z-z'} \)</span>).</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -512,28 +443,30 @@ dr' = -\frac{a^2}{r^2} dr
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B2_S3_3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B2.S3.3</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B2_S4_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B2.S4.2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#efectos-mecanicos-sobre-un-dipolo">Efectos mecánicos sobre un dipolo</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
