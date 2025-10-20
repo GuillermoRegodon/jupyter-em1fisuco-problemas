@@ -26,7 +26,10 @@ parts:
   chapters:
   - file: pages/Problema_B2_S4_1
   - file: pages/Problema_B2_S4_2
-# - file: pages/Problema_B2_6
+- caption: Seminario 5 - Separación de variables, Esferas de carga
+  chapters:
+  - file: pages/Problema_B2_S5_1
+  - file: pages/Problema_B2_S5_2
 # - file: pages/Problema_B4_4
 # - file: pages/Problema_B4_5
 # - file: pages/Problema_B4_7

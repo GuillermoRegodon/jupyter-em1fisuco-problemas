@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B2.6 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B2.S5.2 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,9 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S5_6';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S5_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Problema B2.S5.1" href="Problema_B2_S5_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +116,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -197,6 +196,11 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_1.html">Problema.B2.S4.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_2.html">Problema B2.S4.2</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 5 - Separación de variables, Esferas de carga</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_1.html">Problema B2.S5.1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B2.S5.2</a></li>
+</ul>
 
     </div>
 </nav></div>
@@ -255,7 +259,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B2_S5_6.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B2_S5_2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -329,7 +333,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B2.6</h1>
+    <h1>Problema B2.S5.2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -343,69 +347,73 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-6">
-<h1>Problema B2.6<a class="headerlink" href="#problema-b2-6" title="Link to this heading">#</a></h1>
-<p>Tenemos <strong>una esfera a un potencial conocido</strong> de radio <span class="math notranslate nohighlight">\(R\)</span> que sigue la expresión <span class="math notranslate nohighlight">\(V = K \cos(3\theta)\)</span>, donde <span class="math notranslate nohighlight">\((r, \theta, \varphi)\)</span> son las coordenadas <strong>esféricas</strong> e implicitamente, se establece <em>la simetría en la variable <span class="math notranslate nohighlight">\(\varphi\)</span></em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Si pidiera el potencial en un punto del eje <span class="math notranslate nohighlight">\(z\)</span> o en algún otro punto con una simetría clara, la integración directa sería posible.</p>
-<p>Dado que se pide el potencial en cualquier punto externo e interno, la estrategia de los polinomios de Legendre es la única fáctible.</p>
-</div>
-<p>Se trata entonces de <strong>resolver la ecuación de Poisson</strong> con las condiciones de contorno apropiadas.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-s5-2">
+<h1>Problema B2.S5.2<a class="headerlink" href="#problema-b2-s5-2" title="Link to this heading">#</a></h1>
+<p>Este problema es parecido al anterior. La única diferencia es que el dato es la densidad superficial de carga, en lugar del potencial. La dificultad es que utilizando la metodología de los polinomios de Legendre, el potencial es lo que se resuelve, siendo el campo eléctrico y la densidad superficial de carga consecuencias de este potencial. Por lo tanto, en este problema, <strong>parece que debemos empezar por el final</strong>. Sin embargo, lo que vamos a hacer es utilizar la misma metodología, sin concretar resultados, hasta que lleguemos al final, y entonces, podremos resolver los apartados en función de los datos del enunciado.</p>
+<p>Nos dice el enunciado que la densidad superficial de carga es:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma(\theta) = \sigma_0 \cos\theta
+\]</div>
+<p>Con <span class="math notranslate nohighlight">\(\theta\)</span> la coordenada azimutal de coordenadas esféricas. Veamos que este dato solo me permite establecer una relación entre <span class="math notranslate nohighlight">\(E_{d,r}\)</span> y <span class="math notranslate nohighlight">\(E_{f,r}\)</span>, pero no me permite decidir el valor de cada uno de los dos.</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma(\theta) = \varepsilon_0 (E_{f,r} - E_{d,r})
+\]</div>
+<p>Por esto, vamos a empezar por el potencial. Se trata entonces de <strong>resolver la ecuación de Poisson</strong> con las condiciones de contorno apropiadas.</p>
 <div class="math notranslate nohighlight">
 \[
 \nabla^2 \Phi = 0
 \]</div>
-<p>Para <em>el volumen interno a la esfera</em>, la única condición de contorno es el propio potencial <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em = \kern -0.2em R) = K \cos(3\theta)\)</span> de la esfera. Para <em>el volumen exterior a la esfera</em>, además de <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em = \kern -0.2em R) = K \cos(3\theta)\)</span>, usamos el potencial en el infinito, <span class="math notranslate nohighlight">\(\Phi(r \kern -0.2em \rightarrow \kern -0.2em \infty) = 0\)</span>.</p>
-<p>Este es precisamente el problema que tiene por solución los Polinomios de Lengendre:</p>
+<p>Este es precisamente el problema que tiene por solución los Polinomios de Legendre:</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi = \sum_{l=0}^{\infty} \left( A_l r^l + \frac{B_l}{r^{l+1}} \right) P_l(\cos(\theta))
+\Phi = \sum_{l=0}^{\infty} \left( A_l r^l + \frac{B_l}{r^{l+1}} \right) P_l(\cos\theta)
 \]</div>
-<p><strong>Para el volumen interior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_d\)</span> y usamos la condición de que todos las magnitudes físicas deben ser fínitas, y por tanto, <span class="math notranslate nohighlight">\(B_l = 0\)</span>. <strong>Para el volumen exterior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_f\)</span> y usamos la condición de que el potencial en el infinito se anula, y por tanto, <span class="math notranslate nohighlight">\(A_l = 0\)</span>.</p>
+<p>No conocemos la condición de contorno concreta para el potencial. <strong>Sin embargo, podemos deducir del enunciado su dependencia</strong>. Dado que la relación entre los campos eléctricos radiales dentro y fuera es conocida, <span class="math notranslate nohighlight">\(\varepsilon_0 (E_{f,r} - E_{d,r}) = \sigma_0 \cos\theta\)</span>, podemos deducir que la derivada con respecto a <span class="math notranslate nohighlight">\(r\)</span> del potencial tiene que tener una dependencia directa con <span class="math notranslate nohighlight">\(\cos\theta\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\Phi_d = \sum_{l=0}^{\infty} A_l r^l P_l(\cos(\theta)) \\
-\Phi_f = \sum_{l=0}^{\infty} \frac{B_l}{r^{l+1}} P_l(\cos(\theta))
-\end{split}\]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Podemos <strong>resolver los dos problemas por separado o en paralelo</strong>, ya que son independientes. Están separados por la condición de contorno <span class="math notranslate nohighlight">\(V\)</span> que descompone el espacio en dos volumenes separados.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Debemos usar los infinitos términos de las sumatorias pero por inspección podemos reducir los terminos a unos pocos (<em>en algunos casos a uno</em>)</p>
+\[
+-\frac{\partial\Phi}{\partial r} = E_r \propto \cos\theta
+\]</div>
+<p>Vamos a suponer por tanto, que el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> también depende solamente de <span class="math notranslate nohighlight">\(\cos\theta\)</span> (<em>Podría haber otras dependencias que desaparecieran al restas los campos eléctricos radiales <span class="math notranslate nohighlight">\(E_{f,r}\)</span> y <span class="math notranslate nohighlight">\(E_{d,r}\)</span> dentro y fuera. Pero vamos a partir de esta suposición y ver si resolvemos el problema</em>). El término <span class="math notranslate nohighlight">\(\cos\theta\)</span> aparece en el polinomio de Legendre de orden 1, por lo que vamos a utilizar la siguiente descomposición general del potencial:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi = C_1 P_1(\cos\theta) = \left( A_1 r + \frac{B_1}{r^2} \right) P_1(\cos\theta) = \left( A_1 r + \frac{B_1}{r^2} \right) \cos\theta
+\]</div>
+<p>Utilizamos las condiciones adicionales.</p>
 <ul class="simple">
-<li><p>Los polinomios de Lengendre incluyen términos <span class="math notranslate nohighlight">\(\cos^l(\theta)\)</span>, que siempre se van a poder poner en forma de <strong>una suma de términos que contiene <span class="math notranslate nohighlight">\(\cos(l \theta)\)</span></strong>.</p></li>
-<li><p>Los polinomios de Legendre son independientes, no se puede poner uno en función de otros. El motivo es que <strong>los términos de <span class="math notranslate nohighlight">\(\cos(l \theta)\)</span> son independientes</strong> (<em>y por tanto los polinomios</em>).</p></li>
+<li><p><strong>Para el volumen interior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_d\)</span> y usamos la condición de que todos las magnitudes físicas deben ser finitas y no pueden diverger en el origen <span class="math notranslate nohighlight">\(r{\rightarrow} 0\)</span>, y por tanto, <span class="math notranslate nohighlight">\(B_1 = 0\)</span>.</p></li>
+<li><p><strong>Para el volumen exterior</strong>, denominamos el potencial <span class="math notranslate nohighlight">\(\Phi_f\)</span> y usamos la condición de que el potencial en el infinito se anula, y por tanto, <span class="math notranslate nohighlight">\(A_1 = 0\)</span>.</p></li>
 </ul>
-</div>
-<p>La condición de contorno que nos dan <em>es una función de <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span></em>, por lo que <strong>seguro que necesitamos el término de <span class="math notranslate nohighlight">\(l = 3\)</span></strong>. Efectivamente:</p>
-<div class="math notranslate nohighlight">
-\[
-P_3(\cos(\theta)) = \frac{1}{2} \left( 5 \cos^3(\theta) - 3 \cos(\theta) \right) = \frac{5}{8} \cos(3 \theta) + \frac{3}{8} \cos(\theta) 
-\]</div>
-<p>Vemos que este polinomio de Lengendre incluye un término en <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>, por lo que de por sí solo, podemos conseguir el término <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span>, pero nos sobra el de <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>. <strong>Por esto tenemos que añadir el término del polinómio de Lengendre con <span class="math notranslate nohighlight">\(l=1\)</span></strong>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>En general, si nos vemos obligados a añadir <strong>un polinomio de orden <span class="math notranslate nohighlight">\(l\)</span></strong>, tendremos que añadir también todos los polinomios <strong>de grado inferior <span class="math notranslate nohighlight">\(l'\)</span> del mismo tipo par o impar</strong>. (Es decir, si <span class="math notranslate nohighlight">\(l\)</span> es par, pondremos todos los términos pares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>, y si <span class="math notranslate nohighlight">\(l\)</span> es impar, todos los términos impares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>).</p>
-<p>Por ejemplo, si la condición de contorno fuera <span class="math notranslate nohighlight">\(V = K_1 \cos(9 l) + K_2 \cos(4 l)\)</span>, por el primer término tendríamos que poner <span class="math notranslate nohighlight">\(l \in \{1, 3, 5, 7, 9\}\)</span> mientras que por el segundo término, tendríamos que poner <span class="math notranslate nohighlight">\(l \in \{0, 2, 4\}\)</span> (Ojalá nunca nos encontremos con un problema así).</p>
-</div>
-<p>Si realizamos la igualación de los términos con la condición de contorno…</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Phi_d(r \kern -0.2em = \kern -0.2em R) = A_1 R^1 P_1(\cos(\theta)) + A_3 R^3 P_3(\cos(\theta)) = K \cos(3\theta) \\
-\Phi_f(r \kern -0.2em = \kern -0.2em R) = \frac{B_1}{R^2} P_1(\cos(\theta)) + \frac{B_3}{R^4} P_3(\cos(\theta)) = K \cos(3\theta)
+\Phi_d = A_1 r \cos\theta \\
+\Phi_f = \frac{B_1}{r^2} \cos\theta
 \end{split}\]</div>
-<p>…nos da el siguiente resultado</p>
+<p>Podemos calcular los campo eléctricos radiales que derivan de esta configuración de potencial:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E_{d,r}(r{=}R) = -\frac{\partial\Phi_d}{\partial r}|_{r{=}R} = -A_1 \cos\theta \\
+E_{f,r}(r{=}R) = -\frac{\partial\Phi_f}{\partial r}|_{r{=}R} = \frac{2 B_1}{R^3} \cos\theta
+\end{split}\]</div>
+<p>Con lo que obtenemos:</p>
 <div class="math notranslate nohighlight">
 \[
-A_1 = -\frac{3 K}{5 R}; \space
-A_3 = \frac{8 K}{5 R^3}; \space
-B_1 = -\frac{3}{5} K R^2; \space
-B_3 = \frac{8}{5} K R^4
+\sigma_0 = \varepsilon_0\left( \frac{2 B_1}{R^3} + A_1 \right)
 \]</div>
-<p>Por supuesto, la expresión de <span class="math notranslate nohighlight">\(\Phi_d\)</span> es válida dentro de la esfera y la de <span class="math notranslate nohighlight">\(\Phi_f\)</span> es válida fuera de la esfera.</p>
+<p>Tenemos una sola ecuación para dos variables, <span class="math notranslate nohighlight">\(A_1\)</span> y <span class="math notranslate nohighlight">\(B_1\)</span>. <strong>Necesitamos otra ecuación, a partir de otra condición</strong>. (<em>Pensar cuál podríamos utilizar</em>)</p>
+<p>El problema aún no está completamente definido, porque nos falta alguna condición. En este caso, la consideración física que nos permite establecer la segunda condición es la continuidad del potencial. Por lo tanto, <span class="math notranslate nohighlight">\(\Phi_d(r{=}R) = \Phi_f(r{=}R)\)</span> y por tanto:</p>
+<div class="math notranslate nohighlight">
+\[
+A_1 R = \frac{B_1}{R^2}
+\]</div>
+<p>Con estas dos condiciones:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A_1 = \frac{\sigma_0}{3\varepsilon_0} \\
+B_1 = \frac{\sigma_0 R^3}{3 \varepsilon_0}
+\end{split}\]</div>
+<p>Con estos coeficientes, tenemos el potencial tanto dentro como fuera de la esfera de densidad superficial de carga, y a partir del potencial, se puede calcular el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E_d}\)</span> y <span class="math notranslate nohighlight">\(\vec{E_f}\)</span>, dentro y fuera.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -438,6 +446,15 @@ B_3 = \frac{8}{5} K R^4
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B2_S5_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B2.S5.1</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
