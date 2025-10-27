@@ -30,6 +30,10 @@ parts:
   chapters:
   - file: pages/Problema_B2_S5_1
   - file: pages/Problema_B2_S5_2
+- caption: Seminario 6 - Medios dieléctricos, Energía electrostática
+  chapters:
+  - file: pages/Problema_B3_S6_1
+  - file: pages/Problema_B3_S6_2
 # - file: pages/Problema_B4_4
 # - file: pages/Problema_B4_5
 # - file: pages/Problema_B4_7

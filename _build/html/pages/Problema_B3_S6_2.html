@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B4.5 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B3.S6.2 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,9 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_5';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B3_S6_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Problema B3.S6.1" href="Problema_B3_S6_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +116,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -203,9 +202,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_2.html">Problema B2.S5.2</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 6 - Medios dieléctricos, Energía electrostática</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_1.html">Problema B3.S6.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_2.html">Problema B3.S6.2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B3.S6.2</a></li>
 </ul>
 
     </div>
@@ -265,7 +264,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B4_5.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B3_S6_2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -328,9 +327,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -341,20 +338,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B4.5</h1>
+    <h1>Problema B3.S6.2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-db">Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-dm">Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span></a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -364,78 +352,75 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-5">
-<h1>Problema B4.5<a class="headerlink" href="#problema-b4-5" title="Link to this heading">#</a></h1>
-<p><em>La carga superficial <span class="math notranslate nohighlight">\(\sigma\)</span> girando a velocidad constante <span class="math notranslate nohighlight">\(\omega\)</span></em> implica <strong>unas cargas que se desplazan</strong>, en este caso, <em>una corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span></em>. En este caso, dado que el cilindro <strong>se puede dividir fácilmente en espiras diferenciales que podemos integrar</strong>, vamos a calcular el campo magnético total a partir del campo magnético de una espira (<em>Notar que es similar al problema 4.2</em>):</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b3-s6-2">
+<h1>Problema B3.S6.2<a class="headerlink" href="#problema-b3-s6-2" title="Link to this heading">#</a></h1>
+<p>El problema pide resolver la capacidad y la energía electrostática en una configuración esférica con un dieléctrico en el espacio intermedio entre los dos electrodos (metálicos, de conductor eléctrico perfecto o <em>CEP</em>). Las relaciones entre el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>, el vector polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span> y el vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span> son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{D} &amp;= \varepsilon \vec{E} \\
+\vec{P} &amp;= \vec{D} - \varepsilon_0 \vec{E} = (\varepsilon - \varepsilon_0) \vec{E}
+\end{split}\]</div>
+<p>Y la condición de contorno que nos impone la conexión del condensador es <span class="math notranslate nohighlight">\(\Phi(b) = 0\)</span> y <span class="math notranslate nohighlight">\(\Phi(a) = V\)</span>. Este problema es de un condensador esférica con permitividad eléctrica relativa variable. Sin embargo, la dependencia radial de la permitividad relativa mantiene la simetría esférica, por lo que podemos utilizar el método de Gauss para resolverlo. Utilizamos la ecuación de Gauss en forma integral para medios materiales dieléctricos con simetría esférica, eligiendo una superficie de Gauss esférica centrada en el origen con un radio <span class="math notranslate nohighlight">\(r\)</span>, lo que nos da, para la componente radial (<em>y única componente</em>) del vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{B} = \int d \vec{B}
+\oint_S \vec{D}\cdot\vec{S} = Q_l \quad \Rightarrow \quad D4\pi r^2 = Q_l
 \]</div>
-<p>El campo magnético de <strong>una espira de corriente <span class="math notranslate nohighlight">\(I\)</span> y de radio <span class="math notranslate nohighlight">\(a\)</span> en el eje <span class="math notranslate nohighlight">\(\vec{u_z}\)</span> de simetría</strong> es conocido:</p>
+<p>Siendo <span class="math notranslate nohighlight">\(Q_l\)</span> la carga libre total en el conductor interno. Vamos a escribir también las expresiones para el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> y para el vector polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{D} &amp;= \frac{Q_l}{4\pi r^2}\vec{u_r}; \quad \vec{E} = \frac{Q_l}{4\pi \varepsilon r^2}\vec{u_r} = \frac{Q_l(1-kr)}{4\pi \varepsilon_0 r^2}\vec{u_r}; \quad \vec{P} = \frac{kQ_l}{4\pi r}\vec{u_r} \quad r\in[a,b]\\
+\end{split}\]</div>
+<p>Para poder relacionar la carga libre <span class="math notranslate nohighlight">\(Q_l\)</span> con el potencial <span class="math notranslate nohighlight">\(V\)</span> utilizamos la definición de potencial en forma integral:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{B_1} = \frac{\mu_0 I}{2} \frac{a^2}{(a^2 + z^2)^{3/2}} \vec{u_z}
+V = \Phi(r{=}a) - \Phi(r{=}b) = -\int\vec{E}\cdot\vec{dl}
 \]</div>
-<p>Ahora vamos a utilizar este resultado para <strong>obtener el campo magnético generado por un trozo de cilindro</strong> cuya posición sea <span class="math notranslate nohighlight">\(z'\)</span>:</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/cilindro_rot.png"><img alt="cilindro_rot" src="../_images/cilindro_rot.png" style="width: 200px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Vamos a particularizar el resultado para la espira diferencial en <span class="math notranslate nohighlight">\(z'\)</span>.</p>
-<section id="calculo-de-vec-db">
-<h2>Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span><a class="headerlink" href="#calculo-de-vec-db" title="Link to this heading">#</a></h2>
-<p>Por una parte, <strong>la posición ha cambiado, por lo que tenemos que sustituir <span class="math notranslate nohighlight">\(z\)</span></strong> para tener en cuenta la posición de la espira diferencial:</p>
+<p>Eligiendo un radio, <span class="math notranslate nohighlight">\(\vec{dl} = dr\vec{u_r}\)</span></p>
 <div class="math notranslate nohighlight">
 \[
-z \rightarrow z-z'
+V = -\int\vec{E}\cdot\vec{dl} = - \int_{r=b}^{r=a} E dr = - \int_{r=b}^{r=a} \frac{Q_l(1-kr)}{4\pi \varepsilon_0 r^2} dr = \frac{Q_l}{4\pi \varepsilon_0 r}|_{r=b}^{r=a} + \frac{kQ_l}{4\pi \varepsilon_0}\log(r)|_{r=b}^{r=a} = \frac{Q_l}{4\pi \varepsilon_0} \left( \frac{1}{a} - \frac{1}{b} \right) + \frac{kQ_l}{4\pi \varepsilon_0} \log\frac{a}{b}
 \]</div>
-<p>Por otra parte, <strong>tenemos que obtener la corriente que atraviesa la sección lateral de anchura <span class="math notranslate nohighlight">\(dz'\)</span></strong>. Se puede calcular como la densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j}\)</span> multiplicada por la anchura del segmento perpendicular <span class="math notranslate nohighlight">\(dz'\)</span>. <em>Cuando tenemos la velocidad de desplazamiento de las cargas</em>, la manera más sencilla de obtener la corriente superficial es multiplicar:</p>
+<p>Con lo que la capacidad y la energía electrostática son inmediatas. Por ejemplo, para la capacidad:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{j} = \sigma \vec{v} 
+C = \frac{Q_l}{V} = \frac{1}{\frac{1}{4\pi \varepsilon_0} \left( \frac{1}{a} - \frac{1}{b} \right) + \frac{k}{4\pi \varepsilon_0} \log\frac{a}{b}}
 \]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Para recordar o deducir la expresión de <span class="math notranslate nohighlight">\(\vec{j}\)</span>, primero observamos que tiene <strong>las unidades correctas, de <span class="math notranslate nohighlight">\([A/m]\)</span></strong>. Notamos que <strong>la velocidad debe estar contenida en la superficie</strong> para que la expresión tenga sentido, de forma que las cargas se desplazan dentro de la superficie</p>
-<p>Es similar a la expresión conocida <span class="math notranslate nohighlight">\(\vec{J} = \rho \vec{v}\)</span>, con unidades de <span class="math notranslate nohighlight">\([A/m^2]\)</span></p>
-</div>
-<p>Queda obtener la velocidad, que está relacionada con la velocidad angular <span class="math notranslate nohighlight">\(\omega\)</span> y con el radio del cilíndro <span class="math notranslate nohighlight">\(a\)</span>. Así:</p>
+<p>!Observamos que la polarización no tiene una divergencia nula! Esto significa que la densidad volumétrica de carga de polarización tampoco es nula. Usando la divergencia en esféricas:</p>
 <div class="math notranslate nohighlight">
 \[
-I = j \space dz' = \sigma v \space dz' = \sigma \omega a \space dz' 
+\rho_P = -\nabla\cdot\vec{P} = -\frac{1}{r^2}\frac{\partial}{\partial r}(r^2P_r) = \frac{kQ_l}{4\pi r^2}
 \]</div>
-<p>Observar que coincide con la carga por unidad de tiempo que atraviesa la sección lateral de anchura <span class="math notranslate nohighlight">\(dz'\)</span>. Dicha carga, la que atraviesa <span class="math notranslate nohighlight">\(dz'\)</span> en un tiempo <span class="math notranslate nohighlight">\(dt\)</span> es la contenida en una superficie de lados <span class="math notranslate nohighlight">\(dz'\)</span> y <span class="math notranslate nohighlight">\(v \space dt\)</span>.
-$<span class="math notranslate nohighlight">\(
-I = \frac{dq}{dt} = \frac{\sigma dz' \space v \space dt}{dt}
-\)</span>$</p>
-<p>Ya tenemos todos los elementos para obtener <span class="math notranslate nohighlight">\(\vec{dB}\)</span>. Por último, las espiras diferenciales tienen posiciones desde <span class="math notranslate nohighlight">\(z' = -L/2\)</span> hasta <span class="math notranslate nohighlight">\(z' = +L/2\)</span>, que serán los límites de integración</p>
-<p>Con esto, <strong>el campo magnético total, obtenido a partir del campo magnético diferencial de cada espira diferencial</strong> es:</p>
+<p>Las densidades superficiales de carga de polarización se pueden obtener, teniendo cuidado con la dirección del vector unitario <span class="math notranslate nohighlight">\(\vec{n}\)</span>. En la frontera del dieléctrico en <span class="math notranslate nohighlight">\(r=a\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{B} = \int d \vec{B} = \int_{z'=-L/2}^{z'=L/2} \frac{\mu_0 \sigma \omega a \space dz'}{2} \frac{a^2}{(a^2 + (z-z')^2)^{3/2}} \vec{u_z}
+\vec{n} = -\vec{u_r} \quad \Rightarrow \quad \sigma_a = \vec{n}\cdot\vec{P} = -\vec{u_r}\cdot\vec{P}(r{=}a) = -\frac{kQ_l}{4\pi a}
 \]</div>
-<p>Dando un resultado comparable al del problema 4.2:</p>
+<p>Mientras que en la frontera del dieléctrico en <span class="math notranslate nohighlight">\(r=b\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{B} = - \frac{\mu_0 \sigma \omega a \vec{u_z}}{2} \left(\frac{z-L/2}{\sqrt{a^2 + (z-L/2)^2}} - \frac{z+L/2}{\sqrt{a^2 + (z+L/2)^2}}\right)
+\vec{n} = \vec{u_r} \quad \Rightarrow \quad \sigma_b = \vec{n}\cdot\vec{P} = \vec{u_r}\cdot\vec{P}(r{=}b) = \frac{kQ_l}{4\pi b}
 \]</div>
-<p><strong>Para obtener el momento magnético total, usamos la misma estrategia</strong>:</p>
-</section>
-<section id="calculo-de-vec-dm">
-<h2>Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span><a class="headerlink" href="#calculo-de-vec-dm" title="Link to this heading">#</a></h2>
-<p>El momento magnético de cada espira diferencial es el de una espira de corriente <span class="math notranslate nohighlight">\(I\)</span> y radio <span class="math notranslate nohighlight">\(a\)</span></p>
+<p>Podemos verificar que la suma total de la carga de polarización del dieléctrico es nula:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{dm} = I \pi a^2 \vec{u_z} = \sigma \omega a \space dz' \pi a^2 \vec{u_z}
+Q_T = \int_{S_a} \sigma_a dS_a + \int_{S_b} \sigma_b dS_b + \int_V \rho_P dV = 0
 \]</div>
-<p>Por lo tanto:</p>
+<p>La integral en la esfera de radio a, <span class="math notranslate nohighlight">\(S_a\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{m} = \int \vec{dm} = \sigma \omega \pi a^3 L \vec{u_z}
+\int_{S_a} \sigma_a dS_a = \int_{\theta{=}0}^{\theta{=}\pi}\int_{\phi{=}0}^{\phi{=}2\pi}\left(-\frac{kQ_l}{4\pi a}\right)a^2\sin\theta d\theta d\phi = -kQ_la
 \]</div>
-</section>
+<p>Similarmente:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_{S_b} \sigma_b dS_b = kQ_lb
+\]</div>
+<p>Y finalmente:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_V \rho_P dV = \int_{r{=}b}^{r{=}a}\int_{\theta{=}0}^{\theta{=}\pi}\int_{\phi{=}0}^{\phi{=}2\pi} \left(\frac{kQ_l}{4\pi r^2}\right)r^2\sin\theta dr d\theta d\phi = kQ_l(a-b)
+\]</div>
+<p>Con lo que comprobamos el resultado de teoría, <span class="math notranslate nohighlight">\(Q_T = 0\)</span>.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -468,29 +453,21 @@ I = \frac{dq}{dt} = \frac{\sigma dz' \space v \space dt}{dt}
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B3_S6_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B3.S6.1</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-db">Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-dm">Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span></a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
