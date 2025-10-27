@@ -202,6 +202,11 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B2.S5.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_2.html">Problema B2.S5.2</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 6 - Medios dieléctricos, Energía electrostática</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_1.html">Problema B3.S6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_2.html">Problema B3.S6.2</a></li>
+</ul>
 
     </div>
 </nav></div>
@@ -394,7 +399,7 @@ C_l = A_l R^l + \frac{B_l}{R^{l+1}}
 \[
 P_3(\cos\theta) = \frac{1}{2} \left( 5 \cos^3\theta - 3 \cos\theta \right) = \frac{5}{8} \cos(3 \theta) + \frac{3}{8} \cos\theta 
 \]</div>
-<p>Vemos que este polinomio de Legendre incluye un término en <span class="math notranslate nohighlight">\(\cos(\theta)\)</span>, por lo que de por sí solo, podemos conseguir el término <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span>, pero nos sobra el de <span class="math notranslate nohighlight">\(\cos\theta\)</span>. <strong>Por esto tenemos que añadir el término del polinomio de Legendre con <span class="math notranslate nohighlight">\(l=1\)</span></strong>.</p>
+<p>Vemos que este polinomio de Legendre incluye un término en <span class="math notranslate nohighlight">\(\cos\theta\)</span>, por lo que de por sí solo, podemos conseguir el término <span class="math notranslate nohighlight">\(\cos(3 \theta)\)</span>, pero nos sobra el de <span class="math notranslate nohighlight">\(\cos\theta\)</span>. <strong>Por esto tenemos que añadir el término del polinomio de Legendre con <span class="math notranslate nohighlight">\(l=1\)</span></strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>En general, si nos vemos obligados a añadir <strong>un polinomio de orden <span class="math notranslate nohighlight">\(l\)</span></strong>, tendremos que añadir también todos los polinomios <strong>de grado inferior <span class="math notranslate nohighlight">\(l'\)</span> del mismo tipo par o impar</strong>. (Es decir, si <span class="math notranslate nohighlight">\(l\)</span> es par, pondremos todos los términos pares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>, y si <span class="math notranslate nohighlight">\(l\)</span> es impar, todos los términos impares inferiores o iguales a <span class="math notranslate nohighlight">\(l\)</span>).</p>
@@ -404,7 +409,7 @@ P_3(\cos\theta) = \frac{1}{2} \left( 5 \cos^3\theta - 3 \cos\theta \right) = \fr
 <p>Ahora, los coeficientes <span class="math notranslate nohighlight">\(C_l\)</span> generales que resuelven la descomposición se pueden obtener fácilmente…</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Phi(r {=} R) = C_1 P_1(\cos(\theta)) + C_3 P_3(\cos(\theta)) = K \cos(3\theta) \\
+\Phi(r {=} R) = C_1 P_1(\cos\theta) + C_3 P_3(\cos\theta) = K \cos(3\theta) \\
 \end{split}\]</div>
 <p>…nos da el siguiente resultado:</p>
 <div class="math notranslate nohighlight">
@@ -424,8 +429,8 @@ C_l = A_l R^l + \frac{B_l}{R^{l+1}}
 </ul>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\Phi_d = \sum_{l=0}^{\infty} A_l r^l P_l(\cos(\theta)) \\
-\Phi_f = \sum_{l=0}^{\infty} \frac{B_l}{r^{l+1}} P_l(\cos(\theta))
+\Phi_d = \sum_{l=0}^{\infty} A_l r^l P_l(\cos\theta) \\
+\Phi_f = \sum_{l=0}^{\infty} \frac{B_l}{r^{l+1}} P_l(\cos\theta)
 \end{split}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -444,7 +449,7 @@ B_3 = \frac{8}{5} K R^4
 <p class="admonition-title">Note</p>
 <p>En un volumen con simetría esférica nos vamos a encontrar tres posibilidades:</p>
 <ul class="simple">
-<li><p><strong>Incluye el origen</strong>: La expresión del potencial en general no puede diverger en el origen, así que, salvo que haya alguna carga puntual, dipolo, o algo que lo justifique, <span class="math notranslate nohighlight">\(B_l = \)</span>, para todo <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
+<li><p><strong>Incluye el origen</strong>: La expresión del potencial en general no puede diverger en el origen, así que, salvo que haya alguna carga puntual, dipolo, o algo que lo justifique, <span class="math notranslate nohighlight">\(B_l = 0\)</span>, para todo <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
 <li><p><strong>Incluye el infinito</strong>: La expresión del potencial en general no diverge en el infinito, así que, salvo que la condición de contorno en el infinito lo imponga, <span class="math notranslate nohighlight">\(A_l = 0\)</span>, para todo <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
 <li><p><strong>No incluye ni el origen ni el infinito</strong>: Es una esfera con un hueco esférico, por lo que tiene dos condiciones de contorno, la interior y la exterior, con las que podemos obtener <span class="math notranslate nohighlight">\(A_l\)</span> y <span class="math notranslate nohighlight">\(B_l\)</span>, para todo <span class="math notranslate nohighlight">\(l\)</span></p></li>
 </ul>

@@ -202,6 +202,11 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_1.html">Problema B2.S5.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_2.html">Problema B2.S5.2</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 6 - Medios dieléctricos, Energía electrostática</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_1.html">Problema B3.S6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_2.html">Problema B3.S6.2</a></li>
+</ul>
 
     </div>
 </nav></div>
@@ -434,34 +439,53 @@ dr' = -\frac{a^2}{r^2} dr \quad \Rightarrow \quad \frac{dr'}{dr} = -\frac{a^2}{r
 <p>(<em>He utilizado la definición de <span class="math notranslate nohighlight">\(\vec{E} = - \nabla \Phi\)</span>, de forma que podemos calcular el que nos parezca más fácil. Típicamente el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> es más fácil, aunque no siempre</em>)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>De los tres términos, dos son sencillos de obtener, ya que son integrales que hemos hecho otras veces:</p>
+<p>De los tres términos, dos son sencillos de obtener, ya que son integrales que hemos hecho otras veces. Como repaso, vamos a plantear la integral de un disco de carga en un punto de su eje de simetría:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-&amp;\Phi_{corona} = \frac{\sigma}{2 \varepsilon_0} \left( \sqrt{z^2 + R_2^2} - \sqrt{z^2 + R_1^2} \right), \\
-&amp;\Phi_{Q_c} = \frac{Q_c}{4 \pi \varepsilon_0 z}
+\sigma &amp;= cte, \\
+\vec{r} &amp;= z \vec{u_z},\\
+\vec{r'} &amp;= (r'\cos{\phi'},r'\sin{\phi'},0),\\ 
+|{\vec{r}-\vec{r'}}| &amp;= \sqrt{r'^2 + z^2}, \\
+dS' &amp;= r'dr'd\phi' \quad r'\in[R_1,R_2] \quad \phi'\in[0,2\pi],
 \end{split}\]</div>
-<p>El otro término es el de <strong>una corona con <span class="math notranslate nohighlight">\(\sigma \neq cte\)</span></strong>:</p>
+<p>Por lo tanto,</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi_{corona}(z) = \int_{r'=R_1}^{r'=R_2} \int_{\phi'=0}^{\phi'=2\pi} \frac{\sigma}{4\pi\varepsilon_0\sqrt{r'^2 + z^2}}r'dr'd\phi'
+\]</div>
+<p>Con el resultado:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+&amp;\Phi_{corona}(z) = \frac{\sigma}{2 \varepsilon_0} \left( \sqrt{z^2 + R_2^2} - \sqrt{z^2 + R_1^2} \right), \\
+\end{split}\]</div>
+<p>Respecto al potencial de la carga puntual central:</p>
+<div class="math notranslate nohighlight">
+\[
+&amp;\Phi_{Q_c}(z) = \frac{Q_c}{4 \pi \varepsilon_0 z}
+\]</div>
+<p>El último término es el de <strong>una corona con <span class="math notranslate nohighlight">\(\sigma' \neq cte\)</span></strong>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \sigma' &amp;= -\sigma \frac{a^3}{r'^3}, \\
-\vec{r} &amp;= z \vec{u_z},\\
-\vec{r'} &amp;= (r'\cos{\phi'},r'\sin{\phi'},0),\\ 
-|{\vec{r}-\vec{r'}}| &amp;= \sqrt{r'^2 + z^2},
+\vec{r} &amp;= z \vec{u_z}, \\
+\vec{r'} &amp;= (r'\cos{\phi'},r'\sin{\phi'},0), \\ 
+|{\vec{r}-\vec{r'}}| &amp;= \sqrt{r'^2 + z^2}, \\
+dS' &amp;= r'dr'd\phi' \quad r'\in[R'_1,R'_2] \quad \phi'\in[0,2\pi],
 \end{split}\]</div>
 <p>con los límites de integración <span class="math notranslate nohighlight">\(r' \in [R_2', R_1'] = [\frac{a^2}{R_2}, \frac{a^2}{R_1}]\)</span> y <span class="math notranslate nohighlight">\(\phi' \in [0, 2 \pi]\)</span>. Con lo que la integral queda:</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi_{imagen} = \frac{1}{4 \pi \varepsilon_0} \int_{s`=R_2'}^{s'=R_1'} \int_{\phi' = 0}^{\phi' = 2 \pi} \frac{-\sigma \frac{a^3}{r'^3}}{\sqrt{r'^2 + z^2}} r'dr'd\phi'
+\Phi_{imagen}(z) = \frac{1}{4 \pi \varepsilon_0} \int_{s`=R_2'}^{s'=R_1'} \int_{\phi' = 0}^{\phi' = 2 \pi} \frac{-\sigma \frac{a^3}{r'^3}}{\sqrt{r'^2 + z^2}} r'dr'd\phi'
 \]</div>
 <p>Esta integral no es plato de buen gusto, pero se puede resolver realizando algunos cambios de variable. Primero, para quitar el denominador, podemos usar <span class="math notranslate nohighlight">\(\frac{r'}{z} = \sinh{x}\)</span> de forma que queda:</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi_{imagen} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{dx}{\sinh^2{x}}
+\Phi_{imagen}(z) = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{dx}{\sinh^2{x}}
 \]</div>
-<p>Esta integral parece más dificil, pero si tenemos en cuenta que <span class="math notranslate nohighlight">\(\sinh{x} = \frac{e^x-e^{-x}}{2}\)</span> podemos poner:</p>
+<p>Esta integral parece más difícil, pero si tenemos en cuenta que <span class="math notranslate nohighlight">\(\sinh{x} = \frac{e^x-e^{-x}}{2}\)</span> podemos poner:</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi_{imagen} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 dx}{(e^x-e^{-x})^2} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 e^{2x} dx}{(e^{2x}-1)^2} 
+\Phi_{imagen}(z) = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 dx}{(e^x-e^{-x})^2} = -\frac{\sigma a^3}{2 \varepsilon_0 z^2} \int \frac{4 e^{2x} dx}{(e^{2x}-1)^2} 
 \]</div>
 <p>Por lo que ahora podemos usar el cambio de variable <span class="math notranslate nohighlight">\(y = e^{2x} - 1\)</span>, <span class="math notranslate nohighlight">\(dy = 2 e^{2x} dx\)</span>, resultando en una integral inmediata. Después de hacer la sustitución y posteriormente sustituir a la inversa:</p>
 <div class="math notranslate nohighlight">
@@ -474,9 +498,9 @@ dr' = -\frac{a^2}{r^2} dr \quad \Rightarrow \quad \frac{dr'}{dr} = -\frac{a^2}{r
 <p>Por lo tanto, se puede obtener la expresión:</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi_{imagen} = \frac{\sigma a^3}{2 \varepsilon_0} \frac{1}{r'(r'+ \sqrt{r'^2 + z^2})}|_{r' = R'_2}^{r' = R'_1}
+\Phi_{imagen}(z) = \frac{\sigma a^3}{2 \varepsilon_0} \frac{1}{r'(r'+ \sqrt{r'^2 + z^2})}|_{r' = R'_2}^{r' = R'_1}
 \]</div>
-<p>Finalmente, si quisieramos desarrollar una expresión final, faltaría sustituir y derivar dos veces con respecto a <span class="math notranslate nohighlight">\(z\)</span>.</p>
+<p>Finalmente, si quisiéramos desarrollar una expresión final, faltaría sustituir y derivar dos veces con respecto a <span class="math notranslate nohighlight">\(z\)</span>.</p>
 </div>
 </section>
 </section>

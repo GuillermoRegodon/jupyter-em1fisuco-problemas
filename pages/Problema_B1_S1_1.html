@@ -202,6 +202,11 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_1.html">Problema B2.S5.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_2.html">Problema B2.S5.2</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 6 - Medios dieléctricos, Energía electrostática</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_1.html">Problema B3.S6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_2.html">Problema B3.S6.2</a></li>
+</ul>
 
     </div>
 </nav></div>
@@ -386,10 +391,27 @@ E_z = \frac{1}{4\pi\varepsilon_0}\int\frac{\lambda z dx'}{(x'^2 + z^2)^\frac{3}{
 <p class="admonition-title">Note</p>
 <p>Este resultado se puede utilizar, <strong>gracias al principio de superposición</strong>, para obtener el campo eléctrico generado por <strong>cualquier configuración de hilos rectos</strong>. Como ejemplo de aplicación, sugiero que se intente calcular el campo eléctrico de las siguientes configuraciones en los puntos dados:</p>
 <ul class="simple">
-<li><p>Un hilo infinito de densidad de carga lineal <span class="math notranslate nohighlight">\(\lambda\)</span> constante.</p></li>
+<li><p>Un hilo infinito de densidad de carga lineal <span class="math notranslate nohighlight">\(\lambda\)</span> constante (Se puede verificar que por Gauss da lo mismo).</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\vec{E} = E_z\vec{u_z} = \frac{\lambda}{2\pi\varepsilon_0 z} \vec{u_z}
+\]</div>
+<ul class="simple">
 <li><p>Un segmento de densidad de carga lineal <span class="math notranslate nohighlight">\(\lambda\)</span> constante y de longitud <span class="math notranslate nohighlight">\(L\)</span> en cualquier punto del espacio.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E_x = \frac{\lambda}{4\pi\varepsilon_0}\left( \frac{1}{\sqrt{(L+x)^2+z^2}} - \frac{1}{\sqrt{x^2+z^2}}\right) \\
+E_z = \frac{\lambda}{4\pi\varepsilon_0}\left( \frac{L+x}{z\sqrt{((L+x)^2+z^2}} - \frac{x}{z\sqrt{(x^2+z^2}} \right)
+\end{split}\]</div>
+<ul class="simple">
 <li><p>Un marco cuadrado de lado <span class="math notranslate nohighlight">\(b\)</span> en un punto a altura <span class="math notranslate nohighlight">\(h\)</span> perpendicularmente sobre el centro del marco.</p></li>
 </ul>
+<div class="math notranslate nohighlight">
+\[
+E = \frac{8}{\sqrt{2}}\frac{\lambda}{4\pi\varepsilon_0}\left( \frac{b/2}{(h\sqrt{2})\sqrt{(b/2)^2+(h\sqrt{2}))^2}} \right)
+\]</div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

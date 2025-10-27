@@ -1,0 +1,684 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Problema B3.S6.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B3_S6_1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B3.S6.2" href="Problema_B3_S6_2.html" />
+    <link rel="prev" title="Problema B2.S5.2" href="Problema_B2_S5_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Problemas resueltos de Electromagnetismo I - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Problemas resueltos de Electromagnetismo I - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Problemas resueltos de Electromagnetismo I
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Repaso</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0-repaso_gauss_ampere.html">Repaso del uso de las simetrías para resolver problemas</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Superposición</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_3.html">Problema B1.S1.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_4.html">Problema B1.S1.4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 2 - Multipolar</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_1.html">Problema B1.S2.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_2.html">Problema B1.S2.2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 3 - Imágenes, Cargas puntuales</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_1.html">Problema B2.S3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_2.html">Problema B2.S3.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_3.html">Problema B2.S3.3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 4 - Imágenes, Cargas distribuidos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_1.html">Problema.B2.S4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_2.html">Problema B2.S4.2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 5 - Separación de variables, Esferas de carga</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_1.html">Problema B2.S5.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S5_2.html">Problema B2.S5.2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 6 - Medios dieléctricos, Energía electrostática</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B3.S6.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_2.html">Problema B3.S6.2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/pages/Problema_B3_S6_1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Problema B3.S6.1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-a">Configuración <em>(a)</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-b">Configuración <em>(b)</em></a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b3-s6-1">
+<h1>Problema B3.S6.1<a class="headerlink" href="#problema-b3-s6-1" title="Link to this heading">#</a></h1>
+<p>El problema pide resolver la capacidad y la energía electrostática para dos configuraciones esféricas diferentes, con dos distintas configuraciones de dieléctricos en el espacio intermedio entre los dos electrodos (metálicos, de conductor eléctrico perfecto o <em>CEP</em>). Las relaciones entre el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>, el vector polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span> y el vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span> son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{D} &amp;= \varepsilon_i \vec{E} \\
+\vec{P} &amp;= \vec{D} - \varepsilon_0 \vec{E} = (\varepsilon_i - \varepsilon_0) \vec{E}
+\end{split}\]</div>
+<p>Y la condición de contorno que nos impone la conexión del condensador es <span class="math notranslate nohighlight">\(\Phi(c) = 0\)</span> y <span class="math notranslate nohighlight">\(\Phi(a) = V\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Vamos a resolver el problema con un solo dieléctrico.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B3_S6_1_1.png"><img alt="condensador.png" src="../_images/B3_S6_1_1.png" style="width: 200px;" /></a>
+</figure>
+<p>La simetría esférica de dicho problema, nos permite utilizar la ecuación de Gauss en forma integral para materiales dieléctricos. Supongamos que el conductor interno tiene un potencial <span class="math notranslate nohighlight">\(V\)</span> y una carga libre <span class="math notranslate nohighlight">\(Q_l\)</span> total repartida homogéneamente en dicho conductor esférico.</p>
+<div class="math notranslate nohighlight">
+\[
+\oint_S \vec{D}\cdot\vec{S} = \oint_S \varepsilon_1 \vec{E}\cdot\vec{S} = Q_l
+\]</div>
+<p>Y por tanto, para <span class="math notranslate nohighlight">\(r\in[a,c]\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+\varepsilon_1 E4\pi r^2 = Q_l \quad \Rightarrow \quad E = \frac{Q_l}{4\pi\varepsilon_1 r^2}
+\]</div>
+<p>Para relacionar la constante <span class="math notranslate nohighlight">\(Q_l\)</span> con el potencial, utilizamos la definición de potencial en forma integral. Utilizando un radio para el camino integral, <span class="math notranslate nohighlight">\(\vec{dl} = dr \vec{u_r}\)</span> .</p>
+<div class="math notranslate nohighlight">
+\[
+V = \Phi(r{=}a) - \Phi(r{=}c) = -\int\vec{E}\cdot\vec{dl} = -\int_{r=c}^{r=a} E dr = \frac{Q_l}{4\pi\varepsilon_1}\left( \frac{1}{a} - \frac{1}{c} \right)
+\]</div>
+<p>La capacidad y la energía electrostática acumulada en el condensador son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C = \frac{Q_l}{V} = \frac{4\pi\varepsilon_1}{\frac{1}{a} - \frac{1}{c}} \\
+U_e = \frac{1}{2} C V^2 = \frac{2\pi\varepsilon_1 V^2}{\frac{1}{a} - \frac{1}{c}} 
+\end{split}\]</div>
+</div>
+<p>Volvemos a las configuraciones <em>(a)</em> y <em>(b)</em> con dos dieléctricos: La configuración <em>(a)</em> tiene claramente simetría esférica, por lo que podemos utilizar el método de superficies de Gauss esféricas para resolverlo. Veamos qué podemos hacer con la configuración <em>(b)</em>, pero para ello vamos a considerar lo siguiente:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dado que se cumple <span class="math notranslate nohighlight">\(\vec{D} = \varepsilon_i \vec{E}\)</span> y dentro de los dieléctricos no hay cargas libres, la ley de Gauss nos da lo siguiente (<em>¡Dentro de los dieléctricos!</em>):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\nabla\cdot\vec{D} &amp;= 0 \\
+\nabla\cdot\vec{E} &amp;= \frac{1}{\varepsilon_i} \nabla\cdot\vec{D} = 0
+\end{split}\]</div>
+<p>Es decir, <strong>no hay ni cargas libres ni cargas ligadas en el interior de los dieléctricos</strong>. Efectivamente, lo podemos obtener de la expresión de la densidad volumétrica de carga equivalente de polarización:</p>
+<div class="math notranslate nohighlight">
+\[
+\rho_P = -\nabla\cdot\vec{P} = 0
+\]</div>
+<p>Por lo tanto, <strong>cuando la constante dieléctrica de un medio es constante, la densidad volumétrica de carga equivalente de polarización es nula</strong>. Sin embargo, la densidad superficial de carga equivalente de polarización en general no es nula.</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_P = \vec{P}\cdot\vec{n}
+\]</div>
+</div>
+<p>Por lo tanto, la única densidad de carga que nos puede aparecer es en la frontera entre los dieléctricos y entre los dieléctricos y los conductores eléctricos perfectos. Confirmamos que efectivamente, la configuración <em>(a)</em> tiene simetría esférica también después de considerar la densidad superficial de carga equivalente de polarización. En la configuración <em>(b)</em> puede aparecer una densidad de carga equivalente que rompe la simetría esférica. Si observamos la ecuación de Gauss en forma integral para medios dieléctricos.</p>
+<div class="math notranslate nohighlight">
+\[
+\oint_S \vec{D}\cdot\vec{S} = Q_l
+\]</div>
+<p>Vemos que en esta ecuación, la constante dieléctrica no aparece, pero la falta de simetría esférica hace que no podamos asegurar que la carga libre se reparte homogéneamente en la superficie del CEP interno (<em>¡No lo hace!</em>), ni que el vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span> sea constante en una esfera de Gauss (<em>¡No lo es!</em>).</p>
+<section id="configuracion-a">
+<h2>Configuración <em>(a)</em><a class="headerlink" href="#configuracion-a" title="Link to this heading">#</a></h2>
+<p>Supongamos que tenemos una determinada carga libre <span class="math notranslate nohighlight">\(Q_l\)</span> en el conductor interior. La ecuación de Gauss en forma integral para medios dieléctricos, con la simetría esférica, eligiendo una superficie de Gauss esférica centrada en el origen con un radio <span class="math notranslate nohighlight">\(r\)</span> nos da, para la componente radial (<em>y única componente</em>) del vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\oint_S \vec{D}\cdot\vec{S} = Q_l \quad \Rightarrow \quad D4\pi r^2 = Q_l
+\]</div>
+<p>Si ahora particularizamos en cada uno de los dos medios, dado que la carga libre encerrada es la misma, tenemos que en el medio 1 y 2 respectivamente:</p>
+<div class="math notranslate nohighlight">
+\[
+D_1 4\pi r^2 = D_2 4\pi r^2 = Q_l
+\]</div>
+<p>Es decir, ambos tienen la misma expresión. La diferencia es que la relación para el vector desplazamiento <span class="math notranslate nohighlight">\(D_1\)</span> es válida en el rango <span class="math notranslate nohighlight">\(r\in[a,b]\)</span> y la ecuación para <span class="math notranslate nohighlight">\(D_2\)</span> es válida en el rango <span class="math notranslate nohighlight">\(r\in[b,c]\)</span>. Vamos a escribir también las expresiones para el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> y para el vector polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{D_1} &amp;= \frac{Q_l}{4\pi r^2}\vec{u_r}; \quad \vec{E_1} = \frac{Q_l}{4\pi \varepsilon_1 r^2}\vec{u_r}; \quad \vec{P_1} = (1-\frac{\varepsilon_0}{\varepsilon_1})\frac{Q_l}{4\pi r^2}\vec{u_r} \quad r\in[a,b]\\
+\vec{D_2} &amp;= \frac{Q_l}{4\pi r^2}\vec{u_r}; \quad \vec{E_2} = \frac{Q_l}{4\pi \varepsilon_2 r^2}\vec{u_r}; \quad \vec{P_2} = (1-\frac{\varepsilon_0}{\varepsilon_2})\frac{Q_l}{4\pi r^2}\vec{u_r} \quad r\in[b,c]
+\end{split}\]</div>
+<p>Como <span class="math notranslate nohighlight">\(\varepsilon_1 \ne \varepsilon_2\)</span>, vemos que hay una discontinuidad en el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> entre los dos dieléctricos, salto producido por la densidad superficial de carga de polarización entre ambos materiales dieléctricos, que es la suma de dos contribuciones, una por cada material. Por lo tanto, en <span class="math notranslate nohighlight">\(r=b\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sigma_1 = \vec{P_1}\cdot\vec{n} = \vec{P_1}\cdot\vec{u_r} = (1-\frac{\varepsilon_0} {\varepsilon_1})\frac{Q_l}{4\pi b^2} \\
+\sigma_2 = \vec{P_2}\cdot\vec{n} = \vec{P_1}\cdot(-\vec{u_r}) = (\frac{\varepsilon_0} {\varepsilon_2}-1)\frac{Q_l}{4\pi b^2}
+\end{split}\]</div>
+<p>Y por tanto:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_{r=b} = (\frac{\varepsilon_0} {\varepsilon_2}-\frac{\varepsilon_0} {\varepsilon_1})\frac{Q_l}{4\pi b^2}
+\]</div>
+<p>y efectivamente:</p>
+<div class="math notranslate nohighlight">
+\[
+E_2(r{=}b) - E_1(r{=}b) = \frac{\sigma_{r=b}}{\varepsilon_0}
+\]</div>
+<p>(<em>Entre el material y el CEP también aparecerá otra densidad superficial de carga de polarización, pero como la carga en el CEP es cualquiera que permita cumplir que el potencial sea constante, por lo que siempre va a poder cancelar cualquier densidad superficial de carga de polarización que pudiera aparecer.</em>)</p>
+<p>Lo único que falta es relacionar la carga libre con el potencial <span class="math notranslate nohighlight">\(V\)</span>. Lo hacemos relacionando el potencial <span class="math notranslate nohighlight">\(\Phi(r)\)</span> con el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> conocido. Utilizamos la definición de potencial en forma integral:</p>
+<div class="math notranslate nohighlight">
+\[
+V = \Phi(r{=}a) - \Phi(r{=}b) = -\int\vec{E}\cdot\vec{dl}
+\]</div>
+<p>Eligiendo un radio, <span class="math notranslate nohighlight">\(\vec{dl} = dr\vec{u_r}\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+V = -\int\vec{E}\cdot\vec{dl} = - \int_{r=a}^{r=b} E_1 dr - \int_{r=b}^{r=c} E_2 dr = \frac{Q_l}{4\pi \varepsilon_1 r}|_{r=a}^{r=b} + \frac{Q_l}{4\pi \varepsilon_2 r}|_{r=b}^{r=c} = \frac{Q_l}{4\pi \varepsilon_1} \left( \frac{1}{b} - \frac{1}{a} \right) + \frac{Q_l}{4\pi \varepsilon_2} \left( \frac{1}{c} - \frac{1}{b} \right)
+\]</div>
+<p>Por último, la capacidad y la energía electrostática acumulada en el condensador son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C = \frac{Q_l}{V} = \frac{1}{\frac{1}{4\pi \varepsilon_1} \left( \frac{1}{b} - \frac{1}{a} \right) + \frac{1}{4\pi \varepsilon_2} \left( \frac{1}{c} - \frac{1}{b} \right)} \\
+U_e = \frac{1}{2}CV^2 = \frac{1}{2}\frac{1}{\frac{1}{4\pi \varepsilon_1} \left( \frac{1}{b} - \frac{1}{a} \right) + \frac{1}{4\pi \varepsilon_2} \left( \frac{1}{c} - \frac{1}{b} \right)} V^2
+\end{split}\]</div>
+<p>Observemos que la capacidad <span class="math notranslate nohighlight">\(C\)</span> del condensador formado es la configuración con dos dieléctricos es el resultado de la configuración en serie de un condensador esférico <span class="math notranslate nohighlight">\(C_1\)</span> de radios <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span> con permitividad eléctrica <span class="math notranslate nohighlight">\(\varepsilon_1\)</span> y otro condensador esférico <span class="math notranslate nohighlight">\(C_2\)</span> de radios <span class="math notranslate nohighlight">\(b\)</span> y <span class="math notranslate nohighlight">\(c\)</span> con permitividad eléctrica <span class="math notranslate nohighlight">\(\varepsilon_2\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C = \frac{1}{\frac{1}{C_1} + \frac{1}{C_2}} \\
+C_1 = \frac{4\pi\varepsilon_1}{\frac{1}{b} - \frac{1}{a}} \quad C_2 = \frac{4\pi\varepsilon_2}{\frac{1}{c} - \frac{1}{b}}
+\end{split}\]</div>
+<p>Y si <span class="math notranslate nohighlight">\(\varepsilon_1=\varepsilon_2\)</span>, recuperamos el caso del condensador esférico con un solo dieléctrico.</p>
+</section>
+<section id="configuracion-b">
+<h2>Configuración <em>(b)</em><a class="headerlink" href="#configuracion-b" title="Link to this heading">#</a></h2>
+<p>En esta configuración, puede aparecer una densidad superficial de carga de polarización entre los dieléctricos, que rompe la simetría esférica, y entre los dieléctricos y los CEP. Sin embargo, a pesar de esto, vamos a suponer que tanto el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>, el vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span> y el vector polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span> son radiales. Veremos que esto da una solución consistente y por tanto, dado que la solución en electrostática es única, es la correcta.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En muchos contextos, tenemos varias ecuaciones posibles, y algunas de ellas nos ofrecen una visión más clara que otras. Tenemos la ecuación de Gauss en forma integral para medios materiales, que no permite ver simetría esférica, debido a que no hay motivo para que la carga <span class="math notranslate nohighlight">\(Q_l\)</span> total del CEP interno esté homogéneamente distribuida, ni que el vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span> sea constante en una esfera de Gauss.</p>
+<div class="math notranslate nohighlight">
+\[
+\oint_S \vec{D}\cdot\vec{S} = Q_l
+\]</div>
+<p>Tenemos la ecuación de Gauss en forma integral.</p>
+<div class="math notranslate nohighlight">
+\[
+\oint_S \vec{E}\cdot\vec{S} = \frac{Q_T}{\varepsilon_0}
+\]</div>
+<p>Que tampoco lo permite, por el mismo motivo, ya que la carga total incluye la carga libre y la ligada. También tenemos las versiones diferenciales en los materiales, <span class="math notranslate nohighlight">\(\nabla\cdot\vec{D} = 0\)</span> y <span class="math notranslate nohighlight">\(\nabla\cdot\vec{E} = \frac{1}{\varepsilon_i} \nabla\cdot\vec{D} = 0\)</span>, que hemos utilizado para argumentar que no hay densidad volumétrica de carga equivalente de polarización. Tenemos por último, la ecuación de Poisson:</p>
+<div class="math notranslate nohighlight">
+\[
+\nabla^2\Phi = 0
+\]</div>
+<p>Con las condiciones de contorno, <span class="math notranslate nohighlight">\(\Phi(c) = 0\)</span> y <span class="math notranslate nohighlight">\(\Phi(a) = V\)</span>. Tanto la condición de contorno como la ecuación tienen simetría esférica. ¿El cambio de material entre los dieléctricos supone una ruptura de la simetría esférica? Veamos las condiciones de contorno sobre el potencial, entre los dos materiales:</p>
+<ul class="simple">
+<li><p>El potencial debe de ser continuo.</p></li>
+<li><p>El campo eléctrico radial (<em>paralelo a la superficie que separa los materiales</em>) y por lo tanto la derivada radial del potencial también.</p></li>
+</ul>
+<p>¿Es suficiente para convencernos que que la ecuación de Poisson tiene simetría esférica? Pero en última instancia, lo único que podemos hacer es resolver el problema con las suposiciones indicadas y comprobar el resultado.</p>
+</div>
+<p>Hemos argumentado que la ecuación de Poisson <span class="math notranslate nohighlight">\(\nabla^2\Phi = 0\)</span> y la condición de contorno <span class="math notranslate nohighlight">\(\Phi(c) = 0\)</span> y <span class="math notranslate nohighlight">\(\Phi(a) = V\)</span> sobre el potencial sí tienen simetría radial, por lo que vamos a resolverla, lo que nos dará el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>, el vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span> y el vector polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span> radiales. Poniendo la ecuación de Poisson en esféricas obtenemos:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi(r) = \frac{A}{r} + B
+\]</div>
+<p>Sustituyendo las condiciones de contorno:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi(r) = V \frac{\frac{1}{r} - \frac{1}{c}}{\frac{1}{a} - \frac{1}{c}}
+\]</div>
+<p>El campo eléctrico es inmediato a partir de la definición de potencial. Observamos que es igual en ambos medios dieléctricos:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{E}(r) = \vec{E_1}(r) = \vec{E_2}(r) = \frac{V}{r^2}\frac{1}{\frac{1}{a} - \frac{1}{c}}\vec{u_r}
+\]</div>
+<p>Las demás magnitudes vectoriales salen a partir del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{D_1}(r) &amp;= \frac{\varepsilon_1 V}{r^2}\frac{1}{\frac{1}{a} - \frac{1}{c}}\vec{u_r}; \quad \vec{P_1}(r) &amp;= \frac{(\varepsilon_1 - \varepsilon_0)  V}{r^2}\frac{1}{\frac{1}{a} - \frac{1}{c}}\vec{u_r}\\
+\vec{D_2}(r) &amp;= \frac{\varepsilon_2 V}{r^2}\frac{1}{\frac{1}{a} - \frac{1}{c}}\vec{u_r}; \quad \vec{P_2}(r) &amp;= \frac{(\varepsilon_2 - \varepsilon_0) V}{r^2}\frac{1}{\frac{1}{a} - \frac{1}{c}}\vec{u_r}
+\end{split}\]</div>
+<p>Si quisiéramos poner el resultado en función de la carga libre total del conductor interno <span class="math notranslate nohighlight">\(Q_l\)</span>, la debemos calcular a partir de la ley de Gauss. Usamos una superficie esférica <span class="math notranslate nohighlight">\(S\)</span> que se puede dividir en dos mitades <span class="math notranslate nohighlight">\(S_1\)</span> y <span class="math notranslate nohighlight">\(S_2\)</span>, cada una de las cuales está en el volumen ocupado por cada medio dieléctrico.</p>
+<div class="math notranslate nohighlight">
+\[
+Q_l = \oint_S\vec{D}\cdot\vec{dS} = \int_{S_1}\vec{D_1}\cdot\vec{dS_1} + \int_{S_2}\vec{D_2}\cdot\vec{dS_2} = D_1S_1 + D_2S_2 = \frac{\varepsilon_1 V}{r^2}\frac{1}{\frac{1}{a} - \frac{1}{c}} 2\pi r^2 + \frac{\varepsilon_2 V}{r^2}\frac{1}{\frac{1}{a} - \frac{1}{c}} 2\pi r^2 = \frac{(\varepsilon_1 + \varepsilon_2) V}{\frac{1}{a} - \frac{1}{c}} 2\pi
+\]</div>
+<p>Por último, la capacidad y la energía electrostática acumulada en el condensador son:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C = \frac{Q_l}{V} = \frac{2\pi(\varepsilon_1 + \varepsilon_2)}{\frac{1}{a} - \frac{1}{c}} \\
+U_e = \frac{1}{2}CV^2 = \frac{\pi(\varepsilon_1 + \varepsilon_2) V^2}{\frac{1}{a} - \frac{1}{c}}
+\end{split}\]</div>
+<p>Observemos que la capacidad <span class="math notranslate nohighlight">\(C\)</span> del condensador formado es la configuración con dos dieléctricos es el resultado de la configuración en paralelo de medio condensador esférico <span class="math notranslate nohighlight">\(C_1\)</span> de radios <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(c\)</span> con permitividad eléctrica <span class="math notranslate nohighlight">\(\varepsilon_1\)</span> y otro medio condensador esférico <span class="math notranslate nohighlight">\(C_2\)</span> de los mismos radios <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(c\)</span> con permitividad eléctrica <span class="math notranslate nohighlight">\(\varepsilon_2\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C = C_1 + C_2 \\
+C_1 = \frac{2\pi\varepsilon_1}{\frac{1}{a} - \frac{1}{c}}  \quad C_2 = \frac{2\pi\varepsilon_2}{\frac{1}{a} - \frac{1}{c}}
+\end{split}\]</div>
+<p>Y si <span class="math notranslate nohighlight">\(\varepsilon_1=\varepsilon_2\)</span>, recuperamos el caso del condensador esférico con un solo dieléctrico.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En esencia, hemos supuesto que la densidad superficial de carga de polarización <span class="math notranslate nohighlight">\(\sigma_P\)</span> entre los dos dieléctricos es nula, <span class="math notranslate nohighlight">\(\sigma_P=0\)</span>, junto con el hecho que que la densidad volumétrica de carga de polarización <span class="math notranslate nohighlight">\(\rho_p\)</span> también es nula, <span class="math notranslate nohighlight">\(\rho_P=0\)</span>, por ser la permitividad <span class="math notranslate nohighlight">\(\varepsilon_0\)</span> constante, para poder utilizar la ecuación de Poisson con el término de la densidad volumétrica de carga nulo (<em>total, libre más ligada</em>). La solución resultante efectivamente es consistente con <span class="math notranslate nohighlight">\(\sigma_P=0\)</span> entre los dieléctricos.</p>
+<p><em>Obviamente, la densidad superficial de carga de polarización entre los diléctricos y los CEP no es nula. ¿Cuánto vale?</em></p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./pages"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B2_S5_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B2.S5.2</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B3_S6_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B3.S6.2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-a">Configuración <em>(a)</em></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuracion-b">Configuración <em>(b)</em></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Guillermo Fernando Regodon Harkness
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
