@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B1.S1.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema Propuesto B2.S4.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,11 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B1_S1_4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Propuesto_B2_S4_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B1.S2.1" href="Problema_B1_S2_1.html" />
-    <link rel="prev" title="Problema B1.S1.3" href="Problema_B1_S1_3.html" />
+    <link rel="next" title="Problema B2.S5.1" href="Problema_B2_S5_1.html" />
+    <link rel="prev" title="Problema B2.S4.2" href="Problema_B2_S4_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -175,11 +175,11 @@
 <li class="toctree-l1"><a class="reference internal" href="0-repaso_gauss_ampere.html">Repaso del uso de las simetrías para resolver problemas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Superposición</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_3.html">Problema B1.S1.3</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B1.S1.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_4.html">Problema B1.S1.4</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 2 - Multipolar</span></p>
 <ul class="nav bd-sidenav">
@@ -193,10 +193,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_3.html">Problema B2.S3.3</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 4 - Imágenes, Cargas distribuidos</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_1.html">Problema.B2.S4.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_2.html">Problema B2.S4.2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Propuesto_B2_S4_1.html">Problema Propuesto B2.S4.1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema Propuesto B2.S4.1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 5 - Separación de variables, Esferas de carga</span></p>
 <ul class="nav bd-sidenav">
@@ -266,7 +266,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B1_S1_4.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Propuesto_B2_S4_1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -340,7 +340,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B1.S1.4</h1>
+    <h1>Problema Propuesto B2.S4.1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -354,49 +354,75 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b1-s1-4">
-<h1>Problema B1.S1.4<a class="headerlink" href="#problema-b1-s1-4" title="Link to this heading">#</a></h1>
-<p>Nos pide la fuerza que ejerce un hemisferio de carga sobre el otro, con la densidad de carga <span class="math notranslate nohighlight">\(\rho = \frac{Q}{(4/3)\pi a^3}\)</span> constante. Observamos que la fuerza que sufre una partícula, o un diferencial de carga en nuestro caso, es proporcional al campo eléctrico. Por lo tanto, <em>necesitamos conocer el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{S\rightarrow N}\)</span> que ejerce el hemisferio sur en un punto del hemisferio norte</em>. Una vez tuvieramos la expresión, podríamos integrar en todo el hemisferio norte para obtener la fuerza total.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{F}_N = \int_N \rho \vec{E}_{S\rightarrow N} dV_N
-\]</div>
-<p>Posiblemente, lo primero que observemos es que la fuerza debe tener dirección <span class="math notranslate nohighlight">\(z\)</span> por simetría y eliminar dos componentes. Sin embargo, calcular el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{S\rightarrow N}\)</span> que genera el hemisferio sur en cualquier punto del hemisferio norte es complicado.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{E}_{S\rightarrow N} = \frac{1}{4\pi\varepsilon_0}\int_S \frac{\rho}{R^2}\vec{u_R} dV_S
-\]</div>
-<p>La simetría esférica se puede utilizar para parametrizar de forma sencilla el diferencial de volumen de integración, pero para parametrizar el punto en el que se integra, es necesario utilizar otras coordenadas. La distancia <span class="math notranslate nohighlight">\(R = |\vec{r_N} - \vec{r_S}|\)</span> depende fuertemente del punto en el que se quiere integrar, y no resulta sencillo en ningún caso. (<strong>Notar que en lugar de utilizar <span class="math notranslate nohighlight">\(\vec{r}\)</span> y <span class="math notranslate nohighlight">\(\vec{r'}\)</span>, hemos utilizado los subíndices <span class="math notranslate nohighlight">\(N\)</span> y <span class="math notranslate nohighlight">\(S\)</span> para el punto donde se calcula el campo y el punto en el que está la fuente</strong>).</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-propuesto-b2-s4-1">
+<h1>Problema Propuesto B2.S4.1<a class="headerlink" href="#problema-propuesto-b2-s4-1" title="Link to this heading">#</a></h1>
+<p>Este problema se resuelve usando una metodología similar a la teoría que desarrollamos para obtener la imagen de una carga puntual. Se trata de la imagen de un hilo infinito de densidad lineal de carga <span class="math notranslate nohighlight">\(\lambda\)</span> cuando se pone paralelo a un cilindro infinito de conductor eléctrico perfecto (<em>CEP</em>) conectado a un potencial <span class="math notranslate nohighlight">\(\Phi_{CEP} = V\)</span>. Igual que en el caso esférico, vamos a suponer que el CEP está conectado a tierra, y <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>, y a posteriori añadiremos un hilo de carga en el eje del CEP para tener en cuenta la posible diferencia.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S4_P1_1.png"><img alt="cilindro_hilo" src="../_images/B2_S4_P1_1.png" style="width: 300px;" /></a>
+</figure>
+<p>La metodología resumida es:</p>
+<ul class="simple">
+<li><p>Primero, planteamos una imagen para el hilo, que posiblemente será otro hilo (<em>y de hecho es así</em>).</p></li>
+<li><p>Buscamos la posición <span class="math notranslate nohighlight">\(d`\)</span> y la densidad lineal de carga <span class="math notranslate nohighlight">\(\lambda'\)</span> de la imagen para que el potencial sea 0, o lo que es lo mismo, para que el campo eléctrico sea perpendicular a la superficie del CEP.</p></li>
+<li><p>Escribimos las magnitudes físicas potencial <span class="math notranslate nohighlight">\(\Phi\)</span> y campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> fuera del CEP como la superposición de las magnitudes físicas generadas por la el hilo de carga original y por su imagen.</p></li>
+</ul>
+<p>Este problema tiene algunas peculiaridades derivadas del hecho de que la configuración de carga se extiende hasta el infinito. Veamos antes el campo eléctrico y el potencial que generan un hilo de carga infinito.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Aunque a priori, este problema se puede plantear, y quizás resolver la expresión exacta, <em>vamos a aprovechar el principio de superposición para resolver el problema de forma sencilla</em>.</p>
+<p>Un hilo infinito de densidad lineal de carga <span class="math notranslate nohighlight">\(\lambda\)</span> genera un campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> radial simetría cilíndrica. Lo resolvemos por Gauss. Para una superficie de Gauss que sea un cilindro de altura <span class="math notranslate nohighlight">\(H\)</span> y radio <span class="math notranslate nohighlight">\(s\)</span>:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B2_S4_P1_2.png"><img alt="cilindro_hilo" src="../_images/B2_S4_P1_2.png" style="width: 200px;" /></a>
+</figure>
+<div class="math notranslate nohighlight">
+\[
+E2\pi sH = \frac{\lambda H}{\varepsilon_0} \quad \Rightarrow \quad \vec{E} = \frac{\lambda}{2\pi s} \vec{u_s}
+\]</div>
+<p>El potencial <span class="math notranslate nohighlight">\(\Phi\)</span> se puede obtener por integración, pero nos encontramos con el problema de que la referencia del potencial no se puede poner en el infinito, porque la expresión diverge:</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi = \frac{\lambda}{2\pi\varepsilon_0}\log{s} + C
+\]</div>
 </div>
-<p>Para simplificar el cálculo, observemos que si añadiéramos el hemisferio norte, calcular el campo eléctrico en el hemisferio norte es sencillo por Gauss (<em>¡Comprobar!</em>).</p>
+<p>Para resolver el problema, podemos intentar plantear la condición sobre el potencial. Sin embargo, dado que la referencia del potencial <span class="math notranslate nohighlight">\(\Phi\)</span> no está bien definida, al ser un hilo infinito, nos da problemas. Sin embargo, puedo imponer la condición sobre el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>. Para obtener el campo eléctrico de un hilo desplazado, tenemos que modificar el vector unitario y la coordenada radial:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{E}_N = \vec{E}_{S\rightarrow N} + \vec{E}_{N\rightarrow N} = \frac{\rho \vec{r}}{3\varepsilon_0} = \frac{Q \vec{r}}{4\pi\varepsilon_0 a^3} = \frac{Q r}{4\pi\varepsilon_0 a^3}\vec{u_r}
+\vec{E} = \frac{\lambda}{2\pi s} \vec{u_s} = \frac{\lambda}{2\pi s^2} \vec{s} \quad \Rightarrow \quad \vec{E}_{\lambda,R} = \frac{\lambda}{2\pi (s\vec{u_s} - R\vec{u_x})^2} (s\vec{u_s} - R\vec{u_x})
 \]</div>
-<p>Nos preguntamos en este punto, <strong>¿Pero el campo eléctrico que afecta al hemisferio norte es sólo el del hemisferio sur?</strong> Sin duda que el hemisferio norte también genera su campo eléctrico. <strong>¿Qué efecto produce el campo eléctrico del hemisferio norte sobre el propio hemisfério norte?</strong> (<em>¡Pensar durante unos instantes!</em>)</p>
-<p>La respuesta proviene de un principio de mecánica: La fuerza que ejerce un cuerpo sobre sí mismo, debe ser nulo (<em>Si no fuera así, se movería sólo, sin cumplir la tercera ley de Newton</em>). Por lo tanto, la fuerza total que ejerce el hemisferio sur sobre el hemisferio norte es la misma que la fuerza que ejerce la esfera completa (<em>sur y norte</em>) sobre el hemisferio norte.</p>
+<p>De la misma forma, para el hilo <span class="math notranslate nohighlight">\(\lambda'\)</span> en <span class="math notranslate nohighlight">\(d'\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{F}_N = \int_N \rho \vec{E}_{S\rightarrow N} dV_N + \int_N \rho \vec{E}_{N\rightarrow N} dV_N = \int_N \rho \vec{E}_{N} dV_N
+\vec{E}_{\lambda',d'} = \frac{\lambda'}{2\pi (s\vec{u_s} - d'\vec{u_x})^2} (s\vec{u_s} - d'\vec{u_x})
 \]</div>
-<p>Utilizando la expresión obtenida fácilmente por la ley de Gauss:</p>
+<p>La suma de los dos campos eléctricos <span class="math notranslate nohighlight">\(\vec{E}_{\lambda,R}\)</span> y <span class="math notranslate nohighlight">\(\vec{E}_{\lambda',d'}\)</span> da un vector con componente radial y componente <span class="math notranslate nohighlight">\(x\)</span>. La condición de CEP nos impone que el campo eléctrico es perpendicular en la superficie del CEP, por lo que si sustituyo <span class="math notranslate nohighlight">\(s\)</span> por <span class="math notranslate nohighlight">\(b\)</span>, el radio del CEP, la componente <span class="math notranslate nohighlight">\(x\)</span> debe desaparecer:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{F}_N = \int_N \rho \frac{\rho r}{3\varepsilon_0}\vec{u_r} dV_N
+\frac{-R\lambda}{2\pi (b\vec{u_s} - R\vec{u_x})^2} + \frac{-d'\lambda'}{2\pi (b\vec{u_s} - d'\vec{u_x})^2} = 0
 \]</div>
-<p>Por la simetría en torno al eje <span class="math notranslate nohighlight">\(z\)</span> de la que seguro que nos hemos dado cuenta antes, nos quedamos solamente con la componente <span class="math notranslate nohighlight">\(z\)</span> de <span class="math notranslate nohighlight">\(\vec{u_r} = (...,...,\cos\theta)\)</span>. Usando el diferencial de volumen en el hemisferio norte:</p>
+<p>Podemos intentar obtener los elementos <span class="math notranslate nohighlight">\((s\vec{u_s} - R\vec{u_x})^2\)</span> y <span class="math notranslate nohighlight">\((s\vec{u_s} - d'\vec{u_x})^2\)</span> aplicando trigonometría, pero podemos hacerlo directamente realizando el producto escalar. Así vemos:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-dV_N = r^2 \sin \theta dr d\theta d\varphi \\
-r \in [0,a] \qquad \theta \in [0, \pi/2] \qquad \varphi \in [0,2\pi]
+(b\vec{u_s} - R\vec{u_x})^2 = b^2 + R^2 -2bR\vec{u_s}\cdot\vec{u_x} \\
+(b\vec{u_s} - d'\vec{u_x})^2 = b^2 + d'^2 -2bd'\vec{u_s}\cdot\vec{u_x} \\
 \end{split}\]</div>
-<p>Por lo que, finalmente:</p>
+<p>Vemos que una solución posible es que si <span class="math notranslate nohighlight">\(d' = R\)</span> y <span class="math notranslate nohighlight">\(lambda' = -lambda\)</span>, el campo eléctrico en dirección <span class="math notranslate nohighlight">\(x\)</span>, se anula, pero esta solución es un hilo que cancela al otro, por lo que es una solución trivial que no nos interesa. Pensemos en la otra solución posible: Si <span class="math notranslate nohighlight">\(d'\)</span> fuera proporcional a <span class="math notranslate nohighlight">\(b\)</span> y <span class="math notranslate nohighlight">\(b\)</span> a su vez fuera proporcional a <span class="math notranslate nohighlight">\(R\)</span> en el mismo factor <span class="math notranslate nohighlight">\(k\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-F_{Nz} = \int_{r=0}^{r=a} \int_{\theta=0}^{\theta=\pi/2)} \int_{\varphi=0}^{\varphi=2\pi} \frac{\rho^2}{3\varepsilon_0} r^3 \cos \theta \sin \theta dr d\theta d\varphi = \frac{\rho^2 \pi a^4}{12 \varepsilon_0} = \frac{3 Q^2}{64 \pi a^2\varepsilon_0}
+\frac{d'}{b} = \frac{b}{R} = k
+\]</div>
+<p>Entonces, los denominadores son proporcionales:</p>
+<div class="math notranslate nohighlight">
+\[
+b^2 + d'^2 -2bd'\vec{u_s}\cdot\vec{u_x} = k^2(b^2 + R^2 -2bR\vec{u_s}\cdot\vec{u_x})
+\]</div>
+<p>Mientras que en los numeradores tenemos que <span class="math notranslate nohighlight">\(d'=kb = k^2R\)</span>, por lo que, probando esta condición, vemos que la condición de que la componente <span class="math notranslate nohighlight">\(x\)</span> del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> se anule, se cumple si además <span class="math notranslate nohighlight">\(\lambda' = -\lambda\)</span>. Además, de la relación de proporcionalidad <span class="math notranslate nohighlight">\(d'=\frac{b^2}{R}\)</span>. Aunque esta solución se ha obtenido por inspección, es la única (<em>junto con la trivial</em>) para la que el campo eléctrico es perpendicular a la superficie del CEP. El resto de los apartados:</p>
+<ul class="simple">
+<li><p>El potencial total <span class="math notranslate nohighlight">\(\Phi\)</span> se puede obtener como la superposición del potencial de los dos hilos, real e imagen, <span class="math notranslate nohighlight">\(\Phi_{\lambda,R}\)</span> y <span class="math notranslate nohighlight">\(\Phi_{\lambda',d'}\)</span>. Observemos que tenemos una constante arbitraria relacionada con la imposibilidad de establecer una referencia de potencial para una configuración cilíndrica infinita. En este sentido, da igual que el hilo tenga un potencial u otro, o que consideremos un hilo central para tener en cuenta el potencial <span class="math notranslate nohighlight">\(V\)</span>, simplemente, la constante arbitraria es inevitable.</p></li>
+<li><p>La densidad superficial de carga inducida se puede obtener a partir de la condición de contorno para el campo eléctrico en la superficie del CEP, en la que tiene una discontinuidad.</p></li>
+<li><p>Finalmente, la fuerza por unidad de longitud es la fuerza que sufre un diferencial de hilo:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+f = \lambda E_{\lambda'\rightarrow\lambda} \quad \left( {\rm \frac{N}{m}} \right)
 \]</div>
 </section>
 
@@ -431,20 +457,20 @@ F_{Nz} = \int_{r=0}^{r=a} \int_{\theta=0}^{\theta=\pi/2)} \int_{\varphi=0}^{\var
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problema_B1_S1_3.html"
+       href="Problema_B2_S4_2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B1.S1.3</p>
+        <p class="prev-next-title">Problema B2.S4.2</p>
       </div>
     </a>
     <a class="right-next"
-       href="Problema_B1_S2_1.html"
+       href="Problema_B2_S5_1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problema B1.S2.1</p>
+        <p class="prev-next-title">Problema B2.S5.1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
