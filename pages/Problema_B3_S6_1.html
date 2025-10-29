@@ -466,24 +466,24 @@ E_2(r{=}b) - E_1(r{=}b) = \frac{\sigma_{r=b}}{\varepsilon_0}
 <p>Lo único que falta es relacionar la carga libre con el potencial <span class="math notranslate nohighlight">\(V\)</span>. Lo hacemos relacionando el potencial <span class="math notranslate nohighlight">\(\Phi(r)\)</span> con el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> conocido. Utilizamos la definición de potencial en forma integral:</p>
 <div class="math notranslate nohighlight">
 \[
-V = \Phi(r{=}a) - \Phi(r{=}b) = -\int\vec{E}\cdot\vec{dl}
+V = \Phi(r{=}a) - \Phi(r{=}c) = -\int\vec{E}\cdot\vec{dl}
 \]</div>
 <p>Eligiendo un radio, <span class="math notranslate nohighlight">\(\vec{dl} = dr\vec{u_r}\)</span></p>
 <div class="math notranslate nohighlight">
 \[
-V = -\int\vec{E}\cdot\vec{dl} = - \int_{r=a}^{r=b} E_1 dr - \int_{r=b}^{r=c} E_2 dr = \frac{Q_l}{4\pi \varepsilon_1 r}|_{r=a}^{r=b} + \frac{Q_l}{4\pi \varepsilon_2 r}|_{r=b}^{r=c} = \frac{Q_l}{4\pi \varepsilon_1} \left( \frac{1}{b} - \frac{1}{a} \right) + \frac{Q_l}{4\pi \varepsilon_2} \left( \frac{1}{c} - \frac{1}{b} \right)
+V = -\int\vec{E}\cdot\vec{dl} = - \int_{r=b}^{r=a} E_1 dr - \int_{r=c}^{r=b} E_2 dr = \frac{Q_l}{4\pi \varepsilon_1 r}|_{r=b}^{r=a} + \frac{Q_l}{4\pi \varepsilon_2 r}|_{r=c}^{r=b} = \frac{Q_l}{4\pi \varepsilon_1} \left( \frac{1}{a} - \frac{1}{b} \right) + \frac{Q_l}{4\pi \varepsilon_2} \left( \frac{1}{b} - \frac{1}{c} \right)
 \]</div>
 <p>Por último, la capacidad y la energía electrostática acumulada en el condensador son:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-C = \frac{Q_l}{V} = \frac{1}{\frac{1}{4\pi \varepsilon_1} \left( \frac{1}{b} - \frac{1}{a} \right) + \frac{1}{4\pi \varepsilon_2} \left( \frac{1}{c} - \frac{1}{b} \right)} \\
-U_e = \frac{1}{2}CV^2 = \frac{1}{2}\frac{1}{\frac{1}{4\pi \varepsilon_1} \left( \frac{1}{b} - \frac{1}{a} \right) + \frac{1}{4\pi \varepsilon_2} \left( \frac{1}{c} - \frac{1}{b} \right)} V^2
+C = \frac{Q_l}{V} = \frac{1}{\frac{1}{4\pi \varepsilon_1} \left( \frac{1}{a} - \frac{1}{b} \right) + \frac{1}{4\pi \varepsilon_2} \left( \frac{1}{b} - \frac{1}{c} \right)} \\
+U_e = \frac{1}{2}CV^2 = \frac{1}{2}\frac{1}{\frac{1}{4\pi \varepsilon_1} \left( \frac{1}{a} - \frac{1}{b} \right) + \frac{1}{4\pi \varepsilon_2} \left( \frac{1}{b} - \frac{1}{c} \right)} V^2
 \end{split}\]</div>
 <p>Observemos que la capacidad <span class="math notranslate nohighlight">\(C\)</span> del condensador formado es la configuración con dos dieléctricos es el resultado de la configuración en serie de un condensador esférico <span class="math notranslate nohighlight">\(C_1\)</span> de radios <span class="math notranslate nohighlight">\(a\)</span> y <span class="math notranslate nohighlight">\(b\)</span> con permitividad eléctrica <span class="math notranslate nohighlight">\(\varepsilon_1\)</span> y otro condensador esférico <span class="math notranslate nohighlight">\(C_2\)</span> de radios <span class="math notranslate nohighlight">\(b\)</span> y <span class="math notranslate nohighlight">\(c\)</span> con permitividad eléctrica <span class="math notranslate nohighlight">\(\varepsilon_2\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 C = \frac{1}{\frac{1}{C_1} + \frac{1}{C_2}} \\
-C_1 = \frac{4\pi\varepsilon_1}{\frac{1}{b} - \frac{1}{a}} \quad C_2 = \frac{4\pi\varepsilon_2}{\frac{1}{c} - \frac{1}{b}}
+C_1 = \frac{4\pi\varepsilon_1}{\frac{1}{a} - \frac{1}{b}} \quad C_2 = \frac{4\pi\varepsilon_2}{\frac{1}{b} - \frac{1}{c}}
 \end{split}\]</div>
 <p>Y si <span class="math notranslate nohighlight">\(\varepsilon_1=\varepsilon_2\)</span>, recuperamos el caso del condensador esférico con un solo dieléctrico.</p>
 </section>
