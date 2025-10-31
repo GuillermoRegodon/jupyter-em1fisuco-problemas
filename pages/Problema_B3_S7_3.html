@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema Propuesto B2.S4.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B3.S7.3 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,11 +62,9 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Propuesto_B2_S4_1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B3_S7_3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B2.S5.1" href="Problema_B2_S5_1.html" />
-    <link rel="prev" title="Problema B2.S4.2" href="Problema_B2_S4_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,6 +115,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -193,10 +193,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_3.html">Problema B2.S3.3</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 4 - Imágenes, Cargas distribuidos</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_1.html">Problema.B2.S4.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S4_2.html">Problema B2.S4.2</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema Propuesto B2.S4.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Propuesto_B2_S4_1.html">Problema Propuesto B2.S4.1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 5 - Separación de variables, Esferas de carga</span></p>
 <ul class="nav bd-sidenav">
@@ -266,7 +266,7 @@
       
       
       
-      <li><a href="../_sources/pages/Propuesto_B2_S4_1.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B3_S7_3.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -340,7 +340,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema Propuesto B2.S4.1</h1>
+    <h1>Problema B3.S7.3</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -354,82 +354,36 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-propuesto-b2-s4-1">
-<h1>Problema Propuesto B2.S4.1<a class="headerlink" href="#problema-propuesto-b2-s4-1" title="Link to this heading">#</a></h1>
-<p>Este problema se resuelve usando una metodología similar a la teoría que desarrollamos para obtener la imagen de una carga puntual. Se trata de la imagen de un hilo infinito de densidad lineal de carga <span class="math notranslate nohighlight">\(\lambda\)</span> cuando se pone paralelo a un cilindro infinito de conductor eléctrico perfecto (<em>CEP</em>) conectado a un potencial <span class="math notranslate nohighlight">\(\Phi_{CEP} = V\)</span>. Igual que en el caso esférico, vamos a suponer que el CEP está conectado a tierra, y <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>, y a posteriori añadiremos un hilo de carga en el eje del CEP para tener en cuenta la posible diferencia.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/B2_S4_P1_1.png"><img alt="cilindro_hilo" src="../_images/B2_S4_P1_1.png" style="width: 300px;" /></a>
-</figure>
-<p>La metodología resumida es:</p>
-<ul class="simple">
-<li><p>Primero, planteamos una imagen para el hilo, que posiblemente será otro hilo (<em>y de hecho es así</em>).</p></li>
-<li><p>Buscamos la posición <span class="math notranslate nohighlight">\(d'\)</span> y la densidad lineal de carga <span class="math notranslate nohighlight">\(\lambda'\)</span> de la imagen para que el potencial sea 0, o lo que es lo mismo, para que el campo eléctrico sea perpendicular a la superficie del CEP.</p></li>
-<li><p>Escribimos las magnitudes físicas potencial <span class="math notranslate nohighlight">\(\Phi\)</span> y campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> fuera del CEP como la superposición de las magnitudes físicas generadas por la el hilo de carga original y por su imagen.</p></li>
-</ul>
-<p>Este problema tiene algunas peculiaridades derivadas del hecho de que la configuración de carga se extiende hasta el infinito. Veamos antes el campo eléctrico y el potencial que generan un hilo de carga infinito.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b3-s7-3">
+<h1>Problema B3.S7.3<a class="headerlink" href="#problema-b3-s7-3" title="Link to this heading">#</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Un hilo infinito de densidad lineal de carga <span class="math notranslate nohighlight">\(\lambda\)</span> genera un campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> radial simetría cilíndrica. Lo resolvemos por Gauss. Para una superficie de Gauss que sea un cilindro de altura <span class="math notranslate nohighlight">\(H\)</span> y radio <span class="math notranslate nohighlight">\(s\)</span>:</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/B2_S4_P1_2.png"><img alt="cilindro_hilo" src="../_images/B2_S4_P1_2.png" style="width: 200px;" /></a>
-</figure>
-<div class="math notranslate nohighlight">
-\[
-E2\pi sH = \frac{\lambda H}{\varepsilon_0} \quad \Rightarrow \quad \vec{E} = \frac{\lambda}{2\pi s} \vec{u_s}
-\]</div>
-<p>El potencial <span class="math notranslate nohighlight">\(\Phi\)</span> se puede obtener por integración, pero nos encontramos con el problema de que la referencia del potencial no se puede poner en el infinito, porque la expresión diverge:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi = -\frac{\lambda}{2\pi\varepsilon_0}\log{s} + C
-\]</div>
+<p>Un sólido polarizado está constituido por dipolos microscópicos que no está perfectamente balanceados, creando unas densidades de carga de polarización que, a su vez, son fuentes de campo electrostático <span class="math notranslate nohighlight">\(\vec{E}\)</span> y de potencial <span class="math notranslate nohighlight">\(\Phi\)</span>.</p>
 </div>
-<p>Para resolver el problema, podemos intentar plantear la condición sobre el potencial. Sin embargo, dado que la referencia del potencial <span class="math notranslate nohighlight">\(\Phi\)</span> no está bien definida, al ser un hilo infinito, nos da problemas. Sin embargo, puedo imponer la condición sobre el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>. Para obtener el campo eléctrico de un hilo desplazado, tenemos que modificar el vector unitario y la coordenada radial:</p>
+<p>La esfera polarizada genera unas densidades de carga de polarización que a su vez, son las fuentes del potencial <span class="math notranslate nohighlight">\(\Phi\)</span> y del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>. La polarización de la esfera es uniforme. Por conveniencia lo orientamos en la dirección del eje <span class="math notranslate nohighlight">\(z\)</span> y centrada en el origen, de tal forma que:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{E} = \frac{\lambda}{2\pi s} \vec{u_s} = \frac{\lambda}{2\pi s^2} \vec{s} \quad \Rightarrow \quad \vec{E}_{\lambda,R} = \frac{\lambda}{2\pi (s\vec{u_s} - R\vec{u_x})^2} (s\vec{u_s} - R\vec{u_x})
+\vec{P} = P\vec{u_z}
 \]</div>
-<p>De la misma forma, para el hilo <span class="math notranslate nohighlight">\(\lambda'\)</span> en <span class="math notranslate nohighlight">\(d'\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{E}_{\lambda',d'} = \frac{\lambda'}{2\pi (s\vec{u_s} - d'\vec{u_x})^2} (s\vec{u_s} - d'\vec{u_x})
-\]</div>
-<p>La suma de los dos campos eléctricos <span class="math notranslate nohighlight">\(\vec{E}_{\lambda,R}\)</span> y <span class="math notranslate nohighlight">\(\vec{E}_{\lambda',d'}\)</span> da un vector con componente radial y componente <span class="math notranslate nohighlight">\(x\)</span>. La condición de CEP nos impone que el campo eléctrico es perpendicular en la superficie del CEP, por lo que si sustituyo <span class="math notranslate nohighlight">\(s\)</span> por <span class="math notranslate nohighlight">\(b\)</span>, el radio del CEP, la componente <span class="math notranslate nohighlight">\(x\)</span> debe desaparecer:</p>
-<div class="math notranslate nohighlight">
-\[
-\frac{-R\lambda}{2\pi (b\vec{u_s} - R\vec{u_x})^2} + \frac{-d'\lambda'}{2\pi (b\vec{u_s} - d'\vec{u_x})^2} = 0
-\]</div>
-<p>Podemos intentar obtener los elementos <span class="math notranslate nohighlight">\((s\vec{u_s} - R\vec{u_x})^2\)</span> y <span class="math notranslate nohighlight">\((s\vec{u_s} - d'\vec{u_x})^2\)</span> aplicando trigonometría, pero podemos hacerlo directamente realizando el producto escalar. Así vemos:</p>
+<p>Y la normal <span class="math notranslate nohighlight">\(\vec{n}\)</span> a la superficie es <span class="math notranslate nohighlight">\(\vec{n} = \vec{u_r}\)</span>. Veamos los valores de las densidades de carga de polarización:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-(b\vec{u_s} - R\vec{u_x})^2 = b^2 + R^2 -2bR\vec{u_s}\cdot\vec{u_x} \\
-(b\vec{u_s} - d'\vec{u_x})^2 = b^2 + d'^2 -2bd'\vec{u_s}\cdot\vec{u_x} \\
+\rho_P &amp;= -\nabla\cdot\vec{P} = 0 \\
+\sigma_P &amp;= \vec{n}\cdot\vec{P} = P\cos\theta
 \end{split}\]</div>
-<p>Vemos que una solución posible es que si <span class="math notranslate nohighlight">\(d' = R\)</span> y <span class="math notranslate nohighlight">\(\lambda' = -\lambda\)</span>, el campo eléctrico en dirección <span class="math notranslate nohighlight">\(x\)</span>, se anula, pero esta solución es un hilo que cancela al otro, por lo que es una solución trivial que no nos interesa. Pensemos en la otra solución posible: Si <span class="math notranslate nohighlight">\(d'\)</span> fuera proporcional a <span class="math notranslate nohighlight">\(b\)</span> y <span class="math notranslate nohighlight">\(b\)</span> a su vez fuera proporcional a <span class="math notranslate nohighlight">\(R\)</span> en el mismo factor <span class="math notranslate nohighlight">\(k\)</span>:</p>
+<p>Es decir, tenemos que calcular el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> y el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> de una esfera hueca de carga superficial <span class="math notranslate nohighlight">\(\sigma_P=P\cos\theta\)</span>. La solución la obtuvimos en el problema B2.S5.2 (<em>¿Usando qué metodología?</em>), sustituyendo <span class="math notranslate nohighlight">\(\sigma_0\)</span> por <span class="math notranslate nohighlight">\(P\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[
-\frac{d'}{b} = \frac{b}{R} = k
-\]</div>
-<p>Entonces, los denominadores son proporcionales:</p>
+\[\begin{split}
+\Phi_d &amp;= \frac{P}{3\varepsilon_0} r \cos\theta = \frac{P}{3\varepsilon_0} z \\
+\Phi_f &amp;= \frac{P R^3}{3 \varepsilon_0r^2} \cos\theta
+\end{split}\]</div>
+<p>Mientras que el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> se puede obtener a partir de la definición de potencial, <span class="math notranslate nohighlight">\(\vec{E} = -\nabla\Phi\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[
-b^2 + d'^2 -2bd'\vec{u_s}\cdot\vec{u_x} = k^2(b^2 + R^2 -2bR\vec{u_s}\cdot\vec{u_x})
-\]</div>
-<p>Mientras que en los numeradores tenemos que <span class="math notranslate nohighlight">\(d'=kb = k^2R\)</span>, por lo que, probando esta condición, vemos que la condición de que la componente <span class="math notranslate nohighlight">\(x\)</span> del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> se anule, se cumple si además <span class="math notranslate nohighlight">\(\lambda' = -\lambda\)</span>. Además, de la relación de proporcionalidad <span class="math notranslate nohighlight">\(d'=\frac{b^2}{R}\)</span>. Aunque esta solución se ha obtenido por inspección, es la única (<em>junto con la trivial</em>) para la que el campo eléctrico es perpendicular a la superficie del CEP. El resto de los apartados:</p>
-<ul class="simple">
-<li><p>El potencial total <span class="math notranslate nohighlight">\(\Phi\)</span> se puede obtener como la superposición del potencial de los dos hilos, real e imagen, <span class="math notranslate nohighlight">\(\Phi_{\lambda,R}\)</span> y <span class="math notranslate nohighlight">\(\Phi_{\lambda',d'}\)</span>. Observemos que tenemos una constante arbitraria relacionada con la imposibilidad de establecer una referencia de potencial para una configuración cilíndrica infinita. En este sentido, da igual que el hilo tenga un potencial u otro, o que consideremos un hilo central para tener en cuenta el potencial <span class="math notranslate nohighlight">\(V\)</span>, simplemente, la constante arbitraria es inevitable.</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-\Phi(\vec{r}) = \Phi_{\lambda,R}(\vec{r}) + \Phi_{\lambda',d'}(\vec{r}) = -\frac{\lambda}{2\pi\varepsilon_0}\log{|s\vec{u_s} - R\vec{u_x}|} - \frac{-\lambda}{2\pi\varepsilon_0}\log{|s\vec{u_s} - d'\vec{u_x}|} + C = \frac{\lambda}{2\pi\varepsilon_0}\log{\frac{\sqrt{s^2 + d'^2 -2sd'\vec{u_s}\cdot\vec{u_x}}}{\sqrt{s^2 + R^2 -2sR\vec{u_s}\cdot\vec{u_x}}}} + C
-\]</div>
-<ul class="simple">
-<li><p>La densidad superficial de carga inducida se puede obtener a partir de la condición de contorno para el campo eléctrico en la superficie del CEP, en la que tiene una discontinuidad.</p></li>
-<li><p>Finalmente, la fuerza por unidad de longitud es la fuerza que sufre un diferencial de hilo:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-f = \lambda E_{\lambda'\rightarrow\lambda} \quad \left( {\rm \frac{N}{m}} \right)
-\]</div>
+\[\begin{split}
+\vec{E_d} &amp;= -\frac{P}{3\varepsilon_0} \vec{u_z} \\
+\vec{E_f} &amp;= \frac{P R^3}{3 \varepsilon_0r^3} (2\cos\theta \vec{u_r} + \sin\theta \vec{u_\theta})
+\end{split}\]</div>
+<p>En este caso, no se puede definir una permitividad de la esfera ya que la polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span> no depende del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span>.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -462,24 +416,6 @@ f = \lambda E_{\lambda'\rightarrow\lambda} \quad \left( {\rm \frac{N}{m}} \right
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Problema_B2_S4_2.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B2.S4.2</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Problema_B2_S5_1.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problema B2.S5.1</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               

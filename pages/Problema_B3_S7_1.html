@@ -361,9 +361,45 @@
 <p>Un sólido polarizado está constituido por dipolos microscópicos que no está perfectamente balanceados, creando unas densidades de carga de polarización que, a su vez, son fuentes de campo electrostático <span class="math notranslate nohighlight">\(\vec{E}\)</span> y de potencial <span class="math notranslate nohighlight">\(\Phi\)</span>.</p>
 </div>
 <p>A partir de la expresión del vector polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span> de la esfera polarizada, podemos obtener de forma sencilla las densidades volumétrica y superficial de carga de polarización:</p>
-<p>$$
-\rho_P &amp;= -\nabla\cdot\vec{P}\
-\sigma_P &amp;=</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\rho_P &amp;= -\nabla\cdot\vec{P}\\
+\sigma_P &amp;= \vec{n}\cdot\vec{P}
+\end{split}\]</div>
+<p>Tenemos que tener cuidado con las coordenadas esféricas, por que la expresión del vector polarización <span class="math notranslate nohighlight">\(\vec{P}\)</span> está en cilíndricas:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{P} = A(s\vec{u_s}-z\vec{u_z})
+\]</div>
+<ul class="simple">
+<li><p>La densidad volumétrica de carga de polarización se puede calcular en coordenadas cilíndricas. Escribiendo la divergencia en cilíndricas:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\rho_P = -\nabla\cdot\vec{P} = -\frac{1}{s}\frac{\partial}{\partial s} \left( sP_s\right) - \frac{\partial P_z}{\partial z} = -A
+\]</div>
+<ul class="simple">
+<li><p>La densidad superficial de carga de polarización aparece sobre la superficie de la esfera, cuyo vector normal es sencillo.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\sigma_P = \vec{n}\cdot\vec{P} = \vec{u_r}\cdot(A(s\vec{u_s}-z\vec{u_z})
+\]</div>
+<p>Podemos elegir varias maneras de escribir este resultado. Viendo que nos va a quedar una configuración de carga esférica con simetría en torno al eje <span class="math notranslate nohighlight">\(z\)</span>, parece conveniente escribirlo en coordenadas esféricas en función del ángulo azimutal <span class="math notranslate nohighlight">\(\theta\)</span>. El vector polarización, en la superficie de la esfera vale:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{P}(r{=}a) = A(s\vec{u_s}-z\vec{u_z}) = Aa(\sin\theta\vec{u_s} - \cos\theta\vec{u_z})
+\]</div>
+<p>A su vez, <span class="math notranslate nohighlight">\(\vec{u_r}\cdot\vec{u_s} = \sin\theta\)</span> y <span class="math notranslate nohighlight">\(\vec{u_r}\cdot\vec{u_z} = \cos\theta\)</span> (<em>¡Comprobar!</em>), por lo que finalmente:</p>
+<div class="math notranslate nohighlight">
+\[
+\sigma_P = Aa\left(\sin^2\theta-\cos^2\theta\right) = -2Aa\cos(2\theta)
+\]</div>
+<p>Vemos que las fuentes del problema son una esfera de densidad volumétrica de carga constante <span class="math notranslate nohighlight">\(\rho_P = -A\)</span> y una densidad superficial de carga de polarización <span class="math notranslate nohighlight">\(\sigma_P = -2Aa\cos(2\theta)\)</span> (<em>que provienen de la polarización</em>). Ambos problemas son problemas que podemos resolver <strong>en todo el espacio</strong> con la metodología de los temas anteriores. En partícular, en el origen (<span class="math notranslate nohighlight">\(\vec{r} = \vec{0}\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi(r{=}0) = \frac{1}{4\pi\varepsilon_0}\int_V\frac{\rho_P(\vec{r'})}{r'}dV' + \frac{1}{4\pi\varepsilon_0}\int_V\frac{\sigma_P(\vec{r'})}{r'}dS' = -\frac{Aa^2}{2\varepsilon_0} + \frac{Aa^2}{3\varepsilon_0} = -\frac{Aa^2}{6\varepsilon_0}
+\]</div>
 </section>
 
     <script type="text/x-thebe-config">
