@@ -65,6 +65,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B3_S7_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B3.S7.3" href="Problema_B3_S7_3.html" />
+    <link rel="prev" title="Problema B3.S7.1" href="Problema_B3_S7_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -207,6 +207,16 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_1.html">Problema B3.S6.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_2.html">Problema B3.S6.2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 7 - Medios dieléctricos, Energía electrostática</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S7_1.html">Problema B3.S7.1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B3.S7.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B3_S7_3.html">Problema B3.S7.3</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ejercicios de examen de Electrostática</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Ejercicios_examen_electrostatica.html">Ejercicios de examen de electrostática</a></li>
 </ul>
 
     </div>
@@ -380,14 +390,14 @@
 </ul>
 <div class="math notranslate nohighlight">
 \[
-\Phi_1 = \left( A_1 r + \frac{B_1}{r^2} \right) \cos\theta \quad\Rightarrow\quad \vec{E} = \left( A_1 - 2\frac{B_1}{r^3} \right) \cos\theta\vec{u_r} + \frac{1}{r}\left( A_1 r + \frac{B_1}{r^2} \right) (-\sin\theta)\vec{u_\theta}
+\Phi_1 = \left( A_1 r + \frac{B_1}{r^2} \right) \cos\theta \quad\Rightarrow\quad \vec{E} = -\left( A_1 - 2\frac{B_1}{r^3} \right) \cos\theta\vec{u_r} - \frac{1}{r}\left( A_1 r + \frac{B_1}{r^2} \right) (-\sin\theta)\vec{u_\theta}
 \]</div>
 <p>Cuando <span class="math notranslate nohighlight">\(r\rightarrow\infty\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{E}(r{\rightarrow}\infty) = A_1\left(\cos\theta\vec{u_r} - \sin\theta\vec{u_\theta}\right) = A_1 \vec{u_z}
+\vec{E}(r{\rightarrow}\infty) = -A_1\left(\cos\theta\vec{u_r} - \sin\theta\vec{u_\theta}\right) = -A_1 \vec{u_z}
 \]</div>
-<p>Es decir, <span class="math notranslate nohighlight">\(A_1 = E_0\)</span>, y todos los demás términos <span class="math notranslate nohighlight">\(A_l=0\)</span> con <span class="math notranslate nohighlight">\(l\neq 1\)</span>.</p>
+<p>Es decir, <span class="math notranslate nohighlight">\(A_1 = -E_0\)</span>, y todos los demás términos <span class="math notranslate nohighlight">\(A_l=0\)</span> con <span class="math notranslate nohighlight">\(l\neq 1\)</span>.</p>
 <ul class="simple">
 <li><p>Por otro lado, dentro de la esfera solemos utilizar que el potencial no diverge y <span class="math notranslate nohighlight">\(B_l=0\)</span>. Esto sigue siendo válido en este caso.</p></li>
 </ul>
@@ -395,9 +405,9 @@
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \Phi_d &amp;= A_{d,1} r \cos\theta \\
-\Phi_f &amp;= (E_0 r + \frac{B_{f,1}}{r^2})\cos\theta \\
+\Phi_f &amp;= (-E_0 r + \frac{B_{f,1}}{r^2})\cos\theta \\
 \vec{E_d} &amp;= A_{d,1} (\cos\theta\vec{u_r} - \sin\theta\vec{u_\theta}) \\
-\vec{E_f} &amp;= E_0 \vec{u_z} - \frac{B_{f,1}}{r^3} \left( 2 \cos\theta \vec{u_r} + \sin\theta \vec{u_\theta} \right)
+\vec{E_f} &amp;= -E_0 \vec{u_z} - \frac{B_{f,1}}{r^3} \left( 2 \cos\theta \vec{u_r} + \sin\theta \vec{u_\theta} \right)
 \end{split}\]</div>
 <p>Las tres condiciones de contorno son: Continuidad del potencial <span class="math notranslate nohighlight">\(\Phi\)</span>, Continuidad del vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span> normal y Continuidad del campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> tangencial.</p>
 <div class="math notranslate nohighlight">
@@ -409,18 +419,18 @@
 <p>La primera y la tercera imponen la misma condición:</p>
 <div class="math notranslate nohighlight">
 \[
-A_{d,1} = E_0 + \frac{B_{f,1}}{R^3}
+A_{d,1} = -E_0 + \frac{B_{f,1}}{R^3}
 \]</div>
 <p>La segunda, la del vector desplazamiento <span class="math notranslate nohighlight">\(\vec{D}\)</span> normal:</p>
 <div class="math notranslate nohighlight">
 \[
-\varepsilon \left( A_{d,1} \right) = \varepsilon_0 \left( E_0 - 2 \frac{B_{f,1}}{R^3} \right)
+\varepsilon \left( A_{d,1} \right) = \varepsilon_0 \left( -E_0 - 2 \frac{B_{f,1}}{R^3} \right)
 \]</div>
 <p>Con el resultado para los coeficientes, utilizando la permitividad eléctrica relativa <span class="math notranslate nohighlight">\(\varepsilon_r = \frac{\varepsilon}{\varepsilon_0}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-A_{d,1} &amp;= \frac{3}{2 + \varepsilon_r} E_0 \\
-B_{f,1} &amp;= \frac{1 - \varepsilon_r}{2 + \varepsilon_r} E_0 R^3
+A_{d,1} &amp;= -\frac{3}{2 + \varepsilon_r} E_0 \\
+B_{f,1} &amp;= -\frac{1 - \varepsilon_r}{2 + \varepsilon_r} E_0 R^3
 \end{split}\]</div>
 <p>Que cumple todas las condiciones de contorno en la frontera y en el infinito. Si intentamos considerar los términos de orden superior, de los polinomios de Legendre no se pueden cumplir las tres condiciones de contorno salvo que los dos coeficientes sean nulos, <span class="math notranslate nohighlight">\(A_{d,l} = B_{f,l} = 0\)</span></p>
 <div class="admonition note">
@@ -430,8 +440,8 @@ B_{f,1} &amp;= \frac{1 - \varepsilon_r}{2 + \varepsilon_r} E_0 R^3
 \[\begin{split}
 \Phi_d &amp;= A_{d,1} r \frac{1}{2}(3\cos^2\theta - 1)\\
 \Phi_f &amp;= \frac{B_{f,1}}{r^2}\frac{1}{2}(3\cos^2\theta - 1)\\
-\vec{E_d} &amp;= A_{d,1} (\frac{1}{2}(3\cos^2\theta - 1)\vec{u_r} - 3\cos\theta\sin\theta\vec{u_\theta}) \\
-\vec{E_f} &amp;= - \frac{B_{f,1}}{r^3} \left(2\frac{1}{2}(3\cos^2\theta - 1) \vec{u_r} + 3 \cos\theta\sin\theta \vec{u_\theta} \right)
+\vec{E_d} &amp;= -A_{d,1} (\frac{1}{2}(3\cos^2\theta - 1)\vec{u_r} + 3\cos\theta\sin\theta\vec{u_\theta}) \\
+\vec{E_f} &amp;= \frac{B_{f,1}}{r^3} \left(2\frac{1}{2}(3\cos^2\theta - 1) \vec{u_r} - 3 \cos\theta\sin\theta \vec{u_\theta} \right)
 \end{split}\]</div>
 <p>De donde las condiciones de contorno:</p>
 <div class="math notranslate nohighlight">
@@ -473,6 +483,24 @@ A_{d,1} = \frac{B_{f,1}}{R^3} \\
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B3_S7_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B3.S7.1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B3_S7_3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B3.S7.3</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

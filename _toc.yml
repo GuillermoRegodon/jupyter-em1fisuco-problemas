@@ -35,6 +35,14 @@ parts:
   chapters:
   - file: pages/Problema_B3_S6_1
   - file: pages/Problema_B3_S6_2
+- caption: Seminario 7 - Medios dieléctricos, Energía electrostática
+  chapters:
+  - file: pages/Problema_B3_S7_1
+  - file: pages/Problema_B3_S7_2
+  - file: pages/Problema_B3_S7_3
+- caption: Ejercicios de examen de Electrostática
+  chapters:
+  - file: pages/Ejercicios_examen_electrostatica
 # - file: pages/Problema_B4_4
 # - file: pages/Problema_B4_5
 # - file: pages/Problema_B4_7
