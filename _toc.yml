@@ -43,6 +43,7 @@ parts:
 - caption: Ejercicios de examen de Electrostática
   chapters:
   - file: pages/Ejercicios_examen_electrostatica
+  - file: pages/Parcial_2526
 # - file: pages/Problema_B4_4
 # - file: pages/Problema_B4_5
 # - file: pages/Problema_B4_7
