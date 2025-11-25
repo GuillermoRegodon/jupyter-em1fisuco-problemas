@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B4.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B4.S8.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,9 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_S8_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B4.S8.2" href="Problema_B4_S8_2.html" />
+    <link rel="prev" title="Parcial de Electrostática 25/26" href="Parcial_2526.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -174,7 +174,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="0-repaso_gauss_ampere.html">Repaso del uso de las simetrías para resolver problemas</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Superposición</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Electrostática, Superposición</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
@@ -218,6 +218,14 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Ejercicios_examen_electrostatica.html">Ejercicios de examen de electrostática</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Parcial_2526.html">Parcial de Electrostática 25/26</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 8 - Magnetostática, Superposición</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B4.S8.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_2.html">Problema B4.S8.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_4.html">Problema B4.S8.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_5.html">Problema B4.S8.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_7.html">Problema B4.S8.7</a></li>
 </ul>
 
     </div>
@@ -277,7 +285,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B4_4.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B4_S8_1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -340,7 +348,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -351,11 +361,20 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B4.4</h1>
+    <h1>Problema B4.S8.1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -365,134 +384,116 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-4">
-<h1>Problema B4.4<a class="headerlink" href="#problema-b4-4" title="Link to this heading">#</a></h1>
-<p>Claramente, <em>la carga superficial <span class="math notranslate nohighlight">\(\sigma\)</span> girando a velocidad constante <span class="math notranslate nohighlight">\(\omega\)</span></em> implica <strong>unas cargas que se desplazan</strong>, en este caso, <em>una corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span></em>. <strong>El potencial vector</strong> tiene una expresión sencilla a partir de la corriente superficial.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{A} = \frac{\mu_0}{4 \pi} \int_{S'} \frac{\vec{j}(\vec{r}')} {|\vec{r} - \vec{r}'|} dS'
-\]</div>
-<p>Para usar esta expresión, tenemos que calcular <strong>la corriente superficial</strong>, que debe ir en la dirección de la velocidad de desplazamiento de las cargas. <em>Cuando tenemos la velocidad de desplazamiento de las cargas</em>, la manera más sencilla de obtener la corriente superficial es multiplicar:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{j} = \sigma \vec{v}
-\]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Para recordar o deducir la expresión de <span class="math notranslate nohighlight">\(\vec{j}\)</span>, primero observamos que tiene <strong>las unidades correctas, de <span class="math notranslate nohighlight">\([A/m]\)</span></strong>. Notamos que <strong>la velocidad debe estar contenida en la superficie</strong> para que la expresión tenga sentido, de forma que las cargas se desplazan dentro de la superficie</p>
-<p>Es similar a la expresión conocida <span class="math notranslate nohighlight">\(\vec{J} = \rho \vec{v}\)</span>, con unidades de <span class="math notranslate nohighlight">\([A/m^2]\)</span></p>
-</div>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/esfera_rot.png"><img alt="esfera_rot" src="../_images/esfera_rot.png" style="width: 200px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Podemos comprobar que la velocidad siempre tiene dirección <span class="math notranslate nohighlight">\(\vec{u_\varphi}\)</span>, y que su valor depende de la latitud en la esfera, <span class="math notranslate nohighlight">\(\vec{v} = a \sin{\theta} \omega \vec{u_\varphi}\)</span>. Vemos que esta expresión <strong>es la que obtendríamos si utilizamos la expresión vectorial de la velocidad (y por tanto, indendiente del sistema de referencia) en función de la velocidad angular</strong>:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{v} = \vec{\omega} \times \vec{r}' = \omega \vec{u_z} \times a \vec{u_r}
-\]</div>
-<p>Así:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{j} = \sigma a \sin{\theta'} \omega \vec{u_\varphi}
-\]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Observamos que la expresión del <strong>potencial escalar general</strong> en función de la densidad de corriente <span class="math notranslate nohighlight">\(\vec{J}\)</span> <strong>es fácil de particularizar para los casos de corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span> o corriente por un hilo <span class="math notranslate nohighlight">\(I\)</span></strong>:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{A} = \frac{\mu_0}{4 \pi} \int_{V'} \frac{\vec{J}(\vec{r}')} {|\vec{r} - \vec{r}'|} dV' =
-\frac{\mu_0}{4 \pi} \int_{S'} \frac{\vec{j}(\vec{r}')} {|\vec{r} - \vec{r}'|} dS' =
-\frac{\mu_0}{4 \pi} \int_{C'} \frac{I(\vec{r}')} {|\vec{r} - \vec{r}'|} \vec{dl}'
-\]</div>
-<p>Sin embargo, la expresión de la ley de Biot-Sabart, se puede poner fácilmente para densidad de corriente <span class="math notranslate nohighlight">\(\vec{J}\)</span> y para la corriente <span class="math notranslate nohighlight">\(I\)</span> que pasa por un hilo (<em>ambas están en las transparencias</em>), pero es dificil de expresar en función de la corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span>. Por eso, en este problema es más facil calcular la expresión del potencial vector <span class="math notranslate nohighlight">\(\vec{A}\)</span> y obtener el campo magnético como un rotacional, <span class="math notranslate nohighlight">\(\vec{B} = \nabla \times \vec{A}\)</span>.</p>
-<p><strong>A veces, la geometría de la corriente superficial es suficientemente sencilla</strong> para que el campo magnético resulte facil de plantear directamente del diagrama como una suma (<em>integral</em>) de espiras o hilos, <em>pero en este caso, aunque se hiciera, la integral resultaría complicada</em>.</p>
-</div>
-<p>Planteamos los elementos que aparecen en la integral de <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-s8-1">
+<h1>Problema B4.S8.1<a class="headerlink" href="#problema-b4-s8-1" title="Link to this heading">#</a></h1>
+<p>El campo magnético tiene la siguiente expresión para una configuración de corriente dada:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\vec{r} &amp;= (x,y,z) \\
-\vec{r}' &amp;= (a \sin \theta'  \cos \varphi', a \sin \theta' \sin \varphi', a \cos\theta') \\
-|\vec{r} - \vec{r}'| &amp;= \sqrt{(x - a \sin\theta' \cos\varphi')^2 + (y - a \sin\theta' \sin\varphi')^2 + (z - a \cos\theta')^2} \\
-dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
-\vec{j} &amp; = \sigma a \sin{\theta'} \omega \vec{u_\varphi}
+\vec{B}(\vec{r}) &amp;= \frac{\mu_0}{4\pi}\int_{C'}\frac{(I\vec{dl'})\times(\vec{r}-\vec{r'})}{|\vec{r}-\vec{r'}|^3} \\
+&amp;= \frac{\mu_0}{4\pi}\int_{S'}\frac{(\vec{j}(\vec{r'})dS')\times(\vec{r}-\vec{r'})}{|\vec{r}-\vec{r'}|^3} \\
+&amp;= \frac{\mu_0}{4\pi}\int_{V'}\frac{(\vec{J}(\vec{r'})dV')\times(\vec{r}-\vec{r'})}{|\vec{r}-\vec{r'}|^3}
 \end{split}\]</div>
-<p>Con lo que nos queda una expresión para <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
+<p>Para cada una de los tres tipos de corrientes lineal, superficial y volumétrica. En este ejercicio, la configuración de corriente es lineal, por lo que usamos la primera expresión.</p>
+<p>Tenemos que parametrizar la región donde está la fuente y la región donde está el punto de observación.</p>
+<section id="apartado-a">
+<h2>Apartado <span class="math notranslate nohighlight">\(a)\)</span><a class="headerlink" href="#apartado-a" title="Link to this heading">#</a></h2>
+<p>Elegimos el sistema de referencia con el punto <span class="math notranslate nohighlight">\(P\)</span> en el origen, en previsión de poder usar coordenada polares convenientemente. En este caso el punto de observación <span class="math notranslate nohighlight">\(\vec{r} = 0\)</span>. Respecto a la fuente, la expresión de la integral la podemos dividir en cuatro tramos, numerados de la siguiente forma:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{A} = \frac{\mu_0}{4 \pi} \int_{S'} \frac{\sigma a \sin{\theta'} \omega \vec{u_\varphi}} {\sqrt{(x - a \sin\theta' \cos\varphi')^2 + (y - a \sin\theta' \sin\varphi')^2 + (z - a \cos\theta')^2}} a^2 \sin\theta'd\theta'd\varphi'
+\vec{B}(\vec{r}) = \frac{\mu_0}{4\pi}\int_{C'}\frac{(I\vec{dl'})\times(\vec{r}-\vec{r'})}{|\vec{r}-\vec{r'}|^3} = \int_1 ... + \int_2 ... + \int_3 ... + \int_4 ...
 \]</div>
-<p><strong>¡Esta expresión es dificil!</strong> Las variables de integración <span class="math notranslate nohighlight">\(\theta'\)</span> y <span class="math notranslate nohighlight">\(\varphi'\)</span> están ambas en el argumento de la raíz, por lo que no son separables. Además están dentro de senos y cosenos. Y peor aún, no hay cambios de variable de <span class="math notranslate nohighlight">\(\theta'\)</span> o de <span class="math notranslate nohighlight">\(\varphi'\)</span> por separado que permitan simplificar la integral de forma sustancial. Sin embargo, existe una manera alternativa de plantear el sistema de referencia, de forma que la integral es sencilla.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>El hecho de que podamos cambiar el sistema de referencia para que la integral sea sencilla significa que <em>debe existir un cambio de variables <span class="math notranslate nohighlight">\((\theta', \varphi')\)</span> a otras dos que simplificaría la integral</em>. Sin embargo, no es facil pensar dicho cambio de variables, mientras que <strong>el cambio de sistema de referencia es muy facil de ver</strong>.</p>
-</div>
-<p>El sistema de referencia alternativo es el que <strong>tiene el eje <span class="math notranslate nohighlight">\(z\)</span> en la dirección del vector posición <span class="math notranslate nohighlight">\(\vec{r}\)</span></strong>, de forma que es la velocidad angular <span class="math notranslate nohighlight">\(\vec{\omega}\)</span> la que es un parámetro de la integral. Arbitrariamente, elegimos que esté contenida en el plano <span class="math notranslate nohighlight">\((x,z)\)</span>.</p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/esfera_alt.png"><img alt="esfera_alt" src="../_images/esfera_alt.png" style="width: 250px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama del problema con sistema de referencia alternativo.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B4_S8_1_1.png"><img alt="hilo de corriente.png" src="../_images/B4_S8_1_1.png" style="width: 200px;" /></a>
 </figure>
-<p>De esta manera, planteamos los elementos de la integral de <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
+<p>Parametrizamos cada tramo:</p>
+<ol class="arabic simple">
+<li><p><strong>Los puntos forman un hilo en el eje <span class="math notranslate nohighlight">\(y\)</span></strong>:</p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\vec{r} &amp;= (0,0,z) \\
-\vec{r}' &amp;= (a \sin \theta'  \cos \varphi', a \sin \theta' \sin \varphi', a \cos\theta') \\
-|\vec{r} - \vec{r}'| &amp;= \sqrt{a^2 + z^2 - 2 a z \cos\theta'} \\
-dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
+\vec{r'} &amp;= y'\vec{u_y} \\
+\vec{r} - \vec{r'} &amp;= -y'\vec{u_y} \\
+|\vec{r} - \vec{r'}| &amp;= y' \\
+dl' &amp;= dy' \quad y' \in [a,b] \\
+\vec{dl'} &amp;= dy' \vec{u_y}
 \end{split}\]</div>
-<p>Para la densidad superficial de corriente, usamos la expresión vectorial. Llamamos <span class="math notranslate nohighlight">\(\Psi\)</span> al ángulo entre <span class="math notranslate nohighlight">\(\vec{r}\)</span> y <span class="math notranslate nohighlight">\(\vec{\omega}\)</span>:</p>
+<p>Como en este tramo la corriente va hacia arriba, la corriente <span class="math notranslate nohighlight">\(I\)</span> de la fórmula de <span class="math notranslate nohighlight">\(\vec{B}\)</span> es la <span class="math notranslate nohighlight">\(I\)</span> del enunciado del problema (<em>Es típico encontrarse con la misma letra, y generalmente no hay lugar a confusión</em>).</p>
+<p>Vemos que en la integral tenemos el producto vectorial <span class="math notranslate nohighlight">\((I\vec{dl})\times(\vec{r}-\vec{r'}) = (Idy' \vec{u_y})\times(-y'\vec{u_y}) = 0\)</span>, por lo que este campo magnético es nulo. <strong>Esto podríamos haberlo deducido a priori, por que el punto está en la misma linea que el hilo recto de corriente</strong>.</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Los puntos forma un hilo en el eje <span class="math notranslate nohighlight">\(x\)</span></strong>. Por el mismo motivo <span class="math notranslate nohighlight">\(\vec{B_2}=0\)</span>.</p></li>
+<li><p><strong>Los puntos forman un arco circular alrededor del origen</strong>:</p></li>
+</ol>
 <div class="math notranslate nohighlight">
-\[
-\vec{j} = \sigma \vec{v} = \sigma \vec{\omega} \times \vec{r}' = \sigma (\omega (\sin\Psi \vec{u_x} + \cos\Psi \vec{u_z})) \times (a \sin \theta'  \cos \varphi', a \sin \theta' \sin \varphi', a \cos\theta')
-\]</div>
-<p>Con lo que nos queda una expresión para <span class="math notranslate nohighlight">\(\vec{A}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{A} = \frac{\mu_0}{4 \pi} \int_{S'} \frac{\sigma (\omega (\sin\Psi \vec{u_x} + \cos\Psi \vec{u_z})) \times (a \sin \theta'  \cos \varphi', a \sin \theta' \sin \varphi', a \cos\theta')} {\sqrt{a^2 + z^2 - 2 a z \cos\theta'}} a^2 \sin\theta'd\theta'd\varphi'
-\]</div>
-<p><strong>¡Esta expresión es más facilmente resoluble!</strong> Para empezar, <span class="math notranslate nohighlight">\(\varphi'\)</span> esta separada y se puede integrar. Además, los términos que tienen <span class="math notranslate nohighlight">\(\sin\varphi'\)</span> y <span class="math notranslate nohighlight">\(\cos\varphi'\)</span> tienen una integral nula, por ser la integral en un periodo completo. Otros términos desaparecen por el producto vectorial. El único término que sobrevive es:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{A} = \frac{\mu_0}{2} \int_{\theta'=0}^{\theta'=\pi} \frac{\sigma \omega (\sin\Psi \vec{u_x}) \times (a \cos\theta' \vec{u_z})} {\sqrt{a^2 + z^2 - 2 a z \cos\theta'}} a^2 \sin\theta'd\theta'
-\]</div>
-<p>La dirección resultante <span class="math notranslate nohighlight">\(-\vec{u_y}\)</span> es constante en la integral. Con el cambio de variable <span class="math notranslate nohighlight">\(u = \cos\theta'\)</span>, y usando la integral:</p>
-<div class="math notranslate nohighlight">
-\[
-\int \frac{udu}{\sqrt{k-u}} = -\frac{2}{3}\sqrt{k-u}(u-2k)
-\]</div>
+\[\begin{split}
+\vec{r'} &amp;= a\vec{u_s} \\
+\vec{r} - \vec{r'} &amp;= -a\vec{u_s} \\
+|\vec{r} - \vec{r'}| &amp;= a \\
+dl' &amp;= a \space d\phi' \quad \phi' \in [0,\pi/2] \\
+\vec{dl'} &amp;= a\space d\phi' \vec{u_\phi}
+\end{split}\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>En algunos problemas, <em>el sistema de referencia se puede elegir en base a criterios físicos del problema, y pensar que permitirá simplificar la expresión de la integral</em>. En este caso, poniendo el sistema de referencia con el punto <span class="math notranslate nohighlight">\(\vec{r}\)</span> fijado, podemos deducir que las componentes <span class="math notranslate nohighlight">\(\vec{u_x}\)</span> y <span class="math notranslate nohighlight">\(\vec{u_z}\)</span> se cancelarán. Para verlo podemos ver que para <strong>cada punto de la fuente de corriente que contribuye en las dirección positivas de <span class="math notranslate nohighlight">\(\vec{u_x}\)</span> y <span class="math notranslate nohighlight">\(\vec{u_z}\)</span> hay otro punto que contribuye en dirección contraria y se cancelan</strong>. La unica componente que no se cancela es la <span class="math notranslate nohighlight">\(\vec{u_y}\)</span>. En la integral, resulta en integrales en <span class="math notranslate nohighlight">\(\sin\varphi'\)</span> y <span class="math notranslate nohighlight">\(\cos\varphi'\)</span> que se anulan.</p>
+<p>El punto de observación en polares siempre es <span class="math notranslate nohighlight">\(\vec{r'} = r'\vec{u_r}\)</span>. En la mayoría de las integrales, <span class="math notranslate nohighlight">\(\vec{u_r}\)</span> no es constante, por lo que en la integral no se puede manejar directamente. Tipicamente, lo que hacemos es pasarlo a cartesianas, de tal forma que el vector unitario sale de la integral (<em>Los unitarios en cartesianas sí son constantes</em>) y la integral se puede resolver.</p>
+<p>Sin embargo, en magnetostática, es común que los productos vectoriales sean más fáciles de manejar <strong>en polares, cilíndricas o esféricas</strong>, por lo que <strong>suele ser conveniente no realizar el cambio a cartesianas hasta después de los productos vectoriales</strong>.</p>
 </div>
-<p>Podemos resolver el potencial vector <span class="math notranslate nohighlight">\(\vec{A}\)</span>. Para los puntos dentro de la esfera, para <span class="math notranslate nohighlight">\(z&lt;a\)</span> (<em>cuidado con que el resultado de las raices siempre sea positivo</em>) el resultado final es:</p>
+<p>En este caso, la integral del campo magnético <span class="math notranslate nohighlight">\(\vec{B_3}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{A} = -\frac{\mu_0 \omega z a \sin\Psi \sigma}{3} \vec{u_y}
+\vec{B_3} = \frac{\mu_0}{4\pi}\int_{\phi'{=}0}^{\phi'{=}\pi/2}\frac{(Ia\space d\phi' \vec{u_\phi})\times(-a\vec{u_s})}{a^3} = \frac{\mu_0}{4\pi}\int_{\phi'{=}0}^{\phi'{=}\pi/2}\frac{(I\space d\phi' \vec{u_z})}{a} = \frac{\mu_0 I}{8a} \vec{u_z}
 \]</div>
-<p>Ahora, <strong>podemos volver al sistema de referencia original</strong>. La manera más sencilla es poner <strong>la expresión resultante en forma vectorial</strong> de nuevo, que es independiente del sistema de referencia. Usamos que, en este sistema de referencia:</p>
+<p>Exactamente la cuarta parte del campo magnético de una espira de radio <span class="math notranslate nohighlight">\(a\)</span> en su centro.</p>
+<ol class="arabic simple" start="4">
+<li><p><strong>Los puntos forman un arco circular alrededor del origen</strong>. En este caso, cambiamos el radio <span class="math notranslate nohighlight">\(a\)</span> por <span class="math notranslate nohighlight">\(b\)</span>, y para tener en cuenta que la corriente va en sentido contrario, cambiamos <span class="math notranslate nohighlight">\(I\)</span> por <span class="math notranslate nohighlight">\(-I\)</span>.</p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[
-\vec{\omega} \times \vec{r} = (\omega (\sin\Psi \vec{u_x} + \cos\Psi \vec{u_z}) \times (0,0,z) = -\omega z \sin\Psi \vec{u_y}
+\vec{B_4} = -\frac{\mu_0 I}{8b} \vec{u_z}
 \]</div>
-<p>De tal forma que obtenemos la expresión vectorial, independiente del sistema de referencia:</p>
+<p>Por lo que:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{A} = \frac{\mu_0 a \sigma}{3} \vec{\omega} \times \vec{r}
+\vec{B} = \frac{\mu_0 I}{8}\left(\frac{1}{a} - \frac{1}{b}\right)
 \]</div>
-<p>Ponemos esta expresión en el sistema de referencia original, con <span class="math notranslate nohighlight">\(\vec{\omega} = \omega \vec{u_z}\)</span></p>
+</section>
+<section id="apartado-b">
+<h2>Apartado <span class="math notranslate nohighlight">\(b)\)</span><a class="headerlink" href="#apartado-b" title="Link to this heading">#</a></h2>
+<p>Elegimos el sistema de referencia colocando <span class="math notranslate nohighlight">\(P\)</span> en el origen por el mismo motivo, en previsión de poder usar coordenada polares convenientemente. En este caso el punto de observación <span class="math notranslate nohighlight">\(\vec{r} = 0\)</span>. Respecto a la fuente, la expresión de la integral la podemos dividir en tres tramos, numerados de la siguiente forma:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B4_S8_1_2.png"><img alt="hilo de corriente.png" src="../_images/B4_S8_1_2.png" style="width: 300px;" /></a>
+</figure>
+<p>Parametrizamos cada tramo:</p>
+<ol class="arabic simple">
+<li><p><strong>Los puntos forman un hilo horizontal desplazado <span class="math notranslate nohighlight">\(a\)</span> en la dirección <span class="math notranslate nohighlight">\(+y\)</span></strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{r'} &amp;= x'\vec{u_x} + a \vec{u_y} = (x', a, 0) \\
+\vec{r} - \vec{r'} &amp;= (-x', -a, 0) \\
+|\vec{r} - \vec{r'}| &amp;= \sqrt{x'^2 + a^2} \\
+dl' &amp;= dx' \quad x' \in [0,\infty) \\
+\vec{dl'} &amp;= dx' \vec{u_x}
+\end{split}\]</div>
+<p>Como en este tramo la corriente va hacia la derecha, la corriente <span class="math notranslate nohighlight">\(I\)</span> de la fórmula de <span class="math notranslate nohighlight">\(\vec{B}\)</span> es la <span class="math notranslate nohighlight">\(I\)</span> del enunciado del problema.</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{A} = \frac{\mu_0 a \omega \sigma}{3} r \sin\theta \vec{u_\varphi}
+\vec{B_1}(\vec{r}) = \frac{\mu_0}{4\pi}\int_{x'{=}0}^{x'{=}\infty}\frac{(I\space dx' \vec{u_x})\times(-x'\vec{u_x} - a \vec{u_y})}{(x'^2 + a^2)^{3/2}} = \frac{\mu_0}{4\pi}\int_{x'{=}0}^{x'{=}\infty}\frac{(-I\space dx' a \vec{u_z})}{(x'^2 + a^2)^{3/2}} = -\frac{\mu_0I\vec{u_z}}{4\pi a}
 \]</div>
-<p>Finalmente, tomando rotacional, comprobamos que <strong>el campo magnético en el interior de la esfera es constante</strong>:</p>
+<p>Es decir, medio hilo infinito a distancia <span class="math notranslate nohighlight">\(a\)</span>.</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Los puntos forman un hilo horizontal desplazado <span class="math notranslate nohighlight">\(a\)</span> en la dirección <span class="math notranslate nohighlight">\(-y\)</span></strong>. También es otro medio hilo infinito a la misma distancia.</p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[
-\vec{B} = \frac{2}{3} \mu_0 a \sigma \vec{\omega}
+\vec{B_1} = \vec{B_2}
 \]</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Los puntos forman un arco circular alrededor del origen</strong>. Observamos que se trata de media espira. Observando la dirección de giro, deducimos:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{B_3} = -\frac{\mu_0 I}{4a} \vec{u_z}
+\]</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -525,12 +526,47 @@ dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Parcial_2526.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Parcial de Electrostática 25/26</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B4_S8_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B4.S8.2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

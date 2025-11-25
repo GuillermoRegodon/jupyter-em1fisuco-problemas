@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B4.7 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B4.S8.5 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,9 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_7';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_S8_5';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B4.S8.7" href="Problema_B4_S8_7.html" />
+    <link rel="prev" title="Problema B4.S8.4" href="Problema_B4_S8_4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -174,7 +174,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="0-repaso_gauss_ampere.html">Repaso del uso de las simetrías para resolver problemas</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Superposición</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Electrostática, Superposición</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
@@ -218,6 +218,14 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Ejercicios_examen_electrostatica.html">Ejercicios de examen de electrostática</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Parcial_2526.html">Parcial de Electrostática 25/26</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 8 - Magnetostática, Superposición</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_1.html">Problema B4.S8.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_2.html">Problema B4.S8.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_4.html">Problema B4.S8.4</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B4.S8.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_7.html">Problema B4.S8.7</a></li>
 </ul>
 
     </div>
@@ -277,7 +285,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B4_7.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B4_S8_5.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -353,7 +361,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B4.7</h1>
+    <h1>Problema B4.S8.5</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -363,8 +371,8 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-momentos-magneticos-perpendiculares-con-vec-m-2-apuntando-a-vec-m-1">a) Momentos magnéticos perpendiculares, con <span class="math notranslate nohighlight">\(\vec{m_2}\)</span> apuntando a <span class="math notranslate nohighlight">\(\vec{m_1}\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-momentos-magneticos-antiparalelos">b) Momentos magnéticos antiparalelos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-db">Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-dm">Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span></a></li>
 </ul>
             </nav>
         </div>
@@ -376,73 +384,77 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-7">
-<h1>Problema B4.7<a class="headerlink" href="#problema-b4-7" title="Link to this heading">#</a></h1>
-<p><strong>El campo magnético que genera una espira pequeña</strong> es conocido.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-s8-5">
+<h1>Problema B4.S8.5<a class="headerlink" href="#problema-b4-s8-5" title="Link to this heading">#</a></h1>
+<p><em>La carga superficial <span class="math notranslate nohighlight">\(\sigma\)</span> girando a velocidad constante <span class="math notranslate nohighlight">\(\omega\)</span></em> implica <strong>unas cargas que se desplazan</strong>, en este caso, <em>una corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span></em>. En este caso, dado que el cilindro <strong>se puede dividir fácilmente en espiras diferenciales que podemos integrar</strong>, vamos a calcular el campo magnético total a partir del campo magnético de una espira (<em>Notar que es similar al problema 4.2</em>):</p>
 <div class="math notranslate nohighlight">
 \[
-B_1 = \frac{\mu_0}{4 \pi} \left( \frac{3 (\vec{m_1} \cdot \vec{r})\vec{r}}{r^5} - \frac{\vec{m_1}}{r^3}\ \right)
+\vec{B} = \int d \vec{B}
 \]</div>
-<p>Como sabemos, este campo magnético sigue unas lineas de campo que salen en la misma dirección que <span class="math notranslate nohighlight">\(\vec{m_1}\)</span>, y dan una vuelta para entrar por abajo y cerrar el camino.</p>
-<p><strong>El efecto mecánico de un campo magnético sobre una espira</strong> también es conocido:</p>
+<p>El campo magnético de <strong>una espira de corriente <span class="math notranslate nohighlight">\(I\)</span> y de radio <span class="math notranslate nohighlight">\(a\)</span> en el eje <span class="math notranslate nohighlight">\(\vec{u_z}\)</span> de simetría</strong> es conocido:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{F} &amp;= (m_2 \cdot \nabla)\vec{B_1} \\
-\vec{\tau} &amp;= \vec{m_2} \times \vec{B_1}
-\end{split}\]</div>
-<p>También sabemos que el torque intentará alinear <span class="math notranslate nohighlight">\(\vec{m_2}\)</span> para que siga la misma dirección de <span class="math notranslate nohighlight">\(\vec{B_1}\)</span></p>
-<p>Para resolver las preguntas del enunciado, solo tenemos que <em>particularizar el campo magnético <span class="math notranslate nohighlight">\(\vec{B_1}\)</span> y la posición y orientación de la espira <span class="math notranslate nohighlight">\(\vec{m_2}\)</span></em> para los casos que se proponen:</p>
-<section id="a-momentos-magneticos-perpendiculares-con-vec-m-2-apuntando-a-vec-m-1">
-<h2>a) Momentos magnéticos perpendiculares, con <span class="math notranslate nohighlight">\(\vec{m_2}\)</span> apuntando a <span class="math notranslate nohighlight">\(\vec{m_1}\)</span><a class="headerlink" href="#a-momentos-magneticos-perpendiculares-con-vec-m-2-apuntando-a-vec-m-1" title="Link to this heading">#</a></h2>
-<p>Elegimos, por ejemplo, <span class="math notranslate nohighlight">\(\vec{m_1} = m_1 \vec{u_y}\)</span> y colocado en el origen, <span class="math notranslate nohighlight">\(\vec{r_1} = 0\)</span>. Para que <span class="math notranslate nohighlight">\(\vec{m_2}\)</span> sea perpendicular y apunte hacia la posición de <span class="math notranslate nohighlight">\(\vec{m_1}\)</span>, elegimos por ejemplo <span class="math notranslate nohighlight">\(\vec{m_2} = -m_2 \vec{u_x}\)</span> y <span class="math notranslate nohighlight">\(\vec{r_2} = \vec{r}= r \vec{u_x}\)</span>. De esta manera:</p>
+\[
+\vec{B_1} = \frac{\mu_0 I}{2} \frac{a^2}{(a^2 + z^2)^{3/2}} \vec{u_z}
+\]</div>
+<p>Ahora vamos a utilizar este resultado para <strong>obtener el campo magnético generado por un trozo de cilindro</strong> cuya posición sea <span class="math notranslate nohighlight">\(z'\)</span>:</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/m1m2a.png"><img alt="m1m2_a" src="../_images/m1m2a.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../_images/cilindro_rot.png"><img alt="cilindro_rot" src="../_images/cilindro_rot.png" style="width: 200px;" /></a>
 <figcaption>
-<p><span class="caption-text">Configuración de momentos magnéticos del problema a)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<p>Vamos a particularizar el resultado para la espira diferencial en <span class="math notranslate nohighlight">\(z'\)</span>.</p>
+<section id="calculo-de-vec-db">
+<h2>Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span><a class="headerlink" href="#calculo-de-vec-db" title="Link to this heading">#</a></h2>
+<p>Por una parte, <strong>la posición ha cambiado, por lo que tenemos que sustituir <span class="math notranslate nohighlight">\(z\)</span></strong> para tener en cuenta la posición de la espira diferencial:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{B_1} = -\frac{\mu_0 \vec{m_1}}{4 \pi r^3}
+z \rightarrow z-z'
 \]</div>
-<p>Y, respecto la fuerza y al torque:</p>
+<p>Por otra parte, <strong>tenemos que obtener la corriente que atraviesa la sección lateral de anchura <span class="math notranslate nohighlight">\(dz'\)</span></strong>. Se puede calcular como la densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j}\)</span> multiplicada por la anchura del segmento perpendicular <span class="math notranslate nohighlight">\(dz'\)</span>. <em>Cuando tenemos la velocidad de desplazamiento de las cargas</em>, la manera más sencilla de obtener la corriente superficial es multiplicar:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{F} &amp;= -m_2 \frac{\partial}{\partial x} \vec{B_1} = -\frac{3 \mu_0 m_1 m_2}{4 \pi r^4} \vec{u_y}\\
-\vec{\tau} &amp;= \frac{\mu_0 m_1 m_2}{4 \pi r^3} \vec{u_z}
-\end{split}\]</div>
-<p>Este torque implica que <span class="math notranslate nohighlight">\(\vec{m_2}\)</span> sufre un torque que tiene tendencia a alinearlo con <span class="math notranslate nohighlight">\(\vec{m_1}\)</span> pero con sentido contrario.</p>
+\[
+\vec{j} = \sigma \vec{v} 
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Para recordar o deducir la expresión de <span class="math notranslate nohighlight">\(\vec{j}\)</span>, primero observamos que tiene <strong>las unidades correctas, de <span class="math notranslate nohighlight">\([A/m]\)</span></strong>. Notamos que <strong>la velocidad debe estar contenida en la superficie</strong> para que la expresión tenga sentido, de forma que las cargas se desplazan dentro de la superficie</p>
+<p>Es similar a la expresión conocida <span class="math notranslate nohighlight">\(\vec{J} = \rho \vec{v}\)</span>, con unidades de <span class="math notranslate nohighlight">\([A/m^2]\)</span></p>
+</div>
+<p>Queda obtener la velocidad, que está relacionada con la velocidad angular <span class="math notranslate nohighlight">\(\omega\)</span> y con el radio del cilíndro <span class="math notranslate nohighlight">\(a\)</span>. Así:</p>
+<div class="math notranslate nohighlight">
+\[
+I = j \space dz' = \sigma v \space dz' = \sigma \omega a \space dz' 
+\]</div>
+<p>Observar que coincide con la carga por unidad de tiempo que atraviesa la sección lateral de anchura <span class="math notranslate nohighlight">\(dz'\)</span>. Dicha carga, la que atraviesa <span class="math notranslate nohighlight">\(dz'\)</span> en un tiempo <span class="math notranslate nohighlight">\(dt\)</span> es la contenida en una superficie de lados <span class="math notranslate nohighlight">\(dz'\)</span> y <span class="math notranslate nohighlight">\(v \space dt\)</span>.
+$<span class="math notranslate nohighlight">\(
+I = \frac{dq}{dt} = \frac{\sigma dz' \space v \space dt}{dt}
+\)</span>$</p>
+<p>Ya tenemos todos los elementos para obtener <span class="math notranslate nohighlight">\(\vec{dB}\)</span>. Por último, las espiras diferenciales tienen posiciones desde <span class="math notranslate nohighlight">\(z' = -L/2\)</span> hasta <span class="math notranslate nohighlight">\(z' = +L/2\)</span>, que serán los límites de integración</p>
+<p>Con esto, <strong>el campo magnético total, obtenido a partir del campo magnético diferencial de cada espira diferencial</strong> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = \int d \vec{B} = \int_{z'=-L/2}^{z'=L/2} \frac{\mu_0 \sigma \omega a \space dz'}{2} \frac{a^2}{(a^2 + (z-z')^2)^{3/2}} \vec{u_z}
+\]</div>
+<p>Dando un resultado comparable al del problema 4.2:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = - \frac{\mu_0 \sigma \omega a \vec{u_z}}{2} \left(\frac{z-L/2}{\sqrt{a^2 + (z-L/2)^2}} - \frac{z+L/2}{\sqrt{a^2 + (z+L/2)^2}}\right)
+\]</div>
+<p><strong>Para obtener el momento magnético total, usamos la misma estrategia</strong>:</p>
 </section>
-<section id="b-momentos-magneticos-antiparalelos">
-<h2>b) Momentos magnéticos antiparalelos<a class="headerlink" href="#b-momentos-magneticos-antiparalelos" title="Link to this heading">#</a></h2>
-<p>Las posiciones relativas no están especificadas, por lo que ponemos <span class="math notranslate nohighlight">\(\vec{m_1}\)</span> en el origen, <span class="math notranslate nohighlight">\(\vec{r_1} = 0\)</span>, y <span class="math notranslate nohighlight">\(\vec{m_2}\)</span> en un punto arbitrario <span class="math notranslate nohighlight">\(\vec{r_2} = \vec{r}\)</span>. Elegimos <span class="math notranslate nohighlight">\(\vec{m_1} = m_1 \vec{u_z}\)</span> y <span class="math notranslate nohighlight">\(\vec{m_2} = -m_2 \vec{u_z}\)</span>, para poder usar las coordenadas esféricas y dejar el resultado en función de los ángulos. De esta manera, usando las coordenadas esféricas <span class="math notranslate nohighlight">\((r, \theta, \varphi)\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{B_1} &amp;= \frac{\mu_0}{4 \pi} \left( \frac{3 (\vec{m_1} \cdot \vec{r})\vec{r}}{r^5} - \frac{\vec{m_1}}{r^3}\ \right) = \\
-&amp;= \frac{\mu_0 m_1}{4 \pi r^3} \left( 3 \cos \theta \vec{u_r} - \vec{u_z}\ \right) = \\
-&amp;= \frac{\mu_0 m_1}{4 \pi r^3} \left( 2 \cos \theta \vec{u_r} + \sin \theta \vec{u_\theta}\ \right)
-\end{split}\]</div>
-<p>Y, por lo tanto, la fuerza:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{F} &amp;= \left( (-m_2 \vec{u_z}) \cdot (\frac{\partial}{\partial r} \vec{u_r} + \frac{1}{r}\frac{\partial}{\partial \theta} \vec{u_\theta} + \frac{1}{r\sin \theta}\frac{\partial}{\partial \varphi} \vec{u_\varphi} )\right) \vec{B_1} \\
-&amp;= -m_2 \left( \cos \theta \frac{\partial}{\partial r} + \frac{\sin \theta}{r} \frac{\partial}{\partial \theta} \right) \vec{B_1}
-\end{split}\]</div>
-<p>Y el torque:</p>
+<section id="calculo-de-vec-dm">
+<h2>Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span><a class="headerlink" href="#calculo-de-vec-dm" title="Link to this heading">#</a></h2>
+<p>El momento magnético de cada espira diferencial es el de una espira de corriente <span class="math notranslate nohighlight">\(I\)</span> y radio <span class="math notranslate nohighlight">\(a\)</span></p>
 <div class="math notranslate nohighlight">
 \[
-\vec{\tau} = \vec{m_2} \times \vec{B_1} = (- m_2 \vec{u_z}) \times \left( \frac{\mu_0}{4 \pi r^3} \left( 3 m_1 \cos \theta \vec{u_r} - m_1 \vec{u_z}\ \right) \right) = - \frac{\mu_0 m_1 m_2}{4 \pi r^3} \left( 3 \cos \theta \sin \theta \vec{u_\varphi} \right)
+\vec{dm} = I \pi a^2 \vec{u_z} = \sigma \omega a \space dz' \pi a^2 \vec{u_z}
 \]</div>
-<p>Si analizamos la dirección de giro, <span class="math notranslate nohighlight">\(\vec{m_2}\)</span> sufre un torque que <em>tiene tendencia a ponerlo en dirección y sentido al campo <span class="math notranslate nohighlight">\(\vec{B_1}\)</span></em>, igual que en el apartado anterior.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/m1m2b1.png"><img alt="m1m2b1" src="../_images/m1m2b1.png" style="width: 180px;" /></a>
-</figure>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/m1m2b2.png"><img alt="m1m2b2" src="../_images/m1m2b2.png" style="width: 180px;" /></a>
-<figcaption>
-<p><span class="caption-text">Configuración de momentos magnéticos del problema b)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<p>Por lo tanto:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{m} = \int \vec{dm} = \sigma \omega \pi a^3 L \vec{u_z}
+\]</div>
 </section>
 </section>
 
@@ -476,6 +488,24 @@ B_1 = \frac{\mu_0}{4 \pi} \left( \frac{3 (\vec{m_1} \cdot \vec{r})\vec{r}}{r^5} 
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B4_S8_4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B4.S8.4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B4_S8_7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B4.S8.7</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -493,8 +523,8 @@ B_1 = \frac{\mu_0}{4 \pi} \left( \frac{3 (\vec{m_1} \cdot \vec{r})\vec{r}}{r^5} 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-momentos-magneticos-perpendiculares-con-vec-m-2-apuntando-a-vec-m-1">a) Momentos magnéticos perpendiculares, con <span class="math notranslate nohighlight">\(\vec{m_2}\)</span> apuntando a <span class="math notranslate nohighlight">\(\vec{m_1}\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b-momentos-magneticos-antiparalelos">b) Momentos magnéticos antiparalelos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-db">Cálculo de <span class="math notranslate nohighlight">\(\vec{dB}\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculo-de-vec-dm">Cálculo de <span class="math notranslate nohighlight">\(\vec{dm}\)</span></a></li>
 </ul>
   </nav></div>
 
