@@ -7,7 +7,7 @@ parts:
 - caption: Repaso
   chapters:
   - file: pages/0-repaso_gauss_ampere
-- caption: Seminario 1 - Superposición
+- caption: Seminario 1 - Electrostática, Superposición
   chapters:
   - file: pages/Problema_B1_S1_1
   - file: pages/Problema_B1_S1_2
@@ -44,6 +44,13 @@ parts:
   chapters:
   - file: pages/Ejercicios_examen_electrostatica
   - file: pages/Parcial_2526
+- caption: Seminario 8 - Magnetostática, Superposición
+  chapters:
+  - file: pages/Problema_B4_S8_1
+  - file: pages/Problema_B4_S8_2
+  - file: pages/Problema_B4_S8_4
+  - file: pages/Problema_B4_S8_5
+  - file: pages/Problema_B4_S8_7
 # - file: pages/Problema_B4_4
 # - file: pages/Problema_B4_5
 # - file: pages/Problema_B4_7
