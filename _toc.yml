@@ -48,12 +48,11 @@ parts:
   chapters:
   - file: pages/Problema_B4_S8_1
   - file: pages/Problema_B4_S8_2
+  - file: pages/Problema_B4_S8_3
   - file: pages/Problema_B4_S8_4
   - file: pages/Problema_B4_S8_5
+  - file: pages/Problema_B4_S8_6
   - file: pages/Problema_B4_S8_7
-# - file: pages/Problema_B4_4
-# - file: pages/Problema_B4_5
-# - file: pages/Problema_B4_7
 # - file: pages/Problema_B5_4
 # - file: pages/Problema_B5_5
 # - file: pages/Problema_B6_1
