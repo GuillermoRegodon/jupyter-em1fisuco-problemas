@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B2.S3.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B5.S9.1 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,11 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B2_S3_1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B5_S9_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B2.S3.2" href="Problema_B2_S3_2.html" />
-    <link rel="prev" title="Problema B1.S2.2" href="Problema_B1_S2_2.html" />
+    <link rel="next" title="Problema B5.S11.1" href="Problema_B5_S11_1.html" />
+    <link rel="prev" title="Problema B4.S8.7" href="Problema_B4_S8_7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -187,8 +187,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S2_2.html">Problema B1.S2.2</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 3 - Imágenes, Cargas puntuales</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B2.S3.1</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_1.html">Problema B2.S3.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_2.html">Problema B2.S3.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B2_S3_3.html">Problema B2.S3.3</a></li>
 </ul>
@@ -230,8 +230,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_7.html">Problema B4.S8.7</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 9 - Magnetostática, Materiales</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_1.html">Problema B5.S9.1</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B5.S9.1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 11 - Circuitos ferromagnéticos</span></p>
 <ul class="nav bd-sidenav">
@@ -296,7 +296,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B2_S3_1.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B5_S9_1.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -359,9 +359,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -372,23 +370,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B2.S3.1</h1>
+    <h1>Problema B5.S9.1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuerza-sobre-la-carga">Fuerza sobre la carga:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-densidad-de-carga-inducida-en-el-pano-de-cep">La densidad de carga inducida en el pano de CEP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-potencial-y-el-campo-electrico-en-el-punto-medio-entre-la-carga-y-el-plano">El potencial y el campo eléctrico en el punto medio entre la carga y el plano</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expresion-aproximada-para-r-rightarrow-infty">Expresión aproximada para <span class="math notranslate nohighlight">\(r\rightarrow\infty\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variaciones">Variaciones</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -398,136 +384,149 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b2-s3-1">
-<h1>Problema B2.S3.1<a class="headerlink" href="#problema-b2-s3-1" title="Link to this heading">#</a></h1>
-<p>Este problema es el más básico de imágenes, pero es interesante porque pide calcular muchas cosas distintas en los distintos subapartados. Se trata de una partícula de carga <span class="math notranslate nohighlight">\(q\)</span> a una distancia <span class="math notranslate nohighlight">\(d\)</span> de un plano de conductor eléctrico perfecto (<em>CEP</em>) conectada a un potencial nulo, <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b5-s9-1">
+<h1>Problema B5.S9.1<a class="headerlink" href="#problema-b5-s9-1" title="Link to this heading">#</a></h1>
+<p>En este problema, tenemos un material con una magnetización permanente. La configuración geométrica es la de un cilindro de longitud <span class="math notranslate nohighlight">\(L\)</span> y radio <span class="math notranslate nohighlight">\(a\)</span> con una magnetización permanente en la dirección del eje de simetría. Solocamos el sistema de referencia para que el eje de simetría coincida con el eje <span class="math notranslate nohighlight">\(z\)</span>, de tal forma que :</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = M\vec{u_z}
+\]</div>
 <figure class="align-default">
-<a class="reference internal image-reference" href="../_images/B2_S3_1_1.png"><img alt="plano CEP y carga.png" src="../_images/B2_S3_1_1.png" style="width: 350px;" /></a>
+<a class="reference internal image-reference" href="../_images/B5_S9_1_1.png"><img alt="Magnet_cte" src="../_images/B5_S9_1_1.png" style="width: 250px;" /></a>
 </figure>
-<p>La imagen de la carga puntal <span class="math notranslate nohighlight">\(q\)</span> es fácil, pero antes de establecerla y empezar a hacer cálculos, vamos a considerar las condiciones que debe cumplir la imagen para que sea válida (<em>El argumento también será válido en configuraciones más complejas</em>).</p>
-<ul class="simple">
-<li><p>Queremos sustituir el CEP por una configuración de cargas que permita que el potencial en la superficie del CEP sea <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>.</p></li>
-</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Recordemos que un conductor eléctrico perfecto (<em>CEP</em>) tiene las siguiente características, derivadas de la libertad de movimiento de las cargas dentro del CEP.</p>
-<ul class="simple">
-<li><p>El CEP impone un potencial constante en su superficie (<em>y en general en todo su volumen</em>).</p></li>
-<li><p>El campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{CEP}\)</span> en la superficie del CEP es perpendicular (<em>o nulo</em>) a dicha superficie. Está garantizado si el potencial el constante en la superficie.</p></li>
-<li><p>La densidad de carga superficial es la que permite cumplir estas dos condiciones. Puede ser cualquiera, dependiendo de las cargas fuera del conductor. Solamente se puede calcular a posteriori, después de conocer el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}_{CEP}\)</span> en la superficie del CEP.</p></li>
-</ul>
+<p>De forma similar a lo que nos encontrábamos en los ejercicios de Electrostática de materiales, en los problemas de Magnetostática de materiales, vamos a tener tres posibilidades, una de las cuales es particular de los problemas de magnetostática.</p>
+<ol class="arabic simple">
+<li><p><strong>Materiales lineales</strong>: Se caracterizan por que la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> es lineal con respecto al vector <span class="math notranslate nohighlight">\(\vec{H}\)</span>, típicamente tan solo una constante (<em>aunque podría ser una matriz, o tensor de orden 2</em>).</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = \chi_M \vec{H}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Materiales con magnetización constante</strong>: Se caracterizan por que la magnetización es independiente del vector <span class="math notranslate nohighlight">\(\vec{H}\)</span> externo. En este caso, las densidades de corriente de magnetización también son constantes, por lo que podemos considerarlas como fuentes de campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span> y sustituir el material por dichas corrientes.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = cte \quad \Rightarrow \quad \vec{J} = \nabla\times\vec{M}; \space \vec{j} = \vec{M}\times\vec{n}
+\]</div>
+<p>Ambos casos, <strong>1</strong> y <strong>2</strong>, son equivalentes a problemas de Electrostática de materiales. El siguiente caso, <strong>3</strong>, aunque nos lo podríamos encontrar en Electrostática, allí tiene muy poca importancia, mientras que en Magnetostática tiene muchas aplicaciones prácticas.</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Materiales no lineales</strong>: Se caracterizan por que la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> responde al vector <span class="math notranslate nohighlight">\(\vec{H}\)</span> externo de forma no lineal. Un ejemplo importante son los materiales con histéresis. Típicamente, le damos la vuelta a la dependencia para que <span class="math notranslate nohighlight">\(\vec{H}\)</span> sea la variable independiente y <span class="math notranslate nohighlight">\(\vec{B}\)</span> sea la variable dependiente:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = f(\vec{H}) \quad \Rightarrow \quad \vec{B} = \mu_0(\vec{M} + f(\vec{H})) = g(\vec{H}) \quad \Rightarrow \quad \vec{H} = \vec{H}(\vec{B})
+\]</div>
 </div>
+<p>Nos piden el campo magnético en un punto del eje de simetría <span class="math notranslate nohighlight">\(z\)</span>. El material, en estos casos, se puede sustituir por unas densidades de corriente de magnetización. La densidad (<em>volumétrica</em>) de corriente de magnetización:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{J} = \nabla\times\vec{M} = 0
+\]</div>
+<p>Debido a que la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> es constante. Para la superficial, debemos distinguir tres superficies con normal <span class="math notranslate nohighlight">\(\vec{n}\)</span> distintas, numeradas en la figura.</p>
+<ol class="arabic simple">
+<li><p>La tapa superior tiene un vector normal <span class="math notranslate nohighlight">\(\vec{n} = \vec{u_z}\)</span>. Realizando el producto vectorial, la densidad superficial de corriente es nula:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{j_1} = \vec{M}\times\vec{n} = (M\vec{u_z})\times\vec{u_z} = 0
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p>La tapa inferior tiene un vector normal <span class="math notranslate nohighlight">\(\vec{n} = -\vec{u_z}\)</span>, por lo que genera una densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j_2}=0\)</span> que también es nula.</p></li>
+<li><p>La cara lateral tiene un vector normal <span class="math notranslate nohighlight">\(\vec{n} = \vec{u_s}\)</span> en coordenadas cilíndricas. La densidad superficial de corriente es:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{j_3} = \vec{M}\times\vec{n} = (M\vec{u_z})\times\vec{u_s} = M\vec{u_\phi}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En magnetostática, es común que los productos vectoriales sean más fáciles de manejar <strong>en polares, cilíndricas o esféricas</strong>, por lo que <strong>suele ser conveniente no realizar el cambio a cartesianas hasta después de los productos vectoriales</strong>.</p>
+</div>
+<p>Por lo tanto, el problema es el de un cilindro de longitud <span class="math notranslate nohighlight">\(L\)</span> y radio <span class="math notranslate nohighlight">\(a\)</span> con densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j_3} = M\vec{u_\phi}\)</span>. Este problema es el mismo que se resolvió en el boletín anterior, el B4.S8.2. Adaptando la notación:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{NI}{L} \rightarrow M
+\]</div>
+<p>Con lo que:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = \frac{\mu_0 M \vec{u_z}}{2} \left( \frac{z+L/2}{\sqrt{a^2 + (z+L/2)^2}} - \frac{z-L/2}{\sqrt{a^2 + (z-L/2)^2}} \right)
+\]</div>
+<p>Por último, nos pide realizar el mismo cálculo utilizando las densidades de polos equivalentes de magnetización. Para ello utilizamos las expresiones de las densidades superficiales de carga con la magnetización:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sigma_M &amp;= \vec{n}\cdot\vec{M} \\
+\rho_M &amp;= -\nabla\cdot\vec{M}
+\end{split}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>En los formularios, podemos encontrarnos <span class="math notranslate nohighlight">\(\vec{J_M} = \nabla'\times\vec{M}\)</span> y <span class="math notranslate nohighlight">\(\rho_M = -\nabla'\cdot\vec{M}\)</span>, sobre las variables primadas. Esto es así por que típicamente, las densidades de corriente de magnetización y las densidades de polos equivalentes magnéticos, al igual que las densidades de carga de polarización, son las fuentes del campo magnético y del campo eléctrico. No siempre tiene que ser así, podríamos encontrar un problema en el que el material magnético fuera el objeto sobre en que se ejerce una fuerza magnética. Sin embargo, es lo común.</p>
+<p>En cualquier caso, <strong>las derivadas se realizan con respecto a las coordenadas que definan la posición geométrica del material</strong>, sea primado o sin primar.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Es importante observar, antes de seguir, que las densidades de polos equivalentes de magnetización, son <strong>una metodología alternativa</strong> con respecto a las densidades de corriente de magnetización. O se usa una, o se usa la otra, ¡pero no las dos!</p>
+</div>
+<p>Por el mismo motivo, <span class="math notranslate nohighlight">\(\rho_M = \)</span>, mientras que realizando los productos:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sigma_{M,1} &amp;= M \\
+\sigma_{M,2} &amp;= -M
+\end{split}\]</div>
+<p>Es decir, que la solución puede ser obtenida calculando el campo eléctrico que generan dos discos de carga superficial constante <span class="math notranslate nohighlight">\(M\)</span> y <span class="math notranslate nohighlight">\(-M\)</span> en las posiciones <span class="math notranslate nohighlight">\(z'+\frac{L}{2}\)</span> y <span class="math notranslate nohighlight">\(z'-\frac{L}{2}\)</span>. Este problema se resolvió en electrostática, en el segundo apartado del problema propuesto B3.S7.P1. Aquel problema solo se propuso en puntos exteriores al cilindro. Vamos a resolverlo aquí para todos los puntos del eje <span class="math notranslate nohighlight">\(z\)</span>, utilizando el problema de referencia de un disco de radio <span class="math notranslate nohighlight">\(a\)</span> con densidad superficial de carga constante <span class="math notranslate nohighlight">\(\sigma\)</span> centrado en el origen y contenido en el plano <span class="math notranslate nohighlight">\(xy\)</span>. La solución es (<em>verificar, deberíamos poder resolverlo con cierta soltura</em>):</p>
+<div class="math notranslate nohighlight">
+\[
+E_z(z) = \frac{\sigma}{2\varepsilon_0} \left( \frac{z}{|z|} - \frac{z}{\sqrt{a^2 + z^2}}\right)
+\]</div>
+<p>Observemos que <span class="math notranslate nohighlight">\(|z|\)</span> surge de <span class="math notranslate nohighlight">\(\sqrt{z^2}\)</span> que no simplificamos para que dé el signo correcto tanto para <span class="math notranslate nohighlight">\(z&gt;0\)</span> como para <span class="math notranslate nohighlight">\(z&lt;0\)</span>. Para obtener el campo magnético del disco de densidad superficial de polos equivalentes de magnetización <span class="math notranslate nohighlight">\(M\)</span> en <span class="math notranslate nohighlight">\(z'=L/2\)</span> tenemos que realizar los siguientes cambios:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+z &amp;\rightarrow z-\frac{L}{2} \\
+\sigma &amp;\rightarrow M \\
+\frac{1}{\varepsilon_0} &amp;\rightarrow \mu_0
+\end{split}\]</div>
+<p>Con lo que:</p>
+<div class="math notranslate nohighlight">
+\[
+B_{z,\frac{L}{2},M}(z) = \frac{\mu_0 M}{2} \left( \frac{z-\frac{L}{2}}{|z-\frac{L}{2}|} - \frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}}\right)
+\]</div>
+<p>Mientras que para el disco de densidad de polos equivalentes de magnetización <span class="math notranslate nohighlight">\(-M\)</span> en <span class="math notranslate nohighlight">\(z'=-L/2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+B_{z,-\frac{L}{2},-M}(z) = -\frac{\mu_0 M}{2} \left( \frac{z+\frac{L}{2}}{|z+\frac{L}{2}|} - \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right)
+\]</div>
+<p>Para obtener el campo magnético total, no nos podemos olvidar (<em>comprobar de las demostraciones de las expresiones</em>) de añadir <span class="math notranslate nohighlight">\(\mu_0\vec{M}\)</span> el la región del material. Con esto, distinguimos 3 regiones:</p>
 <ul class="simple">
-<li><p>La imagen debe garantizar que el potencial en la superficie del CEP es la apropiada, <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span>, permitiendo sustituir una por la otra en los cálculos.</p></li>
-<li><p>El potencial <span class="math notranslate nohighlight">\(\Phi(\vec{r})\)</span> y el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}(\vec{r})\)</span> calculados con las cargas y sus imágenes solo es válido fuera del CEP. Dentro del CEP, el modelo no es válido, y el potencial es constante <span class="math notranslate nohighlight">\(\Phi_{CEP}(\vec{r}) = \Phi_{CEP} = 0\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(z&gt;\frac{L}{2}\)</span>: Aquí la magnetización no existe, porque estamos fuera del cilindro por arriba. Ambos cocientes <span class="math notranslate nohighlight">\(\frac{z-\frac{L}{2}}{|z-\frac{L}{2}|} = \frac{z+\frac{L}{2}}{|z+\frac{L}{2}|} = 1\)</span> con lo que la suma de los dos términos:</p></li>
 </ul>
-<p>Pensar en términos de potencial es a menudo más sencillo en problemas de imágenes. Por lo tanto, necesitamos una configuración de cargas que permita que el potencial sea 0 en la superficie del CEP, teniendo una carga <span class="math notranslate nohighlight">\(q\)</span> que ya impone un potencial distinto de 0. Por lo tanto, <strong>contamos con la posición y el valor de las cargas imágenes</strong>: Aunque se puede demostrar matemáticamente, por inspección vemos que la única opción es una carga negativa <span class="math notranslate nohighlight">\(-q\)</span> a una distancia <span class="math notranslate nohighlight">\(d\)</span> dentro del CEP, de tal modo que el potencial que impone es del mismo valor y de signo contrario. La combinación de ambos da 0 en la superficie, y podemos retirar el CEP (<em>como la solución es única, y hemos encontrado una solución aunque sea por inspección, la solución es la correcta</em>).</p>
-<p>Es decir, la configuración equivalente, que verifica que el potencial en la superficie del CEP es <span class="math notranslate nohighlight">\(\Phi_{CEP} = 0\)</span> es la siguiente:</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/B2_S3_1_2.png"><img alt="plano CEP y carga.png" src="../_images/B2_S3_1_2.png" style="width: 350px;" /></a>
-</figure>
-<p>Elegimos el Sistema de Referencia de tal modo que el plano de CEP está en <span class="math notranslate nohighlight">\(x=0\)</span>, y la carga <span class="math notranslate nohighlight">\(q\)</span> está en <span class="math notranslate nohighlight">\(\vec{r}'_q = d\vec{u_x}\)</span>, entonces la imagen <span class="math notranslate nohighlight">\(q'\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-q' &amp;= -q \\
-\vec{r}'_{q'} &amp;= -d\vec{u_x}
+B_z = B_{z,\frac{L}{2},M}(z) + B_{z,-\frac{L}{2},-M}(z) &amp;= \frac{\mu_0 M}{2} \left( \frac{z-\frac{L}{2}}{|z-\frac{L}{2}|} - \frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}}\right) -\frac{\mu_0 M}{2} \left( \frac{z+\frac{L}{2}}{|z+\frac{L}{2}|} - \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right) = \\
+&amp;= \frac{\mu_0 M}{2} \left( 1 - \frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}}\right) -\frac{\mu_0 M}{2} \left( 1 - \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right) = \\
+&amp;= \frac{\mu_0 M}{2} \left( -\frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}} + \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right)
 \end{split}\]</div>
-<p>Procedemos ahora a calcular los resultados que pide el problema:</p>
-<section id="fuerza-sobre-la-carga">
-<h2>Fuerza sobre la carga:<a class="headerlink" href="#fuerza-sobre-la-carga" title="Link to this heading">#</a></h2>
-<p>El efecto del plano de CEP se sustituye por el efecto de la imagen, por lo que el campo eléctrico al que está sometida la carga <span class="math notranslate nohighlight">\(q\)</span> es el que crea su imagen <span class="math notranslate nohighlight">\(-q\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{E}_{-q}(\vec{r}) = \frac{1}{4\pi\varepsilon_0} \frac{-q (\vec{r}-\vec{r}'_{-q})}{|\vec{r}-\vec{r}'_{-q}|^3}
-\]</div>
-<p>(<em>Por supuesto, esta expresión solamente es válida para <span class="math notranslate nohighlight">\(x&gt;0\)</span></em>). Y la fuerza a la que está sometida la carga <span class="math notranslate nohighlight">\(q\)</span> es:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{F}_{-q\rightarrow q} = q \vec{E}_{-q}(\vec{r}_q) 
-\]</div>
-<p>Sustituyendo:</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{F}_{-q\rightarrow q} = -\frac{q^2}{16\pi\varepsilon_0 d^2} \vec{u_x}
-\]</div>
-</section>
-<section id="la-densidad-de-carga-inducida-en-el-pano-de-cep">
-<h2>La densidad de carga inducida en el pano de CEP<a class="headerlink" href="#la-densidad-de-carga-inducida-en-el-pano-de-cep" title="Link to this heading">#</a></h2>
-<p>Sabemos que el CEP exige que el campo eléctrico en su superficie <span class="math notranslate nohighlight">\(\vec{E}_{CEP}\)</span> sea perpendicular a la misma, mientras que dentro del propio CEP, el campo eléctrico es nulo. Esta discontinuidad en el campo eléctrico solamente se puede explicar a través de la densidad superficial de carga inducida, mediante la expresión de la condición:</p>
-<div class="math notranslate nohighlight">
-\[
-E_2 - E_1 = \frac{\sigma}{\varepsilon_0}
-\]</div>
-<p>(<em>¿Cómo se demuestra esta expresión a partir de la ley de Gauss?</em>) Si aplicamos esta expresión en la frontera, <span class="math notranslate nohighlight">\(E_2 = E_{CEP}\)</span> y <span class="math notranslate nohighlight">\(E_1 = 0\)</span>. Por lo tanto, solo nos queda calcular el campo eléctrico en la frontera, verificar que es normal a la superficie y aplicar la expresión para despejar <span class="math notranslate nohighlight">\(\sigma\)</span>. En la superficie,</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{r}=(0,y,z)
-\]</div>
-<p>Y el vector entre el punto <span class="math notranslate nohighlight">\(\vec{r}\)</span> y la posición de la carga <span class="math notranslate nohighlight">\(\pm q\)</span>,</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{r} - \vec{r}'_{\pm q} = (\mp d, y, z)
-\]</div>
-<p>Por lo que el campo eléctrico en la superficie del CEP,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{E}_{CEP}(0,y,z) &amp;= \vec{E}_{q}(0,y,z) + \vec{E}_{-q}(0,y,z) \\
-&amp;= \frac{1}{4\pi\varepsilon_0} \frac{q (-d,y,z)}{(d^2 + y^2 + z^2)^{3/2}} + \frac{1}{4\pi\varepsilon_0} \frac{-q (d,y,z)}{(d^2 + y^2 + z^2)^{3/2}}
-\end{split}\]</div>
-<p>Comprobamos que la suma de los dos términos, efectivamente tiene dirección <span class="math notranslate nohighlight">\(\vec{u_x}\)</span>, como debía ocurrir si la imagen está bien obtenida.</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{E}_{CEP}(0,y,z) = \frac{1}{4\pi\varepsilon_0} \frac{-2qd}{(d^2 + y^2 + z^2)^{3/2}} \vec{u_x}
-\]</div>
-<p>Y finalmente la densidad superficial de carga es inmediata:</p>
-<div class="math notranslate nohighlight">
-\[
-\sigma_{CEP} =  -\frac{qd}{2\pi (d^2 + y^2 + z^2)^{3/2}}
-\]</div>
-<p>(<em>Observar que las unidades son las correctas</em>) Finalmente, pide la carga total inducida, para lo que podemos integrar <span class="math notranslate nohighlight">\(\sigma_{CEP}\)</span> en todo el plano. Realizando el cambio de variable de cartesianas a polares, <span class="math notranslate nohighlight">\((y,z)\Rightarrow (r,\theta)\)</span>, la integral es separable y el resultado es fácil de probar.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-y &amp;= r \cos \theta \\
-z &amp;= r \sin \theta \\
-dy \space dz &amp;= r dr\space d\theta \\
-r \in [0, \infty) &amp;\quad \theta \in [0, 2\pi)
-\end{split}\]</div>
-<p>De tal modo que:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-Q_T &amp;= \int_{CEP} \sigma_{CEP} dS \\
-&amp;= \int_{y=-\infty}^{y=\infty} \int_{z=-\infty}^{z=\infty} \frac{-qd}{2\pi (d^2 + y^2 + z^2)^{3/2}} dy \space dz \\
-&amp;= \int_{r=0}^{r=\infty} \int_{\theta=0}^{\theta=2\pi} \frac{-qd}{2\pi (d^2 + r^2)^{3/2}} r dr\space d\theta =-q
-\end{split}\]</div>
-</section>
-<section id="el-potencial-y-el-campo-electrico-en-el-punto-medio-entre-la-carga-y-el-plano">
-<h2>El potencial y el campo eléctrico en el punto medio entre la carga y el plano<a class="headerlink" href="#el-potencial-y-el-campo-electrico-en-el-punto-medio-entre-la-carga-y-el-plano" title="Link to this heading">#</a></h2>
-<p>Entre la carga y el plano, estamos fuera del CEP, por lo que el plano se puede sustituir por la carga imagen. Dicho punto es <span class="math notranslate nohighlight">\(\vec{r} = \frac{d}{2}\vec{u_x}\)</span>. Para calcular el campo eléctrico, por ejemplo, realizaríamos los mismos pasos que en el apartado anterior, cambiando en la solución <span class="math notranslate nohighlight">\((0,y,z)\)</span> por <span class="math notranslate nohighlight">\((\frac{d}{2},0,0)\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{r} - \vec{r}'_{q} &amp;= (\frac{d}{2},0,0) - (d,0,0) = (-\frac{d}{2},0,0) \\
-\vec{r} - \vec{r}'_{-q} &amp;= (\frac{d}{2},0,0) - (-d,0,0) = (\frac{3d}{2},0,0)
-\end{split}\]</div>
-<p>Las componentes <span class="math notranslate nohighlight">\(E_y\)</span> y <span class="math notranslate nohighlight">\(E_z\)</span> del campo eléctrico van a ser cero, viendo las componentes del vector que une el punto y cada una de las cargas. Por tanto:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-E_x &amp;= E_{x,-q}(\frac{d}{2},0,0) + E_{x,q}(\frac{d}{2},0,0) \\
-&amp;= \frac{1}{4\pi\varepsilon_0} \frac{q (-\frac{d}{2})}{(\frac{d}{2})^3} + \frac{1}{4\pi\varepsilon_0} \frac{-q (\frac{3d}{2})}{(\frac{3d}{2})^3}
-\end{split}\]</div>
-<p>Un procedimiento similar permite resolver el potencial en dicho punto a partir del potencial generado por cada una de las cargas.</p>
-</section>
-<section id="expresion-aproximada-para-r-rightarrow-infty">
-<h2>Expresión aproximada para <span class="math notranslate nohighlight">\(r\rightarrow\infty\)</span><a class="headerlink" href="#expresion-aproximada-para-r-rightarrow-infty" title="Link to this heading">#</a></h2>
-<p>Cuando la distancia en la que calculamos el campo eléctrico es mucho mayor que la distancia <span class="math notranslate nohighlight">\(d\)</span> entre el plano de CEP y la carga <span class="math notranslate nohighlight">\(q\)</span> (<em>siempre para <span class="math notranslate nohighlight">\(x&gt;0\)</span></em>), observamos que tenemos una configuración de dos cargas <span class="math notranslate nohighlight">\(\pm q\)</span> de signo opuesto separadas una distancia <span class="math notranslate nohighlight">\(2d\)</span>, por lo que la configuración es equivalente a un dipolo de valor <span class="math notranslate nohighlight">\(\vec{p} = 2qd\vec{u_x}\)</span>.</p>
-</section>
-<section id="variaciones">
-<h2>Variaciones<a class="headerlink" href="#variaciones" title="Link to this heading">#</a></h2>
-<p>El problema del conductor eléctrico perfecto CEP plano puede tener variaciones:</p>
 <ul class="simple">
-<li><p>¿Qué ocurre si ponemos una carga <span class="math notranslate nohighlight">\(q\)</span> entre dos planos de CEP paralelos? ¿La imagen <span class="math notranslate nohighlight">\(q'\)</span> de un plano de CEP genera a su vez una imagen en el otro plano de CEP? ¿Cuántas imágenes hay en total?</p></li>
-<li><p>¿Que ocurre si tenemos dos semiplanos de CEP formando un ángulo de 90º? ¿Cuántas imágenes tiene una carga <span class="math notranslate nohighlight">\(q\)</span>?</p></li>
+<li><p><span class="math notranslate nohighlight">\(z&lt;-\frac{L}{2}\)</span>: Aquí la magnetización tampoco existe, porque estamos fuera del cilindro por abajo. Ambos cocientes <span class="math notranslate nohighlight">\(\frac{z-\frac{L}{2}}{|z-\frac{L}{2}|} = \frac{z+\frac{L}{2}}{|z+\frac{L}{2}|} = -1\)</span> con lo que la suma de los dos términos es la misma:</p></li>
 </ul>
-</section>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B_z = B_{z,\frac{L}{2},M}(z) + B_{z,-\frac{L}{2},-M}(z) &amp;= \frac{\mu_0 M}{2} \left( \frac{z-\frac{L}{2}}{|z-\frac{L}{2}|} - \frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}}\right) -\frac{\mu_0 M}{2} \left( \frac{z+\frac{L}{2}}{|z+\frac{L}{2}|} - \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right) = \\
+&amp;= \frac{\mu_0 M}{2} \left( -1 - \frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}}\right) -\frac{\mu_0 M}{2} \left( -1 - \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right) = \\
+&amp;= \frac{\mu_0 M}{2} \left( -\frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}} + \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right)
+\end{split}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(z\in[-\frac{L}{2},\frac{L}{2}]\)</span>: Aquí la magnetización es <span class="math notranslate nohighlight">\(M_z = M\)</span>, por lo que tenemos que sumar el término <span class="math notranslate nohighlight">\(\mu_0 M\)</span>. Además, los cocientes tienen signo contrario, <span class="math notranslate nohighlight">\(\frac{z-\frac{L}{2}}{|z-\frac{L}{2}|} = -1\)</span> y <span class="math notranslate nohighlight">\(\frac{z+\frac{L}{2}}{|z+\frac{L}{2}|} = 1\)</span>. Por lo tanto, en esta región:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B_z = B_{z,\frac{L}{2},M}(z) + B_{z,-\frac{L}{2},-M}(z) + \mu_0 M &amp;= \frac{\mu_0 M}{2} \left( \frac{z-\frac{L}{2}}{|z-\frac{L}{2}|} - \frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}}\right) -\frac{\mu_0 M}{2} \left( \frac{z+\frac{L}{2}}{|z+\frac{L}{2}|} - \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right) + \mu_0 M = \\
+&amp;= \frac{\mu_0 M}{2} \left( -1 - \frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}}\right) -\frac{\mu_0 M}{2} \left( 1 - \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right) + \mu_0 M= \\
+&amp;= \frac{\mu_0 M}{2} \left( -\frac{z-\frac{L}{2}}{\sqrt{a^2 + (z-\frac{L}{2})^2}} + \frac{z+\frac{L}{2}}{\sqrt{a^2 + (z+\frac{L}{2})^2}}\right)
+\end{split}\]</div>
+<p><strong>¡Otra vez, dando el mismo resultado!</strong> En general esta verificación no será necesaria, ya demostramos en teoría que las densidades de corriente de magnetización y las densidades de polos equivalentes de magnetización ofrecen el mismo resultado para el campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span>, y aquí hemos podido comprobarlo numéricamente en un ejemplo concreto.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -561,20 +560,20 @@ E_x &amp;= E_{x,-q}(\frac{d}{2},0,0) + E_{x,q}(\frac{d}{2},0,0) \\
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problema_B1_S2_2.html"
+       href="Problema_B4_S8_7.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B1.S2.2</p>
+        <p class="prev-next-title">Problema B4.S8.7</p>
       </div>
     </a>
     <a class="right-next"
-       href="Problema_B2_S3_2.html"
+       href="Problema_B5_S11_1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problema B2.S3.2</p>
+        <p class="prev-next-title">Problema B5.S11.1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -584,26 +583,6 @@ E_x &amp;= E_{x,-q}(\frac{d}{2},0,0) + E_{x,q}(\frac{d}{2},0,0) \\
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fuerza-sobre-la-carga">Fuerza sobre la carga:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-densidad-de-carga-inducida-en-el-pano-de-cep">La densidad de carga inducida en el pano de CEP</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-potencial-y-el-campo-electrico-en-el-punto-medio-entre-la-carga-y-el-plano">El potencial y el campo eléctrico en el punto medio entre la carga y el plano</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expresion-aproximada-para-r-rightarrow-infty">Expresión aproximada para <span class="math notranslate nohighlight">\(r\rightarrow\infty\)</span></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variaciones">Variaciones</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
