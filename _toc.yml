@@ -53,6 +53,13 @@ parts:
   - file: pages/Problema_B4_S8_5
   - file: pages/Problema_B4_S8_6
   - file: pages/Problema_B4_S8_7
+- caption: Seminario 9 - Magnetostática, Materiales
+  chapters:
+  - file: pages/Problema_B5_S9_1
+- caption: Seminario 11 - Circuitos ferromagnéticos
+  chapters:
+  - file: pages/Problema_B5_S11_1
+  - file: pages/Problema_B5_S11_2
 # - file: pages/Problema_B5_4
 # - file: pages/Problema_B5_5
 # - file: pages/Problema_B6_1

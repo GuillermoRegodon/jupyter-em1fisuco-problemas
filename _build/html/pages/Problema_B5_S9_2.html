@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B5.5 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B5.S9.2 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -60,9 +60,7 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B5_5';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B5_S9_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -223,9 +221,20 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_1.html">Problema B4.S8.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_2.html">Problema B4.S8.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_3.html">Problema B4.S8.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_4.html">Problema B4.S8.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_5.html">Problema B4.S8.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_6.html">Problema B4.S8.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_7.html">Problema B4.S8.7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 9 - Magnetostática, Materiales</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_1.html">Problema B5.S9.1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 11 - Circuitos ferromagnéticos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_1.html">Problema B5.S11.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_2.html">Problema B5.S11.2</a></li>
 </ul>
 
     </div>
@@ -285,7 +294,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B5_5.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B5_S9_2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -359,7 +368,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B5.5</h1>
+    <h1>Problema B5.S9.2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -373,90 +382,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b5-5">
-<h1>Problema B5.5<a class="headerlink" href="#problema-b5-5" title="Link to this heading">#</a></h1>
-<p>Este es un problema de circuito magnético que resolvemos con un <strong>método gráfico, ya que la respuesta del material ferromagnético es no lineal y tenemos la gráfica, pero no tenemos una expresión</strong>. Nos dan la gráfica de la respuesta del material <span class="math notranslate nohighlight">\(\mu_0 H_{Fe} = \mu_0 H_{Fe}(B_{Fe})\)</span>.</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/fe_descarga.png"><img alt="fe_descarga" src="../_images/fe_descarga.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-text">Respuesta de desimanación del material ferromagnético previamente imanado.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>El circuito construido tiene <strong>un trozo de material ferromagnético con la característica no lineal</strong> <span class="math notranslate nohighlight">\(\mu_0 H_{Fe}(B_{Fe})\)</span> de sección de <span class="math notranslate nohighlight">\(S_{Fe} = 3 \rm{cm^2}\)</span> y longitud de <span class="math notranslate nohighlight">\(L_{Fe}=5 \rm{cm}\)</span>. También tiene <strong>un material lineal</strong>, con la misma sección <span class="math notranslate nohighlight">\(S_l = S_{Fe} = S\)</span>, una longitud de <span class="math notranslate nohighlight">\(L_l = 25 \rm{cm}\)</span> y una permeabilidad magnética relativa de <span class="math notranslate nohighlight">\(\mu_r = 100\)</span>. La reluctancia del material lineal es, por lo tanto, <span class="math notranslate nohighlight">\(R_l = \frac{L_l}{\mu_r \mu_0 S}\)</span>. Dado que la sección es la misma (y el flujo lo es siempre en todos los circuitos magnéticos de una malla), <em>el campo magnético también es igual en el material lineal que en el material ferromagnético, <span class="math notranslate nohighlight">\(B_l = B_{Fe} = B\)</span></em>. El circuito magnético del apartado a) podríamos dibujarlo de la siguiente manera, con una fuerza magnetomotriz nula:</p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/fe_descarga_circuito_1.png"><img alt="fe_descarga_circuito_1" src="../_images/fe_descarga_circuito_1.png" style="width: 200px;" /></a>
-<figcaption>
-<p><span class="caption-text">Circuito magnético equivalente.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Todos los problemas de este tipo los vamos a resolver por un método gráfico. <strong>La metodología gráfica tiene tres pasos</strong>:</p>
-<ul class="simple">
-<li><p><strong>Plantear</strong> la ecuación del circuito. Tipicamente:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-fmm = H(B)L + \Phi R
-\]</div>
-<ul class="simple">
-<li><p><strong>Despejar</strong> el elemento no lineal para el que tenemos la gráfica.</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-H(B) = \frac{1}{L}(fmm - \Phi R)
-\]</div>
-<ul class="simple">
-<li><p><strong>Dibujar</strong> en la gráfica la recta que nos queda en la igualdad. El punto de corte es la solución que cumple los dos miembros de la igualdad.</p></li>
-</ul>
-<p>Las fórmulas que debemos tener en cuenta son:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-fmm &amp;= NI \\
-\Phi R &amp;= \phi \frac{L_R}{\mu_R S_R} = B_R \frac{L_R}{\mu_R}
-\end{split}\]</div>
-<p>Esta metodología general se puede aplicar a los casos concretos de los problemas con un único material ferromagnético y una unica malla, de forma que solo nos queda la ecuación de dicha malla.</p>
-</div>
-<p>Aplicando la metodología gráfica, <strong>la ecuación del circuito</strong> queda:</p>
-<div class="math notranslate nohighlight">
-\[
-fmm = H_{Fe}(B_{Fe}) L_{Fe} + \Phi R_l
-\]</div>
-<p>Sustituimos los valores de <span class="math notranslate nohighlight">\(fmm = 0\)</span> y <span class="math notranslate nohighlight">\(R_l = \frac{L_l}{\mu_r \mu_0 S}\)</span> y dejamos la expresión para que dependa de <span class="math notranslate nohighlight">\(B_l = B_{Fe} = B\)</span>. La expresión final, después de despejar <span class="math notranslate nohighlight">\(\mu_0 H_{Fe}(B)\)</span>, es la siguiente:</p>
-<div class="math notranslate nohighlight">
-\[
-\mu_0 H_{Fe}(B) = -B \frac{L_l}{\mu_r L_{Fe}}
-\]</div>
-<p>Podemos comprobar que la recta <span class="math notranslate nohighlight">\(-B \frac{L_l}{\mu_r L_{Fe}}\)</span> coincide con la recta (1) dibujada sobre la gráfica.</p>
-<p>En el segundo apartado b), se abre un entrehierro en el circuito magnético (es decir, un trozo de aire que rompe el circuito de hierro) de <span class="math notranslate nohighlight">\(L_e=0.2 \rm{cm}\)</span> y de sección <span class="math notranslate nohighlight">\(S_e = 1 \rm{cm^2}\)</span>. <strong>El entrehierro, al ser aire, tendrá una respuesta lineal, caracterizada por su reluctancia <span class="math notranslate nohighlight">\(R_e = \frac{L_e}{\mu_0 S_e}\)</span></strong>. Observar que la sección del entrehierro es distinta de la del toroide. Por lo tanto, <em>el campo magnético también es distinto en el material toriode que en el entrehierro, <span class="math notranslate nohighlight">\(B_e \neq B\)</span></em>.  Sin embargo, el flujo magnético <span class="math notranslate nohighlight">\(\Phi\)</span> si debe ser igual, lo que nos permite relacionar ambos campos magnéticos:</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi = B S = B_e S_e
-\]</div>
-<p>El circuito magnético podríamos dibujarlo de la siguiente manera:</p>
-<figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/fe_descarga_circuito_2.png"><img alt="fe_descarga_circuito_2" src="../_images/fe_descarga_circuito_2.png" style="width: 200px;" /></a>
-<figcaption>
-<p><span class="caption-text">Circuito magnético equivalente.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Aplicando la metodología gráfica, <strong>la ecuación del circuito</strong> queda:</p>
-<div class="math notranslate nohighlight">
-\[
-fmm = H_{Fe}(B_{Fe}) L_{Fe} + \Phi R_l + \Phi R_e
-\]</div>
-<p>Desarrollamos la expresión:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-0 &amp;= H_{Fe}(B_{Fe}) L_{Fe} + \Phi \frac{R_l}{\mu_r \mu_0 S} + \Phi \frac{L_e}{\mu_0 S_e} \\
-0 &amp;= H_{Fe}(B_{Fe}) L_{Fe} + B \frac{R_l}{\mu_r \mu_0} + B S \frac{L_e}{\mu_0 S_e}
-\end{split}\]</div>
-<p>La expresión final, después de despejar <span class="math notranslate nohighlight">\(H_{Fe}(B)\)</span>, es la siguiente:</p>
-<div class="math notranslate nohighlight">
-\[
-\mu_0 H_{Fe}(B) = -\frac{B}{L_{Fe}} \left( \frac{L_l}{\mu_r} + \frac{L_e S}{S_e} \right)
-\]</div>
-<p>Podemos comprobar que la recta <span class="math notranslate nohighlight">\(-\frac{B}{L_{Fe}} \left( \frac{L_l}{\mu_r} + \frac{L_e S}{S_e} \right)\)</span> coincide con la recta (2) dibujada sobre la gráfica.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b5-s9-2">
+<h1>Problema B5.S9.2<a class="headerlink" href="#problema-b5-s9-2" title="Link to this heading">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">

@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Problema B4.S8.5" href="Problema_B4_S8_5.html" />
-    <link rel="prev" title="Problema B4.S8.2" href="Problema_B4_S8_2.html" />
+    <link rel="prev" title="Problema B4.S8.3" href="Problema_B4_S8_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -223,9 +223,20 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_1.html">Problema B4.S8.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_2.html">Problema B4.S8.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_3.html">Problema B4.S8.3</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B4.S8.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_5.html">Problema B4.S8.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_6.html">Problema B4.S8.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_7.html">Problema B4.S8.7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 9 - Magnetostática, Materiales</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_1.html">Problema B5.S9.1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 11 - Circuitos ferromagnéticos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_1.html">Problema B5.S11.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_2.html">Problema B5.S11.2</a></li>
 </ul>
 
     </div>
@@ -375,6 +386,7 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-s8-4">
 <h1>Problema B4.S8.4<a class="headerlink" href="#problema-b4-s8-4" title="Link to this heading">#</a></h1>
+<p><strong>El problema pide calcular el campo magnético <span class="math notranslate nohighlight">\(\vec{B}(\vec{r})\)</span> generado por una esfera hueca de carga homogénea <span class="math notranslate nohighlight">\(\sigma\)</span> en rotación a velocidad angular constante <span class="math notranslate nohighlight">\(\omega\)</span>.</strong> Si el enunciado hubiera preguntado por el campo magnético en el eje <span class="math notranslate nohighlight">\(z\)</span>, la única componente a tener en cuenta sería la componente <span class="math notranslate nohighlight">\(B_z\)</span> del campo magnético, <span class="math notranslate nohighlight">\(B_z(z)\)</span>, y plantear la integral de <span class="math notranslate nohighlight">\(B_z\)</span> directamente sería relativamente fácil. Sin embargo, al preguntar en cualquier punto del espacio, el problema es más completo y más difícil. La integral del campo magnético tendrá 3 componentes, y productos vectoriales en cualquier punto del espacio, etc. <strong>Para simplificar la solución, vamos a utilizar el conceptor de potencial escalar definido como <span class="math notranslate nohighlight">\(\vec{B} = \nabla\times\vec{A}\)</span>, y vamos a comprobar que la solución es factible</strong> (<em>aunque sigue siendo un problema de nivel avanzado</em>).</p>
 <p>Claramente, <em>la carga superficial <span class="math notranslate nohighlight">\(\sigma\)</span> girando a velocidad constante <span class="math notranslate nohighlight">\(\omega\)</span></em> implica <strong>unas cargas que se desplazan</strong>, en este caso, <em>una corriente superficial <span class="math notranslate nohighlight">\(\vec{j}\)</span></em>. <strong>El potencial vector</strong> tiene una expresión sencilla a partir de la corriente superficial.</p>
 <div class="math notranslate nohighlight">
 \[
@@ -387,7 +399,7 @@
 \]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Para recordar o deducir la expresión de <span class="math notranslate nohighlight">\(\vec{j}\)</span>, primero observamos que tiene <strong>las unidades correctas, de <span class="math notranslate nohighlight">\([A/m]\)</span></strong>. Notamos que <strong>la velocidad debe estar contenida en la superficie</strong> para que la expresión tenga sentido, de forma que las cargas se desplazan dentro de la superficie</p>
+<p>Para recordar o deducir la expresión de <span class="math notranslate nohighlight">\(\vec{j}\)</span>, primero observamos que tiene <strong>las unidades correctas, de <span class="math notranslate nohighlight">\([A/m]\)</span></strong>. Notamos que <strong>la velocidad debe estar contenida en la superficie</strong> para que la expresión tenga sentido, de forma que las cargas se desplazan dentro de la superficie.</p>
 <p>Es similar a la expresión conocida <span class="math notranslate nohighlight">\(\vec{J} = \rho \vec{v}\)</span>, con unidades de <span class="math notranslate nohighlight">\([A/m^2]\)</span></p>
 </div>
 <figure class="align-default" id="id1">
@@ -534,12 +546,12 @@ dS' &amp;= a^2 \sin\theta'd\theta'd\varphi' \\
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problema_B4_S8_2.html"
+       href="Problema_B4_S8_3.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B4.S8.2</p>
+        <p class="prev-next-title">Problema B4.S8.3</p>
       </div>
     </a>
     <a class="right-next"

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B5.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B4.S8.6 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,9 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B5_4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B4_S8_6';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B4.S8.7" href="Problema_B4_S8_7.html" />
+    <link rel="prev" title="Problema B4.S8.5" href="Problema_B4_S8_5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -220,12 +220,23 @@
 <li class="toctree-l1"><a class="reference internal" href="Parcial_2526.html">Parcial de Electrostática 25/26</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 8 - Magnetostática, Superposición</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_1.html">Problema B4.S8.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_2.html">Problema B4.S8.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_3.html">Problema B4.S8.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_4.html">Problema B4.S8.4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_5.html">Problema B4.S8.5</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B4.S8.6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_7.html">Problema B4.S8.7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 9 - Magnetostática, Materiales</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_1.html">Problema B5.S9.1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 11 - Circuitos ferromagnéticos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_1.html">Problema B5.S11.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_2.html">Problema B5.S11.2</a></li>
 </ul>
 
     </div>
@@ -285,7 +296,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B5_4.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B4_S8_6.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -359,7 +370,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B5.4</h1>
+    <h1>Problema B4.S8.6</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -373,61 +384,63 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b5-4">
-<h1>Problema B5.4<a class="headerlink" href="#problema-b5-4" title="Link to this heading">#</a></h1>
-<p>Este es un problema de circuito magnético que resolvemos con un <strong>método gráfico, ya que la respuesta del material ferromagnético es no lineal y tenemos la gráfica, pero no tenemos una expresión</strong>. Nos dan la gráfica de la respuesta del material <span class="math notranslate nohighlight">\(H_{Fe} = H_{Fe}(B_{Fe})\)</span>.</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/fe_carga.png"><img alt="fe_carga" src="../_images/fe_carga.png" style="width: 400px;" /></a>
-<figcaption>
-<p><span class="caption-text">Respuesta de carga inicial del material ferromagnético.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p><strong>El circuito magnético tiene una fuerza magnetomotriz, o <span class="math notranslate nohighlight">\(fmm\)</span></strong>, generada por un bobinado de <span class="math notranslate nohighlight">\(N=300\)</span> espiras por las que circula una corriente <span class="math notranslate nohighlight">\(I=2.5\rm{A}\)</span>. El circuito tiene una sección <span class="math notranslate nohighlight">\(S = 2 \rm{cm^2}\)</span> y una longitud de <span class="math notranslate nohighlight">\(L_{Fe}=60 \rm{cm}\)</span>, y un entrehierro (es decir, un trozo de aire que rompe el circuito de hierro) de <span class="math notranslate nohighlight">\(L_e=2 \rm{mm}\)</span>. <strong>El entrehierro, al ser aire, tendrá una respuesta lineal, caracterizada por su reluctancia <span class="math notranslate nohighlight">\(R_e = \frac{L_e}{\mu_0 S}\)</span></strong>. Deberíamos haber usado <span class="math notranslate nohighlight">\(S_e\)</span>, pero el entrehierro es tan estrecho, que podemo asumir que la sección por la que pasa el flujo magnético es la misma que la sección del material ferromagnético <span class="math notranslate nohighlight">\(S\)</span>. Por lo tanto, <em>el campo magnético también es igual en el material ferromagnético que en el entrehierro, <span class="math notranslate nohighlight">\(B_{Fe} = B_e = B\)</span></em>. El circuito magnético podríamos dibujarlo de la siguiente manera:</p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/fe_carga_circuito.png"><img alt="fe_carga_circuito" src="../_images/fe_carga_circuito.png" style="width: 200px;" /></a>
-<figcaption>
-<p><span class="caption-text">Circuito magnético equivalente.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Todos los problemas de este tipo los vamos a resolver por un método gráfico. <strong>La metodología gráfica tiene tres pasos</strong>:</p>
-<ul class="simple">
-<li><p><strong>Plantear</strong> la ecuación del circuito. Tipicamente:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-fmm = H(B)L + \Phi R
-\]</div>
-<ul class="simple">
-<li><p><strong>Despejar</strong> el elemento no lineal para el que tenemos la gráfica.</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-H(B) = \frac{1}{L}(fmm - \Phi R)
-\]</div>
-<ul class="simple">
-<li><p><strong>Dibujar</strong> en la gráfica la recta que nos queda en la igualdad. El punto de corte es la solución que cumple los dos miembros de la igualdad.</p></li>
-</ul>
-<p>Las fórmulas que debemos tener en cuenta son:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b4-s8-6">
+<h1>Problema B4.S8.6<a class="headerlink" href="#problema-b4-s8-6" title="Link to this heading">#</a></h1>
+<p>Este problema nos pide calcular la fuerza que ejerce una configuración de corriente sobre otra. Para ello, <strong>vamos a parametrizar matemáticamente la fuente de campo magnético y los puntos en los que tenemos que evaluar dicho campo campo magnético</strong>. Colocamos el hilo de corriente, que es la fuente, en el eje <span class="math notranslate nohighlight">\(z\)</span>, de tal forma que el hilo se parametriza mediante la coordenada <span class="math notranslate nohighlight">\(z'\)</span>, a la que le ponemos la prima <span class="math notranslate nohighlight">\('\)</span> por que es la fuente de campo magnético. La corriente es <span class="math notranslate nohighlight">\(I\)</span> y el diferencial de linea <span class="math notranslate nohighlight">\(\vec{dl'} = dz' \vec{u_z}\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-fmm &amp;= NI \\
-\Phi R &amp;= \phi \frac{L_R}{\mu_R S_R} = B_R \frac{L_R}{\mu_R}
+\vec{r'} &amp;= (0,0,z') \\
+\vec{dl'} &amp;= dz' \vec{u_z} \quad z' \in[-\infty, \infty]
 \end{split}\]</div>
-<p>Esta metodología general se puede aplicar a los casos concretos de los problemas con un único material ferromagnético y una unica malla, de forma que solo nos queda la ecuación de dicha malla.</p>
-</div>
-<p>Aplicando la metodología gráfica, <strong>la ecuación del circuito</strong> queda:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B4_S8_6_1.png"><img alt="Espiras" src="../_images/B4_S8_6_1.png" style="width: 300px;" /></a>
+</figure>
+<p>Esta configuración tiene simetría cilíndrica que nos permite usar la ley de Ampere para resolver el campo magnético fácilmente en cualquier punto <span class="math notranslate nohighlight">\(\vec{r} = \rho\vec{u_\rho}\)</span> del espacio (<em>La ley de Ampere siempre es válida, aunque no siempre simplifica la resolución</em>).</p>
 <div class="math notranslate nohighlight">
 \[
-fmm = H_{Fe}(B_{Fe}) L_{Fe} + \Phi R_e
+\vec{B_1} = \frac{\mu_0 I }{2\pi \rho}\vec{u_\phi}
 \]</div>
-<p>Sustituimos los valores de <span class="math notranslate nohighlight">\(fmm\)</span> y <span class="math notranslate nohighlight">\(R_e\)</span> y dejamos la expresión para que dependa de <span class="math notranslate nohighlight">\(B_{Fe} = B_e = B\)</span>. La expresión final, después de despejar <span class="math notranslate nohighlight">\(H_{Fe}(B)\)</span>, es la siguiente:</p>
+<p><strong>Dado que el enunciado utilizada la variable <span class="math notranslate nohighlight">\(s\)</span> como la distancia entre el hilo y el punto más cercano de la espira, utilizamos <span class="math notranslate nohighlight">\(\rho\)</span> como variable radial</strong>. Con esto, la fuerza sobre otra configuración de corriente sigue la expresión:</p>
 <div class="math notranslate nohighlight">
 \[
-H_{Fe}(B) = \frac{1}{L_{Fe}}\left( NI - B \frac{L_e}{\mu_0} \right)
+\vec{F_{12}} = \int_C I_2 \vec{dl_2}\times\vec{B_1}
 \]</div>
-<p>Podemos comprobar que la recta dibujada en la figura es la recta que tiene esta ecuación. Lo más facil es dibujar los puntos de corte con los ejes y trazar la linea recta que los une. Si calculamos los puntos de corte con los ejes de la recta <span class="math notranslate nohighlight">\(\frac{1}{L_{Fe}}\left( NI - B \frac{L_e}{\mu_0} \right)\)</span>, comprobaremos que coinciden con los de la recta dibujada.</p>
+<p>Aún no hemos parametrizado la configuración de corriente sobre la que aplicamos el campo magnético. Eso es porque está definida por ramas y tenemos que dividirla en cuatro partes. Dejamos el 1 para el hilo infinito, y usamos 2, 3, 4 y 5 para los cuatro trozos de la espira. En todos los tramos, la corriente es la misma, <span class="math notranslate nohighlight">\(I\)</span>.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{F_{12}}\)</span>: Este tramos se parametriza con la coordenada radial. De esta forma, el diferencial de linea <span class="math notranslate nohighlight">\(\vec{dl} = d\rho\vec{u_\rho}\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\vec{F_{12}} = \int_{\rho=s+a}^{\rho=s} I (d\rho \vec{u_\rho})\times (\frac{\mu_0 I }{2\pi\rho}\vec{u_\phi}) = \frac{\mu_0 I^2}{2\pi} \int_{\rho=s+a}^{\rho=s} \frac{d\rho }{\rho}\vec{u_z} = - \frac{\mu_0 I^2}{2\pi} \log{\frac{s+a}{s}}\vec{u_z}
+\]</div>
+<p>(<em>Observemos que es más fácil pensar en el diferencial de línea en la dirección estándar de las coordenadas y poner los límites de integración para definir los puntos donde empieza y acaba la corriente <span class="math notranslate nohighlight">\(I\)</span>. Alternativamente, podríamos haber usado los límites normales y haberle dado la vuelta a la corriente, <span class="math notranslate nohighlight">\(-I\)</span></em>).</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{F_{13}}\)</span>: Este tramo es igual que 2, con el signo cambiado a través de los límites de integración.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\vec{F_{13}} = \int_{\rho=s}^{\rho=s+a} I (d\rho \vec{u_\rho})\times (\frac{\mu_0 I }{2\pi\rho}\vec{u_\phi}) = \frac{\mu_0 I^2}{2\pi} \log{\frac{s+a}{s}}\vec{u_z}
+\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{F_{14}}\)</span>: Este tramo se parametriza con la coordenada <span class="math notranslate nohighlight">\(z\)</span>, es decir, $\vec{dl} = z\vec{u_z}. Igual que 2, jugamos con los límites de integración para indicar la dirección de la corriente.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\vec{F_{14}} = \int_{z=a}^{z=0} I (dz \vec{u_z})\times (\frac{\mu_0 I }{2\pi s}\vec{u_\phi}) = \frac{\mu_0 I^2 a}{2\pi s}\vec{u_\rho}
+\]</div>
+<p>(<em>Observemos que todos los puntos del tramo están a la misma distancia radial <span class="math notranslate nohighlight">\(\rho=s\)</span></em>)</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{F_{15}}\)</span>: Este tramo es igual que 4, con el signo cambiado a través de los límites de integración y teniendo en cuenta que el tramo de corriente está un poco más lejos, en <span class="math notranslate nohighlight">\(\rho=s+a\)</span>.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\vec{F_{15}} = \int_{z=0}^{z=a} I (dz \vec{u_z})\times (\frac{\mu_0 I }{2\pi(s+a)}\vec{u_\phi}) = -\frac{\mu_0 I^2 a}{2\pi (s+a)}\vec{u_\rho}
+\]</div>
+<p>Con esto, la fuerza total sobre la espira es:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{F} = \vec{F_{12}} + \vec{F_{13}} + \vec{F_{14}} + \vec{F_{15}} = \frac{\mu_0 I^2 a^2}{2\pi s(s+a)}\vec{u_\rho}
+\]</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -460,6 +473,24 @@ H_{Fe}(B) = \frac{1}{L_{Fe}}\left( NI - B \frac{L_e}{\mu_0} \right)
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B4_S8_5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B4.S8.5</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B4_S8_7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B4.S8.7</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
