@@ -60,9 +60,13 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B5_S9_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B5.S9.3" href="Problema_B5_S9_3.html" />
+    <link rel="prev" title="Problema B5.S9.1" href="Problema_B5_S9_1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -113,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -206,7 +208,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_1.html">Problema B3.S6.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_2.html">Problema B3.S6.2</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 7 - Medios dieléctricos, Energía electrostática</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 7 - Medios dieléctricos, Campo electrostática</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S7_1.html">Problema B3.S7.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S7_2.html">Problema B3.S7.2</a></li>
@@ -228,8 +230,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_7.html">Problema B4.S8.7</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 9 - Magnetostática, Materiales</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_1.html">Problema B5.S9.1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B5.S9.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_3.html">Problema B5.S9.3</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 11 - Circuitos ferromagnéticos</span></p>
 <ul class="nav bd-sidenav">
@@ -357,7 +361,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -373,6 +379,16 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-c">Apartado <span class="math notranslate nohighlight">\(c)\)</span></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -384,6 +400,133 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="problema-b5-s9-2">
 <h1>Problema B5.S9.2<a class="headerlink" href="#problema-b5-s9-2" title="Link to this heading">#</a></h1>
+<p>En este problema tenemos un cilindro de radio <span class="math notranslate nohighlight">\(a\)</span> de material lineal por el que se hace pasar una corriente <span class="math notranslate nohighlight">\(I\)</span> uniformemente distribuida a los largo del hilo en dirección del eje de simetría del cilindro, el eje <span class="math notranslate nohighlight">\(z\)</span>. La susceptibilidad magnética del material es <span class="math notranslate nohighlight">\(\chi_M\)</span>. La densidad de corriente <span class="math notranslate nohighlight">\(\vec{J}\)</span> tiene la dirección <span class="math notranslate nohighlight">\(z\)</span> y dado que la corriente está uniformemente distribuida, su valor es constante:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{J} = J\vec{u_z} = \frac{I}{\pi a^2}\vec{u_z}
+\]</div>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B5_S9_2_1.png"><img alt="J_cte" src="../_images/B5_S9_2_1.png" style="width: 250px;" /></a>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>De forma similar a lo que nos encontrábamos en los ejercicios de Electrostática de materiales, en los problemas de Magnetostática de materiales, vamos a tener tres posibilidades, una de las cuales es particular de los problemas de magnetostática.</p>
+<ol class="arabic simple">
+<li><p><strong>Materiales lineales</strong>: Se caracterizan por que la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> es lineal con respecto al vector <span class="math notranslate nohighlight">\(\vec{H}\)</span>, típicamente tan solo una constante (<em>aunque podría ser una matriz, o tensor de orden 2</em>).</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = \chi_M \vec{H}
+\]</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Materiales con magnetización constante</strong>: Se caracterizan por que la magnetización es independiente del vector <span class="math notranslate nohighlight">\(\vec{H}\)</span> externo. En este caso, las densidades de corriente de magnetización también son constantes, por lo que podemos considerarlas como fuentes de campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span> y sustituir el material por dichas corrientes.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = cte \quad \Rightarrow \quad \vec{J_M} = \nabla\times\vec{M}; \space \vec{j_M} = \vec{M}\times\vec{n}
+\]</div>
+<p>Ambos casos, <strong>1</strong> y <strong>2</strong>, son equivalentes a problemas de Electrostática de materiales. El siguiente caso, <strong>3</strong>, aunque nos lo podríamos encontrar en Electrostática, allí tiene muy poca importancia, mientras que en Magnetostática tiene muchas aplicaciones prácticas.</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Materiales no lineales</strong>: Se caracterizan por que la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> responde al vector <span class="math notranslate nohighlight">\(\vec{H}\)</span> externo de forma no lineal. Un ejemplo importante son los materiales con histéresis. Típicamente, le damos la vuelta a la dependencia para que <span class="math notranslate nohighlight">\(\vec{H}\)</span> sea la variable independiente y <span class="math notranslate nohighlight">\(\vec{B}\)</span> sea la variable dependiente:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = f(\vec{H}) \quad \Rightarrow \quad \vec{B} = \mu_0(\vec{M} + f(\vec{H})) = g(\vec{H}) \quad \Rightarrow \quad \vec{H} = \vec{H}(\vec{B})
+\]</div>
+</div>
+<p>Dado que el problema tiene una de las simetrías convenientes para aplicar Ampere, lo utilizamos. El circuito de Ampere que conviene tiene que encerrar una superficie atravesada por corriente y tiene que tener su frontera en la linea del campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span> y del vector <span class="math notranslate nohighlight">\(\vec{H}\)</span>, que conocemos por la regla de la mano derecha. La única posibilidad es un circulo perpendicular al eje <span class="math notranslate nohighlight">\(z\)</span> centrado en dicho eje de radio arbitrario <span class="math notranslate nohighlight">\(s\)</span>.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/B5_S9_2_2.png"><img alt="J_cte" src="../_images/B5_S9_2_2.png" style="width: 250px;" /></a>
+</figure>
+<p>Distinguimos dos casos:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(s{\le}a\)</span>: La corriente encerrada es la fracción de la corriente que atraviesa el circuito.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\oint\vec{H}\cdot\vec{dl} = I_{enc} \quad \rightarrow \quad H(s)2\pi s = J\pi s^2
+\]</div>
+<p>O lo que es lo mismo:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{H}(s) = \frac{Js}{2}\vec{u_\phi} = \frac{Is}{2\pi a^2}\vec{u_\phi}
+\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(s{&gt;}a\)</span>: La corriente encerrada es la total, <span class="math notranslate nohighlight">\(I\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\oint\vec{H}\cdot\vec{dl} = I_{enc} \quad \rightarrow \quad H(s)2\pi s = I
+\]</div>
+<p>O lo que es lo mismo:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{H}(s) = \frac{I}{2\pi s}\vec{u_\phi} 
+\]</div>
+<p>Claramente el vector <span class="math notranslate nohighlight">\(\vec{H}\)</span> es tangente y continuo en la frontera. Con esto ya podemos resolver el resto del problema.</p>
+<section id="apartado-a">
+<h2>Apartado <span class="math notranslate nohighlight">\(a)\)</span><a class="headerlink" href="#apartado-a" title="Link to this heading">#</a></h2>
+<p>El campo magnético fuera del hilo, donde no existe material ni magnetización, la relación entre el vector <span class="math notranslate nohighlight">\(\vec{H}\)</span> y el campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = \mu_0\vec{H} = \frac{\mu_0 I}{2\pi s}\vec{u_\phi} \quad s&gt;a
+\]</div>
+<p>Que coincide con el campo magnético generado por un hilo de corriente en el eje <span class="math notranslate nohighlight">\(z\)</span>. Dentro del material tenemos una magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> relacionada mediante la susceptibilidad <span class="math notranslate nohighlight">\(\chi_M\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = \chi_M\vec{H} = \frac{\chi_MIs}{2\pi a^2}\vec{u_\phi} \quad s{\le}a
+\]</div>
+<p>De tal forma que el campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span> es:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = \mu_0(\vec{H} + \vec{M}) = \frac{\mu_0(1+\chi_M)Is}{2\pi a^2}\vec{u_\phi} = \frac{\mu Is}{2\pi a^2}\vec{u_\phi} \quad s{\le}a
+\]</div>
+</section>
+<section id="apartado-b">
+<h2>Apartado <span class="math notranslate nohighlight">\(b)\)</span><a class="headerlink" href="#apartado-b" title="Link to this heading">#</a></h2>
+<p>Las densidades de corriente de magnetización se pueden obtener a partir de su definición:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{J_M} &amp;= \nabla\times\vec{M} \\
+\vec{j_M} &amp;= \vec{M}\times\vec{n}
+\end{split}\]</div>
+<p>En el rotacional, dado que <span class="math notranslate nohighlight">\(\vec{M} = M_\phi(s)\vec{u_\phi}\)</span> que solo tiene dirección <span class="math notranslate nohighlight">\(\phi\)</span> y ademas dicha componente solo depende de <span class="math notranslate nohighlight">\(s\)</span>, la coordenada radial de cilíndricas, el único término que sobrevive es (<em>Importante verificar la expresión: el producto <span class="math notranslate nohighlight">\(sM_\phi\)</span> se hace antes de la derivada parcial</em>):</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{J_M} = \nabla\times\vec{M} = \frac{1}{s} \left( \frac{\partial(sM_\phi)}{\partial s} \right) \vec{u_z} = \frac{\chi_MI}{\pi a^2}\vec{u_z}
+\]</div>
+<p>El vector unitario saliente <span class="math notranslate nohighlight">\(\vec{n}\)</span> es justo el vector unitario radial de cilíndricas, <span class="math notranslate nohighlight">\(\vec{n}=\vec{u_s}\)</span> (<em>Importante: <span class="math notranslate nohighlight">\(s\)</span> es arbitrario, en la superficie <span class="math notranslate nohighlight">\(s\)</span> se particulariza a <span class="math notranslate nohighlight">\(s=a\)</span></em>):</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{j_M} = \vec{M}\times\vec{n} = \left(\frac{\chi_MIs}{2\pi a^2}\vec{u_\phi}\times\vec{u_s}\right)_{s{=}a} = -\frac{\chi_MI}{2\pi a} \vec{u_z}
+\]</div>
+<ul class="simple">
+<li><p>Observemos que el campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span> no es continuo en la frontera del material, y el salto corresponde justo con la densidad superficial de corriente de magnetización <span class="math notranslate nohighlight">\(\vec{j_M}\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\left(B_f - B_d\right)_{s{=}a} = \mu_0 j_M
+\]</div>
+</section>
+<section id="apartado-c">
+<h2>Apartado <span class="math notranslate nohighlight">\(c)\)</span><a class="headerlink" href="#apartado-c" title="Link to this heading">#</a></h2>
+<p>Vamos a realizar ahora la comprobación sobre las densidades de corriente de magnetización: La corriente neta en el material es nula. Dado que tiene simetría a lo largo del eje <span class="math notranslate nohighlight">\(z\)</span>, si comprobamos que la corriente de magnetización neta que atraviesa una superficie <span class="math notranslate nohighlight">\(z=cte\)</span>, habremos comprobado que la corriente de magnetización total en el cilindro también es nula. Particularizando en un plano  cualquiera, la corriente total es la suma de la volumétrica más la superficial:</p>
+<div class="math notranslate nohighlight">
+\[
+I(z) = \int_S \vec{J_M}\cdot\vec{dS} + \oint_C j_M dl
+\]</div>
+<p>Lo corriente volumétrica total de magnetización es, dado que la densidad de corriente de magnetización es constante:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_S \vec{J_M}\cdot\vec{dS} = J_MS = \chi_MI
+\]</div>
+<p>Mientras que la corriente superficial que atraviesa la frontera hacia arriba es:</p>
+<div class="math notranslate nohighlight">
+\[
+\oint_C j_M dl = j_M2\pi a = -\chi_MI
+\]</div>
+<p>Dando un valor total nulo.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -416,12 +559,48 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B5_S9_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B5.S9.1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B5_S9_3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B5.S9.3</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-a">Apartado <span class="math notranslate nohighlight">\(a)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-b">Apartado <span class="math notranslate nohighlight">\(b)\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apartado-c">Apartado <span class="math notranslate nohighlight">\(c)\)</span></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

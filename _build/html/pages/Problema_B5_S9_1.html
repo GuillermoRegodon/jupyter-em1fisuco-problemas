@@ -65,7 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B5_S9_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B5.S11.1" href="Problema_B5_S11_1.html" />
+    <link rel="next" title="Problema B5.S9.2" href="Problema_B5_S9_2.html" />
     <link rel="prev" title="Problema B4.S8.7" href="Problema_B4_S8_7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -208,7 +208,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_1.html">Problema B3.S6.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S6_2.html">Problema B3.S6.2</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 7 - Medios dieléctricos, Energía electrostática</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 7 - Medios dieléctricos, Campo electrostática</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S7_1.html">Problema B3.S7.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B3_S7_2.html">Problema B3.S7.2</a></li>
@@ -232,6 +232,8 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 9 - Magnetostática, Materiales</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B5.S9.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_2.html">Problema B5.S9.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_3.html">Problema B5.S9.3</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 11 - Circuitos ferromagnéticos</span></p>
 <ul class="nav bd-sidenav">
@@ -409,7 +411,7 @@
 </ol>
 <div class="math notranslate nohighlight">
 \[
-\vec{M} = cte \quad \Rightarrow \quad \vec{J} = \nabla\times\vec{M}; \space \vec{j} = \vec{M}\times\vec{n}
+\vec{M} = cte \quad \Rightarrow \quad \vec{J_M} = \nabla\times\vec{M}; \space \vec{j_M} = \vec{M}\times\vec{n}
 \]</div>
 <p>Ambos casos, <strong>1</strong> y <strong>2</strong>, son equivalentes a problemas de Electrostática de materiales. El siguiente caso, <strong>3</strong>, aunque nos lo podríamos encontrar en Electrostática, allí tiene muy poca importancia, mientras que en Magnetostática tiene muchas aplicaciones prácticas.</p>
 <ol class="arabic simple" start="3">
@@ -423,7 +425,7 @@
 <p>Nos piden el campo magnético en un punto del eje de simetría <span class="math notranslate nohighlight">\(z\)</span>. El material, en estos casos, se puede sustituir por unas densidades de corriente de magnetización. La densidad (<em>volumétrica</em>) de corriente de magnetización:</p>
 <div class="math notranslate nohighlight">
 \[
-\vec{J} = \nabla\times\vec{M} = 0
+\vec{J_M} = \nabla\times\vec{M} = 0
 \]</div>
 <p>Debido a que la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> es constante. Para la superficial, debemos distinguir tres superficies con normal <span class="math notranslate nohighlight">\(\vec{n}\)</span> distintas, numeradas en la figura.</p>
 <ol class="arabic simple">
@@ -431,21 +433,21 @@
 </ol>
 <div class="math notranslate nohighlight">
 \[
-\vec{j_1} = \vec{M}\times\vec{n} = (M\vec{u_z})\times\vec{u_z} = 0
+\vec{j_{M,1}} = \vec{M}\times\vec{n} = (M\vec{u_z})\times\vec{u_z} = 0
 \]</div>
 <ol class="arabic simple" start="2">
-<li><p>La tapa inferior tiene un vector normal <span class="math notranslate nohighlight">\(\vec{n} = -\vec{u_z}\)</span>, por lo que genera una densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j_2}=0\)</span> que también es nula.</p></li>
+<li><p>La tapa inferior tiene un vector normal <span class="math notranslate nohighlight">\(\vec{n} = -\vec{u_z}\)</span>, por lo que genera una densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j_{M,2}}=0\)</span> que también es nula.</p></li>
 <li><p>La cara lateral tiene un vector normal <span class="math notranslate nohighlight">\(\vec{n} = \vec{u_s}\)</span> en coordenadas cilíndricas. La densidad superficial de corriente es:</p></li>
 </ol>
 <div class="math notranslate nohighlight">
 \[
-\vec{j_3} = \vec{M}\times\vec{n} = (M\vec{u_z})\times\vec{u_s} = M\vec{u_\phi}
+\vec{j_{M,3}} = \vec{M}\times\vec{n} = (M\vec{u_z})\times\vec{u_s} = M\vec{u_\phi}
 \]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>En magnetostática, es común que los productos vectoriales sean más fáciles de manejar <strong>en polares, cilíndricas o esféricas</strong>, por lo que <strong>suele ser conveniente no realizar el cambio a cartesianas hasta después de los productos vectoriales</strong>.</p>
 </div>
-<p>Por lo tanto, el problema es el de un cilindro de longitud <span class="math notranslate nohighlight">\(L\)</span> y radio <span class="math notranslate nohighlight">\(a\)</span> con densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j_3} = M\vec{u_\phi}\)</span>. Este problema es el mismo que se resolvió en el boletín anterior, el B4.S8.2. Adaptando la notación:</p>
+<p>Por lo tanto, el problema es el de un cilindro de longitud <span class="math notranslate nohighlight">\(L\)</span> y radio <span class="math notranslate nohighlight">\(a\)</span> con densidad superficial de corriente <span class="math notranslate nohighlight">\(\vec{j_{M,3}} = M\vec{u_\phi}\)</span>. Este problema es el mismo que se resolvió en el boletín anterior, el B4.S8.2. Adaptando la notación:</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{NI}{L} \rightarrow M
@@ -569,11 +571,11 @@ B_z = B_{z,\frac{L}{2},M}(z) + B_{z,-\frac{L}{2},-M}(z) + \mu_0 M &amp;= \frac{\
       </div>
     </a>
     <a class="right-next"
-       href="Problema_B5_S11_1.html"
+       href="Problema_B5_S9_2.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problema B5.S11.1</p>
+        <p class="prev-next-title">Problema B5.S9.2</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

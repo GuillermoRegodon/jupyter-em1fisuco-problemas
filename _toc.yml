@@ -35,7 +35,7 @@ parts:
   chapters:
   - file: pages/Problema_B3_S6_1
   - file: pages/Problema_B3_S6_2
-- caption: Seminario 7 - Medios dieléctricos, Energía electrostática
+- caption: Seminario 7 - Medios dieléctricos, Campo electrostática
   chapters:
   - file: pages/Problema_B3_S7_1
   - file: pages/Problema_B3_S7_2
@@ -56,6 +56,8 @@ parts:
 - caption: Seminario 9 - Magnetostática, Materiales
   chapters:
   - file: pages/Problema_B5_S9_1
+  - file: pages/Problema_B5_S9_2
+  - file: pages/Problema_B5_S9_3
 - caption: Seminario 11 - Circuitos ferromagnéticos
   chapters:
   - file: pages/Problema_B5_S11_1
