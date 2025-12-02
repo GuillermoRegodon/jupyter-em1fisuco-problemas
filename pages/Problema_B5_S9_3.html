@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B1.S1.2 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B5.S9.3 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,11 +62,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B1_S1_2';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B5_S9_3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problema B1.S1.3" href="Problema_B1_S1_3.html" />
-    <link rel="prev" title="Problema B1.S1.1" href="Problema_B1_S1_1.html" />
+    <link rel="next" title="Problema B5.S11.1" href="Problema_B5_S11_1.html" />
+    <link rel="prev" title="Problema B5.S9.2" href="Problema_B5_S9_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -175,9 +175,9 @@
 <li class="toctree-l1"><a class="reference internal" href="0-repaso_gauss_ampere.html">Repaso del uso de las simetrías para resolver problemas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 1 - Electrostática, Superposición</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_1.html">Problema B1.S1.1</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B1.S1.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_2.html">Problema B1.S1.2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_3.html">Problema B1.S1.3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B1_S1_4.html">Problema B1.S1.4</a></li>
 </ul>
@@ -230,10 +230,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B4_S8_7.html">Problema B4.S8.7</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 9 - Magnetostática, Materiales</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_1.html">Problema B5.S9.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_2.html">Problema B5.S9.2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B5_S9_3.html">Problema B5.S9.3</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B5.S9.3</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 11 - Circuitos ferromagnéticos</span></p>
 <ul class="nav bd-sidenav">
@@ -298,7 +298,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B1_S1_2.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B5_S9_3.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -372,7 +372,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B1.S1.2</h1>
+    <h1>Problema B5.S9.3</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,74 +386,94 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b1-s1-2">
-<h1>Problema B1.S1.2<a class="headerlink" href="#problema-b1-s1-2" title="Link to this heading">#</a></h1>
-<p>Este problema pide la diferencia de potencial <span class="math notranslate nohighlight">\(\Delta \Phi\)</span> entre dos puntos en trono a una configuración de carga superficial constante con forma de semiesfera. Debido a la falta de simetría del problema, es difícil encontrar una expresión general para el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> o para el campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> en cualquier punto del espacio. Por ello, vamos a calcular el potencial <span class="math notranslate nohighlight">\(\Phi\)</span> (<em>con respecto a la referencia  en el infinito</em>) en los puntos pedidos y realizar la resta.</p>
-<ul class="simple">
-<li><p><strong>Para calcular el potencial en el primer punto <span class="math notranslate nohighlight">\(O\)</span> aplicamos directamente la expresión del potencial <span class="math notranslate nohighlight">\(\phi\)</span> con respecto al infinito</strong>.</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b5-s9-3">
+<h1>Problema B5.S9.3<a class="headerlink" href="#problema-b5-s9-3" title="Link to this heading">#</a></h1>
+<p>Este es otro problema de un material con una magnetización constante.</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi(O) = \frac{1}{4\pi\varepsilon_0}\int\frac{\sigma(\vec{r'}) dS'}{R}
+\vec{M} = ks^2\vec{u_\phi}
 \]</div>
-<p>Con <span class="math notranslate nohighlight">\(\vec{R} = \vec{r}-\vec{r'}\)</span>. Tenemos que interpretar todos los elementos que aparecen en la integral de superficie. Para poder aprovechar la simetría esférica de la semiesfera, ponemos el origen en el centro de la semiesfera <strong>de forma que la parametrización natural de la superficie es en coordenadas esféricas</strong>. Llamamos <span class="math notranslate nohighlight">\(a\)</span> al radio de la semiesfera.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\sigma(\vec{r'}) &amp;= cte\\
-\vec{r} &amp;= (0,0,0) \\
-\vec{r'} &amp;= a (\sin \theta' \cos \varphi', \sin \theta' \sin \varphi', \cos \theta') \\
-\vec{R} &amp;= - a (\sin \theta' \cos \varphi', \sin \theta' \sin \varphi', \cos \theta') \\
-R &amp;= a \\
-d S' &amp;= a^2 \sin \theta' d\theta' d \varphi' \\
-\theta' &amp;\in [0,\pi/2] \qquad \varphi' \in [0, 2\pi] 
-\end{split}\]</div>
-<p>Escribimos la expresión con los elementos sustituidos.</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi(O) = \frac{\sigma}{4\pi\varepsilon_0 a}\int dS'
-\]</div>
-<p>No tenemos que seguir sustituyendo, porque al ser la densidad superficial <span class="math notranslate nohighlight">\(\sigma\)</span> y la distancia <span class="math notranslate nohighlight">\(R\)</span> ambos constantes, el integrando es 1, y la integral resulta ser directamente la superficie de media esfera, <span class="math notranslate nohighlight">\(2 \pi a^2\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[
-\Phi(O) = \frac{\sigma a}{2 \varepsilon_0} 
-\]</div>
-<ul class="simple">
-<li><p><strong>Para calcular el potencial en el segundo punto <span class="math notranslate nohighlight">\(N\)</span> también aplicamos directamente la expresión del potencial <span class="math notranslate nohighlight">\(\Phi\)</span> con respecto al infinito</strong>.</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-\Phi(N) = \frac{1}{4\pi\varepsilon_0}\int\frac{\sigma(\vec{r'}) dS'}{R}
-\]</div>
-<p>Ponemos el origen del sistema de referencia en el mismo punto por los mismos motivos. Los elementos de la integral son los mismo salvo el punto en el que se calcula la integral.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{r} &amp;= (0,0,a) \\
-\vec{R} &amp;= - a (\sin \theta' \cos \varphi', \sin \theta' \sin \varphi', \cos \theta' - 1) \\
-R &amp;= a \sqrt{2} \sqrt{1-\cos\theta'}
-\end{split}\]</div>
+<p>Dado que la magnetización es fija, no tiene sentido hablar de susceptibilidad magnética <span class="math notranslate nohighlight">\(\chi_M\)</span> ni de permeabilidad relativa <span class="math notranslate nohighlight">\(\mu_r\)</span>. Al tener la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span>, podemos obtener las densidades de corriente de magnetización, que a su vez serán las fuentes del campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>La expresión de <span class="math notranslate nohighlight">\(R\)</span> que se puede deducir a partir de la definición, <em>se puede obtener de otra manera más visual</em>. La distancia <span class="math notranslate nohighlight">\(R\)</span> es la longitud del segmento que une el punto <span class="math notranslate nohighlight">\(N\)</span> en la cima de la semiesfera y un punto cualquiera de la semiesfera, que caracterizamos por los angulos <span class="math notranslate nohighlight">\(\theta'\)</span> y <span class="math notranslate nohighlight">\(\varphi'\)</span>.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="../_images/B1_S1_2_1.png"><img alt="semiesfera carga constante.png" src="../_images/B1_S1_2_1.png" style="width: 500px;" /></a>
-</figure>
-<p>Comprobamos que podemos dividir el triangulo <span class="math notranslate nohighlight">\(ONr\)</span> en dos triángulos rectángulos de ángulo <span class="math notranslate nohighlight">\(\theta/2\)</span>, de tal forma que <span class="math notranslate nohighlight">\(R = 2a \sin\frac{\theta'}{2}\)</span>, y por la expresión del seno del ángulo mitad, obtenemos justo la misma expresión correcta.</p>
-</div>
-<p>Con esto, la expresión resulta ser:</p>
+<p>De forma similar a lo que nos encontrábamos en los ejercicios de Electrostática de materiales, en los problemas de Magnetostática de materiales, vamos a tener tres posibilidades, una de las cuales es particular de los problemas de magnetostática.</p>
+<ol class="arabic simple">
+<li><p><strong>Materiales lineales</strong>: Se caracterizan por que la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> es lineal con respecto al vector <span class="math notranslate nohighlight">\(\vec{H}\)</span>, típicamente tan solo una constante (<em>aunque podría ser una matriz, o tensor de orden 2</em>).</p></li>
+</ol>
 <div class="math notranslate nohighlight">
 \[
-\Phi(N) = \frac{\sigma}{4\pi\varepsilon_0}\int_{\theta'=0}^{\theta'=\pi/2} \int_{\varphi'=0}^{\varphi'=2\pi}\frac{a^2 \sin \theta' d\theta' d \varphi'}{2a \sin\frac{\theta'}{2}} = \frac{\sigma a}{\varepsilon_0}\frac{\sqrt 2}{2}
+\vec{M} = \chi_M \vec{H}
 \]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>La integral se puede realizar cambiando <span class="math notranslate nohighlight">\(\theta'/2\)</span> por <span class="math notranslate nohighlight">\(\theta'\)</span> o al revés, cambiando <span class="math notranslate nohighlight">\(\theta'\)</span> por <span class="math notranslate nohighlight">\(\theta'/2\)</span>. En ambos casos salen integrales relativamente inmediatas.</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Materiales con magnetización constante</strong>: Se caracterizan por que la magnetización es independiente del vector <span class="math notranslate nohighlight">\(\vec{H}\)</span> externo. En este caso, las densidades de corriente de magnetización también son constantes, por lo que podemos considerarlas como fuentes de campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span> y sustituir el material por dichas corrientes.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = cte \quad \Rightarrow \quad \vec{J_M} = \nabla\times\vec{M}; \space \vec{j_M} = \vec{M}\times\vec{n}
+\]</div>
+<p>Ambos casos, <strong>1</strong> y <strong>2</strong>, son equivalentes a problemas de Electrostática de materiales. El siguiente caso, <strong>3</strong>, aunque nos lo podríamos encontrar en Electrostática, allí tiene muy poca importancia, mientras que en Magnetostática tiene muchas aplicaciones prácticas.</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Materiales no lineales</strong>: Se caracterizan por que la magnetización <span class="math notranslate nohighlight">\(\vec{M}\)</span> responde al vector <span class="math notranslate nohighlight">\(\vec{H}\)</span> externo de forma no lineal. Un ejemplo importante son los materiales con histéresis. Típicamente, le damos la vuelta a la dependencia para que <span class="math notranslate nohighlight">\(\vec{H}\)</span> sea la variable independiente y <span class="math notranslate nohighlight">\(\vec{B}\)</span> sea la variable dependiente:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\vec{M} = f(\vec{H}) \quad \Rightarrow \quad \vec{B} = \mu_0(\vec{M} + f(\vec{H})) = g(\vec{H}) \quad \Rightarrow \quad \vec{H} = \vec{H}(\vec{B})
+\]</div>
 </div>
+<p>Calculamos las densidades de corriente de magnetización. Respecto a la densidad volumétrica de corriente de magnetización <span class="math notranslate nohighlight">\(\vec{J_M}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{J_M} = \nabla\times\vec{M}
+\]</div>
+<p>Observamos que la magnetización solo tiene componente <span class="math notranslate nohighlight">\(\phi\)</span> que solo depende de la coordenada radial <span class="math notranslate nohighlight">\(s\)</span> de cilíndricas, <span class="math notranslate nohighlight">\(\vec{M} = M_\phi(s)\vec{u_\phi}\)</span>, y el único término del rotacional que sobrevive es (<em>Importante verificar la expresión: el producto <span class="math notranslate nohighlight">\(sM_\phi\)</span> se hace antes de la derivada parcial</em>):</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{J_M} = \nabla\times\vec{M} = \frac{1}{s} \left( \frac{\partial(sM_\phi)}{\partial s} \right) \vec{u_z} = 3ks\vec{u_z}
+\]</div>
+<p>Mientras que la densidad superficial de corriente de magnetización (<em>Importante: <span class="math notranslate nohighlight">\(s\)</span> es arbitrario, en la superficie <span class="math notranslate nohighlight">\(s\)</span> se particulariza a <span class="math notranslate nohighlight">\(s=a\)</span></em>):</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{j_M} = \vec{M}\times\vec{n} = \left(ks^2\vec{u_\phi}\times\vec{u_s}\right)_{s{=}a} = -ka^2 \vec{u_z}
+\]</div>
+<p>El problema resultante tiene simetría cilíndrica, una de las que nos permite utilizar la ley de Ampere. Distinguimos dos casos:</p>
 <ul class="simple">
-<li><p>Finalmente</p></li>
+<li><p><span class="math notranslate nohighlight">\(s{\le}a\)</span>: La corriente encerrada es la fracción de la corriente que atraviesa el circuito.</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[
-\Delta \Phi = \frac{\sigma a}{\varepsilon_0} \left( \frac{\sqrt 2 -1}{2}\right)
+\oint\vec{B}\cdot\vec{dl} = \mu_0I_{enc} = \mu_0\int \vec{J_M}\cdot\vec{dS}
+\]</div>
+<p>Para resolver la integral, utilizamos el diferencial de superficie de un plano <span class="math notranslate nohighlight">\(z=cte\)</span>, es decir, <span class="math notranslate nohighlight">\(\vec{dS} = s'ds'd\phi'\vec{u_z}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\int \vec{J_M}\cdot\vec{dS} = \int_{s'=0}^{s'=s}\int_{\phi'=0}^{\phi'=2\pi} (3ks'\vec{u_z})\cdot(s'ds'd\phi'\vec{u_z}) = \int_{s'=0}^{s'=s}\int_{\phi'=0}^{\phi'=2\pi} 3 ks'^2 ds'd\phi' = 2\pi ks^3
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dado que el radio del circuito de ampere es la variable radial <span class="math notranslate nohighlight">\(s\)</span> de coordenadas cilíndricas, <strong>para poder realizar la integral, nos vemos obligados a utilizar una variable radial diferente</strong> para realizar la integral <span class="math notranslate nohighlight">\(s`\)</span> que varia <span class="math notranslate nohighlight">\(s'\in[0,s]\)</span>. Por coherencia, tambien le ponemos la prima a <span class="math notranslate nohighlight">\(\phi'\)</span></p>
+<p>Otra manera de verlo sería la siguiente: <em>que la integral en <span class="math notranslate nohighlight">\(\phi\)</span> es definida en <span class="math notranslate nohighlight">\(\phi \in[0,2\pi]\)</span> mientras que la integral en <span class="math notranslate nohighlight">\(s\)</span> es indefinida</em>.</p>
+</div>
+<p>Por lo tanto:</p>
+<div class="math notranslate nohighlight">
+\[
+B 2\pi s = \mu_02\pi ks^3 \quad \rightarrow \quad \vec{B}(s) = \mu_0ks^2\vec{u_\phi}
+\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(s{&gt;}a\)</span>: La corriente encerrada es la total, <span class="math notranslate nohighlight">\(I\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\oint\vec{B}\cdot\vec{dl} = \mu_0 I_{enc} = 0
+\]</div>
+<p>Donde hemos usado el resultado de que la corriente total de magnetización en el material debe ser cero, y dado que el material tiene simetría a lo largo del eje <span class="math notranslate nohighlight">\(z\)</span>, la corriente total de magnetización que cruza un plano <span class="math notranslate nohighlight">\(z=cte\)</span> también debe de ser cero. Podemos verificar por integración que:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_S \vec{J_M}\cdot\vec{dS} = - \oint_C j_M dl = 2\pi ka^3
+\]</div>
+<p>Observemos que hay un salto en el campo magnético <span class="math notranslate nohighlight">\(\vec{B}\)</span> tangencial que corresponde con la densidad superficial de corriente de magnetización:</p>
+<div class="math notranslate nohighlight">
+\[
+(B_f - B_d)_{s=a} = \mu_0j_M \quad \rightarrow \quad -B_d|_{s=a} = -\mu_0 ka^2
 \]</div>
 </section>
 
@@ -488,20 +508,20 @@ R &amp;= a \sqrt{2} \sqrt{1-\cos\theta'}
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Problema_B1_S1_1.html"
+       href="Problema_B5_S9_2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Problema B1.S1.1</p>
+        <p class="prev-next-title">Problema B5.S9.2</p>
       </div>
     </a>
     <a class="right-next"
-       href="Problema_B1_S1_3.html"
+       href="Problema_B5_S11_1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Problema B1.S1.3</p>
+        <p class="prev-next-title">Problema B5.S11.1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
