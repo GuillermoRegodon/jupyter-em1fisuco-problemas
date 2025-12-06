@@ -9,4 +9,4 @@ Las notas están pensadas para que puedan actualizarse y mejorarse a medida que 
 ```{tableofcontents}
 ```
 
-*Ultima actualización: 02/12/25*
+*Ultima actualización: 09/12/25*

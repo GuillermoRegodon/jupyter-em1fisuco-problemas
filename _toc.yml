@@ -62,13 +62,17 @@ parts:
   chapters:
   - file: pages/Problema_B5_S11_1
   - file: pages/Problema_B5_S11_2
-# - file: pages/Problema_B5_4
-# - file: pages/Problema_B5_5
-# - file: pages/Problema_B6_1
-# - file: pages/Problema_B6_3
-# - file: pages/Problema_B6_4
-# - file: pages/Problema_B6_5
-# - file: pages/Problema_B6_6
+- caption: Seminario 12 - Inducción magnética y energía magnética
+  chapters:
+  - file: pages/Problema_B6_S12_1
+  - file: pages/Problema_B6_S12_2
+  - file: pages/Problema_B6_S12_3
+  - file: pages/Problema_B6_S12_4
+  - file: pages/Problema_B6_S12_5
+  - file: pages/Problema_B6_S12_6
+- caption: Ejercicios de examen de Magnetostática
+  chapters:
+  - file: pages/Ejercicios_examen_magnetostatica
 # - file: pages/Parcial_2425
 # - file: pages/e1a2425
 # - file: pages/e2a2425
