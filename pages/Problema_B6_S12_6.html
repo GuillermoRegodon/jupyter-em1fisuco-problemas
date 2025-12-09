@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B6.4 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B6.S12.6 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,7 +62,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B6_4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B6_S12_6';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -298,7 +298,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B6_4.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B6_S12_6.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -372,7 +372,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B6.4</h1>
+    <h1>Problema B6.S12.6</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,49 +386,50 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b6-4">
-<h1>Problema B6.4<a class="headerlink" href="#problema-b6-4" title="Link to this heading">#</a></h1>
-<p>Para resolver la corriente inducida en la espira, es necesario conocer el campo magnético que genera el solenoide en todo el espacio.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b6-s12-6">
+<h1>Problema B6.S12.6<a class="headerlink" href="#problema-b6-s12-6" title="Link to this heading">#</a></h1>
+<p>El radio del toroide está indicado, <span class="math notranslate nohighlight">\(R\)</span>, pero no se dice exáctamente si es el radio interior, el exterior, el radio del centro de la sección circular de superficie <span class="math notranslate nohighlight">\(A\)</span>… Por eso, <strong>vamos a suponer que la sección es suficientemente pequeña</strong> como para que la diferencia sea despreciable.</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/solenoide.png"><img alt="solenoide" src="../_images/solenoide.png" style="width: 250px;" /></a>
+<a class="reference internal image-reference" href="../_images/toroide.png"><img alt="toroide" src="../_images/toroide.png" style="width: 360px;" /></a>
 <figcaption>
 <p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Podemos aprovechar la simetría y resolverlo por Ampere, utilizando un circuito de Ampere apropiado.</p>
+<p>Para calcular el coeficiente de autoinducción, <strong>es necesario calcular el flujo magnético que atraviesa la superficie de describe el circuito</strong> generado por el propio circuito. A partir del flujo, <em>el coeficiente de autoinducción es inmediato</em>.</p>
+<div class="math notranslate nohighlight">
+\[
+L = \frac{\Phi_1}{I}
+\]</div>
+<p>El campo magnético se puede obtener fácilmente por Ampere.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>El circuito de Ampere debe elegirse de forma que <strong>la superficie de dicho circuito de Ampere tenga lados paralelos al campo magnético</strong>. Los lados restantes, si los hay, deberían ser perpendiculares al campo magnético. Para ello, debemos adivinar <strong>la dirección del campo magnético usando la regla de la mano derecha</strong>. Por otra parte, <strong>el circuito de Ampere debe estar atravesado por la corriente que genera el campo</strong>.</p>
 </div>
-<p>En esta configuración, de un solenoide cilíndrico infinito en el que los hilos de corriente tienen dirección <span class="math notranslate nohighlight">\(\vec{u_\phi}\)</span> positiva, el campo magnético tendrá dirección <span class="math notranslate nohighlight">\(\vec{u_z}\)</span>. Por lo tanto, <strong>el circuito de Ampere debe tener lados paralelos al eje <span class="math notranslate nohighlight">\(z\)</span></strong>. Los lados restantes deben ser perpendiculares al eje <span class="math notranslate nohighlight">\(z\)</span> para que no aporten en la integral de Ampere. Para que recoja la corriente en su interior, la configuración debe ser la de la figura:</p>
+<p>En esta configuración, por la regla de la mano derecha, podemos deducir que <strong>el campo magnético tiene dirección <span class="math notranslate nohighlight">\(\vec{u_\phi}\)</span> por el interior del toroide</strong>. Por lo tanto, el circuito de Ampere apropiado es un circulo que <em>siga las lineas de campo magnético en el interior</em>. Vemos que los hilos de corriente que suben por el interior del toroide atraviesan su superficie.</p>
 <figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/solenoide_ampere.png"><img alt="solenoide_ampere" src="../_images/solenoide_ampere.png" style="width: 260px;" /></a>
+<a class="reference internal image-reference" href="../_images/toroide_ampere.png"><img alt="toroide_ampere" src="../_images/toroide_ampere.png" style="width: 350px;" /></a>
 <figcaption>
 <p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p><strong>La integral de Ampere es, en el caso de materiales</strong>:</p>
+<p>De esta forma, la integral de Ampere queda:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\int\vec{B}\cdot\vec{dl} &amp;= \mu_0 I_{enc} \\
+B2\pi R &amp;= \mu_0 I N_1
+\end{split}\]</div>
+<p>Para obtener la integral del flujo del campo magnético sobre el propio circuito, <strong>debemos tener cuidado por que el circuito da <span class="math notranslate nohighlight">\(N_1\)</span> vueltas</strong>, por lo que la superficie no es la sección <span class="math notranslate nohighlight">\(A\)</span> de una espira, sino la sección de las <span class="math notranslate nohighlight">\(N_1\)</span> espiras sumadas. Con <span class="math notranslate nohighlight">\(\vec{B}\)</span> aproximadamente constante en la superficie:</p>
 <div class="math notranslate nohighlight">
 \[
-\int\vec{H}\cdot\vec{dl} = I_{enc}
+\Phi_1 = \int_{S_1}\vec{B}\cdot\vec{dS_1} = B N_1 A
 \]</div>
-<p>La integral es facil de calcular, <span class="math notranslate nohighlight">\(\int\vec{H}\cdot\vec{dl} = H_{int}l\)</span>. Podemos ver que el campo magnético en el exterior debe ser independiente de la distancia <span class="math notranslate nohighlight">\(r\)</span> al eje, ya que la expresión no puede depender de la posición del lado que está fuera. Ádemas, debe ser  <span class="math notranslate nohighlight">\(H_{ext} = 0\)</span>, <em>porque en el infinito debería tender a cero y la constante debe coincidir con el valor en el infinito</em>. La corriente que atraviesa la espira es la de todos los hilos que la atraviesan, <span class="math notranslate nohighlight">\(I(t)nl\)</span> (<em>recordamos que <span class="math notranslate nohighlight">\(n\)</span> es el número de espiras por unidad de longitud</em>).</p>
+<p>Podemos obtener <span class="math notranslate nohighlight">\(L\)</span> de forma inmediata. Si se pone un segundo arroyamiento de <span class="math notranslate nohighlight">\(N_2\)</span> vueltas justo encima del primero de forma que el área <span class="math notranslate nohighlight">\(A\)</span> es igual, el coeficiente de inducción mutua <span class="math notranslate nohighlight">\(M\)</span> es también inmediato. Siendo el campo magnético <span class="math notranslate nohighlight">\(B\)</span> el mismo:</p>
 <div class="math notranslate nohighlight">
-\[
-\vec{B_{int}} = \mu I(t) n \vec{u_z}
-\]</div>
-<p>Con esto, <strong>podemos calcular el flujo que pasa por la espira del problema</strong>:</p>
-<figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/solenoide_r.png"><img alt="solenoide_r" src="../_images/solenoide_r.png" style="width: 250px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Observamos que no nos da las dimensiones de la espira, <em>pero no nos importa, porque todo el flujo es el producido en el interior del núcleo de permeabilidad <span class="math notranslate nohighlight">\(\mu\)</span></em>, es decir, <span class="math notranslate nohighlight">\(\Phi = B_{int}\pi a^2\)</span>. Con esto, la corriente inducida en la espira es:</p>
-<div class="math notranslate nohighlight">
-\[
-I_2 = \frac{\mathcal{E}}{R} = -\frac{1}{R}\frac{\rm{d}\Phi}{\rm{d}t} = -\frac{\mu n \pi a^2}{R}\frac{\rm{d}I(t)}{\rm{d}t}
-\]</div>
+\[\begin{split}
+M &amp;= \frac{\Phi_{21}}{I} \\
+\Phi_{21} &amp;= \int_{S_2}\vec{B}\cdot\vec{dS_2} = B N_2 A
+\end{split}\]</div>
+<p>Observar que <strong>en el coeficiente de autoinducción aparece un factor <span class="math notranslate nohighlight">\(N_1^2\)</span></strong>, mientras que <strong>en el coeficiente de inducción mutua hay un factor <span class="math notranslate nohighlight">\(N_1N_2\)</span></strong>. Queda claro que podriamos haber calculado <span class="math notranslate nohighlight">\(\Phi_{21}\)</span> y <span class="math notranslate nohighlight">\(\Phi_{12}\)</span> indistintanmente para obtener el mismo resultado, y que se cumple la expresión <span class="math notranslate nohighlight">\(M = \sqrt{L_1 L_2}\)</span>.</p>
 </section>
 
     <script type="text/x-thebe-config">

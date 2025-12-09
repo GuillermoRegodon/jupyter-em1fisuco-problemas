@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Problema B6.6 &#8212; Problemas resueltos de Electromagnetismo I</title>
+    <title>Problema B6.S12.3 &#8212; Problemas resueltos de Electromagnetismo I</title>
   
   
   
@@ -62,7 +62,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B6_6';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B6_S12_3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -298,7 +298,7 @@
       
       
       
-      <li><a href="../_sources/pages/Problema_B6_6.ipynb" target="_blank"
+      <li><a href="../_sources/pages/Problema_B6_S12_3.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -372,7 +372,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Problema B6.6</h1>
+    <h1>Problema B6.S12.3</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,50 +386,35 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="problema-b6-6">
-<h1>Problema B6.6<a class="headerlink" href="#problema-b6-6" title="Link to this heading">#</a></h1>
-<p>El radio del toroide está indicado, <span class="math notranslate nohighlight">\(R\)</span>, pero no se dice exáctamente si es el radio interior, el exterior, el radio del centro de la sección circular de superficie <span class="math notranslate nohighlight">\(A\)</span>… Por eso, <strong>vamos a suponer que la sección es suficientemente pequeña</strong> como para que la diferencia sea despreciable.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="problema-b6-s12-3">
+<h1>Problema B6.S12.3<a class="headerlink" href="#problema-b6-s12-3" title="Link to this heading">#</a></h1>
+<p>En el diagrama de este problema no hay un circuito, espira o similar por donde sepamos seguro que debe pasar la corriente, por lo que <strong>no podemos aplicar las expresiones de inducción, fuerza electromotriz, etc</strong>. Tenemos que quedarnos en un paso anterior de los desarrollos teóricos y quedarnos con las leyes fundamentales. En este caso, <strong>tenemos unas cargas libres en el disco de metal que estarán sujetas a a fuerza de Lorentz <span class="math notranslate nohighlight">\(\vec{F_L}\)</span></strong> cuando el disco gira.</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/toroide.png"><img alt="toroide" src="../_images/toroide.png" style="width: 360px;" /></a>
+<a class="reference internal image-reference" href="../_images/disco_rot.png"><img alt="disco_rot" src="../_images/disco_rot.png" style="width: 260px;" /></a>
 <figcaption>
 <p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Para calcular el coeficiente de autoinducción, <strong>es necesario calcular el flujo magnético que atraviesa la superficie de describe el circuito</strong> generado por el propio circuito. A partir del flujo, <em>el coeficiente de autoinducción es inmediato</em>.</p>
+<p>Despreciando la aceleración centrípeta, que es muy pequeña, podemos decir que la fuerza de Lorentz sobre la partícula es prácticamente nula, <span class="math notranslate nohighlight">\(\vec{F_L} = 0\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-L = \frac{\Phi_1}{I}
+\vec{F_L} = q \left( \vec{E} + \vec{v} \times \vec{B_0} \right)
 \]</div>
-<p>El campo magnético se puede obtener fácilmente por Ampere.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>El circuito de Ampere debe elegirse de forma que <strong>la superficie de dicho circuito de Ampere tenga lados paralelos al campo magnético</strong>. Los lados restantes, si los hay, deberían ser perpendiculares al campo magnético. Para ello, debemos adivinar <strong>la dirección del campo magnético usando la regla de la mano derecha</strong>. Por otra parte, <strong>el circuito de Ampere debe estar atravesado por la corriente que genera el campo</strong>.</p>
-</div>
-<p>En esta configuración, por la regla de la mano derecha, podemos deducir que <strong>el campo magnético tiene dirección <span class="math notranslate nohighlight">\(\vec{u_\phi}\)</span> por el interior del toroide</strong>. Por lo tanto, el circuito de Ampere apropiado es un circulo que <em>siga las lineas de campo magnético en el interior</em>. Vemos que los hilos de corriente que suben por el interior del toroide atraviesan su superficie.</p>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/toroide_ampere.png"><img alt="toroide_ampere" src="../_images/toroide_ampere.png" style="width: 350px;" /></a>
-<figcaption>
-<p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>De esta forma, la integral de Ampere queda:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\int\vec{B}\cdot\vec{dl} &amp;= \mu_0 I_{enc} \\
-B2\pi R &amp;= \mu_0 I N_1
-\end{split}\]</div>
-<p>Para obtener la integral del flujo del campo magnético sobre el propio circuito, <strong>debemos tener cuidado por que el circuito da <span class="math notranslate nohighlight">\(N_1\)</span> vueltas</strong>, por lo que la superficie no es la sección <span class="math notranslate nohighlight">\(A\)</span> de una espira, sino la sección de las <span class="math notranslate nohighlight">\(N_1\)</span> espiras sumadas. Con <span class="math notranslate nohighlight">\(\vec{B}\)</span> aproximadamente constante en la superficie:</p>
+<p>Es decir, para que las partículas estén estacionarias (<em>o girando con inercia despreciable</em>), debe aparecer <strong>un campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> que compense la fuerza magnética producida por <span class="math notranslate nohighlight">\(\vec{B_0}\)</span></strong>. El campo eléctrico aparece por la acumulación de cargas positivas en el exterior del disco a causa de la fuerza magnética:</p>
 <div class="math notranslate nohighlight">
 \[
-\Phi_1 = \int_{S_1}\vec{B}\cdot\vec{dS_1} = B N_1 A
+\vec{F_m} = q(\vec{v} \times \vec{B_0}) = q(\vec{\omega} \times \vec{r}) \times \vec{B_0} = q(\omega\vec{u_z} \times r\vec{u_r}) \times B_0\vec{u_z} = q \omega r B_0 \vec{u_r}
 \]</div>
-<p>Podemos obtener <span class="math notranslate nohighlight">\(L\)</span> de forma inmediata. Si se pone un segundo arroyamiento de <span class="math notranslate nohighlight">\(N_2\)</span> vueltas justo encima del primero de forma que el área <span class="math notranslate nohighlight">\(A\)</span> es igual, el coeficiente de inducción mutua <span class="math notranslate nohighlight">\(M\)</span> es también inmediato. Siendo el campo magnético <span class="math notranslate nohighlight">\(B\)</span> el mismo:</p>
+<p>Efectivamente, la fuerza magnética aleja las cargas del centro del disco. El campo eléctrico <span class="math notranslate nohighlight">\(\vec{E}\)</span> se obtiene por lo tanto:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-M &amp;= \frac{\Phi_{21}}{I} \\
-\Phi_{21} &amp;= \int_{S_2}\vec{B}\cdot\vec{dS_2} = B N_2 A
-\end{split}\]</div>
-<p>Observar que <strong>en el coeficiente de autoinducción aparece un factor <span class="math notranslate nohighlight">\(N_1^2\)</span></strong>, mientras que <strong>en el coeficiente de inducción mutua hay un factor <span class="math notranslate nohighlight">\(N_1N_2\)</span></strong>. Queda claro que podriamos haber calculado <span class="math notranslate nohighlight">\(\Phi_{21}\)</span> y <span class="math notranslate nohighlight">\(\Phi_{12}\)</span> indistintanmente para obtener el mismo resultado, y que se cumple la expresión <span class="math notranslate nohighlight">\(M = \sqrt{L_1 L_2}\)</span>.</p>
+\[
+\vec{E} = -\vec{v} \times \vec{B_0} = -\omega r B_0 \vec{u_r}
+\]</div>
+<p>Si se conecta una resistencia <span class="math notranslate nohighlight">\(R\)</span> entre el centro y el borde del disco, la corriente que atraviesa la resistencia viene dada por la ley de Ohm, <span class="math notranslate nohighlight">\(I = \frac{\Delta V}{R}\)</span>, y la diferencia de potencial la podemos obtener por integración del campo eléctrico a lo largo de un radio del disco, <span class="math notranslate nohighlight">\(r\in[0,a]\)</span> (<em>Estamos suponiendo que la corriente es suficientemente pequeña como para no influir apenas en las cargas acumuladas que generan dicho campo eléctrico</em>).</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta V = \Phi(r=a) - \Phi(r=0) = -\int_{r_0}^{r=a}\vec{E}\cdot\vec{dl} = \int_{r_0}^{r=a}\omega r B_0 dr = \frac{\omega a^2 B_0}{2}
+\]</div>
 </section>
 
     <script type="text/x-thebe-config">
