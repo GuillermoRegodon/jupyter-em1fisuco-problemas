@@ -240,19 +240,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_1.html">Problema B5.S11.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_2.html">Problema B5.S11.2</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 12 - Inducción magnética y energía magnética</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_1.html">Problema B6.S12.1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_2.html">Problema B6.S12.2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_3.html">Problema B6.S12.3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_4.html">Problema B6.S12.4</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_5.html">Problema B6.S12.5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_6.html">Problema B6.S12.6</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ejercicios de examen de Magnetostática</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Ejercicios_examen_magnetostatica.html">Ejercicios de examen de magnetostática</a></li>
-</ul>
 
     </div>
 </nav></div>
@@ -457,7 +444,7 @@ dS' &amp;= s'ds'\space d\phi' \quad s' \in [0, b] \quad \phi' \in [0,2\pi]
 <p>Finalmente, si queremos obtener la expresión analítica de <span class="math notranslate nohighlight">\(B_z\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[
-B_z = \frac{\mu_0 Q\omega}{4\pi^2 b^2}\int_{s'{=}0}^{s'{=}b}\int_{\phi'{=}0}^{\phi'{=}2\pi}  \frac{ s'^3ds'\space d\phi'}{(z^2 + s'^2)^{3/2}} = \frac{\mu_0 Q\omega z}{2\pi b^2}\int_{\frac{s'}{z}{=}0}^{\frac{s'}{z}{=}\frac{b}{z}} \frac{ (\frac{s'}{z})^3(\frac{ds'}{z})}{(1 + (\frac{s'}{z})^2)^{3/2}} = \frac{\mu_0 Q\omega z}{2\pi b^2} \frac{(\frac{s'}{z})^2 + 2}{\sqrt{1 + (\frac{s'}{z})^2}}
+B_z = \frac{\mu_0 Q\omega}{4\pi^2 b^2}\int_{s'{=}0}^{s'{=}b}\int_{\phi'{=}0}^{\phi'{=}2\pi}  \frac{ s'^3ds'\space d\phi'}{(z^2 + s'^2)^{3/2}} = \frac{\mu_0 Q\omega z}{2\pi b^2}\int_{\frac{s'}{z}{=}0}^{\frac{s'}{z}{=}\frac{b}{z}} \frac{ (\frac{s'}{z})^3(\frac{ds'}{z})}{(1 + (\frac{s'}{z})^2)^{3/2}} = \frac{\mu_0 Q\omega z}{2\pi b^2} \frac{(\frac{z'}{z})^2 + 2}{\sqrt{1 + (\frac{z'}{z})^2}}|_{\frac{s'}{z}{=}0}^{\frac{s'}{z}{=}\frac{b}{z}} = \frac{\mu_0 Q\omega z}{2\pi b^2} \left( \frac{(\frac{b}{z})^2 + 2}{\sqrt{1 + (\frac{b}{z})^2}} - 2\right)
 \]</div>
 <ul class="simple">
 <li><p><strong>El segundo apartado pide el momento dipolar magnético del disco</strong>. Para ello, vamos a beneficiarnos de que conocemos el momento dipolar magnético de una corriente circular, y construimos el momento dipolar magnético total. Para una corriente circular de radio arbitrario <span class="math notranslate nohighlight">\(s'\)</span>:</p></li>
