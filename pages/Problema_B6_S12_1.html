@@ -65,6 +65,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'pages/Problema_B6_S12_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Problema B6.S12.2" href="Problema_B6_S12_2.html" />
+    <link rel="prev" title="Problema B5.S11.2" href="Problema_B5_S11_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -239,6 +239,19 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_1.html">Problema B5.S11.1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Problema_B5_S11_2.html">Problema B5.S11.2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Seminario 12 - Inducción magnética y energía magnética</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Problema B6.S12.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_2.html">Problema B6.S12.2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_3.html">Problema B6.S12.3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_4.html">Problema B6.S12.4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_5.html">Problema B6.S12.5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problema_B6_S12_6.html">Problema B6.S12.6</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ejercicios de examen de Magnetostática</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Ejercicios_examen_magnetostatica.html">Ejercicios de examen de magnetostática</a></li>
 </ul>
 
     </div>
@@ -393,11 +406,20 @@
 \[
 I_2 = \frac{\mathcal{E}}{R} = -\frac{1}{R}\frac{\rm{d}\Phi_{21}}{\rm{d}I_1}
 \]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Muchos problemas de magnetostática se reducen a obtener dos integrales:</p>
+<ul class="simple">
+<li><p>Una integral para obtener el campo magnético <span class="math notranslate nohighlight">\(\vec{B_1}\)</span> que genera una configuración de corriente 1. En esta integral se parametriza la configuración de corriente 1.</p></li>
+<li><p>Una integral para obtener el flujo magnético <span class="math notranslate nohighlight">\(\Phi_{21}\)</span> que genera la espira 1 sobre la espira 2. En esta integral se parametriza la superficie delimitada por la configuración de corriente 2.</p></li>
+</ul>
+<p>Alguna, o las dos integrales, se pueden resolver por métodos simplificados (<em>podría ser Ampere, o producto <span class="math notranslate nohighlight">\(B_1S_2\)</span>… cada problema debe ser analizado para comprobarlo</em>).</p>
+</div>
 <p>En este problema concreto, tenemos la corriente <span class="math notranslate nohighlight">\(I_1 = I(t)\)</span> diferente para cada apartado.</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/induccion.png"><img alt="induccion" src="../_images/induccion.png" style="width: 260px;" /></a>
+<a class="reference internal image-reference" href="../_images/B6_S12_1_1.png"><img alt="induccion" src="../_images/B6_S12_1_1.png" style="width: 260px;" /></a>
 <figcaption>
-<p><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 35 </span><span class="caption-text">Diagrama del problema.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><em>En el primer apartado, la espira rectangular está quieta</em>, por lo que la única variación del flujo <span class="math notranslate nohighlight">\(\Phi_{21}\)</span> viene de la dependencia temporal de la corriente.</p>
@@ -405,6 +427,10 @@ I_2 = \frac{\mathcal{E}}{R} = -\frac{1}{R}\frac{\rm{d}\Phi_{21}}{\rm{d}I_1}
 \[
 \Phi_{21} = \int_{S_2}\vec{B_1}\cdot\vec{dS_2} = \int_{z=0}^{z=b}\int_{r=c}^{r=c+a}(\frac{\mu_0 I(t)}{2\pi r}\vec{u_\phi})\cdot({dr\space dz \space \vec{u_\phi}})
 \]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Observamos que el diferencial de superficie tiene dirección <span class="math notranslate nohighlight">\(\vec{dS_2} = \vec{u_\phi}\)</span>. La corriente <span class="math notranslate nohighlight">\(I_2\)</span> positiva (<em>que es la misma que la de la fuerza electromotriz <span class="math notranslate nohighlight">\(\mathcal{E_2}\)</span></em>) es la que define la dirección del diferencial de superficie, según la regla de la mano derecha.</p>
+</div>
 <p>En los apartados segundo y tercero la corriente es constante <span class="math notranslate nohighlight">\(I_1 = I_0 = cte\)</span>, pero <em>la espira se mueve de forma que el flujo <span class="math notranslate nohighlight">\(\Phi_{21}\)</span> puede variar</em>. En el segundo apartado, la espira rectangular se desplaza radialmente, por lo que cambiamos la corriente y los límites de integración de la siguiente manera:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -452,6 +478,24 @@ z=b &amp;\rightarrow z=vt + b
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Problema_B5_S11_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problema B5.S11.2</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Problema_B6_S12_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Problema B6.S12.2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

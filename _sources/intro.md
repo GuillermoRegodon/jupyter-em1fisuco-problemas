@@ -10,3 +10,5 @@ Las notas están pensadas para que puedan actualizarse y mejorarse a medida que 
 ```
 
 *Ultima actualización: 09/12/25*
+
+© 2025. This work is openly licensed via [CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/).
