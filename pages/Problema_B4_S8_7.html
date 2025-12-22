@@ -454,13 +454,25 @@ B_1 = \frac{\mu_0}{4 \pi} \left( \frac{3 (\vec{m_1} \cdot \vec{r})\vec{r}}{r^5} 
 \[\begin{split}
 \vec{B_1} &amp;= \frac{\mu_0}{4 \pi} \left( \frac{3 (\vec{m_1} \cdot \vec{r})\vec{r}}{r^5} - \frac{\vec{m_1}}{r^3}\ \right) = \\
 &amp;= \frac{\mu_0 m_1}{4 \pi r^3} \left( 3 \cos \theta \vec{u_r} - \vec{u_z}\ \right) = \\
-&amp;= \frac{\mu_0 m_1}{4 \pi r^3} \left( 2 \cos \theta \vec{u_r} + \sin \theta \vec{u_\theta}\ \right)
+&amp;= \frac{\mu_0 m_1}{4 \pi r^3} \left( 2 \cos \theta \vec{u_r} + \sin \theta \vec{u_\theta} \right)
 \end{split}\]</div>
 <p>Y, por lo tanto, la fuerza:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \vec{F} &amp;= \left( (-m_2 \vec{u_z}) \cdot (\frac{\partial}{\partial r} \vec{u_r} + \frac{1}{r}\frac{\partial}{\partial \theta} \vec{u_\theta} + \frac{1}{r\sin \theta}\frac{\partial}{\partial \varphi} \vec{u_\varphi} )\right) \vec{B_1} \\
 &amp;= -m_2 \left( \cos \theta \frac{\partial}{\partial r} + \frac{\sin \theta}{r} \frac{\partial}{\partial \theta} \right) \vec{B_1}
+\end{split}\]</div>
+<p>Dado que los vectores unitarios también varían con las coordenadas, para poder obtener una expresión cerrada tenemos que usar coordenadas cartesianas en las que los unitarios son constantes (<em>Otra opción sería usar derivadas de tensores en el sentido de la geometría diferencial, o en su defecto, buscar una <strong>tabla de derivadas de los vectores unitarios en esféricas</strong></em>). Colocamos el segundo dipolo magnético en el plano <span class="math notranslate nohighlight">\(xz\)</span> por simplicidad en las expresiones (<em><span class="math notranslate nohighlight">\(\varphi\)</span> de esféricas se hace 0</em>).</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{B_1} = \frac{\mu_0 m_1}{4 \pi r^3} \left( 3 \cos \theta (\cos\theta\vec{u_z} + \sin\theta\vec{u_x}) - \vec{u_z}\ \right) =
+\frac{\mu_0 m_1}{4 \pi r^3} \left( (3 \cos^2 \theta -1) \vec{u_z} + 3\sin\theta\cos\theta\vec{u_x} \right)
+\]</div>
+<p>Realizando las derivadas y aplicando trigonometría:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{F} &amp;= 3\cos\theta\frac{\mu_0 m_1m_2}{4 \pi r^4} \left( (3 \cos^2 \theta -1) \vec{u_z} + 3 \sin\theta\cos\theta\vec{u_x} \right) - \frac{\sin\theta}{r}\frac{\mu_0 m_1m_2}{4 \pi r^3} \left( -6 \sin \theta \cos\theta \vec{u_z} + 3 (\cos^2\theta - \sin^2\theta) \vec{u_x} \right) \\
+&amp;= \frac{3 \mu_0 m_1m_2}{4 \pi r^4} \left( \cos^2\theta+1) \left( \cos\theta \vec{u}_z + \sin\theta \vec{u}_x \right) \right) = \frac{3 \mu_0 m_1m_2}{4 \pi r^4} \left( \cos^2\theta+1 \right) \vec{u}_r
 \end{split}\]</div>
 <p>Y el torque:</p>
 <div class="math notranslate nohighlight">
