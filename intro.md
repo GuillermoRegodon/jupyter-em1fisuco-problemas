@@ -9,6 +9,6 @@ Las notas están pensadas para que puedan actualizarse y mejorarse a medida que 
 ```{tableofcontents}
 ```
 
-*Ultima actualización: 15/01/26*
+*Ultima actualización: 20/01/26*
 
 © 2025. This work is openly licensed via [CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/).

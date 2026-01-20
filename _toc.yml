@@ -73,8 +73,8 @@ parts:
 - caption: Ejercicios de examen de Magnetostática
   chapters:
   - file: pages/Ejercicios_examen_magnetostatica
-# - file: pages/Parcial_2425
-# - file: pages/e1a2425
-# - file: pages/e2a2425
+- caption: Examen de 1a Convocatoria
+  chapters:
+  - file: pages/e1a2526.ipynb
 
  
