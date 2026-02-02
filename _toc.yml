@@ -76,5 +76,8 @@ parts:
 - caption: Examen de 1a Convocatoria
   chapters:
   - file: pages/e1a2526.ipynb
+- caption: Examen de 2a Convocatoria
+  chapters:
+  - file: pages/e2a2526.ipynb
 
  
