@@ -88,8 +88,23 @@ project:
       children:
         - file: pages/e2a2526.ipynb
 
+builder:
+  type: custom
+  custom_builder:
+    command: ["sphinx-build", "-b", "html", "-D", "html_theme=sphinx_rtd_theme"]
+    
+sphinx:
+  config:
+    # Direct Sphinx configurations
+    master_doc: index
+    html_theme: sphinx_rtd_theme
+    html_theme_options:
+      collapse_navigation: false
+      navigation_depth: 4
+      
 site:
   template: book-theme
-  # options:
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+  options:
+    folders: true
+    #   favicon: favicon.ico
+    #   logo: site_logo.png
