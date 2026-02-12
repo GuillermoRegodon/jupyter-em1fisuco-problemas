@@ -1,3 +1,11 @@
+---
+exports:
+  - format: pdf
+    template: plain_latex_book
+    output: _build/exports/em1.pdf
+    toc: _toc.yml
+---
+
 # Problemas resueltos de Electromagnetismo I
 
 En este documento pondremos **las soluciones a algunos de los problemas propuestos** en los boletines de problemas de la asignatura *Electomagnetismo I del Grado en Física por la Universidad de Córdoba*, así como problemas de ejemplo. Como insistimos los profesores de la asignatura, **consultar la bibliografía recomendada es una gran ayuda**, especialmente en un área como en el Electromagnetismo en la que hay libros muy buenos. *Seguir los ejemplos de los libros ayuda especialmente a aclarar muchos conceptos*.
@@ -11,4 +19,4 @@ Las notas están pensadas para que puedan actualizarse y mejorarse a medida que 
 
 *Ultima actualización: 04/02/26*
 
-© 2025. This work is openly licensed via [CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+© 2026. This work is openly licensed via [CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/4.0/).
