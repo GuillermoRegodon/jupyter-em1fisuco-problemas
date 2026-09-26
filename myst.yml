@@ -25,11 +25,11 @@ project:
       children:
         - file: pages/Problema_B1_S2_1.ipynb
         - file: pages/Problema_B1_S2_2.ipynb
-    # - title: Seminario 3 - Imágenes, Cargas puntuales
-    #   children:
-    #     - file: pages/Problema_B2_S3_1.ipynb
-    #     - file: pages/Problema_B2_S3_2.ipynb
-    #     - file: pages/Problema_B2_S3_3.ipynb
+    - title: Seminario 3 - Imágenes, Cargas puntuales
+      children:
+        - file: pages/Problema_B2_S3_1.ipynb
+        - file: pages/Problema_B2_S3_2.ipynb
+        - file: pages/Problema_B2_S3_3.ipynb
     # - title: Seminario 4 - Imágenes, Cargas distribuidos
     #   children:
     #     - file: pages/Problema_B2_S4_1.ipynb
