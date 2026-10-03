@@ -30,11 +30,11 @@ project:
         - file: pages/Problema_B2_S3_1.ipynb
         - file: pages/Problema_B2_S3_2.ipynb
         - file: pages/Problema_B2_S3_3.ipynb
-    # - title: Seminario 4 - Imágenes, Cargas distribuidos
-    #   children:
-    #     - file: pages/Problema_B2_S4_1.ipynb
-    #     - file: pages/Problema_B2_S4_2.ipynb
-    #     - file: pages/Propuesto_B2_S4_1.ipynb
+    - title: Seminario 4 - Imágenes, Cargas distribuidos
+      children:
+        - file: pages/Problema_B2_S4_1.ipynb
+        - file: pages/Problema_B2_S4_2.ipynb
+        - file: pages/Propuesto_B2_S4_1.ipynb
     # - title: Seminario 5 - Separación de variables, Esferas de carga
     #   children:
     #     - file: pages/Problema_B2_S5_1.ipynb
