@@ -38,10 +38,10 @@ project:
     - title: Resumen de las presentaciones de los seminarios 1 a 4
       children:
         - file: pages/Actividades_1.ipynb
-    # - title: Seminario 5 - Separación de variables, Esferas de carga
-    #   children:
-    #     - file: pages/Problema_B2_S5_1.ipynb
-    #     - file: pages/Problema_B2_S5_2.ipynb
+    - title: Seminario 5 - Separación de variables, Esferas de carga
+      children:
+        - file: pages/Problema_B2_S5_1.ipynb
+        - file: pages/Problema_B2_S5_2.ipynb
     # - title: Seminario 6 - Medios dieléctricos, Energía electrostática
     #   children:
     #     - file: pages/Problema_B3_S6_1.ipynb
