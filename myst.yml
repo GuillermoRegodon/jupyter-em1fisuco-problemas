@@ -50,19 +50,22 @@ project:
       children:
         - file: pages/Problema_B3_S7_1.ipynb
         - file: pages/Problema_B3_S7_2.ipynb
+    - title: Resumen de las presentaciones de los seminarios 5 a 7
+      children:
+        - file: pages/Actividades_2.ipynb
     # - title: Ejercicios de examen de Electrostática
     #   children:
     #     - file: pages/Ejercicios_examen_electrostatica.ipynb
     #     - file: pages/Parcial_2526.ipynb
-    # - title: Seminario 8 - Magnetostática, Superposición
-    #   children:
-    #     - file: pages/Problema_B4_S8_1.ipynb
-    #     - file: pages/Problema_B4_S8_2.ipynb
-    #     - file: pages/Problema_B4_S8_3.ipynb
-    #     - file: pages/Problema_B4_S8_4.ipynb
-    #     - file: pages/Problema_B4_S8_5.ipynb
-    #     - file: pages/Problema_B4_S8_6.ipynb
-    #     - file: pages/Problema_B4_S8_7.ipynb
+    - title: Seminario 8 - Magnetostática, Superposición
+      children:
+        - file: pages/Problema_B4_S8_1.ipynb
+        - file: pages/Problema_B4_S8_2.ipynb
+        - file: pages/Problema_B4_S8_3.ipynb
+        - file: pages/Problema_B4_S8_4.ipynb
+        - file: pages/Problema_B4_S8_5.ipynb
+        - file: pages/Problema_B4_S8_6.ipynb
+        - file: pages/Problema_B4_S8_7.ipynb
     # - title: Seminario 9 - Magnetostática, Materiales
     #   children:
     #     - file: pages/Problema_B5_S9_1.ipynb
