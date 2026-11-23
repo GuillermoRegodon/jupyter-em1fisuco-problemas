@@ -66,11 +66,11 @@ project:
         - file: pages/Problema_B4_S8_5.ipynb
         - file: pages/Problema_B4_S8_6.ipynb
         - file: pages/Problema_B4_S8_7.ipynb
-    # - title: Seminario 9 - Magnetostática, Materiales
-    #   children:
-    #     - file: pages/Problema_B5_S9_1.ipynb
-    #     - file: pages/Problema_B5_S9_2.ipynb
-    #     - file: pages/Problema_B5_S9_3.ipynb
+    - title: Seminario 10 - Magnetostática, Materiales
+      children:
+        - file: pages/Problema_B5_S10_1.ipynb
+        - file: pages/Problema_B5_S10_2.ipynb
+        - file: pages/Problema_B5_S10_3.ipynb
     # - title: Seminario 11 - Circuitos ferromagnéticos
     #   children:
     #     - file: pages/Problema_B5_S11_1.ipynb
